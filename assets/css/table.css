@@ -206,21 +206,21 @@ table.table .avatar {
 }
 
 .modal .form-control {
-    border-radius: 5px;
+    border-radius: .25rem;
     box-shadow: none;
     border-color: #dddddd;
 }
 
-.modal .form-control.is-red {
+.form-control.is-red {
     border-color: red;
 }
 
-.modal .form-control.is-blue {
+.form-control.is-blue {
     border-color: var(--input-focued-color);
     background-color: #e8f0fe;
 }
 
-.modal .form-control:focus {
+.form-control:focus {
     border-color: var(--input-focued-color);
 }
 
