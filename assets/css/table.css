@@ -212,6 +212,23 @@ table.table .avatar {
 }
 
 /* Costum styles */
+tbody {
+    /* display: none; */
+}
+
+.table-empty {
+    width: 100%;
+}
+
+.table-title-nd {
+    display: none;
+    font-size: 30px;
+    color: #435d7d;
+    text-align: center;
+    padding: 30px 0px 50px 0px;
+    border-bottom: 1px solid #eee;
+}
+
 .btn-big {
     padding: 12px;
 }
