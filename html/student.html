@@ -419,13 +419,13 @@
                                     </div>
                                     <div class="modal-body modal-body-add u-grid">
                                         <div class="form-group">
-                                            <label>Nome</label>
-                                            <input type="text" name="name" id="nome" class="form-control"
+                                            <label for="name">Nome</label>
+                                            <input type="text" name="name" id="name" class="form-control"
                                                 placeholder="Digite o seu nome">
                                             <span class="form-error" id="nameErr">O campo não pode estar vazio</span>
                                         </div>
                                         <div class="form-group">
-                                            <label>Email</label>
+                                            <label for="email">Email</label>
                                             <input type="text" name="email" id="email" class="form-control"
                                                 placeholder="email@exemplo.com">
                                             <span class="form-error" id="emailErr">O campo não pode estar vazio</span>
@@ -456,8 +456,8 @@
                                             <span class="form-error" id="genderErr">O campo não pode estar vazio</span>
                                         </div>
                                         <div class="form-group">
-                                            <label>Imagem </label>
-                                            <input type="file" required>
+                                            <label for="image">Imagem </label>
+                                            <input type="file" name="image" id="image">
                                             <span class="form-error" id="courseErr">O campo não pode estar vazio</span>
                                         </div>
                                         <div class="form-image">
@@ -465,8 +465,9 @@
                                                 class="u-img form-img">
                                         </div>
                                         <div class="form-group form-group-last">
-                                            <label>Telefone</label>
-                                            <input type="text" class="form-control" placeholder="123-456-789">
+                                            <label for="phone">Telefone</label>
+                                            <input type="text" name="phone" id="phone" class="form-control"
+                                                placeholder="123-456-789">
                                             <span class="form-error" id="courseErr">O campo não pode estar vazio</span>
                                         </div>
                                     </div>
@@ -483,7 +484,6 @@
                     <div id="editEmployeeModal" class="modal fade">
                         <div class="modal-dialog">
                             <div class="modal-content">
-
                             </div>
                         </div>
                     </div>
