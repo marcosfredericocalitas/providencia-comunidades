@@ -236,11 +236,11 @@ table.table .avatar {
     display: flex;
 }
 
-.modal .form-gender {
+.form-gender {
     gap: 20px;
 }
 
-.modal .form-gender-gap {
+.form-gender-gap {
     gap: 10px;
 }
 
