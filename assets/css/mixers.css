@@ -1,8 +1,9 @@
-/* Display */
+/* Display flex */
 .u-flex {
     display: flex;
 }
 
+/* Display grid  */
 .u-grid {
     display: grid;
 }
@@ -23,4 +24,8 @@
 
 .u-line-clamp1 {
     -webkit-line-clamp: 1;
+}
+
+.u-line-clamp2 {
+    -webkit-line-clamp: 2;
 }
