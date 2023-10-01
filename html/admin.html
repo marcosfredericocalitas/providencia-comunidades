@@ -178,7 +178,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">Alunos</h1>
+                            <h1 class="m-0">Administradores</h1>
                         </div>
                     </div>
                 </div>
@@ -193,12 +193,12 @@
                             <div class="table-title">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <h2>Gerir <b>alunos</b></h2>
+                                        <h2>Gerir <b>Administradores</b></h2>
                                     </div>
                                     <div class="col-sm-6">
                                         <a href="#addEmployeeModal" class="btn btn-success btn-big"
                                             data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add
-                                                Novo Aluno</span></a>
+                                                Novo admin</span></a>
                                         <a href="#deleteEmployeeModal" class="btn btn-danger btn-big"
                                             data-toggle="modal"><i class="material-icons">&#xE15C;</i>
                                             <span>Apagar todos</span></a>
@@ -209,10 +209,9 @@
                                 <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>Aluno</th>
+                                        <th>Admin</th>
                                         <th>Nome</th>
                                         <th>Email</th>
-                                        <th>Curso</th>
                                         <th>Sexo</th>
                                         <th>Telefone</th>
                                         <th>Ações</th>
@@ -238,7 +237,40 @@
                                         </td>
                                         <td>
                                             <div class="table-data u-display-box u-line-clamp1">
-                                                Programação web (Full-stack)
+                                                Masculino
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-data u-display-box u-line-clamp1">
+                                                (+244) 940-345-430
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                                <i class="material-icons" data-toggle="tooltip"
+                                                    title="Edit">&#xE254;</i>
+                                            </a>
+                                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                                <i class="material-icons" data-toggle="tooltip"
+                                                    title="Delete">&#xE872;</i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>
+                                            <div class="table-image">
+                                                <img src="../assets/img/profile-pic.png" alt="" class="u-img">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-data u-display-box u-line-clamp1">
+                                                Marcos Frederico Marcos
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-data u-display-box u-line-clamp1">
+                                                marcosfredericocalitas22@mail.com
                                             </div>
                                         </td>
                                         <td>
@@ -281,11 +313,6 @@
                                         </td>
                                         <td>
                                             <div class="table-data u-display-box u-line-clamp1">
-                                                Programação web (Full-stack)
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="table-data u-display-box u-line-clamp1">
                                                 Masculino
                                             </div>
                                         </td>
@@ -320,54 +347,6 @@
                                         <td>
                                             <div class="table-data u-display-box u-line-clamp1">
                                                 marcosfredericocalitas22@mail.com
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="table-data u-display-box u-line-clamp1">
-                                                Programação web (Full-stack)
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="table-data u-display-box u-line-clamp1">
-                                                Masculino
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="table-data u-display-box u-line-clamp1">
-                                                (+244) 940-345-430
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                                                <i class="material-icons" data-toggle="tooltip"
-                                                    title="Edit">&#xE254;</i>
-                                            </a>
-                                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                                <i class="material-icons" data-toggle="tooltip"
-                                                    title="Delete">&#xE872;</i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>01</td>
-                                        <td>
-                                            <div class="table-image">
-                                                <img src="../assets/img/profile-pic.png" alt="" class="u-img">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="table-data u-display-box u-line-clamp1">
-                                                Marcos Frederico Marcos
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="table-data u-display-box u-line-clamp1">
-                                                marcosfredericocalitas22@mail.com
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="table-data u-display-box u-line-clamp1">
-                                                Programação web (Full-stack)
                                             </div>
                                         </td>
                                         <td>
@@ -415,9 +394,9 @@
                     <div id="addEmployeeModal" class="modal fade">
                         <div class="modal-dialog">
                             <div class="modal-content modal-content-add">
-                                <form>
+                                <form enctype="multipart/form-data" id="admin-add-form">
                                     <div class="modal-header">
-                                        <h4 class="modal-title">Adicionar Aluno</h4>
+                                        <h4 class="modal-title">Adicionar Administrador</h4>
                                         <button type="button" class="close" data-dismiss="modal"
                                             aria-hidden="true">&times;</button>
                                     </div>
@@ -435,15 +414,10 @@
                                             <span class="form-error" id="emailErr"></span>
                                         </div>
                                         <div class="form-group">
-                                            <label for="course">Curso</label>
-                                            <select name="course" id="course" class="form-control">
-                                                <option value="" selected>Curso</option>
-                                                <option value="1">Programação web</option>
-                                                <option value="4">Programação Front-end</option>
-                                                <option value="6">Programação back-end</option>
-                                                <option value="3">Programação mobile</option>
-                                            </select>
-                                            <span class="form-error" id="courseErr"></span>
+                                            <label for="phone">Telefone</label>
+                                            <input type="text" name="phone" id="phone" class="form-control"
+                                                placeholder="123-456-789">
+                                            <span class="form-error" id="phoneErr"></span>
                                         </div>
                                         <div class="form-group">
                                             <label>Sexo</label>
@@ -469,17 +443,17 @@
                                                 class="u-img form-img">
                                         </div>
                                         <div class="form-group form-group-last">
-                                            <label for="phone">Telefone</label>
-                                            <input type="text" name="phone" id="phone" class="form-control"
-                                                placeholder="123-456-789">
-                                            <span class="form-error" id="phoneErr"></span>
+                                            <label for="password">Senha</label>
+                                            <input type="text" name="password" id="password" class="form-control"
+                                                placeholder="Digite a sua senha">
+                                            <span class="form-error" id="passwordErr"></span>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
                                         <input type="button" class="btn btn-default" data-dismiss="modal"
                                             value="Cancelar">
                                         <input type="button" class="btn btn-success" value="Adicionar"
-                                            id="btn-add-student">
+                                            id="btn-add-admin">
                                     </div>
                                 </form>
                             </div>
@@ -489,9 +463,9 @@
                     <div id="editEmployeeModal" class="modal fade">
                         <div class="modal-dialog">
                             <div class="modal-content modal-content-add">
-                                <form>
+                                <form enctype="multipart/form-data" id="admin-edit-form">
                                     <div class="modal-header">
-                                        <h4 class="modal-title">Editar Aluno</h4>
+                                        <h4 class="modal-title">Editar Administrador</h4>
                                         <button type="button" class="close" data-dismiss="modal"
                                             aria-hidden="true">&times;</button>
                                     </div>
@@ -509,15 +483,10 @@
                                             <span class="form-error" id="edit-emailErr"></span>
                                         </div>
                                         <div class="form-group">
-                                            <label for="edit-course">Curso</label>
-                                            <select name="course" id="edit-course" class="form-control">
-                                                <option value="" selected>Curso</option>
-                                                <option value="1">Programação web</option>
-                                                <option value="4">Programação Front-end</option>
-                                                <option value="6">Programação back-end</option>
-                                                <option value="3">Programação mobile</option>
-                                            </select>
-                                            <span class="form-error" id="edit-courseErr"></span>
+                                            <label for="edit-phone">Telefone</label>
+                                            <input type="text" name="phone" id="edit-phone" class="form-control"
+                                                placeholder="123-456-789">
+                                            <span class="form-error" id="edit-phoneErr"></span>
                                         </div>
                                         <div class="form-group">
                                             <label>Sexo</label>
@@ -545,17 +514,16 @@
                                                 class="u-img form-img">
                                         </div>
                                         <div class="form-group form-group-last">
-                                            <label for="edit-phone">Telefone</label>
-                                            <input type="text" name="phone" id="edit-phone" class="form-control"
-                                                placeholder="123-456-789">
-                                            <span class="form-error" id="edit-phoneErr"></span>
+                                            <label for="edit-password">Senha</label>
+                                            <input type="text" name="password" id="edit-password" class="form-control"
+                                                placeholder="Digite a sua senha">
+                                            <span class="form-error" id="edit-passwordErr"></span>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
                                         <input type="button" class="btn btn-default" data-dismiss="modal"
                                             value="Cancelar">
-                                        <input type="button" class="btn btn-success" value="Editar"
-                                            id="btn-edit-student">
+                                        <input type="button" class="btn btn-success" value="Editar" id="btn-edit-admin">
                                     </div>
                                 </form>
                             </div>
@@ -609,8 +577,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- Validation Scripts -->
     <script src="../assets/js/validation.js"></script>
-    <script src="../assets/js/add-student.js"></script>
-    <script src="../assets/js/edit-student.js"></script>
+    <script src="../assets/js/add-admin.js"></script>
+    <script src="../assets/js/edit-admin.js"></script>
     <script src="../assets/js/validate-by-blur.js"></script>
 
 </body>
