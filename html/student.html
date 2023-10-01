@@ -422,13 +422,13 @@
                                             <label for="name">Nome</label>
                                             <input type="text" name="name" id="name" class="form-control"
                                                 placeholder="Digite o seu nome">
-                                            <span class="form-error" id="nameErr">O campo não pode estar vazio</span>
+                                            <span class="form-error" id="nameErr"></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="email">Email</label>
                                             <input type="text" name="email" id="email" class="form-control"
                                                 placeholder="email@exemplo.com">
-                                            <span class="form-error" id="emailErr">O campo não pode estar vazio</span>
+                                            <span class="form-error" id="emailErr"></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="course">Curso</label>
@@ -439,7 +439,7 @@
                                                 <option value="6">Programação back-end</option>
                                                 <option value="3">Programação mobile</option>
                                             </select>
-                                            <span class="form-error" id="courseErr">O campo não pode estar vazio</span>
+                                            <span class="form-error" id="courseErr"></span>
                                         </div>
                                         <div class="form-group">
                                             <label>Sexo</label>
@@ -453,12 +453,12 @@
                                                     <input type="radio" name="gender" id="feminine" value="Feminino">
                                                 </div>
                                             </div>
-                                            <span class="form-error" id="genderErr">O campo não pode estar vazio</span>
+                                            <span class="form-error" id="genderErr"></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="image">Imagem </label>
                                             <input type="file" name="image" id="image">
-                                            <span class="form-error" id="courseErr">O campo não pode estar vazio</span>
+                                            <span class="form-error" id="imageErr"></span>
                                         </div>
                                         <div class="form-image">
                                             <img src="../assets/img/profile-pic.png" alt="Preview da imagem"
@@ -468,13 +468,14 @@
                                             <label for="phone">Telefone</label>
                                             <input type="text" name="phone" id="phone" class="form-control"
                                                 placeholder="123-456-789">
-                                            <span class="form-error" id="courseErr">O campo não pode estar vazio</span>
+                                            <span class="form-error" id="phoneErr"></span>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
                                         <input type="button" class="btn btn-default" data-dismiss="modal"
                                             value="Cancelar">
-                                        <input type="submit" class="btn btn-success" value="Adicionar">
+                                        <input type="button" class="btn btn-success" value="Adicionar"
+                                            id="btn-add-student">
                                     </div>
                                 </form>
                             </div>
@@ -483,7 +484,75 @@
                     <!-- Edit Modal HTML -->
                     <div id="editEmployeeModal" class="modal fade">
                         <div class="modal-dialog">
-                            <div class="modal-content">
+                            <div class="modal-content modal-content-add">
+                                <form>
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Editar Aluno</h4>
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            aria-hidden="true">&times;</button>
+                                    </div>
+                                    <div class="modal-body modal-body-add u-grid">
+                                        <div class="form-group">
+                                            <label for="edit-name">Nome</label>
+                                            <input type="text" name="name" id="edit-name" class="form-control"
+                                                placeholder="Digite o seu nome">
+                                            <span class="form-error" id="edit-nameErr"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="edit-email">Email</label>
+                                            <input type="text" name="email" id="edit-email" class="form-control"
+                                                placeholder="email@exemplo.com">
+                                            <span class="form-error" id="edit-emailErr"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="edit-course">Curso</label>
+                                            <select name="course" id="edit-course" class="form-control">
+                                                <option value="" selected>Curso</option>
+                                                <option value="1">Programação web</option>
+                                                <option value="4">Programação Front-end</option>
+                                                <option value="6">Programação back-end</option>
+                                                <option value="3">Programação mobile</option>
+                                            </select>
+                                            <span class="form-error" id="edit-courseErr"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Sexo</label>
+                                            <div class="form-gender u-flex">
+                                                <div class="form-gender-gap u-flex">
+                                                    <Label for="edit-male" class="label-normal">Mascuino</Label>
+                                                    <input type="radio" name="gender" id="edit-male" value="Masculino">
+                                                </div>
+                                                <div class="form-gender-gap u-flex">
+                                                    <Label for="edit-feminine" class="label-normal">Femenino</Label>
+                                                    <input type="radio" name="gender" id="edit-feminine"
+                                                        value="Feminino">
+                                                </div>
+                                            </div>
+                                            <span class="form-error" id="edit-genderErr"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="edit-image">Imagem </label>
+                                            <input type="file" name="image" id="edit-image">
+                                            <span class="form-error" id="edit-imageErr"></span>
+                                        </div>
+                                        <div class="form-image">
+                                            <img src="../assets/img/profile-pic.png" alt="Preview da imagem"
+                                                class="u-img form-img">
+                                        </div>
+                                        <div class="form-group form-group-last">
+                                            <label for="edit-phone">Telefone</label>
+                                            <input type="text" name="phone" id="edit-phone" class="form-control"
+                                                placeholder="123-456-789">
+                                            <span class="form-error" id="edit-phoneErr"></span>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <input type="button" class="btn btn-default" data-dismiss="modal"
+                                            value="Cancelar">
+                                        <input type="button" class="btn btn-success" value="Editar"
+                                            id="btn-edit-student">
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
