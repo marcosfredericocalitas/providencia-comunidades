@@ -1,0 +1,26 @@
+/* Display */
+.u-flex {
+    display: flex;
+}
+
+.u-grid {
+    display: grid;
+}
+
+.u-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.u-display-box {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+
+.u-line-clamp1 {
+    -webkit-line-clamp: 1;
+}
