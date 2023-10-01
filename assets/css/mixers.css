@@ -15,6 +15,7 @@
     border-radius: 100px;
 }
 
+/* Display webkit box */
 .u-display-box {
     display: -webkit-box;
     overflow: hidden;
