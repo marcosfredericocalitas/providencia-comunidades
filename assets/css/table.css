@@ -269,7 +269,7 @@ table.table .avatar {
     font-size: 14px;
 }
 
-.error.is-flex {
+.form-error.is-flex {
     display: flex;
 }
 
