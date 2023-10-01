@@ -11,7 +11,7 @@
 .table-wrapper {
     background: #fff;
     padding: 20px 25px;
-    border-radius: 3px;
+    border-radius: 5px;
     min-width: 1000px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
@@ -23,7 +23,7 @@
     padding: 16px 30px;
     min-width: 100%;
     margin: -20px -25px 10px;
-    border-radius: 3px 3px 0 0;
+    border-radius: 5px 5px 0 0;
 }
 
 .table-title h2 {
@@ -41,11 +41,11 @@
     font-size: 13px;
     border: none;
     min-width: 50px;
-    border-radius: 2px;
+    border-radius: 4px;
     border: none;
     outline: none !important;
     margin-left: 10px;
-    padding: 10px;
+    padding: 12px;
 }
 
 .table-title .btn i {
@@ -176,6 +176,10 @@ table.table .avatar {
     padding-left: 17px;
 }
 
+.modal .modal-dialog-400 {
+    max-width: 400px;
+}
+
 .modal .modal-header,
 .modal .modal-body,
 .modal .modal-footer {
@@ -188,7 +192,7 @@ table.table .avatar {
 }
 
 .modal .modal-content {
-    border-radius: 3px;
+    border-radius: 5px;
     font-size: 14px;
 }
 
@@ -202,7 +206,7 @@ table.table .avatar {
 }
 
 .modal .form-control {
-    border-radius: 2px;
+    border-radius: 5px;
     box-shadow: none;
     border-color: #dddddd;
 }
@@ -245,7 +249,7 @@ table.table .avatar {
 }
 
 .modal .btn {
-    border-radius: 2px;
+    border-radius: 4px;
     min-width: 100px;
 }
 
@@ -254,6 +258,7 @@ table.table .avatar {
 }
 
 /* Costum styles */
+
 /* tbody {
     display: none;
 } */
@@ -277,8 +282,7 @@ table.table .avatar {
     height: var(--image-dimention);
 }
 
-/* inputs & errors */
-.form-group-last {
+.modal .form-group-last {
     grid-column: span 2;
     width: 100%;
 }
