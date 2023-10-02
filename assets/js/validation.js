@@ -148,6 +148,14 @@ function validatePhone(inputId, errorId) {
     )
 }
 
+function validateBithDate(inputId, errorId) {
+    return validation(
+        inputId, errorId, "text",
+        /^(19[7-9][5-9]|20[0-1][0-8])-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/,
+        "O campo data de nascimento não pode estar vazio",
+        "O seu ano deve ser maior que 1975 & menor que 2019");
+}
+
 // Validate password
 function validatePasssword(inputId, errorId) {
     return validation(
