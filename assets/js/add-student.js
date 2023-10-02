@@ -9,13 +9,13 @@ $(document).ready(function () {
         const isNameValid = validateName("name", "name-err");
         const isEmailValid = validateEmail("email", "email-err");
         const isBirthDateValid = validateBithDate("birthdate", "birthdate-err");
-        const iscourseValid = validateCourse("course", "course-err");
-        const isValidImage = validateImage("image", "image-err");
         const isGenderValid = validateGender("gender", "gender-err");
+        const iscourseValid = validateCourse("course", "course-err");
         const isPhoneValid = validatePhone("phone", "phone-err");
+        const isValidImage = validateImage("image", "image-err");
 
-        if (!isNameValid || !isEmailValid || !isBirthDateValid || !iscourseValid ||
-            !isValidImage || !isGenderValid || !isPhoneValid) {
+        if (!isNameValid || !isEmailValid || !isBirthDateValid || !isGenderValid ||
+            !iscourseValid || !isPhoneValid || !isValidImage) {
             alert('Erro ao cadastrar aluno');
             return false;
         }

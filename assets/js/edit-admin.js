@@ -8,14 +8,14 @@ $(document).ready(function () {
     $("#btn-edit-admin").click(function () {
         const isValidEditName = validateName("edit-name", "edit-name-err");
         const isValidEditEmail = validateEmail("edit-email", "edit-email-err");
-        const isEditBirthDateValid = validateBithDate("edit-birthdate", "edit-birthdate-err");
-        const isValidEditPhone = validatePhone("edit-phone", "edit-phone-err");
         const isValidEditImage = validateImage("edit-image", "edit-image-err");
+        const isEditBirthDateValid = validateBithDate("edit-birthdate", "edit-birthdate-err");
         const isValidEditGender = validateGender("edit-gender", "edit-gender-err");
+        const isValidEditPhone = validatePhone("edit-phone", "edit-phone-err");
         const isValidEditPassword = validatePasssword("edit-password", "edit-password-err");
 
-        if (!isValidEditName || !isValidEditEmail || !isEditBirthDateValid || !isValidEditPhone ||
-            !isValidEditImage || !isValidEditGender || !isValidEditPassword) {
+        if (!isValidEditName || !isValidEditEmail || !isValidEditImage || !isEditBirthDateValid ||
+            !isValidEditGender || !isValidEditPhone || !isValidEditPassword) {
             alert('Erro ao editar admin');
             return false;
         }
