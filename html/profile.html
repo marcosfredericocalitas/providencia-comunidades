@@ -213,7 +213,7 @@
                                             </div>
                                             <div class="col-sm-9 text-secondary">
                                                 <input type="text" name="name" id="name" class="form-control"
-                                                    value="Marcos Frederico Calitas">
+                                                    value="Marcos Frederico Calitas" placeholder="Digite o seu nome">
                                             </div>
                                         </div>
                                         <div class="row mb-3">
@@ -222,7 +222,7 @@
                                             </div>
                                             <div class="col-sm-9 text-secondary">
                                                 <input type="email" name="email" class="form-control"
-                                                    value="john@example.com">
+                                                    value="john@example.com" placeholder="email@exemplo.com">
                                             </div>
                                         </div>
                                         <div class="row mb-3">
@@ -239,7 +239,19 @@
                                                 <label class="mb-0">Sexo</label>
                                             </div>
                                             <div class="col-sm-9 text-secondary">
-                                                <input type="text" class="form-control" value="(320) 380-4539">
+                                                <div class="form-gender u-flex">
+                                                    <div class="form-gender-gap u-flex">
+                                                        <Label for="male" class="label-normal">Mascuino</Label>
+                                                        <input type="radio" name="gender" id="male" value="Masculino"
+                                                            checked>
+                                                    </div>
+                                                    <div class="form-gender-gap u-flex">
+                                                        <Label for="feminine" class="label-normal">Femenino</Label>
+                                                        <input type="radio" name="gender" id="feminine"
+                                                            value="Feminino">
+                                                    </div>
+                                                </div>
+                                                <span class="form-error" id="gender-err"></span>
                                             </div>
                                         </div>
                                         <div class="row mb-3">
@@ -248,13 +260,14 @@
                                             </div>
                                             <div class="col-sm-9 text-secondary">
                                                 <input type="tel" name="phone" id="phone" class="form-control"
-                                                    value="940305400">
+                                                    value="940-305-400" placeholder="123-456-789">
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-3"></div>
                                             <div class="col-sm-9 text-secondary">
-                                                <input type="button" class="btn btn-primary px-4" value="Save Changes">
+                                                <input type="button" class="btn btn-primary px-4"
+                                                    value="Salvar alterações">
                                             </div>
                                         </div>
                                     </div>
