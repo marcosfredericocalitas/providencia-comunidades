@@ -8,13 +8,13 @@ $(document).ready(function () {
     $("#btn-edit-student").click(function () {
         const isEditNameValid = validateName("edit-name", "edit-name-err");
         const isEditEmailValid = validateEmail("edit-email", "edit-email-err");
-        const isValidBirthDate = validateBithDate("edit-birthdate", "edit-birthdate-err");
+        const isEditBirthDateValid = validateBithDate("edit-birthdate", "edit-birthdate-err");
         const isEditCourseValid = validateCourse("edit-course", "edit-course-err");
         const isValidEditImage = validateImage("edit-image", "edit-image-err");
         const isEditGenderValid = validateGender("edit-gender", "edit-gender-err");
         const isEditPhoneValid = validatePhone("edit-phone", "edit-phone-err");
 
-        if (!isEditNameValid || !isEditEmailValid || !isValidBirthDate || !isEditCourseValid ||
+        if (!isEditNameValid || !isEditEmailValid || !isEditBirthDateValid || !isEditCourseValid ||
             !isValidEditImage || !isEditGenderValid || !isEditPhoneValid) {
             alert('Erro ao cadastrar aluno');
             return false;

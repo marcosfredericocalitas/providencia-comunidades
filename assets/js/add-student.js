@@ -8,13 +8,13 @@ $(document).ready(function () {
     $("#btn-add-student").click(function () {
         const isNameValid = validateName("name", "name-err");
         const isEmailValid = validateEmail("email", "email-err");
-        const isValidBirthDate = validateBithDate("birthdate", "birthdate-err");
+        const isBirthDateValid = validateBithDate("birthdate", "birthdate-err");
         const iscourseValid = validateCourse("course", "course-err");
         const isValidImage = validateImage("image", "image-err");
         const isGenderValid = validateGender("gender", "gender-err");
         const isPhoneValid = validatePhone("phone", "phone-err");
 
-        if (!isNameValid || !isEmailValid || !isValidBirthDate || !iscourseValid ||
+        if (!isNameValid || !isEmailValid || !isBirthDateValid || !iscourseValid ||
             !isValidImage || !isGenderValid || !isPhoneValid) {
             alert('Erro ao cadastrar aluno');
             return false;
