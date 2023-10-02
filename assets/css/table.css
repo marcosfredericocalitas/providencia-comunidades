@@ -209,7 +209,8 @@ table.table .avatar {
     display: inline-block;
 }
 
-.modal .form-control {
+.modal .form-control,
+.card .form-control {
     border-radius: .25rem;
     box-shadow: none;
     border-color: #dddddd;
