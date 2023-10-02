@@ -1,18 +1,18 @@
 // Validation by blur (Focusout event)
 const validationsFunctions = [
     // Add student functions and params
-    ["name", "nameErr", validateName],
-    ["email", "emailErr", validateEmail],
-    ["birthdate", "birthdateErr", validateBithDate],
-    ["phone", "phoneErr", validatePhone],
-    ["image", "imageErr", validateImage],
+    ["name", "name-err", validateName],
+    ["email", "email-err", validateEmail],
+    ["birthdate", "birthdate-err", validateBithDate],
+    ["phone", "phone-err", validatePhone],
+    ["image", "image-err", validateImage],
 
     // Edit Student functions and params
-    ["edit-name", "edit-nameErr", validateName],
-    ["edit-email", "edit-emailErr", validateEmail],
-    ["edit-birthdate", "edit-birthdateErr", validateBithDate],
-    ["edit-phone", "edit-phoneErr", validatePhone],
-    ["edit-image", "edit-imageErr", validateImage]
+    ["edit-name", "edit-name-err", validateName],
+    ["edit-email", "edit-email-err", validateEmail],
+    ["edit-birthdate", "edit-birthdate-err", validateBithDate],
+    ["edit-phone", "edit-phone-err", validatePhone],
+    ["edit-image", "edit-image-err", validateImage]
 ];
 
 validationsFunctions.forEach((array) => {
