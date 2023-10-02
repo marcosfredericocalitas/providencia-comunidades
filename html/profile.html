@@ -183,86 +183,83 @@
             <!-- section-1 start -->
             <section class="content">
                 <div class="container-fluid">
+                    <div class="main-body">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <!-- Profile Image -->
+                                <div class="card card-primary card-outline">
+                                    <div class="card-body box-profile">
+                                        <div class="text-center">
+                                            <img class="profile-user-img img-fluid img-circle"
+                                                src="../assets/img/profile-pic.png" alt="User profile picture">
+                                        </div>
 
-                    <hr class="mt-0 mb-4">
-                    <div class="row">
-                        <div class="col-xl-4">
-                            <!-- Profile picture card-->
-                            <div class="card mb-4 mb-xl-0">
-                                <div class="card-header">Imagem de perfil</div>
-                                <div class="card-body text-center">
-                                    <!-- Profile picture image-->
-                                    <img class="img-account-profile rounded-circle mb-2"
-                                        src="../assets/img/profile-pic.png" alt="">
-                                    <!-- Profile picture help block-->
-                                    <h3 class="profile-username text-center u-display-box u-line-clamp2">Marcos
-                                        Frederico Calitas Marcos</h3>
-                                    <p class="text-muted text-center">Administrador do sistema</p>
-                                    <div class="small font-italic text-muted mb-4">JPG, PNG e menor que 5 MB
+                                        <h3 class="profile-username text-center">Marcos Frederico Calitas</h3>
+                                        <p class="text-secondary mb-1 text-center">Administrador do sistema</p>
+                                        <p class="text-muted font-size-sm text-center">Masculino</p>
+                                        <button type="button" class="btn btn-primary btn-block">
+                                            Salvar nova imagem
+                                        </button>
                                     </div>
-                                    <!-- Profile picture upload button-->
-                                    <button class="btn btn-primary" type="button">Salvar nova imagem</button>
+                                    <!-- /.card-body -->
                                 </div>
+                                <!-- /.card -->
                             </div>
-                        </div>
-                        <div class="col-xl-8">
-                            <!-- Account details card-->
-                            <div class="card mb-4">
-                                <div class="card-header">Detalhes da conta</div>
-                                <div class="card-body">
-                                    <form id="edit-profile-form">
-                                        <!-- Form Row-->
-                                        <div class="row gx-3 mb-3">
-                                            <!-- Form Group (first name)-->
-                                            <div class="col-md-6">
-                                                <label class="form-label" for="name">Nome</label>
-                                                <input type="text" class="form-control" id="name"
-                                                    placeholder="Digite o seu nome" value="Marcos Frederico Calitas">
+                            <div class="col-lg-8">
+                                <div class="card card-primary card-outline">
+                                    <div class="card-body">
+                                        <div class="row mb-3">
+                                            <div class="col-sm-3">
+                                                <h6 class="mb-0">Full Name</h6>
                                             </div>
-                                            <!-- Form Group (last name)-->
-                                            <div class="col-md-6">
-                                                <label class="form-label" for="email">Email</label>
-                                                <input class="form-control" id="email" type="text"
-                                                    placeholder="Digite o seu email"
-                                                    value="marcosfredericocalitas22@mail.com">
+                                            <div class="col-sm-9 text-secondary">
+                                                <input type="text" class="form-control" value="John Doe">
                                             </div>
                                         </div>
-                                        <!-- Form Row        -->
-                                        <div class="row gx-3 mb-3">
-                                            <!-- Form Group (organization name)-->
-                                            <div class="col-md-6">
-                                                <label class="form-label" for="phone">Telefone</label>
-                                                <input class="form-control" id="phone" type="tel"
-                                                    placeholder="123-456-789" value="941-399-400">
+                                        <div class="row mb-3">
+                                            <div class="col-sm-3">
+                                                <h6 class="mb-0">Email</h6>
                                             </div>
-                                            <!-- Form Group (location)-->
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="form-label">Sexo</label>
-                                                    <div class="form-gender u-flex">
-                                                        <div class="form-gender-gap u-flex">
-                                                            <Label for="male" class="label-normal">Mascuino</Label>
-                                                            <input type="radio" name="gender" id="male"
-                                                                value="Masculino">
-                                                        </div>
-                                                        <div class="form-gender-gap u-flex">
-                                                            <Label for="feminine" class="label-normal">Femenino</Label>
-                                                            <input type="radio" name="gender" id="feminine"
-                                                                value="Feminino">
-                                                        </div>
-                                                    </div>
-                                                    <span class="form-error" id="edit-genderErr"></span>
-                                                </div>
+                                            <div class="col-sm-9 text-secondary">
+                                                <input type="text" class="form-control" value="john@example.com">
                                             </div>
                                         </div>
-                                        <!-- Save changes button-->
-                                        <button class="btn btn-primary" type="button">Salvar alterações</button>
-                                    </form>
+                                        <div class="row mb-3">
+                                            <div class="col-sm-3">
+                                                <h6 class="mb-0">Phone</h6>
+                                            </div>
+                                            <div class="col-sm-9 text-secondary">
+                                                <input type="text" class="form-control" value="(239) 816-9029">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-sm-3">
+                                                <h6 class="mb-0">Mobile</h6>
+                                            </div>
+                                            <div class="col-sm-9 text-secondary">
+                                                <input type="text" class="form-control" value="(320) 380-4539">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-sm-3">
+                                                <h6 class="mb-0">Address</h6>
+                                            </div>
+                                            <div class="col-sm-9 text-secondary">
+                                                <input type="text" class="form-control"
+                                                    value="Bay Area, San Francisco, CA">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3"></div>
+                                            <div class="col-sm-9 text-secondary">
+                                                <input type="button" class="btn btn-primary px-4" value="Save Changes">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
             <!-- section-1 end -->
