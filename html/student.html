@@ -432,8 +432,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="birthdate">Data de nascimento</label>
-                                            <input type="date" name="birthdate" id="birthdate" class="form-control"
-                                                placeholder="Digite o seu nome">
+                                            <input type="date" name="birthdate" id="birthdate" class="form-control">
                                             <span class="form-error" id="birthdateErr"></span>
                                         </div>
                                         <div class="form-group">
@@ -500,26 +499,21 @@
                                     <div class="modal-body modal-body-add u-grid">
                                         <div class="form-group">
                                             <label for="edit-name">Nome</label>
-                                            <input type="text" name="name" id="edit-name" class="form-control"
+                                            <input type="text" name="edit-name" id="edit-name" class="form-control"
                                                 placeholder="Digite o seu nome">
                                             <span class="form-error" id="edit-nameErr"></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="edit-email">Email</label>
-                                            <input type="text" name="email" id="edit-email" class="form-control"
+                                            <input type="text" name="edit-email" id="edit-email" class="form-control"
                                                 placeholder="email@exemplo.com">
                                             <span class="form-error" id="edit-emailErr"></span>
                                         </div>
                                         <div class="form-group">
-                                            <label for="edit-course">Curso</label>
-                                            <select name="course" id="edit-course" class="form-control">
-                                                <option value="" selected>Curso</option>
-                                                <option value="1">Programação web</option>
-                                                <option value="4">Programação Front-end</option>
-                                                <option value="6">Programação back-end</option>
-                                                <option value="3">Programação mobile</option>
-                                            </select>
-                                            <span class="form-error" id="edit-courseErr"></span>
+                                            <label for="edit-birthdate">Data de nascimento</label>
+                                            <input type="date" name="edit-birthdate" id="edit-birthdate"
+                                                class="form-control">
+                                            <span class="form-error" id="edit-birthdateErr"></span>
                                         </div>
                                         <div class="form-group">
                                             <label>Sexo</label>
@@ -538,19 +532,30 @@
                                             <span class="form-error" id="edit-genderErr"></span>
                                         </div>
                                         <div class="form-group">
+                                            <label for="edit-course">Curso</label>
+                                            <select name="edit-course" id="edit-course" class="form-control">
+                                                <option value="" selected>Selecione o curso</option>
+                                                <option value="1">Programação web</option>
+                                                <option value="4">Programação Front-end</option>
+                                                <option value="6">Programação back-end</option>
+                                                <option value="3">Programação mobile</option>
+                                            </select>
+                                            <span class="form-error" id="edit-courseErr"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="edit-phone">Telefone</label>
+                                            <input type="text" name="edit-phone" id="edit-phone" class="form-control"
+                                                placeholder="123-456-789">
+                                            <span class="form-error" id="edit-phoneErr"></span>
+                                        </div>
+                                        <div class="form-group">
                                             <label for="edit-image">Imagem </label>
-                                            <input type="file" name="image" id="edit-image">
+                                            <input type="file" name="edit-image" id="edit-image">
                                             <span class="form-error" id="edit-imageErr"></span>
                                         </div>
                                         <div class="form-image">
                                             <img src="../assets/img/profile-pic.png" alt="Preview da imagem"
-                                                class="u-img form-img">
-                                        </div>
-                                        <div class="form-group form-group-last">
-                                            <label for="edit-phone">Telefone</label>
-                                            <input type="text" name="phone" id="edit-phone" class="form-control"
-                                                placeholder="123-456-789">
-                                            <span class="form-error" id="edit-phoneErr"></span>
+                                                class="u-img form-img" id="edit-imagePreview">
                                         </div>
                                     </div>
                                     <div class="modal-footer">

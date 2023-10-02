@@ -3,12 +3,14 @@ const validationsFunctions = [
     // Add student functions and params
     ["name", "nameErr", validateName],
     ["email", "emailErr", validateEmail],
+    ["birthdate", "birthdateErr", validateBithDate],
     ["phone", "phoneErr", validatePhone],
     ["image", "imageErr", validateImage],
 
     // Edit Student functions and params
     ["edit-name", "edit-nameErr", validateName],
     ["edit-email", "edit-emailErr", validateEmail],
+    ["edit-birthdate", "edit-birthdateErr", validateBithDate],
     ["edit-phone", "edit-phoneErr", validatePhone],
     ["edit-image", "edit-imageErr", validateImage]
 ];
