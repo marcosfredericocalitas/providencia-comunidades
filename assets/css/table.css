@@ -2,10 +2,6 @@ a {
     text-decoration: none;
 }
 
-:root {
-    --input-focued-color: #007bff;
-}
-
 .table-responsive {
     position: relative;
     margin: 30px 0;
@@ -209,38 +205,6 @@ table.table .avatar {
     display: inline-block;
 }
 
-.modal .form-control,
-.card .form-control {
-    border-radius: .25rem;
-    box-shadow: none;
-    border-color: #dddddd;
-}
-
-.form-control.is-red {
-    border-color: red;
-}
-
-.form-control.is-blue {
-    border-color: var(--input-focued-color);
-    background-color: #e8f0fe;
-}
-
-.form-control:focus {
-    border-color: var(--input-focued-color);
-}
-
-.form-error {
-    position: relative;
-    display: none;
-    top: 5px;
-    color: red;
-    font-size: 14px;
-}
-
-.form-error.is-flex {
-    display: flex;
-}
-
 .form-gender {
     gap: 20px;
 }
@@ -262,9 +226,8 @@ table.table .avatar {
     font-weight: normal;
 }
 
-/* Costum styles */
-
-/* tbody {
+/* Costum styles
+ tbody {
     display: none;
 } */
 
