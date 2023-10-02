@@ -229,7 +229,7 @@ table.table .avatar {
     border-color: var(--input-focued-color);
 }
 
-.modal .form-error {
+.form-error {
     position: relative;
     display: none;
     top: 5px;
@@ -237,7 +237,7 @@ table.table .avatar {
     font-size: 14px;
 }
 
-.modal .form-error.is-flex {
+.form-error.is-flex {
     display: flex;
 }
 
