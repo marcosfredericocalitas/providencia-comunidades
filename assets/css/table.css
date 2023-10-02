@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 :root {
     --input-focued-color: #007bff;
 }
