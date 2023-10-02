@@ -2,11 +2,11 @@ $(document).ready(function () {
     // Validation by blur (Focusout event)
     const validationAddNews = [
         // Add news functions and params
-        ["title", "titleErr", validateTitle],
-        ["category", "categoryErr", validateCategory],
-        ["admin", "adminErr", validateAdmin],
-        ["details", "detailsErr", validateDetails],
-        ["image", "imageErr", validateImage]
+        ["title", "title-err", validateTitle],
+        ["category", "category-err", validateCategory],
+        ["admin", "admin-err", validateAdmin],
+        ["details", "details-err", validateDetails],
+        ["image", "image-err", validateImage]
     ];
 
     validationAddNews.forEach((array) => {
@@ -15,11 +15,11 @@ $(document).ready(function () {
 
     // Validation by click button (Click event)
     $("#btn-add-news").click(function () {
-        const isValidTitle = validateTitle("title", "titleErr");
-        const isValidCategory = validateCategory("category", "categoryErr");
-        const isValidAdmin = validateAdmin("admin", "adminErr");
-        const isValidDetails = validateDetails("details", "detailsErr");
-        const isValidImage = validateImage("image", "imageErr");
+        const isValidTitle = validateTitle("title", "title-err");
+        const isValidCategory = validateCategory("category", "category-err");
+        const isValidAdmin = validateAdmin("admin", "admin-err");
+        const isValidDetails = validateDetails("details", "details-err");
+        const isValidImage = validateImage("image", "image-err");
     });
 
     if (!isValidTitle || !isValidCategory || !isValidAdmin || !isValidDetails || !isValidImage) {

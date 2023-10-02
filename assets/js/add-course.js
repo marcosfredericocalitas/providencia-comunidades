@@ -2,11 +2,11 @@ $(document).ready(function () {
     // Validation by blur (Focusout event)
     const validationsFunctionsCourse = [
         // Add student functions and params
-        ["name", "nameErr", validateName],
-        ["admin", "adminErr", validateAdmin],
-        ["description", "descriptionErr", validateDescription],
-        ["topics", "topicsErr", validateTopics],
-        ["image", "imageErr", validateImage]
+        ["name", "name-err", validateName],
+        ["admin", "admin-err", validateAdmin],
+        ["description", "description-err", validateDescription],
+        ["topics", "topics-err", validateTopics],
+        ["image", "image-err", validateImage]
     ];
 
     validationsFunctionsCourse.forEach((array) => {
@@ -15,11 +15,11 @@ $(document).ready(function () {
 
     // Validation by click button (Click event)
     $("#btn-add-course").click(function () {
-        const isValidName = validateName("name", "nameErr");
-        const isValidAdmin = validateAdmin("admin", "adminErr");
-        const isValidDescription = validateDescription("description", "descriptionErr");
-        const isValidTopics = validateTopics("topics", "topicsErr");
-        const isValidImage = validateImage("image", "imageErr");
+        const isValidName = validateName("name", "name-err");
+        const isValidAdmin = validateAdmin("admin", "admin-err");
+        const isValidDescription = validateDescription("description", "description-err");
+        const isValidTopics = validateTopics("topics", "topics-err");
+        const isValidImage = validateImage("image", "image-err");
 
 
         if (!isValidName || !isValidAdmin || !isValidDescription || !isValidTopics || !isValidImage) {

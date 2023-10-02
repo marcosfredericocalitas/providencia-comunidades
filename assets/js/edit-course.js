@@ -2,11 +2,11 @@ $(document).ready(function () {
     // Validation by blur (Focusout event)
     const validationsFunctionsCourse = [
         // Add student functions and params
-        ["edit-name", "edit-nameErr", validateName],
-        ["edit-admin", "edit-adminErr", validateAdmin],
-        ["edit-description", "edit-descriptionErr", validateDescription],
-        ["edit-topics", "edit-topicsErr", validateTopics],
-        ["edit-image", "edit-imageErr", validateImage]
+        ["edit-name", "edit-name-err", validateName],
+        ["edit-admin", "edit-admin-err", validateAdmin],
+        ["edit-description", "edit-description-err", validateDescription],
+        ["edit-topics", "edit-topics-err", validateTopics],
+        ["edit-image", "edit-image-err", validateImage]
     ];
 
     validationsFunctionsCourse.forEach((array) => {
@@ -15,11 +15,11 @@ $(document).ready(function () {
 
     // Validation by click button (Click event)
     $("#btn-edit-course").click(function () {
-        const isValidEditName = validateName("edit-name", "edit-nameErr");
-        const isValidEditAdmin = validateAdmin("edit-admin", "edit-adminErr");
-        const isValidEditDescription = validateDescription("edit-description", "edit-descriptionErr");
-        const isValidEditTopics = validateTopics("edit-topics", "edit-topicsErr");
-        const isValidEditImage = validateImage("edit-image", "edit-imageErr");
+        const isValidEditName = validateName("edit-name", "edit-name-err");
+        const isValidEditAdmin = validateAdmin("edit-admin", "edit-admin-err");
+        const isValidEditDescription = validateDescription("edit-description", "edit-description-err");
+        const isValidEditTopics = validateTopics("edit-topics", "edit-topics-err");
+        const isValidEditImage = validateImage("edit-image", "edit-image-err");
 
 
         if (!isValidEditName || !isValidEditAdmin || !isValidEditDescription ||
