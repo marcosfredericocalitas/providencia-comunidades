@@ -1,17 +1,20 @@
 $(document).ready(function () {
+    // Preview selected image
+    previewImageBySelected("image", "image-preview");
     // Validation by blur (Focusout event)
-    validateByFocusOut("password", "passwordErr", validatePasssword);
+    validateByFocusOut("password", "password-err", validatePasssword);
 
     // Validation by click button (Click event)
     $("#btn-add-admin").click(function () {
-        const isValidName = validateName("name", "nameErr");
-        const isValidEmail = validateEmail("email", "emailErr");
-        const isValidPhone = validatePhone("phone", "phoneErr");
-        const isValidImage = validateImage("image", "imageErr");
-        const isValidGender = validateGender("gender", "genderErr");
-        const isValidPassword = validatePasssword("password", "passwordErr");
+        const isValidName = validateName("name", "name-err");
+        const isValidEmail = validateEmail("email", "email-err");
+        const isBirthDateValid = validateBithDate("birthdate", "birthdate-err");
+        const isValidPhone = validatePhone("phone", "phone-err");
+        const isValidImage = validateImage("image", "image-err");
+        const isValidGender = validateGender("gender", "gender-err");
+        const isValidPassword = validatePasssword("password", "password-err");
 
-        if (!isValidName || !isValidEmail || !isValidPhone
+        if (!isValidName || !isValidEmail || !isBirthDateValid || !isValidPhone
             || !isValidImage || !isValidGender || !isValidPassword) {
             alert('Erro ao cadastrar admin');
             return false;
