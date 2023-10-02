@@ -3,9 +3,20 @@
     display: flex;
 }
 
+.u-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .u-flex-column {
     display: flex;
     flex-direction: column;
+}
+
+.u-flex-between {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -14,11 +25,11 @@
     display: grid;
 }
 
-/* Display webkit box */
+/* Display box */
 .u-display-box {
     display: -webkit-box;
-    overflow: hidden;
     text-overflow: ellipsis;
+    overflow: hidden;
     -webkit-box-orient: vertical;
 }
 
@@ -30,7 +41,54 @@
     -webkit-line-clamp: 2;
 }
 
-/* Outros */
+/* Inputs */
+.u-input {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    /* #dddddd */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    outline: none;
+    transition: border-color .15s ease-in-out;
+}
+
+.u-input:focus {
+    border: 1.5px solid var(--primary-color);
+}
+
+.u-input.is-red {
+    border-color: red;
+}
+
+.u-input.is-blue {
+    background-color: #e8f0fe;
+    border-color: var(--primary-color);
+}
+
+/* Inputs (Errors) */
+.u-error {
+    position: relative;
+    display: none;
+    top: 5px;
+    color: red;
+    font-size: 14px;
+}
+
+.u-error.is-flex {
+    display: flex;
+}
+
+/* Images */
 .u-img {
     width: 100%;
     height: 100%;
