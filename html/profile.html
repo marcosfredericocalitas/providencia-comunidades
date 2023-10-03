@@ -44,7 +44,7 @@
                     <div class="navbar-search-block">
                         <form class="form-inline">
                             <div class="input-group input-group-sm">
-                                <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                                <input class="u-input u-input-navbar" type="search" placeholder="Search"
                                     aria-label="Search">
                                 <div class="input-group-append">
                                     <button class="btn btn-navbar" type="submit">
@@ -212,8 +212,9 @@
                                                 <label for="name" class="mb-0">Nome</label>
                                             </div>
                                             <div class="col-sm-9 text-secondary">
-                                                <input type="text" name="name" id="name" class="form-control"
+                                                <input type="text" name="name" id="name" class="u-input"
                                                     value="Marcos Frederico Calitas" placeholder="Digite o seu nome">
+                                                <span class="u-error" id="name-err"></span>
                                             </div>
                                         </div>
                                         <div class="row mb-3">
@@ -221,8 +222,9 @@
                                                 <label for="email" class="mb-0">Email</label>
                                             </div>
                                             <div class="col-sm-9 text-secondary">
-                                                <input type="email" name="email" class="form-control"
+                                                <input type="email" name="email" class="u-input"
                                                     value="john@example.com" placeholder="email@exemplo.com">
+                                                <span class="u-error" id="email-err"></span>
                                             </div>
                                         </div>
                                         <div class="row mb-3">
@@ -230,8 +232,9 @@
                                                 <label for="birthdate" class="mb-0">Data de nascimento</label>
                                             </div>
                                             <div class="col-sm-9 text-secondary">
-                                                <input type="date" name="birthdate" id="birthdate" class="form-control"
+                                                <input type="date" name="birthdate" id="birthdate" class="u-input"
                                                     value="1996-05-10">
+                                                <span class="u-error" id="birthdate-err"></span>
                                             </div>
                                         </div>
                                         <div class="row mb-3">
@@ -259,8 +262,9 @@
                                                 <label for="phone" class="mb-0">Telefone</label>
                                             </div>
                                             <div class="col-sm-9 text-secondary">
-                                                <input type="tel" name="phone" id="phone" class="form-control"
+                                                <input type="tel" name="phone" id="phone" class="u-input"
                                                     value="940-305-400" placeholder="123-456-789">
+                                                <span class="u-error" id="phone-err"></span>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -270,7 +274,7 @@
                                                     value="Salvar alterações">
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>g
                                 </div>
                             </div>
                         </div>
