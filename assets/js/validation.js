@@ -57,7 +57,7 @@ function validationText(inputId, errorId, field) {
     return validation(
         inputId, errorId, 'text', /^[A-Z][a-z]*/,
         "O campo " + field + " não pode estar vazio",
-        "O " + field + " deve iniciar com letra maiúscula"
+        field + " deve iniciar com letra maiúscula"
     )
 }
 
@@ -133,7 +133,8 @@ function validateCategory(inputId, errorId) {
 // Validate email
 function validateEmail(inputId, errorId) {
     return validation(
-        inputId, errorId, 'text', /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+        inputId, errorId, 'text',
+        /^([_\-\.0-9a-z]+)@([_\-\.0-9a-z]+)\.([a-z]){2,7}$/,
         'O campo email não pode estar vazio',
         'Digite um endereço de e-mail válido'
     )
