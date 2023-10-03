@@ -8,7 +8,7 @@ $(document).ready(function () {
     $("#btn-edit-student").click(function () {
         const isEditNameValid = validateName("edit-name", "edit-name-err");
         const isEditEmailValid = validateEmail("edit-email", "edit-email-err");
-        const isEditBirthDateValid = validateBithDate("edit-birthdate", "edit-birthdate-err");
+        const isEditBirthDateValid = validateBirthdate("edit-birthdate", "edit-birthdate-err");
         const isEditGenderValid = validateGender("edit-gender", "edit-gender-err");
         const isEditCourseValid = validateCourse("edit-course", "edit-course-err");
         const isEditPhoneValid = validatePhone("edit-phone", "edit-phone-err");

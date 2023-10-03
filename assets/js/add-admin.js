@@ -9,7 +9,7 @@ $(document).ready(function () {
         const isValidName = validateName("name", "name-err");
         const isValidEmail = validateEmail("email", "email-err");
         const isValidImage = validateImage("image", "image-err");
-        const isBirthDateValid = validateBithDate("birthdate", "birthdate-err");
+        const isBirthDateValid = validateBirthdate("birthdate", "birthdate-err");
         const isValidGender = validateGender("gender", "gender-err");
         const isValidPhone = validatePhone("phone", "phone-err");
         const isValidPassword = validatePasssword("password", "password-err");

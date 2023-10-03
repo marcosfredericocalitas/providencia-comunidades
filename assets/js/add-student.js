@@ -8,7 +8,7 @@ $(document).ready(function () {
     $("#btn-add-student").click(function () {
         const isNameValid = validateName("name", "name-err");
         const isEmailValid = validateEmail("email", "email-err");
-        const isBirthDateValid = validateBithDate("birthdate", "birthdate-err");
+        const isBirthDateValid = validateBirthdate("birthdate", "birthdate-err");
         const isGenderValid = validateGender("gender", "gender-err");
         const iscourseValid = validateCourse("course", "course-err");
         const isPhoneValid = validatePhone("phone", "phone-err");
