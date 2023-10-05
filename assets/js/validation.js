@@ -134,7 +134,7 @@ function validateCategory(inputId, errorId) {
 function validateEmail(inputId, errorId) {
     return validation(
         inputId, errorId, 'text',
-        /^([_\-\.0-9a-z]+)@([_\-\.0-9a-z]+)\.([a-z]){2,7}$/,
+        /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
         'O campo email não pode estar vazio',
         'Digite um endereço de e-mail válido'
     )
