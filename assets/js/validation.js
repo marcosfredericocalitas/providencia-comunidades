@@ -158,7 +158,7 @@ function validateBirthdate(inputId, errorId) {
 }
 
 // Validate password
-function validatePasssword(inputId, errorId) {
+function validatePassword(inputId, errorId) {
     return validation(
         inputId, errorId, "text",
         /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/,
