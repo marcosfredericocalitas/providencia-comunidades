@@ -2,7 +2,7 @@ $(document).ready(function () {
     // Preview selected image
     previewImageBySelected("edit-image", "edit-image-preview");
     // Validation by blur (Focusout event)
-    validateByFocusOut("edit-password", "edit-password-err", validatePasssword);
+    validateByFocusOut("edit-password", "edit-password-err", validatePassword);
 
     // Validation by click button (Click event)
     $("#btn-edit-admin").click(function () {
@@ -12,7 +12,7 @@ $(document).ready(function () {
         const isEditBirthDateValid = validateBirthdate("edit-birthdate", "edit-birthdate-err");
         const isValidEditGender = validateGender("edit-gender", "edit-gender-err");
         const isValidEditPhone = validatePhone("edit-phone", "edit-phone-err");
-        const isValidEditPassword = validatePasssword("edit-password", "edit-password-err");
+        const isValidEditPassword = validatePassword("edit-password", "edit-password-err");
 
         if (!isValidEditName || !isValidEditEmail || !isValidEditImage || !isEditBirthDateValid ||
             !isValidEditGender || !isValidEditPhone || !isValidEditPassword) {

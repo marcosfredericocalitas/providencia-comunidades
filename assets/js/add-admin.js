@@ -2,7 +2,7 @@ $(document).ready(function () {
     // Preview selected image
     previewImageBySelected("image", "image-preview");
     // Validation by blur (Focusout event)
-    validateByFocusOut("password", "password-err", validatePasssword);
+    validateByFocusOut("password", "password-err", validatePassword);
 
     // Validation by click button (Click event)
     $("#btn-add-admin").click(function () {
@@ -12,7 +12,7 @@ $(document).ready(function () {
         const isBirthDateValid = validateBirthdate("birthdate", "birthdate-err");
         const isValidGender = validateGender("gender", "gender-err");
         const isValidPhone = validatePhone("phone", "phone-err");
-        const isValidPassword = validatePasssword("password", "password-err");
+        const isValidPassword = validatePassword("password", "password-err");
 
         if (!isValidName || !isValidEmail || !isValidImage || !isBirthDateValid
             || !isValidGender || !isValidPhone || !isValidPassword) {
