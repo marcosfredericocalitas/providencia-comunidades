@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login do admnistrador</title>
+    <link rel="stylesheet" href="../../../assets/css/adminlte.min.css">
+    <link rel="stylesheet" href="../../../assets/css/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../../../assets/css/main.css">
+    <link rel="stylesheet" href="../../../assets/css/mixers.css">
+    <link rel="stylesheet" href="../../../assets/css/admin-login.css">
+</head>
+
+<body class="hold-transition login-page">
+
+    <div class="login-container u-flex-column u-item-center">
+        <div class="brand">
+            <img src="../../../assets/img/Logitipo-black.png" alt="Logotipo da empresa" class="u-img">
+        </div>
+        <div class="login-box">
+            <!-- /.login-logo -->
+            <div class="card card-outline card-primary">
+                <div class="card-header text-center">
+                    <h1 class="card-title">Providencia as <strong>Comunidades</strong></h1>
+                </div>
+                <div class="card-body">
+                    <p class="login-box-msg">Faça login para iniciar sua sessão</p>
+                    <form action="../../index3.html" method="post">
+                        <div class="input-group mb-3">
+                            <label for="Email">Email</label>
+                            <input type="email" name="email" id="email" class="u-input" placeholder="email@exemplo.com">
+                        </div>
+                        <div class="input-group mb-3">
+                            <label for="Email">Senha</label>
+                            <input type="password" name="password" id="password" class="u-input"
+                                placeholder="Digite a sua senha">
+                        </div>
+                          <div class="row">
+                            <div class="col-8">
+                                <div class="icheck-primary">
+                                    <input type="checkbox" id="remember">
+                                    <label for="remember">
+                                        Lembre de mim
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-4">
+                                <button type="button" class="btn btn-primary btn-block" id="btn-login">Entrar</button>
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                    </form>
+                    <p class="mb-1">
+                        <a href="forgot-password.html">Esqueci a minha senha</a>
+                    </p>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.login-box -->
+    </div>
+
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.min.js"></script>
+    <script src="../../../assets/js/validation.js"></script>
+    <script src="../../../assets/js/admin-login.js"></script>
+</body>
+
+</html>
