@@ -226,17 +226,16 @@ table.table .avatar {
     font-weight: normal;
 }
 
-/* Costum styles
  tbody {
-    display: none;
-} */
+    /* display: none; */
+} 
 
 .table-empty {
     width: 100%;
+    display: none;
 }
 
 .table-title-nd {
-    display: none;
     font-size: 30px;
     color: #435d7d;
     text-align: center;
