@@ -191,8 +191,14 @@
                                     <div class="card-body box-profile card-body-padding">
                                         <div class="text-center">
                                             <img class="profile-user-img img-fluid img-circle"
-                                                src="../../assets/img/profile-pic.png" alt="User profile picture">
+                                                src="../../assets/img/profile-pic.png" alt="User profile picture" id="image-preview">
+                                            <label for="image" class="camera-icon u-flex-center">
+                                                <i class="fas fa-camera"></i>
+                                            </label>
                                         </div>
+                                        <form action="" enctype="multipart/form-data">
+                                            <input type="file" name="" id="image" style="display: none;">
+                                        </form>
                                         <h3 class="profile-username text-center">Marcos Frederico Calitas</h3>
                                         <p class="text-secondary mb-1 text-center">marcosfredericocalitas22@gmail.com
                                         </p>
