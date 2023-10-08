@@ -16,6 +16,9 @@ $(document).ready(function () {
         validateByFocusOut(array[0], array[1], array[2]);
     });
 
+    // Update image preview
+    previewImageBySelected("image", "image-preview");
+
     // Validation by click button (Click event)
     $("#bnt-edit-profile").click(function () {
         const isNameValid = validateName("name", "name-err");
