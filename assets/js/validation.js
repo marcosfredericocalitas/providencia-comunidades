@@ -37,16 +37,16 @@ function hideErrorMessage(inputId, errorId) {
 }
 
 // Validation 
-function validation(inputId, errorId, inputType, regexCode, message1, message2) {
+function validation(inputId, errorId, inputType, regexCode, field, message) {
     let inputValue = getInputValue(inputId, inputType);
     const regex = regexCode;
 
     if (inputValue === "") {
-        return showErrorMessage(inputId, errorId, message1);
+        return showErrorMessage(inputId, errorId, "O campo " + field + " não pode estar vazio");
     }
 
     if (!regex.test(inputValue)) {
-        return showErrorMessage(inputId, errorId, message2);
+        return showErrorMessage(inputId, errorId, message);
     }
 
     return hideErrorMessage(inputId, errorId);
@@ -55,8 +55,7 @@ function validation(inputId, errorId, inputType, regexCode, message1, message2) 
 // Function validate text
 function validationText(inputId, errorId, field) {
     return validation(
-        inputId, errorId, 'text', /^[A-Z][a-z]*/,
-        "O campo " + field + " não pode estar vazio",
+        inputId, errorId, 'text', /^[A-Z][a-z]*/, field,
         field + " deve iniciar com letra maiúscula"
     )
 }
@@ -133,10 +132,8 @@ function validateCategory(inputId, errorId) {
 // Validate email
 function validateEmail(inputId, errorId) {
     return validation(
-        inputId, errorId, 'text',
-        /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-        'O campo email não pode estar vazio',
-        'Digite um endereço de e-mail válido'
+        inputId, errorId, 'text', /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+        "email", "Digite um endereço de e-mail válido"
     )
 }
 
@@ -144,8 +141,7 @@ function validateEmail(inputId, errorId) {
 function validatePhone(inputId, errorId) {
     return validation(
         inputId, errorId, 'text', /^\d{9}$/,
-        'O campo telefone não pode estar vazio',
-        'O número de telefone deve conter apenas 9 digitos'
+        "telefone", "O número de telefone deve conter apenas 9 digitos"
     )
 }
 
@@ -153,16 +149,14 @@ function validateBirthdate(inputId, errorId) {
     return validation(
         inputId, errorId, "text",
         /^(19[7-9][5-9]|20[0-1][0-8])-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/,
-        "O campo data de nascimento não pode estar vazio",
-        "O seu ano deve ser maior que 1975 & menor que 2019");
+        "data de nascimento", "O seu ano deve ser maior que 1975 & menor que 2019");
 }
 
 // Validate password
 function validatePassword(inputId, errorId) {
     return validation(
         inputId, errorId, "text",
-        /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/,
-        "O campo senha não pode estar vazio",
+        /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/, "senha",
         "A sua senha deve ter pelo menos 8 caracteres, letras maiusculas, minusculas, números e caracteres especiais (@, $, !, %, &)"
     );
 }
