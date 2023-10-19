@@ -113,7 +113,7 @@ function setImagePreview(input, preview) {
 
 // file Extension validation
 function validateFileExtension(file, extensions = []) {
-    let fileName = file.name;
+    const fileName = file.name;
     const allowedExtensions = extensions;
     const fileExtention = fileName.split(".").pop().toLowerCase();
     return allowedExtensions.includes(fileExtention);
@@ -174,9 +174,9 @@ function validatePhone(input, error) {
 
 // Image validation
 function validateImage(input, error) {
-    let image = getInputValue(input, "file");
+    const image = getInputValue(input, "file");
     const allowedExtensions = ["png", "jpg", "jpeg"];
-    const allowedSize = 3145728;
+    const maxFileSize = 3145728;
 
     if (!image) {
         return showErrorMessage(input, error, "O campo imagem não pode estar vazio");
@@ -186,8 +186,31 @@ function validateImage(input, error) {
         return showErrorMessage(input, error, "Por favor, selecione uma imagem válida (PNG, JPG ou JPEG)");
     }
 
-    if (!validateFileSize(image, allowedSize)) {
+    if (!validateFileSize(image, maxFileSize)) {
         return showErrorMessage(input, error, "A sua imagem deve ter no maximo 3MB");
+    }
+
+    return hideErrorMessage(input, error);
+}
+
+// Password validation
+function validatePassword(input, error) {
+    const password = getInputValue(input, "password");
+    const requirements = [
+        { regex: /^.{8,}$/, message: "A sua senha deve ter pelo menos 8 caracteres" },
+        { regex: /[A-Z]/, message: "A sua senha deve ter pelo menos uma letra maiúscula" },
+        { regex: /\d/, message: "A sua senha deve ter pelo menos um número" },
+        { regex: /[^a-zA-Z0-9]/, message: "A sua senha deve ter pelo menos 1 caractere especial (@ $ ! % &)" }
+    ];
+
+    if (isEmpty(password)) {
+        return showErrorMessage(input, error, "O campo senha não pode estar vazio");
+    }
+
+    for (const requirement of requirements) {
+        if (!requirement.regex.test(password)) {
+            return showErrorMessage(input, error, requirement.message);
+        }
     }
 
     return hideErrorMessage(input, error);
