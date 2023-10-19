@@ -63,7 +63,7 @@ function validation(input, type, regex, error, field, message) {
 }
 
 //  Texts validation
-function validationText(input, error, field) {
+function validateText(input, error, field) {
     return validation(
         input, "text", /^[A-Z][a-z]*/, error, field,
         field + " deve iniciar com uma letra maiúscula"
@@ -127,7 +127,7 @@ function isValidImageSize(file, size) {
 /* ------ Calling the functions ------ */
 // Name validation
 function validateName(input, error) {
-    return validationText(input, error, "Nome");
+    return validateText(input, error, "Nome");
 }
 
 // Email validation
@@ -216,14 +216,31 @@ function validatePassword(input, error) {
 }
 
 //------------------------------------------------------------------------
+// Admin validation
 function validateAdmin(input, error) {
     return validateSelect(input, error, "Admin");
 }
 
+// Description validation
 function validateDescription(input, error) {
-    return validationText(input, error, "Descrição");
+    return validateText(input, error, "Descrição");
 }
 
+// Topics validation
 function validateTopics(input, error) {
-    return validationText(input, error, "Tópicos");
+    return validateText(input, error, "Tópicos");
+}
+
+//------------------------------------------------------------------------
+// Title validation
+function validateTitle(input, error) {
+    return validateText(input, error, "Título");
+}
+// Category validation
+function validateCategory(input, error) {
+    return validateText(input, error, "Categoría")
+}
+
+function validateDetails(input, error) {
+    return validateText(input, error, "Detalhes");
 }
