@@ -1,5 +1,9 @@
 $(document).ready(function () {
+    // Set image preview
     setImagePreview("edit-image", "edit-image-preview");
+
+    // Validation by blur (Focusout event)
+    validateByFocusOut("edit-password", "edit-password-err", validatePassword);
 
     // Validation by click button (Click event)
     $("#btn-edit-admin").click(function () {

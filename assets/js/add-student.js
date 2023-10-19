@@ -1,5 +1,9 @@
 $(document).ready(function () {
+    // Set image preview
     setImagePreview("image", "image-preview");
+
+    // Validation by blur (Focusout event)
+    validateByFocusOut("course", "course-err", validateCourse);
 
     // Validation by click button (Click event)
     $("#btn-add-student").click(function () {
