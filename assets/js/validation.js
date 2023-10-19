@@ -1,92 +1,98 @@
-// Get value from input by type
-function getInputValue(inputId, inputType) {
-    const input = $("#" + inputId);
+//Get input value
+function getInputValue(input, type) {
+    let inputId = $("#" + input);
 
-    switch (inputType) {
+    switch (type) {
+        case "tel":
+        case "date":
         case "text":
-            return input.val();
+        case "email":
+        case "textarea":
+        case "password":
+            return $(inputId).val();
 
         case "select":
-            return input.find(':selected').val();
+            return $(inputId).find(":selected").val();
 
         case "radio":
-            return $("input[name='" + inputId + "']:checked").val();
+            return $("input[name='" + input + "']:checked").val();
 
         case "file":
-            return input[0].files[0];
+            return inputId[0].files[0];
 
         default:
             return false;
     }
 }
 
-// Show error messages
-function showErrorMessage(inputId, errorId, errorMessage) {
-    $("#" + inputId).removeClass("is-blue");
-    $("#" + inputId).addClass("is-red");
-    $("#" + errorId).addClass("is-flex").html(errorMessage);
+// Show error message
+function showErrorMessage(input, error, message) {
+    $("#" + input).removeClass("is-blue");
+    $("#" + input).addClass("is-red");
+    $("#" + error).addClass("is-flex").html(message);
     return false;
 }
 
 // Hide error message
-function hideErrorMessage(inputId, errorId) {
-    $("#" + inputId).addClass("is-blue");
-    $("#" + inputId).removeClass("is-red");
-    $("#" + errorId).removeClass("is-flex");
+function hideErrorMessage(input, error) {
+    $("#" + input).addClass("is-blue");
+    $("#" + input).removeClass("is-red");
+    $("#" + error).removeClass("is-flex");
     return true;
 }
 
-// Validation 
-function validation(inputId, errorId, inputType, regexCode, field, message) {
-    let inputValue = getInputValue(inputId, inputType);
-    const regex = regexCode;
+// Verify if input is empty
+function isEmpty(input) {
+    return input === "";
+}
 
-    if (inputValue === "") {
-        return showErrorMessage(inputId, errorId, "O campo " + field + " não pode estar vazio");
+// Validation 
+function validation(input, type, regex, error, field, message) {
+    let inputValue = getInputValue(input, type);
+
+    if (isEmpty(inputValue)) {
+        return showErrorMessage(input, error, "O campo " + field + " não pode estar vazio");
     }
 
     if (!regex.test(inputValue)) {
-        return showErrorMessage(inputId, errorId, message);
+        return showErrorMessage(input, error, message);
     }
 
-    return hideErrorMessage(inputId, errorId);
+    hideErrorMessage(input, error);
+    return true;
 }
 
-// Function validate text
-function validationText(inputId, errorId, field) {
+//  Texts validation
+function validationText(input, error, field) {
     return validation(
-        inputId, errorId, 'text', /^[A-Z][a-z]*/, field,
-        field + " deve iniciar com letra maiúscula"
-    )
+        input, "text", /^[A-Z][a-z]*/, error, field,
+        field + " deve iniciar com uma letra maiúscula"
+    );
 }
 
-// Validate by select
-function validateIfIsEmpty(inputId, errorId, message, type) {
-    let input = getInputValue(inputId, type)
+// Validation by Focus Out
+function validateByFocusOut(input, error, validate) {
+    let inputId = ("#" + input)
+    $(inputId).focusout(() => {
+        validate(input, error);
+    });
+}
 
-    if (input === "") {
-        return showErrorMessage(inputId, errorId, message);
+// Selects validation
+function validateSelect(input, error, field) {
+    let selectValue = getInputValue(input, "select");
+
+    if (isEmpty(selectValue)) {
+        return showErrorMessage(input, error, "O campo " + field + " não pode estar vazio");
     }
 
-    return hideErrorMessage(inputId, errorId);
+    return hideErrorMessage(input, error);
 }
 
-// Validate file size
-function validateFileSize(file, fileSize) {
-    return file.size <= fileSize;
-}
-
-//Validate file extention
-function validateFileExtention(file, extension = []) {
-    const allowedExtensions = extension;
-    const fileExtension = file.name.split('.').pop().toLowerCase();
-    return allowedExtensions.includes(fileExtension);
-}
-
-// Preview the image when selected
-function previewImageBySelected(inputId, previewId) {
-    const inputImagem = $("#" + inputId);
-    const previewImagem = $("#" + previewId);
+// Set image preview when selected
+function setImagePreview(input, preview) {
+    const inputImagem = $("#" + input);
+    const previewImagem = $("#" + preview);
 
     inputImagem.change(function () {
         const arquivo = this.files[0];
@@ -104,115 +110,85 @@ function previewImageBySelected(inputId, previewId) {
         }
     });
 }
-/* ----------------------------------------------------------------------------------------------- */
 
-// Validate by Focus Out
-function validateByFocusOut(input, error, validate) {
-    let inputId = ("#" + input)
-    $(inputId).focusout(() => {
-        validate(input, error);
-    });
+// file Extension validation
+function validateFileExtension(file, extensions = []) {
+    let fileName = file.name;
+    const allowedExtensions = extensions;
+    const fileExtention = fileName.split(".").pop().toLowerCase();
+    return allowedExtensions.includes(fileExtention);
 }
 
-// Validate name
-function validateName(inputId, errorId) {
-    return validationText(inputId, errorId, "nome")
+
+// File size validatin
+function validateFileSize(file, size) {
+    return file.size <= size;
 }
 
-// Validate title
-function validateTitle(inputId, errorId) {
-    return validationText(inputId, errorId, "título")
+/* ------ Calling the functions ------ */
+// Name validation
+function validateName(input, error) {
+    return validationText(input, error, "Nome");
 }
 
-// Validate title
-function validateCategory(inputId, errorId) {
-    return validationText(inputId, errorId, "categoria")
-}
-
-// Validate email
-function validateEmail(inputId, errorId) {
+// Email validation
+function validateEmail(input, error) {
     return validation(
-        inputId, errorId, 'text', /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-        "email", "Digite um endereço de e-mail válido"
+        input, "email", /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+        error, "Email", "Digite um endereço de e-mail válido"
     )
 }
 
-// Validate hone number
-function validatePhone(inputId, errorId) {
+// Birthdate validation
+function validateBirthdate(input, error) {
     return validation(
-        inputId, errorId, 'text', /^\d{9}$/,
-        "telefone", "O número de telefone deve conter apenas 9 digitos"
-    )
-}
-
-function validateBirthdate(inputId, errorId) {
-    return validation(
-        inputId, errorId, "text",
-        /^(19[7-9][5-9]|20[0-1][0-8])-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/,
-        "data de nascimento", "O seu ano deve ser maior que 1975 & menor que 2019");
-}
-
-// Validate password
-function validatePassword(inputId, errorId) {
-    return validation(
-        inputId, errorId, "text",
-        /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/, "senha",
-        "A sua senha deve ter pelo menos 8 caracteres, letras maiusculas, minusculas, números e caracteres especiais (@, $, !, %, &)"
+        input, "date", /^(19[7-9][5-9]|20[0-1][0-8])-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/,
+        error, "Data de nascimento", "O seu ano deve ser maior que 1975 & menor que 2019"
     );
 }
 
-// Validate Course
-function validateCourse(inputId, errorId) {
-    return validateIfIsEmpty(inputId, errorId, "O campo curso não pode estar vazio", "select");
-}
+// Gender validation
+function validateGender(input, error) {
+    let gender = getInputValue(input, "radio");
+    const allowedGender = ["Masculino", "Feminino"];
 
-// Validate admin
-function validateAdmin(inputId, errorId) {
-    return validateIfIsEmpty(inputId, errorId, "O campo admin não pode estar vazio", "select");
-}
-
-// Validate description
-function validateDescription(inputId, errorId) {
-    return validateIfIsEmpty(inputId, errorId, "O campo descrição não pode estar vazio", "text");
-}
-
-// Validate topics
-function validateTopics(inputId, errorId) {
-    return validateIfIsEmpty(inputId, errorId, "O campo tópicos não pode estar vazio", "text");
-}
-
-// Validate details
-function validateDetails(inputId, errorId) {
-    return validateIfIsEmpty(inputId, errorId, "O campo detalhes não pode estar vazio", "text");
-}
-
-// Validate gender
-function validateGender(inputId, errorId) {
-    let gender = getInputValue(inputId, "radio")
-
-    if (gender !== "Masculino" && gender !== "Feminino") {
-        return showErrorMessage(inputId, errorId, "O campo sexo não pode estar vazio");
+    if (!allowedGender.includes(gender)) {
+        return showErrorMessage(input, error, "O campo sexo não pode estar vazio");
     }
 
-    return hideErrorMessage(inputId, errorId);
+    return hideErrorMessage(input, error);
 }
 
-// Validate image
-function validateImage(inputId, errorId) {
-    let image = getInputValue(inputId, "file");
+// Course validation
+function validateCourse(input, error) {
+    return validateSelect(input, error, "Curso");
+}
+
+// Phone validatiion
+function validatePhone(input, error) {
+    return validation(
+        input, "tel", /^\d{9}$/, error, "Telefone",
+        "O número de telefone deve conter apenas 9 digitos"
+    );
+}
+
+// Image validation
+function validateImage(input, error) {
+    let image = getInputValue(input, "file");
+    const allowedExtensions = ["png", "jpg", "jpeg"];
+    const allowedSize = 3145728;
 
     if (!image) {
-        return showErrorMessage(inputId, errorId, "O campo imagem não pode estar vazio");
+        return showErrorMessage(input, error, "O campo imagem não pode estar vazio");
     }
 
-    let validExtension = ["png", "jpg", "jpeg"];
-    if (!validateFileExtention(image, validExtension)) {
-        return showErrorMessage(inputId, errorId, "Por favor, selecione uma imagem válida (PNG, JPG ou JPEG)")
+    if (!validateFileExtension(image, allowedExtensions)) {
+        return showErrorMessage(input, error, "Por favor, selecione uma imagem válida (PNG, JPG ou JPEG)");
     }
 
-    if (!validateFileSize(image, 3145728)) {
-        return showErrorMessage(inputId, errorId, "A sua imagem deve ter no maximo 3MB")
+    if (!validateFileSize(image, allowedSize)) {
+        return showErrorMessage(input, error, "A sua imagem deve ter no maximo 3MB");
     }
 
-    return hideErrorMessage(inputId, errorId);
+    return hideErrorMessage(input, error);
 }
