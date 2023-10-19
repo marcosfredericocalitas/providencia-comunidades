@@ -112,7 +112,7 @@ function setImagePreview(input, preview) {
 }
 
 // file Extension validation
-function validateFileExtension(file, extensions = []) {
+function isValidImageExtension(file, extensions = []) {
     const fileName = file.name;
     const allowedExtensions = extensions;
     const fileExtention = fileName.split(".").pop().toLowerCase();
@@ -121,7 +121,7 @@ function validateFileExtension(file, extensions = []) {
 
 
 // File size validatin
-function validateFileSize(file, size) {
+function isValidImageSize(file, size) {
     return file.size <= size;
 }
 
@@ -182,11 +182,11 @@ function validateImage(input, error) {
         return showErrorMessage(input, error, "O campo imagem não pode estar vazio");
     }
 
-    if (!validateFileExtension(image, allowedExtensions)) {
+    if (!isValidImageExtension(image, allowedExtensions)) {
         return showErrorMessage(input, error, "Por favor, selecione uma imagem válida (PNG, JPG ou JPEG)");
     }
 
-    if (!validateFileSize(image, maxFileSize)) {
+    if (!isValidImageSize(image, maxFileSize)) {
         return showErrorMessage(input, error, "A sua imagem deve ter no maximo 3MB");
     }
 
