@@ -124,7 +124,7 @@ function isValidImageSize(file, size) {
     return file.size <= size;
 }
 
-/* ------ Calling the functions ------ */
+/* ------------------------ Calling the functions ------------------------ */
 // Name validation
 function validateName(input, error) {
     return validateText(input, error, "Nome");

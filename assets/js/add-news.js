@@ -1,6 +1,9 @@
 $(document).ready(function () {
+    // Set image preview
+    setImagePreview("image", "image-preview");
+
     // Validation by blur (Focusout event)
-    const validationAddNews = [
+    const NewsValidationFunctions = [
         // Add news functions and params
         ["title", "title-err", validateTitle],
         ["category", "category-err", validateCategory],
@@ -9,7 +12,7 @@ $(document).ready(function () {
         ["image", "image-err", validateImage]
     ];
 
-    validationAddNews.forEach((array) => {
+    NewsValidationFunctions.forEach((array) => {
         validateByFocusOut(array[0], array[1], array[2]);
     });
 
@@ -19,14 +22,16 @@ $(document).ready(function () {
         const isValidCategory = validateCategory("category", "category-err");
         const isValidAdmin = validateAdmin("admin", "admin-err");
         const isValidDetails = validateDetails("details", "details-err");
-        const isValidImage = validateImage("image", "image-err");
+        const isImageValid = validateImage("image", "image-err");
+
+        if (!isValidTitle || !isValidCategory || !isValidAdmin || !isValidDetails || !isImageValid) {
+            alert('Erro ao adicioar novo notícia');
+            return false;
+        }
+
+        alert('Notícia adicionado com sucesso');
+        return true;
     });
-
-    if (!isValidTitle || !isValidCategory || !isValidAdmin || !isValidDetails || !isValidImage) {
-        alert('Erro ao cadastrar noticia');
-        return false;
-    }
-
-    alert('Notícia cadastrada com sucesso');
-    return true
 });
+
+

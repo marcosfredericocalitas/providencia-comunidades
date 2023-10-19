@@ -1,7 +1,10 @@
 $(document).ready(function () {
+    // Set image preview
+    setImagePreview("edit-image", "edit-image-preview");
+
     // Validation by blur (Focusout event)
-    const validateEditNews = [
-        // Edit Student functions and params
+    const NewsValidationFunctions = [
+        // Add news functions and params
         ["edit-title", "edit-title-err", validateTitle],
         ["edit-category", "edit-category-err", validateCategory],
         ["edit-admin", "edit-admin-err", validateAdmin],
@@ -9,25 +12,25 @@ $(document).ready(function () {
         ["edit-image", "edit-image-err", validateImage]
     ];
 
-    validateEditNews.forEach((array) => {
+    NewsValidationFunctions.forEach((array) => {
         validateByFocusOut(array[0], array[1], array[2]);
     });
 
     // Validation by click button (Click event)
     $("#btn-edit-news").click(function () {
-        const isValidEditTitle = validateTitle("edit-title", "edit-title-err");
-        const isValidEditCategory = validateCategory("edit-category", "edit-category-err");
-        const isValidEditAdmin = validateAdmin("edit-admin", "edit-admin-err");
-        const isValidEditDetails = validateDetails("edit-details", "edit-details-err");
-        const isValidEditImage = validateImage("edit-image", "edit-image-err");
+        const isValidTitle = validateTitle("edit-title", "edit-title-err");
+        const isValidCategory = validateCategory("edit-category", "edit-category-err");
+        const isValidAdmin = validateAdmin("edit-admin", "edit-admin-err");
+        const isValidDetails = validateDetails("edit-details", "edit-details-err");
+        const isImageValid = validateImage("edit-image", "edit-image-err");
+
+        if (!isValidTitle || !isValidCategory || !isValidAdmin || !isValidDetails || !isImageValid) {
+            alert('Erro ao adicioar novo notícia');
+            return false;
+        }
+
+        alert('Notícia adicionado com sucesso');
+        return true;
     });
-
-    if (!isValidEditTitle || !isValidEditCategory || !isValidEditAdmin ||
-        !isValidEditDetails || !isValidEditImage) {
-        alert('Erro ao ediatr noticia');
-        return false;
-    }
-
-    alert('Notícia editada com sucesso');
-    return true
 });
+
