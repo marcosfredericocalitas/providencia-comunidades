@@ -135,7 +135,7 @@ function validateName(input, error) {
 function validateEmail(input, error) {
     return validation(
         input, "email", /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-        error, "Email", "Digite um endereço de e-mail válido"
+        error, "Email", "Digite um endereço de e-mail válido."
     )
 }
 
@@ -143,7 +143,7 @@ function validateEmail(input, error) {
 function validateBirthdate(input, error) {
     return validation(
         input, "date", /^(19[7-9][5-9]|20[0-1][0-8])-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/,
-        error, "Data de nascimento", "O seu ano deve ser maior que 1975 & menor que 2019"
+        error, "Data de nascimento", "O ano deve ser maior que 1975 e menor que 2019."
     );
 }
 
@@ -153,7 +153,7 @@ function validateGender(input, error) {
     const allowedGender = ["Masculino", "Feminino"];
 
     if (!allowedGender.includes(gender)) {
-        return showErrorMessage(input, error, "O campo sexo não pode estar vazio");
+        return showErrorMessage(input, error, "O campo sexo não pode estar vazio.");
     }
 
     return hideErrorMessage(input, error);
@@ -168,7 +168,7 @@ function validateCourse(input, error) {
 function validatePhone(input, error) {
     return validation(
         input, "tel", /^\d{9}$/, error, "Telefone",
-        "O número de telefone deve conter apenas 9 digitos"
+        "O número de telefone deve conter apenas 9 dígitos."
     );
 }
 
@@ -179,15 +179,15 @@ function validateImage(input, error) {
     const maxFileSize = 3145728;
 
     if (!image) {
-        return showErrorMessage(input, error, "O campo imagem não pode estar vazio");
+        return showErrorMessage(input, error, "O campo imagem não pode estar vazio.");
     }
 
     if (!isValidImageExtension(image, allowedExtensions)) {
-        return showErrorMessage(input, error, "Por favor, selecione uma imagem válida (PNG, JPG ou JPEG)");
+        return showErrorMessage(input, error, "Por favor, selecione uma imagem válida (PNG, JPG ou JPEG).");
     }
 
     if (!isValidImageSize(image, maxFileSize)) {
-        return showErrorMessage(input, error, "A sua imagem deve ter no maximo 3MB");
+        return showErrorMessage(input, error, "Sua imagem deve ter um tamanho máximo de 3MB.");
     }
 
     return hideErrorMessage(input, error);
@@ -197,10 +197,10 @@ function validateImage(input, error) {
 function validatePassword(input, error) {
     const password = getInputValue(input, "password");
     const requirements = [
-        { regex: /^.{8,}$/, message: "A sua senha deve ter pelo menos 8 caracteres" },
+        { regex: /^.{8,}$/, message: "Sua senha deve conter pelo menos 8 caracteres." },
         { regex: /[A-Z]/, message: "A sua senha deve ter pelo menos uma letra maiúscula" },
-        { regex: /\d/, message: "A sua senha deve ter pelo menos um número" },
-        { regex: /[^a-zA-Z0-9]/, message: "A sua senha deve ter pelo menos 1 caractere especial (@ $ ! % &)" }
+        { regex: /\d/, message: "Sua senha deve conter pelo menos uma letra maiúscula." },
+        { regex: /[^a-zA-Z0-9]/, message: "Sua senha deve conter pelo menos um caractere especial (por exemplo: @, $, !, % ou &)." }
     ];
 
     if (isEmpty(password)) {
