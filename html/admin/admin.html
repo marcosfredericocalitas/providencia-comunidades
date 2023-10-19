@@ -414,7 +414,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="email">Email</label>
-                                            <input type="text" name="email" id="email" class="u-input"
+                                            <input type="email" name="email" id="email" class="u-input"
                                                 placeholder="email@exemplo.com">
                                             <span class="u-error" id="email-err"></span>
                                         </div>
@@ -448,7 +448,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="phone">Telefone</label>
-                                            <input type="text" name="phone" id="phone" class="u-input"
+                                            <input type="tel" name="phone" id="phone" class="u-input" maxlength="9"
                                                 placeholder="123-456-789">
                                             <span class="u-error" id="phone-err"></span>
                                         </div>
@@ -456,7 +456,10 @@
                                             <label for="password">Senha</label>
                                             <input type="text" name="password" id="password" class="u-input"
                                                 placeholder="Digite a sua senha">
-                                            <span class="u-error" id="password-err"></span>
+                                            <span class="u-error is-flex" id="password-err"></span>
+                                            <span class="u-error is-flex" id="password-err-2"></span>
+                                            <span class="u-error is-flex" id="password-err-3"></span>
+                                            <span class="u-error is-flex" id="password-err-4"></span>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
@@ -488,7 +491,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="edit-email">Email</label>
-                                            <input type="text" name="edit-email" id="edit-email" class="u-input"
+                                            <input type="email" name="edit-email" id="edit-email" class="u-input"
                                                 placeholder="email@exemplo.com">
                                             <span class="u-error" id="edit-email-err"></span>
                                         </div>
@@ -525,8 +528,8 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="edit-phone">Telefone</label>
-                                            <input type="text" name="edit-phone" id="edit-phone" class="u-input"
-                                                placeholder="123-456-789">
+                                            <input type="tel" name="edit-phone" id="edit-phone" class="u-input"
+                                                maxlength="9" placeholder="123-456-789">
                                             <span class="u-error" id="edit-phone-err"></span>
                                         </div>
                                         <div class="form-group">
