@@ -1,37 +1,34 @@
 $(document).ready(function () {
+    // Set image preview
+    setImagePreview("edit-image", "edit-image-preview");
+
     // Validation by blur (Focusout event)
-    const validationsFunctionsCourse = [
-        // Add student functions and params
+    const courseValidationFunctions = [
         ["edit-name", "edit-name-err", validateName],
         ["edit-admin", "edit-admin-err", validateAdmin],
         ["edit-description", "edit-description-err", validateDescription],
-        ["edit-topics", "edit-topics-err", validateTopics],
+        ["topics", "edit-topics-err", validateTopics],
         ["edit-image", "edit-image-err", validateImage]
     ];
 
-    validationsFunctionsCourse.forEach((array) => {
+    courseValidationFunctions.forEach((array) => {
         validateByFocusOut(array[0], array[1], array[2]);
     });
 
     // Validation by click button (Click event)
     $("#btn-edit-course").click(function () {
-        const isValidEditName = validateName("edit-name", "edit-name-err");
-        const isValidEditAdmin = validateAdmin("edit-admin", "edit-admin-err");
-        const isValidEditDescription = validateDescription("edit-description", "edit-description-err");
-        const isValidEditTopics = validateTopics("edit-topics", "edit-topics-err");
-        const isValidEditImage = validateImage("edit-image", "edit-image-err");
+        const isEditNameValid = validateName("edit-name", "edit-name-err");
+        const isEditValidAdmin = validateAdmin("edit-admin", "edit-admin-err");
+        const isEditValidDescription = validateDescription("edit-description", "edit-description-err");
+        const isEditValidTopics = validateTopics("edit-topics", "edit-topics-err");
+        const isEditImageValid = validateImage("edit-image", "edit-image-err");
 
-
-        if (!isValidEditName || !isValidEditAdmin || !isValidEditDescription ||
-            !isValidEditTopics || !isValidEditImage) {
-            alert("Erro ao editar Curso");
+        if (!isEditNameValid || !isEditValidAdmin || !isEditValidDescription || !isEditValidTopics || !isEditImageValid) {
+            alert('Erro ao adicionar novo curso');
             return false;
         }
 
-        alert("Curso editado com sucesso");
-        return false;
+        alert('Curso adicionado com sucesso');
+        return true;
     });
-
-    // Preview the image when selected
-    previewImageBySelected("edit-image", "previe-edit-image");
 });

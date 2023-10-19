@@ -1,7 +1,9 @@
 $(document).ready(function () {
+    // Set image preview
+    setImagePreview("image", "image-preview");
+
     // Validation by blur (Focusout event)
-    const validationsFunctionsCourse = [
-        // Add student functions and params
+    const courseValidationFunctions = [
         ["name", "name-err", validateName],
         ["admin", "admin-err", validateAdmin],
         ["description", "description-err", validateDescription],
@@ -9,28 +11,24 @@ $(document).ready(function () {
         ["image", "image-err", validateImage]
     ];
 
-    validationsFunctionsCourse.forEach((array) => {
+    courseValidationFunctions.forEach((array) => {
         validateByFocusOut(array[0], array[1], array[2]);
     });
 
     // Validation by click button (Click event)
     $("#btn-add-course").click(function () {
-        const isValidName = validateName("name", "name-err");
+        const isNameValid = validateName("name", "name-err");
         const isValidAdmin = validateAdmin("admin", "admin-err");
         const isValidDescription = validateDescription("description", "description-err");
         const isValidTopics = validateTopics("topics", "topics-err");
-        const isValidImage = validateImage("image", "image-err");
+        const isImageValid = validateImage("image", "image-err");
 
-
-        if (!isValidName || !isValidAdmin || !isValidDescription || !isValidTopics || !isValidImage) {
-            alert("Erro ao cadastrar Curso");
+        if (!isNameValid || !isValidAdmin || !isValidDescription || !isValidTopics || !isImageValid) {
+            alert('Erro ao adicionar novo curso');
             return false;
         }
 
-        alert("Curso cadastrado com sucesso");
-        return false;
+        alert('Curso adicionado com sucesso');
+        return true;
     });
-
-    // Preview the image when selected
-    previewImageBySelected("image", "previe-image");
 });

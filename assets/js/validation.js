@@ -214,3 +214,16 @@ function validatePassword(input, error) {
 
     return hideErrorMessage(input, error);
 }
+
+//------------------------------------------------------------------------
+function validateAdmin(input, error) {
+    return validateSelect(input, error, "Admin");
+}
+
+function validateDescription(input, error) {
+    return validationText(input, error, "Descrição");
+}
+
+function validateTopics(input, error) {
+    return validationText(input, error, "Tópicos");
+}
