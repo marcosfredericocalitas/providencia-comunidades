@@ -420,7 +420,7 @@
                     <div id="addEmployeeModal" class="modal fade">
                         <div class="modal-dialog">
                             <div class="modal-content modal-content-add">
-                                <form enctype="multipart/form-data" id="student-add-form">
+                                <form enctype="multipart/form-data" id="add-student-form">
                                     <div class="modal-header">
                                         <h4 class="modal-title">Adicionar aluno</h4>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -435,7 +435,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="email">Email</label>
-                                            <input type="text" name="email" id="email" class="u-input"
+                                            <input type="email" name="email" id="email" class="u-input"
                                                 placeholder="email@exemplo.com">
                                             <span class="u-error" id="email-err"></span>
                                         </div>
@@ -448,11 +448,11 @@
                                             <label>Sexo</label>
                                             <div class="form-gender u-flex">
                                                 <div class="form-gender-gap u-flex">
-                                                    <Label for="male" class="label-normal">Mascuino</Label>
+                                                    <Label for="male" class="label-normal">Masculino</Label>
                                                     <input type="radio" name="gender" id="male" value="Masculino">
                                                 </div>
                                                 <div class="form-gender-gap u-flex">
-                                                    <Label for="feminine" class="label-normal">Femenino</Label>
+                                                    <Label for="feminine" class="label-normal">Feminino</Label>
                                                     <input type="radio" name="gender" id="feminine" value="Feminino">
                                                 </div>
                                             </div>
@@ -471,8 +471,8 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="phone">Telefone</label>
-                                            <input type="text" name="phone" id="phone" class="u-input"
-                                                placeholder="123-456-789">
+                                            <input type="tel" name="phone" id="phone" class="u-input"
+                                                placeholder="123-456-789" maxlength="9">
                                             <span class="u-error" id="phone-err"></span>
                                         </div>
                                         <div class="form-group">
@@ -499,9 +499,9 @@
                     <div id="editEmployeeModal" class="modal fade">
                         <div class="modal-dialog">
                             <div class="modal-content modal-content-add">
-                                <form enctype="multipart/form-data" id="student-edit-form">
+                                <form enctype="multipart/form-data" id="edit-student-form">
                                     <div class="modal-header">
-                                        <h4 class="modal-title">Editar aluno</h4>
+                                        <h4 class="modal-title">Adicionar aluno</h4>
                                         <button type="button" class="close" data-dismiss="modal"
                                             aria-hidden="true">&times;</button>
                                     </div>
@@ -514,7 +514,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="edit-email">Email</label>
-                                            <input type="text" name="edit-email" id="edit-email" class="u-input"
+                                            <input type="email" name="edit-email" id="edit-email" class="u-input"
                                                 placeholder="email@exemplo.com">
                                             <span class="u-error" id="edit-email-err"></span>
                                         </div>
@@ -528,12 +528,12 @@
                                             <label>Sexo</label>
                                             <div class="form-gender u-flex">
                                                 <div class="form-gender-gap u-flex">
-                                                    <Label for="edit-male" class="label-normal">Mascuino</Label>
+                                                    <Label for="edit-male" class="label-normal">Masculino</Label>
                                                     <input type="radio" name="edit-gender" id="edit-male"
                                                         value="Masculino">
                                                 </div>
                                                 <div class="form-gender-gap u-flex">
-                                                    <Label for="edit-feminine" class="label-normal">Femenino</Label>
+                                                    <Label for="edit-feminine" class="label-normal">Feminino</Label>
                                                     <input type="radio" name="edit-gender" id="edit-feminine"
                                                         value="Feminino">
                                                 </div>
@@ -553,8 +553,8 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="edit-phone">Telefone</label>
-                                            <input type="text" name="edit-phone" id="edit-phone" class="u-input"
-                                                placeholder="123-456-789">
+                                            <input type="tel" name="edit-phone" id="edit-phone" class="u-input"
+                                                placeholder="123-456-789" maxlength="9">
                                             <span class="u-error" id="edit-phone-err"></span>
                                         </div>
                                         <div class="form-group">
@@ -571,7 +571,7 @@
                                         <input type="button" class="btn btn-default" data-dismiss="modal"
                                             value="Cancelar">
                                         <input type="button" class="btn btn-success" value="Editar"
-                                            id="btn-edit-student">
+                                            id="btn-add-student">
                                     </div>
                                 </form>
                             </div>
@@ -627,7 +627,7 @@
     <script src="../../assets/js/validation.js"></script>
     <script src="../../assets/js/add-student.js"></script>
     <script src="../../assets/js/edit-student.js"></script>
-    <script src="../../assets/js/validate-by-blur.js"></script>
+    <!-- <script src="../../assets/js/validate-by-blur.js"></script> -->
 
 </body>
 
