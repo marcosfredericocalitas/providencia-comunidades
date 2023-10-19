@@ -119,7 +119,6 @@ function isValidImageExtension(file, extensions = []) {
     return allowedExtensions.includes(fileExtention);
 }
 
-
 // File size validatin
 function isValidImageSize(file, size) {
     return file.size <= size;
