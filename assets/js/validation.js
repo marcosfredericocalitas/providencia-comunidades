@@ -267,17 +267,18 @@ function validateDetails(input, error) {
 }
 
 //------------------------------------------------------------------------
-function validateConfirmPassword(input, input2, error) {
-    const password = getInputValue(input, "password");
-    const confirmPassword = getInputValue(input2, "password");
+function validateConfirmPassword(input, error) {
+    const passwordInput = input.split("-").pop();
+    const password = getInputValue(passwordInput, "password");
+    const confirmPassword = getInputValue(input, "password");
 
     if (isEmpty(confirmPassword)) {
-        return showErrorMessage(input2, error, "O campo Confirmar senha não pode estár vazio");
+        return showErrorMessage(input, error, "O campo Confirmar senha não pode estár vazio");
     }
 
     if (confirmPassword !== password) {
-        return showErrorMessage(input2, error, "As senhas não correspondem.");
+        return showErrorMessage(input, error, "As senhas não correspondem.");
     }
 
-    return hideErrorMessage(input2, error);
+    return hideErrorMessage(input, error);
 }
