@@ -124,6 +124,27 @@ function isValidImageSize(file, size) {
     return file.size <= size;
 }
 
+// Change password visibility
+function togglePasswordVisibility(input, button, icon, icon2) {
+    const inputPwd = $("#" + input);
+    const butttonToggle = $("#" + button);
+    const iconOpen = $("#" + icon);
+    const iconClose = $("#" + icon2);
+
+
+    butttonToggle.click(() => {
+        if (inputPwd.attr("type") === "password") {
+            inputPwd.attr("type", "text");
+            $(iconOpen).addClass("is-none");
+            $(iconClose).removeClass("is-none");
+        } else {
+            inputPwd.attr("type", "password");
+            $(iconOpen).removeClass("is-none");
+            $(iconClose).addClass("is-none");
+        }
+    });
+}
+
 /* ------------------------ Calling the functions ------------------------ */
 // Name validation
 function validateName(input, error) {
