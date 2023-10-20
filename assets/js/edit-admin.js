@@ -1,9 +1,10 @@
 $(document).ready(function () {
     // Set image preview
     setImagePreview("edit-image", "edit-image-preview");
-
     // Validation by blur (Focusout event)
     validateByFocusOut("edit-password", "edit-password-err", validatePassword);
+    // Change password visibility
+    togglePasswordVisibility("edit-password", "admin2-btn-eye", "admin2-open-eye-icon", "admin2-close-eye-icon");
 
     // Validation by click button (Click event)
     $("#btn-edit-admin").click(function () {
