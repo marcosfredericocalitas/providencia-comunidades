@@ -92,6 +92,13 @@
     display: flex;
 }
 
+/* Buttons */
+.u-btn {
+    border: none;
+    background-color: var(--white);
+}
+
+
 /* Images */
 .u-img {
     width: 100%;
@@ -102,4 +109,14 @@
 
 .is-none {
     display: none;
+}
+
+.u-p-relative {
+    position: relative;
+}
+
+.u-form-eye {
+    position: absolute;
+    top: 58%;
+    right: 10px;
 }

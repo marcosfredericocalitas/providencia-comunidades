@@ -11,5 +11,7 @@
 }
 
 :root {
+    --white: #fff;
+    --black: #000;
     --primary-color: #007bff;
 }
