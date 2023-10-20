@@ -51,7 +51,7 @@ function validation(input, type, regex, error, field, message) {
     let inputValue = getInputValue(input, type);
 
     if (isEmpty(inputValue)) {
-        return showErrorMessage(input, error, "O campo " + field + " não pode estar vazio");
+        return showErrorMessage(input, error, "O campo " + field + " não pode estár vazio");
     }
 
     if (!regex.test(inputValue)) {
@@ -83,7 +83,7 @@ function validateSelect(input, error, field) {
     let selectValue = getInputValue(input, "select");
 
     if (isEmpty(selectValue)) {
-        return showErrorMessage(input, error, "O campo " + field + " não pode estar vazio");
+        return showErrorMessage(input, error, "O campo " + field + " não pode estár vazio");
     }
 
     return hideErrorMessage(input, error);
@@ -173,7 +173,7 @@ function validateGender(input, error) {
     const allowedGender = ["Masculino", "Feminino"];
 
     if (!allowedGender.includes(gender)) {
-        return showErrorMessage(input, error, "O campo sexo não pode estar vazio.");
+        return showErrorMessage(input, error, "O campo sexo não pode estár vazio.");
     }
 
     return hideErrorMessage(input, error);
@@ -199,7 +199,7 @@ function validateImage(input, error) {
     const maxFileSize = 3145728;
 
     if (!image) {
-        return showErrorMessage(input, error, "O campo imagem não pode estar vazio.");
+        return showErrorMessage(input, error, "O campo imagem não pode estár vazio.");
     }
 
     if (!isValidImageExtension(image, allowedExtensions)) {
@@ -218,13 +218,13 @@ function validatePassword(input, error) {
     const password = getInputValue(input, "password");
     const requirements = [
         { regex: /^.{8,}$/, message: "Sua senha deve conter pelo menos 8 caracteres." },
-        { regex: /[A-Z]/, message: "A sua senha deve ter pelo menos uma letra maiúscula" },
-        { regex: /\d/, message: "Sua senha deve conter pelo menos uma letra maiúscula." },
+        { regex: /[A-Z]/, message: "A sua senha deve ter pelo menos uma letra maiúscula." },
+        { regex: /\d/, message: "Sua senha deve conter pelo menos um número de 0 à 9." },
         { regex: /[^a-zA-Z0-9]/, message: "Sua senha deve conter pelo menos um caractere especial (por exemplo: @, $, !, % ou &)." }
     ];
 
     if (isEmpty(password)) {
-        return showErrorMessage(input, error, "O campo senha não pode estar vazio");
+        return showErrorMessage(input, error, "O campo senha não pode estár vazio");
     }
 
     for (const requirement of requirements) {
@@ -264,4 +264,20 @@ function validateCategory(input, error) {
 
 function validateDetails(input, error) {
     return validateText(input, error, "Detalhes");
+}
+
+//------------------------------------------------------------------------
+function validateConfirmPassword(input, input2, error) {
+    const password = getInputValue(input, "password");
+    const confirmPassword = getInputValue(input2, "password");
+
+    if (isEmpty(confirmPassword)) {
+        return showErrorMessage(input2, error, "O campo Confirmar senha não pode estár vazio");
+    }
+
+    if (confirmPassword !== password) {
+        return showErrorMessage(input2, error, "As senhas não correspondem.");
+    }
+
+    return hideErrorMessage(input2, error);
 }
