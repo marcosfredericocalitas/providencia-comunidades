@@ -99,3 +99,7 @@
     object-fit: cover;
     border-radius: 100px;
 }
+
+.is-none {
+    display: none;
+}
