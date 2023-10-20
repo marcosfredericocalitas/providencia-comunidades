@@ -11,7 +11,7 @@ $(document).ready(function () {
             return false;
         }
 
-        alert('Cire uma nova senha');
+        alert('Crie uma nova senha');
         return true;
     });
 });
