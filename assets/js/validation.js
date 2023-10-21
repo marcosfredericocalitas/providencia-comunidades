@@ -1,8 +1,7 @@
 //Get input value
 function getInputValue(input, type) {
-    let inputId = $("#" + input);
-
     let value;
+    const inputId = $("#" + input);
 
     switch (type) {
         case "tel":
@@ -57,7 +56,7 @@ function isEmpty(input) {
 
 // Validation 
 function validation(input, type, regex, error, field, message) {
-    let inputValue = getInputValue(input, type);
+    const inputValue = getInputValue(input, type);
 
     if (isEmpty(inputValue)) {
         return showErrorMessage(input, error, "O campo " + field + " não pode estár vazio");
@@ -81,7 +80,7 @@ function textValidation(input, error, field) {
 
 // Validation by Focus Out
 function validateByFocusOut(input, error, validate) {
-    let inputId = ("#" + input)
+    const inputId = ("#" + input)
     $(inputId).focusout(() => {
         validate(input, error);
     });
@@ -89,7 +88,7 @@ function validateByFocusOut(input, error, validate) {
 
 // Selects validation
 function selectValidation(input, error, field) {
-    let selectValue = getInputValue(input, "select");
+    const selectValue = getInputValue(input, "select");
 
     if (isEmpty(selectValue)) {
         return showErrorMessage(input, error, "O campo " + field + " não pode estár vazio");
@@ -104,16 +103,16 @@ function setImagePreview(input, preview) {
     const previewImagem = $("#" + preview);
 
     inputImagem.change(function () {
-        const arquivo = this.files[0];
+        const file = this.files[0];
 
-        if (arquivo) {
+        if (file) {
             const leitor = new FileReader();
 
             leitor.onload = function (e) {
                 previewImagem.attr('src', e.target.result);
             };
 
-            leitor.readAsDataURL(arquivo);
+            leitor.readAsDataURL(file);
         } else {
             previewImagem.attr('src', '');
         }
@@ -139,7 +138,6 @@ function togglePasswordVisibility(input, button, icon, icon2) {
     const butttonToggle = $("#" + button);
     const iconOpen = $("#" + icon);
     const iconClose = $("#" + icon2);
-
 
     butttonToggle.click(() => {
         if (inputPwd.attr("type") === "password") {
@@ -178,7 +176,7 @@ function validateBirthdate(input, error) {
 
 // Gender validation
 function validateGender(input, error) {
-    let gender = getInputValue(input, "radio");
+    const gender = getInputValue(input, "radio");
     const allowedGender = ["Masculino", "Feminino"];
 
     if (!allowedGender.includes(gender)) {
