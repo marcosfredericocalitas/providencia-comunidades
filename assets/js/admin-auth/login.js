@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    // Validation by blur (Focusout event)
+    // Validation by focusout event
     validateByFocusOut("email", "email-err", validateEmail);
     validateByFocusOut("password", "password-err", validatePassword);
 
-    // Validation by click button (Click event)
+    // Validation by click button
     $("#btn-login").click(function () {
         const isEmailValid = validateEmail("email", "email-err");
         const isPasswordValid = validatePassword("password", "password-err");
