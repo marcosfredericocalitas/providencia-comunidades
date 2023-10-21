@@ -15,6 +15,6 @@ const validationsFunctions = [
     ["edit-image", "edit-image-err", validateImage]
 ];
 
-validationsFunctions.forEach((array) => {
-    validateByFocusOut(array[0], array[1], array[2]);
+validationsFunctions.forEach((validation) => {
+    validateByFocusOut(validation[0], validation[1], validation[2]);
 });
