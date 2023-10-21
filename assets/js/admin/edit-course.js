@@ -2,7 +2,7 @@ $(document).ready(function () {
     // Set image preview
     setImagePreview("edit-image", "edit-image-preview");
 
-    // Validation by blur (Focusout event)
+    // Validation by focusout event
     const courseValidationFunctions = [
         ["edit-name", "edit-name-err", validateName],
         ["edit-admin", "edit-admin-err", validateAdmin],
@@ -15,7 +15,7 @@ $(document).ready(function () {
         validateByFocusOut(array[0], array[1], array[2]);
     });
 
-    // Validation by click button (Click event)
+    // Validation by click button
     $("#btn-edit-course").click(function () {
         const isEditNameValid = validateName("edit-name", "edit-name-err");
         const isEditValidAdmin = validateAdmin("edit-admin", "edit-admin-err");

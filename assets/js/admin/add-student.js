@@ -2,10 +2,10 @@ $(document).ready(function () {
     // Set image preview
     setImagePreview("image", "image-preview");
 
-    // Validation by blur (Focusout event)
+    // Validation by focusout event
     validateByFocusOut("course", "course-err", validateCourse);
 
-    // Validation by click button (Click event)
+    // Validation by click button
     $("#btn-add-student").click(function () {
         const isNameValid = validateName("name", "name-err");
         const isEmailValid = validateEmail("email", "email-err");

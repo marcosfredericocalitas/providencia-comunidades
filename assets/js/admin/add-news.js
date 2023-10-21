@@ -2,9 +2,8 @@ $(document).ready(function () {
     // Set image preview
     setImagePreview("image", "image-preview");
 
-    // Validation by blur (Focusout event)
+    // Validation by focusout event
     const NewsValidationFunctions = [
-        // Add news functions and params
         ["title", "title-err", validateTitle],
         ["category", "category-err", validateCategory],
         ["admin", "admin-err", validateAdmin],
@@ -16,7 +15,7 @@ $(document).ready(function () {
         validateByFocusOut(array[0], array[1], array[2]);
     });
 
-    // Validation by click button (Click event)
+    // Validation by click button
     $("#btn-add-news").click(function () {
         const isValidTitle = validateTitle("title", "title-err");
         const isValidCategory = validateCategory("category", "category-err");

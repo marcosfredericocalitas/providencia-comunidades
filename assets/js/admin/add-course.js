@@ -2,7 +2,7 @@ $(document).ready(function () {
     // Set image preview
     setImagePreview("image", "image-preview");
 
-    // Validation by blur (Focusout event)
+    // Validation by focusout event
     const courseValidationFunctions = [
         ["name", "name-err", validateName],
         ["admin", "admin-err", validateAdmin],
@@ -15,7 +15,7 @@ $(document).ready(function () {
         validateByFocusOut(array[0], array[1], array[2]);
     });
 
-    // Validation by click button (Click event)
+    // Validation by click button
     $("#btn-add-course").click(function () {
         const isNameValid = validateName("name", "name-err");
         const isValidAdmin = validateAdmin("admin", "admin-err");

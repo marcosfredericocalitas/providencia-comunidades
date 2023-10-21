@@ -1,4 +1,4 @@
-// Validation by blur (Focusout event)
+// Validation by focusout event
 const validationFunctions = [
     // Add student functions and params
     ["name", "name-err", validateName],
