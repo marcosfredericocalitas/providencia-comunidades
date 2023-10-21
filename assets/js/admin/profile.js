@@ -1,10 +1,11 @@
 $(document).ready(function () {
     // Preview selected image
-    previewImageBySelected("image", "image-preview");
+    setImagePreview("image", "image-preview");
 
     // Validation by blur (Focusout event)
-    const validationsFunctionsProfile = [
+    const profileValidationFunctions = [
         // Add student functions and params
+        ["image", "image-err", validateImage],
         ["name", "name-err", validateName],
         ["email", "email-err", validateEmail],
         ["birthdate", "birthdate-err", validateBirthdate],
@@ -12,26 +13,35 @@ $(document).ready(function () {
         ["phone", "phone-err", validatePhone]
     ];
 
-    validationsFunctionsProfile.forEach((array) => {
-        validateByFocusOut(array[0], array[1], array[2]);
+    profileValidationFunctions.forEach((validation) => {
+        validateByFocusOut(validation[0], validation[1], validation[2]);
     });
 
-    // Update image preview
-    previewImageBySelected("image", "image-preview");
+    $("#btn-edit-image").click(function () {
+        const isImageValid = validateImage("image", "image-err");
 
-    // Validation by click button (Click event)
-    $("#bnt-edit-profile").click(function () {
+        if (!isImageValid) {
+            alert('Erro ao alterar imagem');
+            return false;
+        }
+        alert('Imagem alterada com sucesso');
+        return true;
+    });
+
+
+    $("#btn-edit-profile").click(function () {
         const isNameValid = validateName("name", "name-err");
         const isEmailValid = validateEmail("email", "email-err");
         const isBirthdateValid = validateBirthdate("birthdate", "birthdate-err");
         const isGenderValid = validateGender("gender", "gender-err");
-        const isValidPhone = validatePhone("phone", "phone-err");
+        const isPhoneValid = validatePhone("phone", "phone-err");
 
-        if (!isNameValid || !isEmailValid || !isBirthdateValid || !isGenderValid || !isValidPhone) {
-            alert('Erro ao editar perfil');
+        if (!isNameValid || !isEmailValid || !isBirthdateValid || !isGenderValid || !isPhoneValid) {
+            alert('Erro ao adicioar novo admin');
             return false;
         }
-        alert('Perfil editado com sucesso');
+
+        alert('Admin adicionado com sucesso');
         return true;
-    });
+    })
 });
