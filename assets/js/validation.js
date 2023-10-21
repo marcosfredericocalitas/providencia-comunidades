@@ -2,6 +2,8 @@
 function getInputValue(input, type) {
     let inputId = $("#" + input);
 
+    let value;
+
     switch (type) {
         case "tel":
         case "date":
@@ -9,20 +11,27 @@ function getInputValue(input, type) {
         case "email":
         case "textarea":
         case "password":
-            return $(inputId).val();
+            value = inputId.val();
+            break;
 
         case "select":
-            return $(inputId).find(":selected").val();
+            value = inputId.find(":selected").val();
+            break;
 
         case "radio":
-            return $("input[name='" + input + "']:checked").val();
+            value = $("input[name='" + input + "']:checked").val();
+            break;
 
         case "file":
-            return inputId[0].files[0];
+            value = inputId[0].files[0];
+            break;
 
         default:
-            return false;
+            value = false;
+            break;
     }
+
+    return value;
 }
 
 // Show error message
@@ -63,7 +72,7 @@ function validation(input, type, regex, error, field, message) {
 }
 
 //  Texts validation
-function validateText(input, error, field) {
+function textValidation(input, error, field) {
     return validation(
         input, "text", /^[A-Z][a-z]*/, error, field,
         field + " deve iniciar com uma letra maiúscula"
@@ -79,7 +88,7 @@ function validateByFocusOut(input, error, validate) {
 }
 
 // Selects validation
-function validateSelect(input, error, field) {
+function selectValidation(input, error, field) {
     let selectValue = getInputValue(input, "select");
 
     if (isEmpty(selectValue)) {
@@ -148,7 +157,7 @@ function togglePasswordVisibility(input, button, icon, icon2) {
 /* ------------------------ Calling the functions ------------------------ */
 // Name validation
 function validateName(input, error) {
-    return validateText(input, error, "Nome");
+    return textValidation(input, error, "Nome");
 }
 
 // Email validation
@@ -181,7 +190,7 @@ function validateGender(input, error) {
 
 // Course validation
 function validateCourse(input, error) {
-    return validateSelect(input, error, "Curso");
+    return selectValidation(input, error, "Curso");
 }
 
 // Phone validatiion
@@ -239,31 +248,31 @@ function validatePassword(input, error) {
 //------------------------------------------------------------------------
 // Admin validation
 function validateAdmin(input, error) {
-    return validateSelect(input, error, "Admin");
+    return selectValidation(input, error, "Admin");
 }
 
 // Description validation
 function validateDescription(input, error) {
-    return validateText(input, error, "Descrição");
+    return textValidation(input, error, "Descrição");
 }
 
 // Topics validation
 function validateTopics(input, error) {
-    return validateText(input, error, "Tópicos");
+    return textValidation(input, error, "Tópicos");
 }
 
 //------------------------------------------------------------------------
 // Title validation
 function validateTitle(input, error) {
-    return validateText(input, error, "Título");
+    return textValidation(input, error, "Título");
 }
 // Category validation
 function validateCategory(input, error) {
-    return validateText(input, error, "Categoría")
+    return textValidation(input, error, "Categoría")
 }
 
 function validateDetails(input, error) {
-    return validateText(input, error, "Detalhes");
+    return textValidation(input, error, "Detalhes");
 }
 
 //------------------------------------------------------------------------
