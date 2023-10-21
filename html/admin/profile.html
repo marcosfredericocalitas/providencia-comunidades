@@ -215,7 +215,8 @@
                                         <form action="" enctype="multipart/form-data">
                                             <input type="file" name="" id="image" style="display: none;">
                                             <input type="button" class="btn btn-primary btn-block"
-                                                value="Salvar nova imagem">
+                                                value="Salvar nova imagem" id="btn-edit-image">
+                                            <span class="u-error" id="image-err"></span>
                                         </form>
                                     </div>
                                     <!-- /.card-body -->
@@ -230,8 +231,8 @@
                                                 <label for="name" class="mb-0">Nome</label>
                                             </div>
                                             <div class="col-sm-9 text-secondary">
-                                                <input type="text" name="name" id="name" class="u-input"
-                                                    value="Marcos Frederico Calitas" placeholder="Digite o seu nome">
+                                                <input type="text" name="name" id="name" class="u-input" value=""
+                                                    placeholder="Digite o seu nome">
                                                 <span class="u-error" id="name-err"></span>
                                             </div>
                                         </div>
@@ -240,8 +241,7 @@
                                                 <label for="email" class="mb-0">Email</label>
                                             </div>
                                             <div class="col-sm-9 text-secondary">
-                                                <input type="email" name="email" class="u-input"
-                                                    value="marcosfredericocalitas22@gmail.com"
+                                                <input type="email" name="email" id="email" class="u-input" value=""
                                                     placeholder="email@exemplo.com">
                                                 <span class="u-error" id="email-err"></span>
                                             </div>
@@ -252,7 +252,7 @@
                                             </div>
                                             <div class="col-sm-9 text-secondary">
                                                 <input type="date" name="birthdate" id="birthdate" class="u-input"
-                                                    value="1996-05-10">
+                                                    value="">
                                                 <span class="u-error" id="birthdate-err"></span>
                                             </div>
                                         </div>
@@ -280,8 +280,8 @@
                                                 <label for="phone" class="mb-0">Telefone</label>
                                             </div>
                                             <div class="col-sm-9 text-secondary">
-                                                <input type="tel" name="phone" id="phone" class="u-input"
-                                                    value="940305400" placeholder="123-456-789">
+                                                <input type="tel" name="phone" id="phone" class="u-input" value=""
+                                                    placeholder="123-456-789">
                                                 <span class="u-error" id="phone-err"></span>
                                             </div>
                                         </div>
@@ -289,7 +289,7 @@
                                             <div class="col-sm-3"></div>
                                             <div class="col-sm-9 text-secondary">
                                                 <input type="button" class="btn btn-primary px-4"
-                                                    value="Salvar alterações" id="bnt-edit-profile">
+                                                    value="Salvar alterações" id="btn-edit-profile">
                                             </div>
                                         </div>
                                     </div>
@@ -319,8 +319,7 @@
     <!-- AdminLTE App -->
     <script src="../../assets/js/adminlte.js"></script>
     <script src="../../assets/js/validation.js"></script>
-    <script src="../../assets/js/profile.js"></script>
-
+    <script src="../../assets/js/admin/profile.js"></script>
 </body>
 
 </html>
