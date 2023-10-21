@@ -1,5 +1,5 @@
 // Validation by blur (Focusout event)
-const validationsFunctions = [
+const validationFunctions = [
     // Add student functions and params
     ["name", "name-err", validateName],
     ["email", "email-err", validateEmail],
@@ -15,6 +15,6 @@ const validationsFunctions = [
     ["edit-image", "edit-image-err", validateImage]
 ];
 
-validationsFunctions.forEach((validation) => {
+validationFunctions.forEach((validation) => {
     validateByFocusOut(validation[0], validation[1], validation[2]);
 });
