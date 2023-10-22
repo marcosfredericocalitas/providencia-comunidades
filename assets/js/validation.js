@@ -8,8 +8,10 @@ function getInputValue(input, type) {
         case "date":
         case "text":
         case "email":
+        case "number":
         case "textarea":
         case "password":
+
             value = inputId.val();
             break;
 
@@ -152,6 +154,11 @@ function togglePasswordVisibility(input, button, icon, icon2) {
     });
 }
 
+// Otp code validation
+function codeValidation(input, error, field) {
+    return validation(input, "text", /^\d{6}$/, error, field, "O " + field + " deve ter apenas 6 dígitos")
+}
+
 /* ------------------------ Calling the functions ------------------------ */
 // Name validation
 function validateName(input, error) {
@@ -288,4 +295,10 @@ function validateConfirmPassword(input, error) {
     }
 
     return hideErrorMessage(input, error);
+}
+
+
+//------------------------------------------------------------------------
+function validateOtpCode(input, error) {
+    return codeValidation(input, error, "Código de veriicação")
 }
