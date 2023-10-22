@@ -276,11 +276,13 @@ function validateCategory(input, error) {
     return textValidation(input, error, "Categoría")
 }
 
+// Details validation
 function validateDetails(input, error) {
     return textValidation(input, error, "Detalhes");
 }
 
 //------------------------------------------------------------------------
+// Password validation 
 function validateConfirmPassword(input, error) {
     const passwordInput = input.split("-").pop();
     const password = getInputValue(passwordInput, "password");
@@ -297,8 +299,8 @@ function validateConfirmPassword(input, error) {
     return hideErrorMessage(input, error);
 }
 
-
 //------------------------------------------------------------------------
+// Otp code validation
 function validateOtpCode(input, error) {
     return codeValidation(input, error, "Código de veriicação")
 }
