@@ -121,3 +121,12 @@
     top: 58%;
     right: 10px;
 }
+
+/* Text  */
+.u-title {
+    font-size: 22px;
+    color: var(--black);
+    font-weight:600;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
