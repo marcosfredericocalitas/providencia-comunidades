@@ -4,7 +4,7 @@ $(document).ready(function () {
     // Validation by focusout event
     validateByFocusOut("edit-password", "edit-password-err", validatePassword);
     // Change password visibility
-    togglePasswordVisibility("edit-password", "admin2-btn-eye", "admin2-open-eye-icon", "admin2-close-eye-icon");
+    togglePasswordVisibility("edit-password", "admin2-eye-btn");
 
     // Validation by click button
     $("#btn-edit-admin").click(function () {

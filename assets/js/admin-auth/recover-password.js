@@ -3,6 +3,10 @@ $(document).ready(function () {
     validateByFocusOut("password", "password-err", validatePassword);
     validateByFocusOut("confirm-password", "confirm-password-err", validateConfirmPassword);
 
+    // Change password visibility
+    togglePasswordVisibility("password", "recover-password-eye-btn");
+    togglePasswordVisibility("confirm-password", "recover-password-eye-btn");
+
     // Validation by click button
     $("#btn-recover-password").click(function () {
         const isPasswordValid = validatePassword("password", "password-err");

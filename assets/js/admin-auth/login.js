@@ -3,6 +3,9 @@ $(document).ready(function () {
     validateByFocusOut("email", "email-err", validateEmail);
     validateByFocusOut("password", "password-err", validatePassword);
 
+    // Change password visibility
+    togglePasswordVisibility("password", "admin-eye-btn");
+
     // Validation by click button
     $("#btn-login").click(function () {
         const isEmailValid = validateEmail("email", "email-err");
