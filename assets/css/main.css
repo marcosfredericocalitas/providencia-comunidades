@@ -11,7 +11,10 @@
 }
 
 :root {
+    --red: red;
     --white: #fff;
     --black: #000;
+    --input-error-bg: #fef3f5;
+    --input-border-color: #ced4da;
     --primary-color: #007bff;
 }
