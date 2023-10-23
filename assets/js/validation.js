@@ -11,7 +11,6 @@ function getInputValue(input, type) {
         case "number":
         case "textarea":
         case "password":
-
             value = inputId.val();
             break;
 
@@ -121,7 +120,7 @@ function setImagePreview(input, preview) {
     });
 }
 
-// file Extension validation
+// File Extension validation
 function isValidImageExtension(file, extensions = []) {
     const fileName = file.name;
     const allowedExtensions = extensions;
@@ -271,6 +270,7 @@ function validateTopics(input, error) {
 function validateTitle(input, error) {
     return textValidation(input, error, "Título");
 }
+
 // Category validation
 function validateCategory(input, error) {
     return textValidation(input, error, "Categoría")
