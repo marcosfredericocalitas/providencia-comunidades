@@ -135,11 +135,11 @@ function isValidImageSize(file, size) {
 }
 
 // Change password visibility
-function togglePasswordVisibility(input, button, icon, icon2) {
+function togglePasswordVisibility(input, button) {
     const inputPwd = $("#" + input);
     const butttonToggle = $("#" + button);
-    const iconOpen = $("#" + icon);
-    const iconClose = $("#" + icon2);
+    const iconOpen = $("#open-eye-icon");
+    const iconClose = $("#close-eye-icon");
 
     butttonToggle.click(() => {
         if (inputPwd.attr("type") === "password") {
