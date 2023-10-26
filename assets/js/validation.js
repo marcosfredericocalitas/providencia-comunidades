@@ -304,3 +304,8 @@ function validateConfirmPassword(input, error) {
 function validateOtpCode(input, error) {
     return codeValidation(input, error, "Código de veriicação")
 }
+
+// Send eye button to the bottom
+function SendEyeIconToBottom() {
+    $(".u-form-eye").addClass("is-top");
+}

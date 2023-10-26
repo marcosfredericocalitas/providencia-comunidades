@@ -99,7 +99,6 @@
     background-color: var(--white);
 }
 
-
 /* Images */
 .u-img {
     width: 100%;
@@ -118,15 +117,36 @@
 
 .u-form-eye {
     position: absolute;
-    top: 58%;
+    top: 52%;
     right: 10px;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%);
+}
+
+.u-form-eye:hover {
+    background-color: #eee;;
+}
+
+.u-form-eye.is-top {
+    top: 40%;
 }
 
 /* Text  */
 .u-title {
     font-size: 22px;
     color: var(--black);
-    font-weight:600;
+    font-weight: 600;
     border-bottom: 1px solid #eee;
     padding-bottom: 10px;
 }
