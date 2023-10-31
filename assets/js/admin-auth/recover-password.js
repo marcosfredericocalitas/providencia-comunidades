@@ -7,6 +7,9 @@ $(document).ready(function () {
     togglePasswordVisibility("password", "recover-password-eye-btn");
     togglePasswordVisibility("confirm-password", "recover-password-eye-btn");
 
+    // put the eye icon down
+    putEyeIconToBottom("confirm-password");
+
     // Validation by click button
     $("#btn-recover-password").click(function () {
         const isPasswordValid = validatePassword("password", "password-err");

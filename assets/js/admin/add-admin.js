@@ -6,6 +6,9 @@ $(document).ready(function () {
     // Change password visibility
     togglePasswordVisibility("password", "admin-eye-btn");
 
+    // put the eye icon down
+    putEyeIconToBottom("password");
+
     // Validation by click button
     $("#btn-add-admin").click(function () {
         const isNameValid = validateName("name", "name-err");

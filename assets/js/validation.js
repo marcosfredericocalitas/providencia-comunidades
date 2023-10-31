@@ -305,7 +305,14 @@ function validateOtpCode(input, error) {
     return codeValidation(input, error, "Código de veriicação")
 }
 
-// Send eye button to the bottom
+// put the eye icon down
 function SendEyeIconToBottom() {
     $(".u-form-eye").addClass("is-top");
+}
+
+// put the eye icon down by focus out
+function putEyeIconToBottom(input) {
+    $("#" + input).focusout(function () {
+        SendEyeIconToBottom()
+    });
 }

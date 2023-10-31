@@ -10,6 +10,9 @@ $(document).ready(function () {
     togglePasswordVisibility("password", "eye-btn-password");
     togglePasswordVisibility("confirm-password", "eye-btn-password");
 
+    // put the eye icon down
+    putEyeIconToBottom("confirm-password");
+
     // Validation by click button
     $("#btn-update-password").click(function () {
         const isOldPasswordValid = validatePassword("old-password", "old-password-err");
