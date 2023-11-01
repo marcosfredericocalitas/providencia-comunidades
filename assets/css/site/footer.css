@@ -1,0 +1,27 @@
+.c-footer {
+    width: 100%;
+}
+
+.c-footer-primary {
+    padding: 50px 150px;
+    align-items: baseline;
+    background-color: var(--footer-bg-color);
+}
+
+.c-brand--large {
+    --logo-dimention: 150px;
+    width: var(--logo-dimention);
+    height: var(--logo-dimention);
+}
+
+.c-menu__list--grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.c-menu__icon {
+    font-size: 18px;
+}
+
+.c-menu__icon-s-media {
+    font-size: 20px;
+}
