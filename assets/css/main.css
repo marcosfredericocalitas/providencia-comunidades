@@ -32,6 +32,7 @@
     --navbar-padding: 8px 140px;
     --navbar-padding2: 40px 50px;
     --mobile-padding: 0px 20px;
+    --footer-padding: 50px 150px;
     /* Transition */
     --hover-transition: all 150ms ease-in-out;
     --secondary-transition: all 80ms ease-in-out;
@@ -76,6 +77,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+/* Gap */
+.u-gap-30 {
+    gap: 30px;
+}
+.u-gap-20 {
+    gap: 20px;
+}
+
+.u-gap-10 {
+    gap: 10px;
 }
 
 /* Display grid  */
@@ -178,6 +192,22 @@
     font-weight: 600;
     border-bottom: 1px solid #eee;
     padding-bottom: 10px;
+}
+
+.u-white {
+    color: var(--white);
+}
+
+.u-footer-title {
+    font-size: 24px;
+}
+
+.u-blue-text {
+    transition: var(--hover-transition);
+}
+
+.u-blue-text:hover {
+    color: var(--primary-color);
 }
 
 /* Form eye */
