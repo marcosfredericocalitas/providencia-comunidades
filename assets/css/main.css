@@ -28,9 +28,9 @@
     --input-error-bg: #fef3f5;
     --input-border-color: #ced4da;
     /* Padding */
+    --navbar-padding: 10px 140px;
+    --navbar-padding2: 40px 50px;
     --mobile-padding: 0px 20px;
-    --deskt-top-padding: 0px 140px;
-    --deskt-top-padding2: 0px 50px;
     /* Transition */
     --primary-transition: all 250ms ease-in-out;
     --secondary-transition: all 80ms ease-in-out;
@@ -41,6 +41,7 @@
     --poppins-Source: 'Source Sans 3', 'sans-serif';
 }
 
+/* Body */
 .body-site {
     font-family: var(--nunito-sans-font);
 }
@@ -97,12 +98,6 @@
     -webkit-line-clamp: 2;
 }
 
-.u-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 /* Inputs */
 .u-input {
     display: block;
@@ -154,7 +149,14 @@
 /* Buttons */
 .u-btn {
     border: none;
-    background-color: var(--white);
+    color: var(--white);
+    font-size: 17px;
+    padding: 11px 12px;
+    border-radius: 5px;
+}
+
+.u-btn-primary {
+    background-color: var(--primary-color);
 }
 
 /* Images */
@@ -165,14 +167,16 @@
     border-radius: 100px;
 }
 
-.is-none {
-    display: none;
+/* Text  */
+.u-title {
+    font-size: 22px;
+    color: var(--black);
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
 }
 
-.u-p-relative {
-    position: relative;
-}
-
+/* Form eye */
 .u-form-eye {
     position: absolute;
     top: 52%;
@@ -201,11 +205,11 @@
     top: 40%;
 }
 
-/* Text  */
-.u-title {
-    font-size: 22px;
-    color: var(--black);
-    font-weight: 600;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
+/* Others */
+.is-none {
+    display: none;
+}
+
+.u-p-relative {
+    position: relative;
 }
