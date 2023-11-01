@@ -1,22 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Source Sans 3', sans-serif;
     list-style: none;
     text-decoration: none;
 }
 
 :root {
     --red: red;
-    --white: #fff;
-    --black: #000;
+    --black: #000000;
+    --white: #ffffff;
+    --primary-color: #1088e9;
+    --secundary-color: #003384;
+    --tertiary-color: #dba622;
+    --gray-color: #00000025;
+    --link-gray-color: #00000090;
+    --searth__intup-bg: #00000008;
+    --mobile-btn-color: #00000011;
+    --facebook-color: #3b5998;
+    --whatsapp-color: #25d366;
+    --youtube-color: #ff0000;
+    --footer-bg-color: #14151a;
+    --footer-bg-color2: #000000;
     --input-error-bg: #fef3f5;
     --input-border-color: #ced4da;
-    --primary-color: #007bff;
+    /* Padding */
+    --mobile-padding: 0px 20px;
+    --deskt-top-padding: 0px 140px;
+    --deskt-top-padding2: 0px 50px;
+    /* Transition */
+    --primary-transition: all 250ms ease-in-out;
+    --secondary-transition: all 80ms ease-in-out;
+    --hover-transition: all 150ms ease-in-out;
+    /* Fonts */
+    --nunito-sans-font: 'Nunito Sans', sans-serif;
+    --poppins: 'Poppins', 'sans-serif';
+    --poppins-Source: 'Source Sans 3', 'sans-serif';
+}
+
+.body-site {
+    font-family: var(--nunito-sans-font);
+}
+
+.body-dashboard {
+    font-family: var(--poppins);
+    font-family: var(--poppins-Source);
 }
 
 /* Display flex */
@@ -64,6 +95,12 @@
 
 .u-line-clamp2 {
     -webkit-line-clamp: 2;
+}
+
+.u-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Inputs */
@@ -156,7 +193,8 @@
 }
 
 .u-form-eye:hover {
-    background-color: #eee;;
+    background-color: #eee;
+    ;
 }
 
 .u-form-eye.is-top {
