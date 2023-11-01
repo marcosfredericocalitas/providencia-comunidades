@@ -53,17 +53,15 @@
 
 @media (max-width: 1120px) {
     .c-footer-primary {
+        gap: 100px;
         padding: var(--mobile-footer-primary-padding);
-    }
-
-    .c-footer__secondary {
-        padding: var(--mobile-footer-secundary-padding);
     }
 }
 
 @media (max-width: 675px) {
     .c-footer-primary {
         flex-direction: column;
+        gap: 50px;
     }
 
     .c-brand--large {
@@ -71,10 +69,14 @@
         width: var(--logo-dimention);
         height: var(--logo-dimention);
     }
+
+    .c-footer__secondary {
+        padding: var(--mobile-footer-secundary-padding);
+    }
 }
 
 @media (max-width: 255px) {
-   .c-menu__list--grid {
-    grid-template-columns: 1fr;
-   }
+    .c-menu__list--grid {
+        grid-template-columns: 1fr;
+    }
 }
