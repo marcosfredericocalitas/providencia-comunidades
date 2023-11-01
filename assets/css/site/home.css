@@ -1,0 +1,65 @@
+.c-navbar {
+    padding: var(--navbar-padding);
+    background-color: var(--white);
+    background-color: var(--white);
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.200);
+}
+
+.c-brand {
+    width: 95px;
+    height: 95px;
+}
+
+.c-menu__list {
+    gap: 30px;
+}
+
+.c-menu__link__active {
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+.c-search__input {
+  
+    padding: 9.3px 16px;
+    font-size: 16px;
+    border-radius: 7px 0px 0px 7px;
+    border: 1px solid var(--gray-color);
+    background-color: var(--searth__intup-bg);
+}
+
+.c-search {
+    flex-grow: 0.1;
+}
+
+.c-search__btn {
+    font-size: 18px;
+    padding: 10px 16px;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 0px 7px 7px 0px;
+    transition: var(--hover-transition);
+}
+
+.c-search__btn:hover {
+    background-color: var(--primary-color);
+}
+
+.c-mobile {
+    display: none;
+}
+
+.c-mobile__btn {
+    font-size: 24px;
+    padding: 9.5px 13px;
+    border-radius: 7px;
+    transition: var(--hover-transition);
+}
+
+.c-mobile__btn:hover {
+    background-color: var(--mobile-btn-color);
+}
+
+.c-mobile__icon--none {
+    display: none;
+}
