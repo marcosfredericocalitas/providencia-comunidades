@@ -6,42 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="../../assets/css/main.css">
-    <link rel="stylesheet" href="../../assets/css/">
+    <link rel="stylesheet" href="../../assets/css/site/home.css">
+    <link rel="stylesheet" href="../../assets/css/icons/All/all.min.css ">
 </head>
 
 <body class="body-site">
 
     <header>
-        <div class="c-navbar">
+        <div class="c-navbar u-flex-between">
             <!-- rand -->
             <div class="c-brand" id="menu-logo">
                 <a href="#">
-                    <img src="assets/img/Logitipo.png" alt="" class="u-img c-brand__img">
+                    <img src="../../assets/img/Logitipo-blue.png" alt="Logotipo" class="u-img c-brand__img">
                 </a>
             </div>
 
             <!-- Menu -->
             <nav class="c-menu">
-                <ul class="c-menu__list">
-                    <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
-                    <li class="c-menu__item"><a href="#" class="c-menu__link">Sobre</a></li>
-                    <li class="c-menu__item"><a href="#" class="c-menu__link">Cursos</a></li>
-                    <li class="c-menu__item"><a href="#" class="c-menu__link">Notícias</a></li>
-                    <li class="c-menu__item"><a href="#" class="c-menu__link">Contactos</a></li>
+                <ul class="c-menu__list u-flex-between">
+                    <li class="c-menu__item">
+                        <a href="#" class="c-menu__link c-menu__link__active u-btn u-btn-primary">Home</a>
+                    </li>
+                    <li class="c-menu__item">
+                        <a href="#" class="c-menu__link u-btn u-btn-primary">Sobre</a>
+                    </li>
+                    <li class="c-menu__item">
+                        <a href="#" class="c-menu__link u-btn u-btn-primary">Cursos</a>
+                    </li>
+                    <li class="c-menu__item">
+                        <a href="#" class="c-menu__link u-btn u-btn-primary">Notícias</a>
+                    </li>
+                    <li class="c-menu__item">
+                        <a href="#" class="c-menu__link u-btn u-btn-primary">Contactos</a>
+                    </li>
                 </ul>
             </nav>
 
             <!-- Searth -->
-            <form class="c-search" method="GET" id="menu-searth">
-                <input type="search" name="search-box" id="" class="c-search__input u-input--focus"
-                    placeholder="Pesquisar">
+            <form class="c-search u-flex-center" method="GET" id="menu-searth">
+                <input type="search" name="search-box" id="" class="u-input c-search__input" placeholder="Pesquisar">
                 <button class="u-btn c-search__btn" type="submit">
                     <i class="fa-solid fa-magnifying-glass c-searth__icon"></i>
                 </button>
             </form>
 
             <!-- Mobile -->
-            <div class="c-mobile">
+            <div class="c-mobile u-none">
                 <button class="u-btn c-mobile__btn" id="btn-mobile">
                     <span class="c-mobile__icon"><i class="fa-solid fa-bars"></i></span>
                     <span class="c-mobile__icon c-mobile__icon--none"><i class="fa-solid fa-xmark"></i></span>
