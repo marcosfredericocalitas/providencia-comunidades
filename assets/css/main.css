@@ -19,13 +19,13 @@
     --tertiary-color: #dba622;
     --gray-color: #00000025;
     --link-gray-color: #00000090;
-    --searth__intup-bg: #00000008;
+    --searth-intup-bg: #00000008;
     --mobile-btn-color: #00000011;
     --facebook-color: #3b5998;
     --whatsapp-color: #25d366;
     --youtube-color: #ff0000;
     --footer-bg-color: #14151a;
-    --footer-bg-color2: #000000;
+    --footer2-bg-color: #000000;
     --input-error-bg: #fef3f5;
     --input-border-color: #ced4da;
     /* Padding */
@@ -33,6 +33,7 @@
     --navbar-padding2: 40px 50px;
     --mobile-padding: 0px 20px;
     --footer-padding: 50px 150px;
+    --footer2-padding: 30px 0px;
     /* Transition */
     --hover-transition: all 150ms ease-in-out;
     --secondary-transition: all 80ms ease-in-out;
@@ -78,7 +79,6 @@
     justify-content: space-between;
     align-items: center;
 }
-
 
 /* Gap */
 .u-gap-30 {
@@ -208,6 +208,18 @@
 
 .u-blue-text:hover {
     color: var(--primary-color);
+}
+
+.u-facebook {
+    color: var(--facebook-color);
+}
+
+.u-whatsApp {
+    color: var(--whatsapp-color);
+}
+
+.u-youtube {
+    color: var(--youtube-color);
 }
 
 /* Form eye */
