@@ -87,3 +87,38 @@
 .scroll-top__btn:hover {
     background-color: var(--primary-color);
 }
+
+@media (max-width: 1285px) {
+    .c-navbar {
+        padding: var(--navbar-padding2)
+    }
+
+    .c-brand {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+
+@media (max-width: 1120px) {
+    .c-navbar {
+        padding: var(--mobile-padding)
+    }
+
+    .c-brand {
+        width: 75px;
+        height: 75px;
+    }
+
+    .c-menu__list--mobile {
+        display: none;
+    }
+
+    .c-search--mobile {
+        display: none;
+    }
+
+    .c-mobile {
+        display: flex;
+    }
+}
