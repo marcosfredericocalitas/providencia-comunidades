@@ -25,3 +25,8 @@
 .c-menu__icon-s-media {
     font-size: 20px;
 }
+
+.c-footer__secondary {
+    padding: var(--footer2-padding);
+    background-color: var(--footer2-bg-color);
+}
