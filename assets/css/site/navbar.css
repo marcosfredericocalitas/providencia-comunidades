@@ -16,12 +16,11 @@
 }
 
 .c-search__input {
-  
     padding: 9.3px 16px;
     font-size: 16px;
     border-radius: 7px 0px 0px 7px;
     border: 1px solid var(--gray-color);
-    background-color: var(--searth__intup-bg);
+    background-color: var(--searth-intup-bg);
 }
 
 .c-search {
