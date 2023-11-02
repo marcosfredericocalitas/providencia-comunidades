@@ -40,6 +40,10 @@
     background-color: var(--primary-color);
 }
 
+.c-mobile {
+    display: none;
+}
+
 .c-mobile__btn {
     font-size: 24px;
     padding: 10px 12px;
@@ -102,16 +106,24 @@
     }
 
     .c-brand {
-        width: 75px;
-        height: 75px;
+        width: 70px;
+        height: 70px;
     }
 
-    .c-menu__list--mobile {
+    .c-menu--mobile {
         display: none;
+    }
+
+    .c-menu--mobile.is-flex {
+        display: flex;
     }
 
     .c-search--mobile {
         display: none;
+    }
+
+    .c-search--mobile.is-flex {
+        display: flex;
     }
 
     .c-mobile {
