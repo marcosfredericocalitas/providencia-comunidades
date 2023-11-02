@@ -1,4 +1,4 @@
-const addClasses = [
+const addClassesByScroll = [
     { button: "btn-mobile", domElement: "menu-mobile", className: "is-block" },
     { button: "btn-mobile", domElement: "menu-searth", className: "is-block" },
     { button: "btn-mobile", domElement: "icon-menu-mobile-open", className: "is-none" },
@@ -6,6 +6,6 @@ const addClasses = [
     { button: "btn-mobile", domElement: "menu-mobile-wrapper", className: "is-flex" }
 ];
 
-for (let addClass of addClasses) {
-    addClassByClick(addClass.button, addClass.domElement, addClass.className);
+for (let addClassOnClick of addClassesByScroll) {
+    addClassByClick(addClassOnClick.button, addClassOnClick.domElement, addClassOnClick.className);
 }
