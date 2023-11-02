@@ -18,7 +18,7 @@ function addClassByScroll(element, className, time) {
 
 }
 
-function addClassOnScrollEvent(element, classList, time) {
+function addClassOnScrollListener(element, classList, time) {
     window.addEventListener("scroll", () => {
         addClassByScroll(element, classList, time);
     });

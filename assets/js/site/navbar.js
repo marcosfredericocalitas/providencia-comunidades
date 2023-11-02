@@ -19,5 +19,5 @@ const classesToAddByScroll = [
 
 // Add classes on window scroll
 for (let classToAddByScroll of classesToAddByScroll) {
-    addClassOnScrollEvent(classToAddByScroll.element, classToAddByScroll.className, classToAddByScroll.time);
+    addClassOnScrollListener(classToAddByScroll.element, classToAddByScroll.className, classToAddByScroll.time);
 }
