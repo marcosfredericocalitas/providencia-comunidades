@@ -76,35 +76,6 @@
     display: none;
 }
 
-/* Scroll top button */
-.scroll-top {
-    position: fixed;
-    bottom: 50px;
-    right: 40px;
-}
-
-.scroll-top__btn.is-visible {
-    visibility: visible;
-    opacity: 1;
-}
-
-.scroll-top__btn {
-    font-size: 21px;
-    border-radius: 100px;
-    --btn-dimention: 60px;
-    width: var(--btn-dimention);
-    height: var(--btn-dimention);
-    background-color: var(--btn-scrol-bg);
-    transition: var(--hover-transition);
-    /* opacity: 0;
-    visibility: hidden; */
-    transition: all 300ms ease-in-out;
-}
-
-.scroll-top__btn:hover {
-    background-color: var(--primary-color);
-}
-
 @media (max-width: 1285px) {
     .c-navbar {
         padding: var(--navbar-padding2)
