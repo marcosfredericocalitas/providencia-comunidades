@@ -15,7 +15,6 @@ function addClassByScroll(element, className, time) {
     const elementId = document.getElementById(element);
 
     elementId.classList.toggle(className, shouldAddClass);
-
 }
 
 function addClassOnScrollListener(element, classList, time) {
