@@ -8,4 +8,3 @@ const addClasses = [
 for (let addClass of addClasses) {
     addClassByClick(addClass.button, addClass.domElement, addClass.className);
 }
-
