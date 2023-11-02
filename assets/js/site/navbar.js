@@ -9,15 +9,24 @@ const classesToAddOnClick = [
 
 // Add classes on button click
 for (let classToAddOnClick of classesToAddOnClick) {
-    addClassByClick(classToAddOnClick.button, classToAddOnClick.element, classToAddOnClick.className);
+    addClassByClick(
+        classToAddOnClick.button,
+        classToAddOnClick.element,
+        classToAddOnClick.className
+    );
 }
 
 // Array of classes to be added on window scroll
 const classesToAddByScroll = [
-    { element: "navbar", className: "is-fixed", time: 100 }
+    { element: "navbar", className: "is-fixed", time: 100 },
+    { element: "btn-scroll-top", className: "is-visible", time: 200 }
 ];
 
 // Add classes on window scroll
 for (let classToAddByScroll of classesToAddByScroll) {
-    addClassOnScrollListener(classToAddByScroll.element, classToAddByScroll.className, classToAddByScroll.time);
+    addClassOnScrollListener(
+        classToAddByScroll.element,
+        classToAddByScroll.className,
+        classToAddByScroll.time
+    );
 }
