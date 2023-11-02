@@ -1,5 +1,5 @@
 // Add class by button click
-const addClassesByClick = [
+const classesToAddOnClick = [
     { button: "btn-mobile", element: "menu-mobile", className: "is-block" },
     { button: "btn-mobile", element: "menu-searth", className: "is-block" },
     { button: "btn-mobile", element: "icon-menu-mobile-open", className: "is-none" },
@@ -7,15 +7,15 @@ const addClassesByClick = [
     { button: "btn-mobile", element: "menu-mobile-wrapper", className: "is-flex" }
 ];
 
-for (let addClassOnClick of addClassesByClick) {
-    addClassByClick(addClassOnClick.button, addClassOnClick.element, addClassOnClick.className);
+for (let classToAddOnClick of classesToAddOnClick) {
+    addClassByClick(classToAddOnClick.button, classToAddOnClick.element, classToAddOnClick.className);
 }
 
 // Add class by window scroll
-const addClassesByScroll = [
+const classesToAddByScroll = [
     { element: "navbar", className: "is-fixed", time: 100 }
 ];
 
-for (let addClassOnScroll of addClassesByScroll) {
-    addClassOnScrollEvent(addClassOnScroll.element, addClassOnScroll.className, addClassOnScroll.time);
+for (let classToAddByScroll of classesToAddByScroll) {
+    addClassOnScrollEvent(classToAddByScroll.element, classToAddByScroll.className, classToAddByScroll.time);
 }
