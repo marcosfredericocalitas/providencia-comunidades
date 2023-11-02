@@ -1,9 +1,9 @@
 // Add class by click
-function addClassByClick(buttonId, elementId, className) {
-    const button = document.getElementById(buttonId);
-    const domElement = document.getElementById(elementId);
+function addClassByClick(button, domElement, className) {
+    const buttonId = document.getElementById(button);
+    const elementId = document.getElementById(domElement);
 
-    button.addEventListener("click", () => {
-        domElement.classList.toggle(className);
+    buttonId.addEventListener("click", () => {
+        elementId.classList.toggle(className);
     });
 }
