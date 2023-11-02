@@ -114,6 +114,10 @@
     .c-navbar {
         padding: var(--mobile-padding);
         border-bottom: var(--bottom-navba-border);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
     }
 
     .c-brand {
@@ -132,16 +136,21 @@
         z-index: 1;
     }
 
-    .c-menu--mobile.is-flex {
+    .c-menu--mobile.is-block {
         display: block;
     }
 
     .c-menu__list--mobile {
+        display: none;
         width: 100%;
         flex-direction: column;
         padding: 20px;
         animation: var(--moblie-menu-animation);
         gap: 22px;
+    }
+
+    .c-menu__list--mobile.is-flex {
+        display: flex;
     }
 
     .c-menu__item-wth100 {
@@ -169,7 +178,7 @@
         z-index: 1;
     }
 
-    .c-search--mobile.is-flex {
+    .c-search--mobile.is-block {
         display: flex;
     }
 
