@@ -17,7 +17,7 @@ function addClassByScroll(element, className, time) {
     elementId.classList.toggle(className, shouldAddClass);
 }
 
-// Remove classes when resizing the screen
+// Remove classes
 function removeClassBy(element, classNam) {
     const windowWidth = window.innerWidth;
     const elementId = document.getElementById(element);
