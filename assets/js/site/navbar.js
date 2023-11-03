@@ -31,9 +31,22 @@ window.addEventListener("scroll", () => {
             classToAddByScroll.element,
             classToAddByScroll.className,
             classToAddByScroll.time
-        )
+        );
     };
 });
+
+// Remove class by event
+function removeClassByEvent(event) {
+    window.addEventListener(event, () => {
+        for (let i = 0; i < 4; i++) {
+            classToRemoveByResize = classesToAddByScroll[i];
+            removeClassBy(classToRemoveByResize.element, classToRemoveByResize.className);
+        }
+    });
+}
+
+removeClassByEvent("resize");
+removeClassByEvent("scroll");
 
 //Scroll the window to the top by button click
 function scrollToTop() {
