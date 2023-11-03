@@ -34,3 +34,14 @@ window.addEventListener("scroll", () => {
         )
     };
 });
+
+//Scroll the window to the top by button click
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
+
+const scrollTopBtn = document.getElementById("btn-scroll-top");
+scrollTopBtn.addEventListener("click", scrollToTop);
