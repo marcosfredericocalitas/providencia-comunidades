@@ -10,8 +10,8 @@ function addClassByClick(button, element, className) {
 
 // Add a class on window scroll
 function addClassByScroll(element, className, time) {
-    let windowScroll = window.scrollY;
-    let shouldAddClass = windowScroll > time;
+    const windowScroll = window.scrollY;
+    const shouldAddClass = windowScroll > time;
     const elementId = document.getElementById(element);
 
     elementId.classList.toggle(className, shouldAddClass);
