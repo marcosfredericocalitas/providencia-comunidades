@@ -29,17 +29,17 @@
     --footer2-bg-color: #000000;
     --input-error-bg: #fef3f5;
     --input-border-color: #ced4da;
-    /* Padding */
-    --navbar-padding: 8px 140px;
-    --navbar-padding2: 5px 50px;
-    --mobile-padding: 8px 20px;
-    --navbar-padding-fixed: 8px 140px;
-    --footer-primary-padding: 50px 150px;
-    --footer-secundary-padding: 30px 0px;
-    --footer-primary-padding2: 50px 50px;
-    --footer-secundary-padding2: 30px 0px;
-    --mobile-footer-primary-padding: 50px 20px;
-    --mobile-footer-secundary-padding: 30px 20px;
+    /* Navbar padding top and bottom */
+    --primary-padding-t-b: 8px;
+    --secundary-padding-t-b: 5px;
+    --mobile-padding-t-b: 8px;
+    /* Navbar padding left and rigth */
+    --primary-padding-l-r: 140px;
+    --secundary-padding-l-r: 50px;
+    --mobile-padding-l-r: 20px;
+    /* Footer padding top and bottom */
+    --primary-footer-padding-t-b: 50px;
+    --secundary-footer-padding-t-b: 30px 20px;
     /* Transition */
     --hover-transition: all 150ms ease-in-out;
     --secondary-transition: all 80ms ease-in-out;
