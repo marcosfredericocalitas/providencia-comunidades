@@ -6,26 +6,28 @@
 
 /* Navbar */
 .c-navbar {
+    width: 100%;
     padding: var(--navbar-padding);
     background-color: var(--white);
-    background-color: var(--white);
-    width: 100%;
-    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.200);
     transition: var(--navbar-transition);
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.200);
 }
 
 .c-navbar.is-fixed {
     position: fixed;
-    top: -100%;
+    top: -100px;
+    visibility: hidden;
     opacity: 0;
     padding: var(--navbar-padding-fixed);
-    /* border-bottom: var(--bottom-navba-border); */
+    overflow: hidden;
     z-index: 2;
 }
 
 .c-navbar.is-visible {
     top: 0;
+    visibility: visible;
     opacity: 1;
+    overflow: visible;
 }
 
 .c-brand {
@@ -207,6 +209,5 @@
 }
 
 .main-content.is-stopped {
-    position: relative;
     margin-top: 200px;
 }
