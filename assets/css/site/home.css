@@ -1,0 +1,38 @@
+.company {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    padding: 0 var(--primary-padding-l-r);
+}
+
+.company__title {
+    font-size: 50px;
+}
+
+.company__btn {
+    flex: 0 0 auto;
+    width: 150px;
+    text-align: center;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider__wrapper {
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+
+.slider__radio {
+    display: none;
+}
+
+.slider__content {
+    filter: brightness(0.4);
+}
