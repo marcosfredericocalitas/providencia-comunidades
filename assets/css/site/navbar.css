@@ -24,6 +24,10 @@
 
 .c-menu__link--navbar {
     font-size: 18px;
+    padding: 11px 17px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: var(--hover-transition);
 }
 
 .c-menu__link--navbar:hover {
@@ -76,7 +80,7 @@
 
 .c-search__btn {
     font-size: 18px;
-    padding: 10px 16px;
+    padding: 11.5px 18px;
     color: var(--white);
     background-color: var(--black);
     border-radius: 0px 7px 7px 0px;
