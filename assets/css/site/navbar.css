@@ -202,11 +202,3 @@
     }
 }
 
-/* Main */
-.main-content {
-    padding: 20px 140px;
-}
-
-.main-content.is-stopped {
-    margin-top: 200px;
-}

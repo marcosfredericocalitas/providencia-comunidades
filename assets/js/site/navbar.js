@@ -21,7 +21,6 @@ const classesToAddByScroll = [
     { element: "navbar", className: "is-fixed", time: 300 },
     { element: "navbar", className: "is-visible", time: 400 },
     { element: "menu-logo", className: "is-small", time: 300 },
-    { element: "main-content-m", className: "is-stopped", time: 300 },
     { element: "btn-scroll-top", className: "is-visible", time: 400 }
 ]
 // Add classes on window scroll
