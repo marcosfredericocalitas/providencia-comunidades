@@ -23,6 +23,7 @@ const classesToAddByScroll = [
     { element: "menu-logo", className: "is-small", time: 300 },
     { element: "btn-scroll-top", className: "is-visible", time: 400 }
 ]
+
 // Add classes on window scroll
 window.addEventListener("scroll", () => {
     for (let classToAddByScroll of classesToAddByScroll) {
