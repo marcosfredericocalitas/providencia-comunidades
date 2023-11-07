@@ -295,3 +295,7 @@
 .u-p-relative {
     position: relative;
 }
+
+.u-p-absolute {
+    position: absolute;
+}
