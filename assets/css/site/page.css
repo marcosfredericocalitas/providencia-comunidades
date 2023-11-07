@@ -1,0 +1,25 @@
+.header__wrapper {
+    width: 100%;
+    height: 480px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../img/test-img-4.jpg');
+}
+
+.page {
+    top: calc(100vh - 460px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-40%);
+    z-index: 1;
+    text-align: center;
+}
+
+.page__title {
+    font-size: 45px;
+}
+
+.page__details {
+    color: #ffffff90;
+}
