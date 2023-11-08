@@ -8,7 +8,7 @@
 .c-footer-primary {
     align-items: baseline;
     padding: var(--primary-footer-padding-t-b) var(--primary-padding-l-r);
-    background-color: var(--footer-bg-color);
+    background-color: var(--primary-footer-bg);
 }
 
 .c-brand--large {
@@ -16,7 +16,6 @@
     width: var(--logo-dimention);
     height: var(--logo-dimention);
 }
-
 
 .c-menu__icon {
     font-size: 18px;
@@ -28,7 +27,7 @@
 
 .c-footer__secondary {
     padding: var(--secundary-footer-padding-t-b);
-    background-color: var(--footer2-bg-color);
+    background-color: var(--secundary-footer-bg);
 }
 
 @media (max-width: 1285px) {
@@ -51,7 +50,6 @@
         padding: var(--primary-footer-padding-t-b) var(--mobile-padding-l-r);
         gap: 50px;
     }
-
 }
 
 @media (max-width: 675px) {

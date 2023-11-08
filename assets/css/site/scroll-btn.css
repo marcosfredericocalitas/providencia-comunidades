@@ -7,12 +7,13 @@
 }
 
 .scroll__btn {
+    --btn-dimention: 60px;
+    --btn-scroll-bg: #00000080;
     font-size: 21px;
     border-radius: 100px;
-    --btn-dimention: 60px;
     width: var(--btn-dimention);
     height: var(--btn-dimention);
-    background-color: var(--btn-scrol-bg);
+    background-color: var(--btn-scroll-bg);
     opacity: 0;
     visibility: hidden;
     transition: var(--hover-transition);
