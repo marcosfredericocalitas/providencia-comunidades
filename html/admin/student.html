@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/main-.css">
     <link rel="stylesheet" href="../../assets/css/dashboard/table.css">
     <link rel="stylesheet" href="../../assets/css/dashboard/alerts.css">
 </head>
@@ -406,20 +407,20 @@
                                     <div class="modal-body modal-body-add u-grid">
                                         <div class="form-group">
                                             <label for="name">Nome</label>
-                                            <input type="text" name="name" id="name" class="u-input"
+                                            <input type="text" name="name" id="name" class="c-input"
                                                 placeholder="Digite o seu nome">
-                                            <span class="u-error" id="name-err"></span>
+                                            <span class="c-input-error" id="name-err"></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="email">Email</label>
-                                            <input type="email" name="email" id="email" class="u-input"
+                                            <input type="email" name="email" id="email" class="c-input"
                                                 placeholder="email@exemplo.com">
-                                            <span class="u-error" id="email-err"></span>
+                                            <span class="c-input-error" id="email-err"></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="birthdate">Data de nascimento</label>
-                                            <input type="date" name="birthdate" id="birthdate" class="u-input">
-                                            <span class="u-error" id="birthdate-err"></span>
+                                            <input type="date" name="birthdate" id="birthdate" class="c-input">
+                                            <span class="c-input-error" id="birthdate-err"></span>
                                         </div>
                                         <div class="form-group">
                                             <label>Sexo</label>
@@ -433,29 +434,29 @@
                                                     <input type="radio" name="gender" id="feminine" value="Feminino">
                                                 </div>
                                             </div>
-                                            <span class="u-error" id="gender-err"></span>
+                                            <span class="c-input-error" id="gender-err"></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="course">Curso</label>
-                                            <select name="course" id="course" class="u-input">
+                                            <select name="course" id="course" class="c-input">
                                                 <option value="" selected>Selecione o curso</option>
                                                 <option value="1">Programação web</option>
                                                 <option value="4">Programação Front-end</option>
                                                 <option value="6">Programação back-end</option>
                                                 <option value="3">Programação mobile</option>
                                             </select>
-                                            <span class="u-error" id="course-err"></span>
+                                            <span class="c-input-error" id="course-err"></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="phone">Telefone</label>
-                                            <input type="tel" name="phone" id="phone" class="u-input" maxlength="9"
+                                            <input type="tel" name="phone" id="phone" class="c-input" maxlength="9"
                                                 placeholder="123-456-789">
-                                            <span class="u-error" id="phone-err"></span>
+                                            <span class="c-input-error" id="phone-err"></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="image">Imagem </label>
                                             <input type="file" name="image" id="image">
-                                            <span class="u-error" id="image-err"></span>
+                                            <span class="c-input-error" id="image-err"></span>
                                         </div>
                                         <div class="form-image">
                                             <img src="../../assets/img/profile-pic.png" alt="Preview da imagem"
@@ -465,8 +466,8 @@
                                     <div class="modal-footer">
                                         <input type="button" class="btn btn-default" data-dismiss="modal"
                                             value="Cancelar">
-                                        <input type="button" onclick="SendEyeIconToBottom();" class="btn btn-success" value="Adicionar"
-                                            id="btn-add-student">
+                                        <input type="button" onclick="SendEyeIconToBottom();" class="btn btn-success"
+                                            value="Adicionar" id="btn-add-student">
                                     </div>
                                 </form>
                             </div>
@@ -485,21 +486,21 @@
                                     <div class="modal-body modal-body-add u-grid">
                                         <div class="form-group">
                                             <label for="edit-name">Nome</label>
-                                            <input type="text" name="edit-name" id="edit-name" class="u-input"
+                                            <input type="text" name="edit-name" id="edit-name" class="c-input"
                                                 placeholder="Digite o seu nome">
-                                            <span class="u-error" id="edit-name-err"></span>
+                                            <span class="c-input-error" id="edit-name-err"></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="edit-email">Email</label>
-                                            <input type="email" name="edit-email" id="edit-email" class="u-input"
+                                            <input type="email" name="edit-email" id="edit-email" class="c-input"
                                                 placeholder="email@exemplo.com">
-                                            <span class="u-error" id="edit-email-err"></span>
+                                            <span class="c-input-error" id="edit-email-err"></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="edit-birthdate">Data de nascimento</label>
                                             <input type="date" name="edit-birthdate" id="edit-birthdate"
-                                                class="u-input">
-                                            <span class="u-error" id="edit-birthdate-err"></span>
+                                                class="c-input">
+                                            <span class="c-input-error" id="edit-birthdate-err"></span>
                                         </div>
                                         <div class="form-group">
                                             <label>Sexo</label>
@@ -515,29 +516,29 @@
                                                         value="Feminino">
                                                 </div>
                                             </div>
-                                            <span class="u-error" id="edit-gender-err"></span>
+                                            <span class="c-input-error" id="edit-gender-err"></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="edit-course">Curso</label>
-                                            <select name="edit-course" id="edit-course" class="u-input">
+                                            <select name="edit-course" id="edit-course" class="c-input">
                                                 <option value="" selected>Selecione o curso</option>
                                                 <option value="1">Programação web</option>
                                                 <option value="4">Programação Front-end</option>
                                                 <option value="6">Programação back-end</option>
                                                 <option value="3">Programação mobile</option>
                                             </select>
-                                            <span class="u-error" id="edit-course-err"></span>
+                                            <span class="c-input-error" id="edit-course-err"></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="edit-phone">Telefone</label>
-                                            <input type="tel" name="edit-phone" id="edit-phone" class="u-input"
+                                            <input type="tel" name="edit-phone" id="edit-phone" class="c-input"
                                                 maxlength="9" placeholder="123-456-789">
-                                            <span class="u-error" id="edit-phone-err"></span>
+                                            <span class="c-input-error" id="edit-phone-err"></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="edit-image">Imagem </label>
                                             <input type="file" name="edit-image" id="edit-image">
-                                            <span class="u-error" id="edit-image-err"></span>
+                                            <span class="c-input-error" id="edit-image-err"></span>
                                         </div>
                                         <div class="form-image">
                                             <img src="../../assets/img/profile-pic.png" alt="Preview da imagem"
@@ -547,8 +548,8 @@
                                     <div class="modal-footer">
                                         <input type="button" class="btn btn-default" data-dismiss="modal"
                                             value="Cancelar">
-                                        <input type="button" onclick="SendEyeIconToBottom();" class="btn btn-success" value="Editar"
-                                            id="btn-edit-student">
+                                        <input type="button" onclick="SendEyeIconToBottom();" class="btn btn-success"
+                                            value="Editar" id="btn-edit-student">
                                     </div>
                                 </form>
                             </div>
