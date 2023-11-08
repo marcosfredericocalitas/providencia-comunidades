@@ -17,9 +17,6 @@
     height: var(--logo-dimention);
 }
 
-.c-menu__list--grid {
-    grid-template-columns: repeat(2, 1fr);
-}
 
 .c-menu__icon {
     font-size: 18px;
