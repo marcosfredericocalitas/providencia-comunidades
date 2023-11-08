@@ -22,14 +22,6 @@
     z-index: 2;
 }
 
-.c-menu__link--navbar {
-    font-size: 18px;
-    padding: 11px 17px;
-    border-radius: 5px;
-    font-weight: 500;
-    transition: var(--hover-transition);
-}
-
 .c-menu__link--navbar:hover {
     color: var(--white);
     background-color: var(--primary-color);
