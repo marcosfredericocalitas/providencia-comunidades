@@ -307,7 +307,7 @@ function validateOtpCode(input, error) {
 
 // put the eye icon down
 function SendEyeIconToBottom() {
-    $(".u-form-eye").addClass("is-top");
+    $(".c-eye-icon").addClass("is-top");
 }
 
 // put the eye icon down by focus out
