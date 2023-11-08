@@ -3,3 +3,11 @@
     border-color: #e8e8e8;
     color: rgba(52, 58, 64, .8);
 }
+
+.page-title {
+    font-size: 22px;
+    color: var(--black);
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
