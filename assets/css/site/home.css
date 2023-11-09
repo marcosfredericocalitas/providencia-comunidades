@@ -54,10 +54,21 @@
     width: 14px;
     height: 14px;
     border-radius: 100px;
+    transition: var(--hover-transition);
 }
 
 .nav-radio__btn {
-    background-color: rgba(255, 255, 255, 0.300);
+    background-color: #ffffff33;
+}
+
+.nav-radio__btn--bg:hover {
+    background-color: var(--white);
+}
+
+/* Navegation manual */
+#radio-1:checked~body {
+    background-color: var(--white);
+    background-color: red;
 }
 
 /* Slider control */
