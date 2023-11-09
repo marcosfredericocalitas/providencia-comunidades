@@ -173,11 +173,6 @@
     transition: var(--hover-transition);
 }
 
-.c-btn--transparent {
-    border: none;
-    background-color: transparent;
-}
-
 .c-btn--primary {
     font-weight: 500;
 }
@@ -189,6 +184,7 @@
 
 .c-btn--secundary {
     font-weight: bolder;
+    padding: 14px 35px;
     border: 2px solid var(--primary-color);
     background-color: var(--primary-color);
 }
@@ -198,9 +194,18 @@
     background-color: transparent;
 }
 
+.c-btn--transparent {
+    border: none;
+    background-color: transparent;
+}
+
 .c-btn.is-active {
     color: var(--white);
     background-color: var(--primary-color);
+}
+
+.c-btn--aline-start {
+    align-self: flex-start;
 }
 
 .c-img {
