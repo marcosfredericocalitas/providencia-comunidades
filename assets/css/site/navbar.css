@@ -49,7 +49,7 @@
 
 /* Search */
 .c-search {
-    flex-grow: 0.9;
+    flex-grow: 0.1;
 }
 
 .c-search__input {
