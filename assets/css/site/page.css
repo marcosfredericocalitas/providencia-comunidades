@@ -8,18 +8,36 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../img/test-img-4.jpg');
 }
 
-.page {
-    top: calc(100vh - 460px);
-    left: 50%;
-    transform: translateX(-50%) translateY(-40%);
-    z-index: 1;
+.c-page {
+    position: absolute;
+    top: 40%;
     text-align: center;
+    transform: translateY(-50%);
+    padding: var(--primary-padding-t-b) var(--primary-padding-l-r);
 }
 
-.page__title {
+.c-page__title {
     font-size: 45px;
 }
 
-.page__details {
+.c-page__details {
     color: #ffffffb0;
+}
+
+/* Responsivity */
+@media (max-width: 1285px) {
+    .c-page {
+        padding: var(--secundary-padding-t-b) var(--secundary-padding-l-r);
+    }
+}
+
+@media (max-width: 1120px) {
+    .c-page {
+        padding: var(--mobile-padding-t-b) var(--mobile-padding-l-r);
+    }
+
+    .c-page__title {
+        font-size: 35px;
+    }
+
 }
