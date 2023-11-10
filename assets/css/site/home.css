@@ -43,32 +43,23 @@
 }
 
 /* Navegation buttons */
-.nav-radio {
+.navegation {
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.nav-radio__btn {
+.navegation__btn {
     position: relative;
     width: 14px;
     height: 14px;
     border-radius: 100px;
+    background-color: #ffffff33;
     transition: var(--hover-transition);
 }
 
-.nav-radio__btn {
-    background-color: #ffffff33;
-}
-
-.nav-radio__btn--bg:hover {
+.navegation__btn:hover {
     background-color: var(--white);
-}
-
-/* Navegation manual */
-#radio-1:checked~body {
-    background-color: var(--white);
-    background-color: red;
 }
 
 /* Slider control */
