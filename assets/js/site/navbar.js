@@ -59,6 +59,7 @@ function scrollToTop() {
 const scrollTopBtn = document.getElementById("btn-scroll-top");
 scrollTopBtn.addEventListener("click", scrollToTop);
 
+// Next image 
 function nextImage() {
     let counter = 1;
     const btnRadio = document.getElementById("radio-1").checked = true;
