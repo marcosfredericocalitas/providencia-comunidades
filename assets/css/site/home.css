@@ -122,3 +122,54 @@
 .slider__control--next {
     right: var(--arrow-align);
 }
+
+/* Responsiviety */
+@media (max-width: 1285px) {
+    .company {
+        padding: var(--secundary-padding-t-b) var(--secundary-padding-l-r);
+    }
+
+    .slider__control {
+        display: none;
+    }
+}
+
+@media (max-width: 1120px) {
+    .company {
+        transform: translateY(-60%);
+        padding: var(--mobile-padding-t-b) var(--mobile-padding-l-r);
+    }
+
+    .company__title {
+        font-size: 45px;
+    }
+
+    .company__btn {
+        padding: 12px 18px;
+    }
+}
+
+@media (max-width: 720px) {
+    .company__title {
+        font-size: 35px;
+    }
+
+    .navegation__btn {
+        width: 13px;
+        height: 13px;
+    }
+}
+
+@media (max-width: 465px) {
+    .company__title {
+        font-size: 30px;
+    }
+
+    .company__slogan {
+        font-size: 14px;
+    }
+
+    .company__btn {
+        padding: 10px 16px;
+    }
+}
