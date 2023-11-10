@@ -1,6 +1,6 @@
 :root {
     --arrow-align: 40px;
-    --slider-transition: all 300ms ease-in-out;
+    --slider-transition: all 500ms ease-in-out;
 }
 
 .company {
@@ -60,6 +60,38 @@
 
 .navegation__btn:hover {
     background-color: var(--white);
+}
+
+.radio-btn--1:checked~.slider__item--1 {
+    margin-left: 0;
+}
+
+.radio-btn--2:checked~.slider__item--1 {
+    margin-left: -100%;
+}
+
+.radio-btn--3:checked~.slider__item--1 {
+    margin-left: -200%;
+}
+
+.radio-btn--4:checked~.slider__item--1 {
+    margin-left: -300%;
+}
+
+.radio-btn--1:checked~.navegation .navegation__btn--1 {
+    background-color: rgb(255, 255, 255);
+}
+
+.radio-btn--2:checked~.navegation .navegation__btn--2 {
+    background-color: rgb(255, 255, 255);
+}
+
+.radio-btn--3:checked~.navegation .navegation__btn--3 {
+    background-color: rgb(255, 255, 255);
+}
+
+.radio-btn--4:checked~.navegation .navegation__btn--4 {
+    background-color: rgb(255, 255, 255);
 }
 
 /* Slider control */
