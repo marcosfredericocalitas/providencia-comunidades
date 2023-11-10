@@ -70,7 +70,7 @@ function nextImage() {
             counter = 1;
         }
         btnRadio = document.getElementById("radio-" + counter).checked = true;
-    }, 3500);
+    }, 4000);
 }
 
 nextImage();
