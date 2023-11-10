@@ -17,7 +17,7 @@
     --primary-color: #1088e9;
     --primary-color-hover: #0c70c2;
     --secundary-color: #003384;
-    --tertiary-color: #dba622;
+    --tertiary-color: #ffc83b;
     --facebook-color: #3b5998;
     --whatsapp-color: #25d366;
     --youtube-color: #ff0000;
@@ -55,6 +55,7 @@
 }
 
 /* -- Base -- */
+/* Text color */
 .b-txt-white {
     color: var(--white);
 }
@@ -63,16 +64,21 @@
     color: var(--black);
 }
 
-.b-txt-24 {
-    font-size: 24px;
-}
-
 .b-txt-blue {
     transition: var(--hover-transition);
 }
 
 .b-txt-blue:hover {
     color: var(--primary-color);
+}
+
+.b-txt-gold {
+    background: linear-gradient(to right, #ffad00, #ffbe25, #ffe081, #ffbe25, #ffad00);
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .b-facebook {
@@ -85,6 +91,11 @@
 
 .b-youtube {
     color: var(--youtube-color);
+}
+
+/* Text size */
+.b-txt-24 {
+    font-size: 24px;
 }
 
 /* -- Components -- */
