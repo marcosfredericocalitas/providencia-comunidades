@@ -58,3 +58,18 @@ function scrollToTop() {
 
 const scrollTopBtn = document.getElementById("btn-scroll-top");
 scrollTopBtn.addEventListener("click", scrollToTop);
+
+function nextImage() {
+    let counter = 1;
+    const btnRadio = document.getElementById("radio-1").checked = true;
+
+    setInterval(() => {
+        counter++;
+        if (counter > 4) {
+            counter = 1;
+        }
+        btnRadio = document.getElementById("radio-" + counter).checked = true;
+    }, 3500);
+}
+
+nextImage();
