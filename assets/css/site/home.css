@@ -25,19 +25,20 @@
 /* Slider  */
 .slider {
     position: relative;
-    max-width: 100%;
+    width: 100%;
     height: calc(100vh - 108px);
     overflow: hidden;
 }
 
 .slider__wrapper {
     display: flex;
-    transition: var(--slider-transition);
+    width: 400%;
+    height: 100%;
 }
 
 .slider__item {
-    flex: 0 0 100%;
-    max-width: 100%;
+    width: 25%;
+    height: 100%;
     filter: brightness(0.5);
     transition: var(--slider-transition);
 }
@@ -67,15 +68,15 @@
 }
 
 .radio-btn--2:checked~.slider__item--1 {
-    margin-left: -100%;
+    margin-left: -25%;
 }
 
 .radio-btn--3:checked~.slider__item--1 {
-    margin-left: -200%;
+    margin-left: -50%;
 }
 
 .radio-btn--4:checked~.slider__item--1 {
-    margin-left: -300%;
+    margin-left: -75%;
 }
 
 .radio-btn--1:checked~.navegation .navegation__btn--1 {
