@@ -96,7 +96,7 @@
 /* Responsivity */
 @media (max-width: 1320px) {
     .c-navbar {
-        padding: var(--secundary-padding-t-b) var(--secundary-padding-l-r);
+        padding: var(--primary-padding-t-b) var(--secundary-padding-l-r);
     }
 }
 

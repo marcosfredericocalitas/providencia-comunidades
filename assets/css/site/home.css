@@ -126,7 +126,7 @@
 /* Responsiviety */
 @media (max-width: 1320px) {
     .company {
-        padding: var(--secundary-padding-t-b) var(--secundary-padding-l-r);
+        padding: 0 var(--secundary-padding-l-r);
     }
 
     .slider__control {
