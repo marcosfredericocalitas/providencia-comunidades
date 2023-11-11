@@ -27,9 +27,9 @@
     --input-error-bg: #fef3f5;
     --input-border-color: #ced4da;
     /* Navbar padding top and bottom */
-    --primary-padding-t-b: 9px;
+    --primary-padding-t-b: 8px;
     --secundary-padding-t-b: 5px;
-    --mobile-padding-t-b: 8px;
+    --mobile-padding-t-b: 5px;
     /* Navbar padding left and rigth */
     --primary-padding-l-r: 140px;
     --secundary-padding-l-r: 50px;
