@@ -12,7 +12,7 @@
     position: absolute;
     top: 40%;
     text-align: center;
-    transform: translateY(-62%);
+    transform: translateY(-65%);
     padding: var(--primary-padding-t-b) var(--primary-padding-l-r);
 }
 
