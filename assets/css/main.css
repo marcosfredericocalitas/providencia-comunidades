@@ -103,6 +103,10 @@
     font-weight: 1000;
 }
 
+.b-txt-bold {
+    font-weight: 800;
+}
+
 /* -- Components -- */
 /* Input */
 .c-input {
