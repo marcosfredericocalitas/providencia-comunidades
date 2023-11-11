@@ -152,7 +152,7 @@
         width: 100%;
     }
 
-    .c-menu__link {
+    .c-menu__link--navbar {
         width: 100%;
         padding: 7px 12px;
         font-weight: bolder;
