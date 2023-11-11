@@ -30,7 +30,7 @@
 }
 
 .c-brand {
-    --logo-dimention: 90px;
+    --logo-dimention: 92px;
     width: var(--logo-dimention);
     height: var(--logo-dimention);
 }
