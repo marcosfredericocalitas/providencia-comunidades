@@ -124,7 +124,7 @@
 }
 
 /* Responsiviety */
-@media (max-width: 1285px) {
+@media (max-width: 1320px) {
     .company {
         padding: var(--secundary-padding-t-b) var(--secundary-padding-l-r);
     }
@@ -134,7 +134,7 @@
     }
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1150px) {
     .company {
         transform: translateY(-60%);
         padding: var(--mobile-padding-t-b) var(--mobile-padding-l-r);

@@ -30,7 +30,7 @@
     background-color: var(--secundary-footer-bg);
 }
 
-@media (max-width: 1285px) {
+@media (max-width: 1320px) {
     .c-footer-primary {
         flex-wrap: wrap;
         padding: var(--primary-footer-padding-t-b) var(--secundary-padding-l-r);
@@ -44,7 +44,7 @@
     }
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1150px) {
     .c-footer-primary {
         flex-wrap: wrap;
         padding: var(--primary-footer-padding-t-b) var(--mobile-padding-l-r);

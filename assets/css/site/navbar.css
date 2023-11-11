@@ -94,18 +94,13 @@
 }
 
 /* Responsivity */
-@media (max-width: 1285px) {
+@media (max-width: 1320px) {
     .c-navbar {
         padding: var(--secundary-padding-t-b) var(--secundary-padding-l-r);
     }
-
-    .c-brand {
-        width: 90px;
-        height: 90px;
-    }
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1150px) {
     .c-navbar {
         position: fixed;
         top: 0;
@@ -116,8 +111,9 @@
     }
 
     .c-brand {
-        width: 70px;
-        height: 70px;
+        --logo-dimention: 70px;
+        width: var(--logo-dimention);
+        height: var(--logo-dimention);
     }
 
     .c-menu--mobile {
