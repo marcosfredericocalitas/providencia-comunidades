@@ -30,7 +30,7 @@
     --primary-padding-t-b: 8px;
     --mobile-padding-t-b: 5px;
     /* Navbar padding left and rigth */
-    --primary-padding-l-r: 140px;
+    --primary-padding-l-r: 150px;
     --secundary-padding-l-r: 50px;
     --mobile-padding-l-r: 20px;
     /* Footer padding top and bottom */
@@ -244,6 +244,11 @@
     height: var(--dimention);
 }
 
+/* Title */
+.c-title {
+    font-size: 40px;
+}
+
 /* -- Helpers -- */
 .h-relative {
     position: relative;
@@ -317,6 +322,11 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+.l-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
 /* Gap */
 .l-gap-30 {
     gap: 30px;
@@ -336,4 +346,13 @@
 
 .l-gap-10 {
     gap: 10px;
+}
+
+/* Margin & padding */
+.l-main {
+    margin: 100px 0px 100px 0px;
+}
+
+.l-section {
+    padding: 0 var(--primary-padding-l-r);
 }
