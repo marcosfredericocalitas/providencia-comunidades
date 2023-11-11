@@ -127,6 +127,10 @@
     transition: border-color .15s ease-in-out;
 }
 
+.c-input--primary {
+    padding: 14px;
+}
+
 .c-input:focus {
     border: 1.5px solid var(--primary-color);
 }
@@ -353,6 +357,22 @@
     margin: 100px 0px 100px 0px;
 }
 
+.l-main--gap {
+    gap: 50px;
+}
+
 .l-section {
     padding: 0 var(--primary-padding-l-r);
+}
+
+@media (max-width: 1320px) {
+    .l-section {
+        padding: 0 var(--secundary-padding-l-r);
+    }
+}
+
+@media (max-width: 1150px) {
+    .l-section {
+        padding: 0 var(--mobile-padding-l-r);
+    }
 }
