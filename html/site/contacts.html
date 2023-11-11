@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../assets/css/site/page.css">
     <link rel="stylesheet" href="../../assets/css/site/preloader.css">
     <link rel="stylesheet" href="../../assets/css/site/scroll-btn.css">
-    <link rel="stylesheet" href="../../assets/css/site/home.css">
+    <link rel="stylesheet" href="../../assets/css/site/contacts.css">
     <link rel="stylesheet" href="../../assets/css/site/footer.css">
     <link rel="stylesheet" href="../../assets/css/icons/All/all.min.css ">
     <link rel="shortcut icon" href="../../assets/img/Logitipo-blue.png" type="image/x-icon">
@@ -99,7 +99,6 @@
             <!-- Page -->
             <div class="c-page h-absolute">
                 <h1 class="c-page__title b-txt-white b-txt-bold h-txt-break">
-                    
                     CONTACTOS
                 </h1>
                 <p class="c-page__details b-txt-white">
@@ -118,7 +117,115 @@
     </header>
 
     <!-- Main content -->
-    <main class="main-content">
+    <main>
+        <div class="l-main l-main--gap l-flex l-flex-column l-align-center">
+            <!-- Title -->
+            <h1 class="c-title b-txt-bold b-txt-break">
+                VAMOS INICIAR UMA <span class="b-txt-gold">CONVERSA</span>
+            </h1>
+            <!-- Section start -->
+            <section class="l-section h-width-100">
+                <ul class="l-flex l-align-center l-space-between l-gap-30">
+                    <li class="h-width-100">
+                        <article class="card">
+                            <div class="card__body l-flex l-align-center l-flex-column h-width-100 l-gap-20">
+                                <span class="card__icon"><i class="fa-solid fa-phone"></i></span>
+                                <p class="card__paragraph">
+                                    <a href="tel:940405495" class="b-txt-black b-txt-blue l-flex l-gap-10">
+                                        +244 940-461-790
+                                    </a>
+                                    <a href="tel:940405495" class="b-txt-black b-txt-blue l-flex l-gap-10">
+                                        +244 222-490-438
+                                    </a>
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="h-width-100">
+                        <article class="card">
+                            <div class="card__body l-flex l-align-center l-flex-column h-width-100 l-gap-20">
+                                <span class="card__icon"><i class="fa-solid fa-house"></i></span>
+                                <p class="card__paragraph">
+                                    <a href="" class="b-txt-black b-txt-blue l-flex l-gap-10">
+                                        Projecto nova vida rua 34
+                                        4730 Crystal Springs Dr, Los Angeles, CA 90027
+                                    </a>
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="h-width-100">
+                        <article class="card">
+                            <div class="card__body l-flex l-align-center l-flex-column h-width-100 l-gap-20">
+                                <span class="card__icon"><i class="fa-solid fa-envelope"></i></span>
+                                <p class="card__paragraph">
+                                    <a href="mailto:marcosfredericocalitas22@gmail.com"
+                                        class="b-txt-black b-txt-blue l-flex l-gap-10 h-txt-break">
+                                        marcosfredericocalitas22@gmail.com
+                                    </a>
+                                    <a href="mailto:marcosfredericocalitas22@gmail.com"
+                                        class="b-txt-black b-txt-blue l-flex l-gap-10 h-txt-break">
+                                        marcosfredericocalitas22@gmail.com
+                                    </a>
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+            <!-- Section end -->
+
+            <!-- Section -->
+            <section class="l-section h-width-100">
+                <!-- contact -->
+                <div class="contact">
+                    <div class="contact__wrapper l-flex l-flex-column l-gap-30 h-relative">
+                        <div class="contact__cta l-flex l-align-center">
+                            <h2 class="contact__title">Entre em contacto</h2>
+                            <div class="contact__line h-absolute"></div>
+                            <p class="contact__description">
+                                Se você tiver alguma dúvida, basta preencher
+                                o formulário de contato e responderemos embreve.
+                            </p>
+                        </div>
+                        <!-- Form -->
+                        <form class="l-flex l-flex-column l-gap-25">
+                            <div class="l-grid l-col-3 l-gap-25">
+                                <div class="field l-flex l-flex-column l-gap-10">
+                                    <label for="name" class="field__label">Nome</label>
+                                    <input type="text" name="name" id="name" class="c-input c-input--primary"
+                                        placeholder="Digite o seu nome completo">
+                                    <span class="c-input-error" id="name-err"></span>
+                                </div>
+                                <div class="field l-flex l-flex-column l-gap-10">
+                                    <label for="email" class="field__label">Email</label>
+                                    <input type="text" name="email" id="email" class="c-input c-input--primary"
+                                        placeholder="exemplo@exemplo.com">
+                                    <span class="c-input-error" id="email-err"></span>
+                                </div>
+                                <div class="field l-flex l-flex-column l-gap-10">
+                                    <label for="phone" class="field__label">Telefone</label>
+                                    <input type="tel" name="phone" id="phone" class="c-input c-input--primary"
+                                        placeholder="123-456-789">
+                                    <span class="c-input-error" id="phone-err"></span>
+                                </div>
+                                <div class="field l-flex l-flex-column l-gap-10">
+                                    <label for="" class="field__label">Mensagem</label>
+                                    <textarea name="message" id="message" cols="30" rows="10"
+                                        class="c-input c-input--primary"></textarea>
+                                    <span class="c-input-error" id="message-err"></span>
+                                </div>
+                            </div>
+                            <button type="button"
+                                class="c-btn c-btn--secundary c-btn--aline-start form__btn b-txt-white">
+                                Enviar mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- Section end -->
+        </div>
+
         <!-- Scroll button  -->
         <div class="scroll" id="scroll-btn">
             <button type="button" class="c-btn--transparent scroll__btn b-txt-white u-btn-hover" id="btn-scroll-top"
