@@ -17,12 +17,12 @@
 }
 
 .c-page__title {
-    font-size: 45px;
+    font-size: var(--primary-title-size);
 }
 
 .c-page__details {
     color: #ffffffb0;
-    font-size: var(--font-size-17px);
+    font-size: 17.5px;
 }
 
 /* Responsivity */
