@@ -369,8 +369,7 @@
 
 /* -- Utilities -- */
 .u-border-2 {
-    border: 2px solid #eee;
-    border-radius: 5px;
+    border: 1px solid #d7d7d7;
     background-color: var(--white);
 }
 
