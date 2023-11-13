@@ -313,9 +313,6 @@
 /* Margin & padding */
 .l-main {
     margin: 100px 0px 100px 0px;
-}
-
-.l-main--gap {
     gap: 50px;
 }
 
