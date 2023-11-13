@@ -15,6 +15,7 @@
     --red: #ff0000;
     --white: #fff;
     --black: #000;
+    --primary-text-color: #00000080;
     --primary-color: #1088e9;
     --primary-color-hover: #0c70c2;
     --secundary-color: #003384;
@@ -26,6 +27,9 @@
     --secundary-footer-bg: #000000;
     --input-error-bg: #fef3f5;
     --input-border-color: #ced4da;
+    /* Font size */
+    --font-size-16px: 16px;
+    --font-size-17px: 17px;
     /* Navbar padding top and bottom */
     --primary-padding-t-b: 8px;
     --mobile-padding-t-b: 5px;
@@ -264,6 +268,10 @@
     align-items: baseline;
 }
 
+.l-flex-wrap {
+    flex-wrap: wrap;
+}
+
 .l-flex-column {
     flex-direction: column;
 }
@@ -314,6 +322,10 @@
 .l-main {
     margin: 100px 0px 100px 0px;
     gap: 50px;
+}
+
+.l-main__item {
+    gap: 100px;
 }
 
 .l-section {
