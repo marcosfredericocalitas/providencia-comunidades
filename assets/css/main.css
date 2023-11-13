@@ -238,6 +238,24 @@
     font-size: 40px;
 }
 
+@media (max-width: 865px) {
+    .c-title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 665px) {
+    .c-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 445px) {
+    .c-title {
+        font-size: 25px;
+    }
+}
+
 /* -- Layouts -- */
 /* Display box */
 .l-box {
@@ -325,6 +343,7 @@
 /* Margin & padding */
 .l-main {
     margin: 100px 0px 100px 0px;
+    padding: 0 var(--mobile-padding-l-r);
     gap: 50px;
 }
 
