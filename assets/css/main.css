@@ -107,6 +107,42 @@
 }
 
 /* -- Components -- */
+.c-menu__list {
+    gap: 30px;
+}
+
+.c-menu__item {
+    width: 100%;
+}
+
+.c-menu__link {
+    border-radius: 5px;
+    background-color: transparent;
+    transition: var(--hover-transition);
+}
+
+.c-menu__link--navbar {
+    color: var(--black);
+    font-size: 17.5px;
+    padding: 12px 20px;
+    font-weight: 500;
+}
+
+.c-menu__link--navbar:hover,
+.c-menu__link--navbar.is-active {
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+.c-menu__link--footer {
+    color: var(--white);
+    padding: 5px;
+}
+
+.c-menu__link--footer:hover {
+    color: var(--primary-color);
+}
+
 /* Input */
 .c-input {
     display: block;
