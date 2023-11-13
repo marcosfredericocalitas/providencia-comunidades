@@ -119,7 +119,7 @@
     .c-menu--mobile {
         display: none;
         position: absolute;
-        top: 89.5px;
+        top: 83.5px;
         left: 0;
         width: 100%;
         height: 100vh;
@@ -144,16 +144,6 @@
         display: flex;
     }
 
-    .c-menu__item-wth100 {
-        width: 100%;
-    }
-
-    .c-menu__link--navbar {
-        width: 100%;
-        padding: 7px 12px;
-        font-weight: bolder;
-    }
-
     .c-menu__arrow {
         display: block;
     }
@@ -161,7 +151,7 @@
     .c-search--mobile {
         display: none;
         position: absolute;
-        top: 415px;
+        top: 408px;
         left: 0;
         width: 100%;
         padding: 20px;

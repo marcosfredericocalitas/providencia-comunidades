@@ -97,6 +97,13 @@
     color: var(--primary-color);
 }
 
+@media (max-width: 1150px) {
+    .c-menu__link--navbar {
+        padding: 7px 12px;
+        font-weight: bolder;
+    }
+}
+
 /* Input */
 .c-input {
     display: block;
