@@ -236,6 +236,7 @@
 /* Title */
 .c-title {
     font-size: 40px;
+    padding: 0 var(--mobile-padding-l-r);
 }
 
 @media (max-width: 865px) {
@@ -343,7 +344,6 @@
 /* Margin & padding */
 .l-main {
     margin: 100px 0px 100px 0px;
-    padding: 0 var(--mobile-padding-l-r);
     gap: 50px;
 }
 

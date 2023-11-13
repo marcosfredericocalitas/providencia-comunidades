@@ -76,6 +76,14 @@
     width: 100%;
 }
 
+
+
+@media (max-width: 850px) {
+    .kk {
+        flex-wrap: wrap;
+    }
+}
+
 @media (max-width: 745px) {
     .contact__cta {
         text-align: center;
