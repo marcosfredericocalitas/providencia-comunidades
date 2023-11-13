@@ -104,6 +104,35 @@
     }
 }
 
+/* Buttons */
+.c-btn {
+    color: var(--white);
+    border: none;
+    font-weight: bold;
+    font-size: 17.5px;
+    padding: 14px 30px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: transparent;
+    transition: var(--hover-transition);
+}
+
+.c-btn--primary {
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    align-self: flex-start;
+}
+
+.c-btn--primary:hover {
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+.c-btn--transparent {
+    border: none;
+    background-color: transparent;
+}
+
 /* Input */
 .c-input {
     display: block;
@@ -182,40 +211,6 @@
     top: 37.5%;
 }
 
-/* Buttons */
-.c-btn {
-    color: var(--white);
-    border: none;
-    font-weight: bold;
-    font-size: 17.5px;
-    padding: 14px 30px;
-    border-radius: 5px;
-    text-align: center;
-    background-color: transparent;
-    transition: var(--hover-transition);
-}
-
-.c-btn--primary {
-    border: 2px solid var(--primary-color);
-    background-color: var(--primary-color);
-    align-self: flex-start;
-}
-
-.c-btn--primary:hover {
-    color: var(--primary-color);
-    background-color: transparent;
-}
-
-.c-btn--transparent {
-    border: none;
-    background-color: transparent;
-}
-
-.c-btn.is-active {
-    color: var(--white);
-    background-color: var(--primary-color);
-}
-
 .c-img {
     display: block;
     max-width: 100%;
@@ -236,32 +231,6 @@
 /* Title */
 .c-title {
     font-size: 40px;
-}
-
-/* -- Helpers -- */
-.h-relative {
-    position: relative;
-}
-
-.h-absolute {
-    position: absolute;
-}
-
-.h-none,
-.is-none {
-    display: none;
-}
-
-.h-width-100 {
-    width: 100%;
-}
-
-.h-txt-center {
-    text-align: center;
-}
-
-.h-txt-break {
-    word-break: break-all;
 }
 
 /* -- Layouts -- */
@@ -366,10 +335,52 @@
 }
 
 /* -- Utilities -- */
-/* Text color */
+/* Position */
+.u-relative {
+    position: relative;
+}
+
+.u-absolute {
+    position: absolute;
+}
+
+/* Visibility */
+.u-none,
+.is-none {
+    display: none;
+}
+
+.u-width-100 {
+    width: 100%;
+}
+
+/* -- Text or txt -- */
+/* Font size */
+.u-txt-24 {
+    font-size: 24px;
+}
+
+.u-txt-bold {
+    font-weight: 800;
+}
+
+.u-txt-bolder {
+    font-weight: 1000;
+}
+
+.u-txt-break {
+    word-break: break-all;
+}
+
+/* Color */
 .u-txt-white {
     color: var(--white);
 }
+
+.u-txt-center {
+    text-align: center;
+}
+
 
 .u-txt-gold {
     background: linear-gradient(to right, #ffad00, #ffbe25, #ffe081, #ffbe25, #ffad00);
@@ -390,17 +401,4 @@
 
 .u-youtube-color {
     color: var(--youtube-color);
-}
-
-/* Text size */
-.u-txt-24 {
-    font-size: 24px;
-}
-
-.u-txt-bold {
-    font-weight: 800;
-}
-
-.u-txt-bolder {
-    font-weight: 1000;
 }
