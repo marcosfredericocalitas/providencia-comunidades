@@ -5,7 +5,6 @@
 }
 
 .c-footer-primary {
-    align-items: baseline;
     padding: var(--primary-footer-padding-t-b) var(--primary-padding-l-r);
     background-color: var(--primary-footer-bg);
 }
