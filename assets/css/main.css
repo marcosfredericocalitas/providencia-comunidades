@@ -184,9 +184,11 @@
 
 /* Buttons */
 .c-btn {
+    color: var(--white);
     border: none;
+    font-weight: bold;
     font-size: 17.5px;
-    padding: 12px 20px;
+    padding: 14px 30px;
     border-radius: 5px;
     text-align: center;
     background-color: transparent;
@@ -194,9 +196,6 @@
 }
 
 .c-btn--primary {
-    color: var(--white);
-    font-weight: bolder;
-    padding: 14px 35px;
     border: 2px solid var(--primary-color);
     background-color: var(--primary-color);
     align-self: flex-start;
