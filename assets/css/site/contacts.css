@@ -75,3 +75,38 @@
     border-radius: 5px;
     width: 100%;
 }
+
+@media (max-width: 745px) {
+    .contact__cta {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .contact__title {
+        white-space: normal;
+        border: none;
+        padding: 0;
+    }
+
+    .form__item {
+        grid-template-columns: 1fr;
+    }
+
+    .field:nth-child(5) {
+        grid-column: 1 / span 1;
+    }
+
+    .c-input--primary {
+        padding: 10px 14px;
+    }
+}
+
+@media (max-width: 445px) {
+    .contact__title {
+        font-size: 26px;
+    }
+
+    .contact__description {
+        font-size: var(--font-size-16px);
+    }
+}
