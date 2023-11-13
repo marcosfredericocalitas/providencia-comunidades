@@ -62,15 +62,15 @@ scrollTopBtn.addEventListener("click", scrollToTop);
 // Next image 
 function nextImage() {
     let counter = 1;
-    const btnRadio = document.getElementById("radio-1").checked = true;
+    const totalImages = 4;
 
     setInterval(() => {
         counter++;
-        if (counter > 4) {
+        if (counter > totalImages) {
             counter = 1;
         }
-        btnRadio = document.getElementById("radio-" + counter).checked = true;
-    }, 4000);
+        document.getElementById("radio-" + counter).checked = true;
+    }, 3000);
 }
 
 nextImage();
