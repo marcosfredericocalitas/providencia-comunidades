@@ -12,7 +12,7 @@
     position: absolute;
     top: 40%;
     width: 100%;
-    transform: translateY(-65%);
+    transform: translateY(-70%);
     padding: var(--primary-padding-t-b) var(--primary-padding-l-r);
 }
 
