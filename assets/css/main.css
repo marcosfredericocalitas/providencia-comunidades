@@ -54,59 +54,12 @@
     font-family: var(--poppins-Source);
 }
 
-/* -- Base -- */
-/* Text color */
-.b-txt-white {
-    color: var(--white);
-}
-
-.b-txt-black {
-    color: var(--black);
-}
-
-.b-txt-blue {
-    transition: var(--hover-transition);
-}
-
-.b-txt-blue:hover {
-    color: var(--primary-color);
-}
-
-.b-txt-gold {
-    background: linear-gradient(to right, #ffad00, #ffbe25, #ffe081, #ffbe25, #ffad00);
-    background-clip: text;
-    color: transparent;
-    display: inline-block;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.b-facebook {
-    color: var(--facebook-color);
-}
-
-.b-whatsApp {
-    color: var(--whatsapp-color);
-}
-
-.b-youtube {
-    color: var(--youtube-color);
-}
-
-/* Text size */
-.b-txt-24 {
-    font-size: 24px;
-}
-
-.b-txt-bolder {
-    font-weight: 1000;
-}
-
-.b-txt-bold {
-    font-weight: 800;
-}
 
 /* -- Components -- */
+.c-menu {
+    gap: 20px;
+}
+
 .c-menu__list {
     gap: 30px;
 }
@@ -341,6 +294,10 @@
     align-items: center;
 }
 
+.l-align-baseline {
+    align-items: baseline;
+}
+
 .l-flex-column {
     flex-direction: column;
 }
@@ -365,7 +322,6 @@
 .l-col-3 {
     grid-template-columns: repeat(3, 1fr);
 }
-
 
 /* Gap */
 .l-gap-30 {
@@ -411,4 +367,44 @@
     .l-section {
         padding: 0 var(--mobile-padding-l-r);
     }
+}
+
+/* -- Utilities -- */
+/* Text color */
+.u-txt-white {
+    color: var(--white);
+}
+
+.u-txt-gold {
+    background: linear-gradient(to right, #ffad00, #ffbe25, #ffe081, #ffbe25, #ffad00);
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.u-facebook-color {
+    color: var(--facebook-color);
+}
+
+.u-whatsApp-color {
+    color: var(--whatsapp-color);
+}
+
+.u-youtube-color {
+    color: var(--youtube-color);
+}
+
+/* Text size */
+.u-txt-24 {
+    font-size: 24px;
+}
+
+.u-txt-bold {
+    font-weight: 800;
+}
+
+.u-txt-bolder {
+    font-weight: 1000;
 }
