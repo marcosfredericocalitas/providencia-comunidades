@@ -1,50 +1,59 @@
-/* Cards */
-.card__body {
+.info__wrapper {
     padding: 100px 30px;
-    border: 1px solid #eee;
+    border: 2px solid #eee;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     transition: var(--hover-transition);
+    text-align: center;
 }
 
-.card__body:hover {
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.244);
+.info__wrapper:hover {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.100);
+    transform: translateY(-20px);
 }
 
-.card__icon {
-    font-size: 40px;
+.info__header {
+    gap: 10px;
+}
+
+.info__title {
+    font-size: 23px;
+    color: var(--black);
+    font-weight: bolder;
+}
+
+.info__icon {
+    font-size: 23px;
+}
+
+.info__body {
+    gap: 6px;
+}
+
+.info__wrapper:hover>.info__body .info__item {
     color: var(--primary-color);
 }
 
-.card__paragraph {
-    text-align: center;
-    font-size: 18px;
+.info__item {
+    font-size: var(--font-size-16px);
+    color: var(--primary-text-color);
 }
 
-/* Contacts */
-.contact {
-    position: relative;
-    margin-top: 50px;
+/* Contact form */
+.contact__cta {
+    gap: 20px;
 }
 
 .contact__title {
     font-size: 32px;
-}
-
-.contact__cta {
-    gap: 55px;
-}
-
-.contact__line {
-    top: -4px;
-    left: 24%;
-    width: 1px;
-    height: 50px;
-    background-color: #00000023;
+    border-right: 2px solid #eee;
+    padding-right: 20px;
+    white-space: nowrap;
 }
 
 .contact__description {
-    font-size: 18px;
+    font-size: var(--font-size-17px);
+    color: var(--primary-text-color);
 }
 
 .field:nth-child(4) {
@@ -55,7 +64,7 @@
 .google__maps {
     border: 1px solid rgba(0, 0, 0, 0.158);
     width: 100%;
-    height: 500px;
+    height: 550px;
     border-radius: 5px;
     width: 100%;
 }
