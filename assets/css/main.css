@@ -297,6 +297,10 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+.l-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
 /* Gap */
 .l-gap-30 {
     gap: 30px;
@@ -345,6 +349,12 @@
 }
 
 /* -- Utilities -- */
+.u-border-2 {
+    border: 2px solid #eee;
+    border-radius: 5px;
+    background-color: var(--white);
+}
+
 /* Position */
 .u-relative {
     position: relative;

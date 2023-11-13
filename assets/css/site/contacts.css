@@ -1,7 +1,6 @@
 .info__wrapper {
+    width: 100%;
     padding: 100px 30px;
-    border: 2px solid #eee;
-    border-radius: 5px;
     background-color: rgb(255, 255, 255);
     transition: var(--hover-transition);
     text-align: center;
@@ -56,8 +55,16 @@
     color: var(--primary-text-color);
 }
 
-.field:nth-child(4) {
-    grid-column: 1 / span 3;
+.form {
+    padding: 30px;
+}
+
+.field__label {
+    font-weight: bolder;
+}
+
+.field:nth-child(5) {
+    grid-column: 1 / span 2;
 }
 
 /* Google maps */
