@@ -194,22 +194,15 @@
 }
 
 .c-btn--primary {
-    font-weight: 500;
-}
-
-.c-btn--primary:hover {
     color: var(--white);
-    background-color: var(--primary-color);
-}
-
-.c-btn--secundary {
     font-weight: bolder;
     padding: 14px 35px;
     border: 2px solid var(--primary-color);
     background-color: var(--primary-color);
+    align-self: flex-start;
 }
 
-.c-btn--secundary:hover {
+.c-btn--primary:hover {
     color: var(--primary-color);
     background-color: transparent;
 }
@@ -222,10 +215,6 @@
 .c-btn.is-active {
     color: var(--white);
     background-color: var(--primary-color);
-}
-
-.c-btn--aline-start {
-    align-self: flex-start;
 }
 
 .c-img {

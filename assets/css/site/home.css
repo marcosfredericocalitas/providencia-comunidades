@@ -17,11 +17,6 @@
     font-weight: bolder;
 }
 
-.company__btn {
-    position: relative;
-    display: inline-block;
-}
-
 /* Slider  */
 .slider {
     position: relative;
