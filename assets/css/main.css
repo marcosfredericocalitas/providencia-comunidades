@@ -429,6 +429,10 @@
     color: var(--white);
 }
 
+.u-txt-black {
+    color: var(--black);
+}
+
 .u-txt-center {
     text-align: center;
 }
