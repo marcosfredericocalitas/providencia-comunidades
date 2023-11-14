@@ -6,17 +6,15 @@
     position: relative;
 }
 
-.profile-user-img {
+/* .profile-img {
     width: 140px;
     height: 140px;
-}
+} */
 
 .camera-icon {
-    position: absolute;
-    bottom: 0;
-    left: 200px;
-    width: 43px;
-    height: 43px;
+    top: 60px;
+    left: 190px;
+    padding: 3px 8px;
     font-size: 21px;
     border-radius: 100px;
     color: black;
