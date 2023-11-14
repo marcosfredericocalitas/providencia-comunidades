@@ -226,7 +226,7 @@ table.table .avatar {
     font-weight: normal;
 }
 
- /* tbody {
+/* tbody {
     display: none;
 }  */
 
@@ -254,10 +254,16 @@ table.table .avatar {
     width: 100%;
 }
 
-.form-img {
-    --img-dimention-form: 100px;
-    width: var(--img-dimention-form);
-    height: var(--img-dimention-form);
+.table-img {
+    --img-dimention: 65px;
+    width: var(--img-dimention);
+    height: var(--img-dimention);
+}
+
+.form-image {
+    --img-dimention: 115px;
+    width: var(--img-dimention);
+    height: var(--img-dimention);
 }
 
 @media (max-width: 750px) {

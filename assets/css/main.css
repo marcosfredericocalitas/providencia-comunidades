@@ -234,6 +234,10 @@
     height: var(--dimention);
 }
 
+.c-img--radius-full {
+    border-radius: 100px;
+}
+
 /* Title */
 .c-title {
     font-size: var(--secundary-title-size);
