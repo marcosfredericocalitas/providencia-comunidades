@@ -316,3 +316,13 @@ function putEyeIconToBottom(input) {
         SendEyeIconToBottom()
     });
 }
+
+
+//------------------------------------------------------------------------
+function validateSubject(input, error) {
+    return textValidation(input, error, "Assunto")
+}
+
+function validateMessage(input, error) {
+    return textValidation(input, error, "Mensagem")
+}
