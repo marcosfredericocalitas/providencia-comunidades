@@ -1,6 +1,7 @@
 $(document).ready(function () {
     // Validation by focusout event
-
+    // Validation by focusout event
+    validateByFocusOut("otp-code", "otp-code-err", validateOtpCode);
     // Validation by click button
     $("#btn-verification-code").click(function () {
         const isOtpCodeValid = validateOtpCode("otp-code", "otp-code-err");
