@@ -110,7 +110,14 @@
     }
 
     .c-input--primary {
-        padding: 10px 14px;
+        padding: 9px 14px;
+    }
+}
+
+
+@media (max-width: 557px) {
+    .form {
+        padding: 20px;
     }
 }
 
