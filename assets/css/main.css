@@ -29,10 +29,10 @@
     --input-border-color: #ced4da;
     /* Font size */
     --primary-title-size: 42px;
-    --secundary-title-size: 40px;
-    --primary-content-size: 18px;
+    --secondary-title-size: 40px;
+    --font-size-18: 18px;
+    --font-size-17: 17px;
     --font-size-16: 16px;
-    --primary-txt-size: 18px;
     /* Navbar padding top and bottom */
     --primary-padding-t-b: 8px;
     --mobile-padding-t-b: 5px;
@@ -241,7 +241,7 @@
 
 /* Title */
 .c-title {
-    font-size: var(--secundary-title-size);
+    font-size: var(--secondary-title-size);
     padding: 0 var(--mobile-padding-l-r);
 }
 
