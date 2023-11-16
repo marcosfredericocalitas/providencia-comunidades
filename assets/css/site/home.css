@@ -19,7 +19,7 @@
 }
 
 .company__slogan {
-    line-height: 1.5rem;        
+    line-height: 1.5rem;
 }
 
 /* Slider  */
@@ -51,9 +51,9 @@
 }
 
 .navegation__btn {
-    position: relative;
-    width: 13px;
-    height: 13px;
+    --btn-dimention: 14px;
+    width: var(--btn-dimention);
+    height: var(--btn-dimention);
     border-radius: 100px;
     background-color: #ffffff33;
     transition: var(--hover-transition);
@@ -174,7 +174,7 @@
 
     .company__slogan {
         font-size: 14px;
-         /* line-height: normal; */
+        /* line-height: normal; */
     }
 
     .company__btn {
