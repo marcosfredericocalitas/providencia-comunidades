@@ -28,9 +28,11 @@
     --input-error-bg: #fef3f5;
     --input-border-color: #ced4da;
     /* Font size */
-    --primary-txt-size: 18px;
     --primary-title-size: 42px;
     --secundary-title-size: 40px;
+    --primary-content-size: 18px;
+    --font-size-16: 16px;
+    --primary-txt-size: 18px;
     /* Navbar padding top and bottom */
     --primary-padding-t-b: 8px;
     --mobile-padding-t-b: 5px;
