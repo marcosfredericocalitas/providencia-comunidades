@@ -59,7 +59,6 @@
     font-family: var(--poppins-Source);
 }
 
-
 /* -- Components -- */
 /* Menu */
 .c-menu {
@@ -83,7 +82,7 @@
 .c-menu__link--navbar {
     color: var(--black);
     font-size: 17.5px;
-    padding: 12px 20px;
+    padding: 13px 20px;
     font-weight: 500;
 }
 
