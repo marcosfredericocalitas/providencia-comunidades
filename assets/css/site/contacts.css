@@ -9,7 +9,8 @@
 .info__wrapper:hover {
     border: none;
     transform: translateY(-15px);
-    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.100);
+    border: 2px solid var(--primary-color);
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.100);      
 }
 
 .info__header {
@@ -17,7 +18,7 @@
 }
 
 .info__title {
-    font-size: 26px;
+    font-size: 25px;
     color: var(--black);
     font-weight: bolder;
 }
@@ -31,7 +32,7 @@
 }
 
 .info__item {
-    font-size: var(--primary-txt-size);
+    font-size: var(--font-size-17);
     color: var(--primary-text-color);
 }
 
@@ -48,7 +49,7 @@
 }
 
 .contact__description {
-    font-size: var(--primary-txt-size);
+    font-size: var(--font-size-18);
     color: var(--primary-text-color);
 }
 
