@@ -15,6 +15,11 @@
 .company__title {
     font-size: 55px;
     font-weight: bolder;
+    line-height: 5rem;
+}
+
+.company__slogan {
+    line-height: 1.5rem;        
 }
 
 /* Slider  */
@@ -137,20 +142,22 @@
 
     .company__title {
         font-size: 45px;
+        line-height: 4.2rem;
     }
 
     .company__btn {
-        padding: 12px 18px;
+        padding: 12px 20px;
     }
 }
 
 @media (max-width: 720px) {
     .company__title {
         font-size: 35px;
+        line-height: 3.5rem;
     }
 
     .company__btn {
-        padding: 11px 14px;
+        padding: 12px 16px;
     }
 
     .navegation__btn {
@@ -162,13 +169,15 @@
 @media (max-width: 465px) {
     .company__title {
         font-size: 30px;
+        line-height: 3rem;
     }
 
     .company__slogan {
         font-size: 14px;
+         /* line-height: normal; */
     }
 
     .company__btn {
-        padding: 10px;
+        padding: 12px 14px;
     }
 }
