@@ -10,9 +10,9 @@
 
 .c-page {
     position: absolute;
-    top: 40%;
+    top: calc(100% - 480px);
     width: 100%;
-    transform: translateY(-70%);
+    transform: translateY(-10%);
     padding: var(--primary-padding-t-b) var(--primary-padding-l-r);
 }
 
@@ -22,7 +22,7 @@
 
 .c-page__details {
     color: #ffffffb0;
-    font-size: 17.5px;
+    font-size: 17px;
 }
 
 /* Responsivity */
