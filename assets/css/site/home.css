@@ -45,15 +45,15 @@
 
 /* Navegation buttons */
 .navegation {
-    bottom: 50px;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .navegation__btn {
     position: relative;
-    width: 14px;
-    height: 14px;
+    width: 13px;
+    height: 13px;
     border-radius: 100px;
     background-color: #ffffff33;
     transition: var(--hover-transition);
