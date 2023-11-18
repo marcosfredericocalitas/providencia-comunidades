@@ -73,7 +73,7 @@ function nextImage() {
         slider.querySelector("#radio-" + counter).checked = true;
     }, 3000);
 }
-// nextImage();
+nextImage();
 
 function swithImageByControl() {
     let count = 0;
