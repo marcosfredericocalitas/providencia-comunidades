@@ -15,7 +15,8 @@
     --red: #ff0000;
     --white: #fff;
     --black: #000;
-    --primary-text-color: #00000080;
+    /* --primary-text-color: #00000080; */
+    --primary-text-color: #000000a2;
     --primary-color: #1088e9;
     --primary-color-hover: #0c70c2;
     --secundary-color: #003384;
@@ -301,8 +302,16 @@
     flex-direction: column;
 }
 
+.l-flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
 .l-flex-center {
     justify-content: center;
+}
+
+.l-row-reverse {
+    flex-direction: row-reverse;
 }
 
 .l-space-between {
@@ -315,6 +324,10 @@
 }
 
 .l-grid-2-columns {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.l-col-2 {
     grid-template-columns: repeat(2, 1fr);
 }
 
