@@ -4,7 +4,6 @@
 }
 
 .company {
-    position: absolute;
     z-index: 1;
     top: 50%;
     left: 0%;
@@ -24,7 +23,6 @@
 
 /* Slider  */
 .slider {
-    position: relative;
     width: 100%;
     height: calc(100vh - 108px);
     overflow: hidden;
@@ -150,9 +148,9 @@
     }
 }
 
-@media (width <=720px) {
+@media (width <=768px) {
     .company__title {
-        font-size: 35px;
+        font-size: var(--font-size-35);
         line-height: 3.5rem;
     }
 
@@ -166,9 +164,9 @@
     }
 }
 
-@media (width <=465px) {
+@media (width <=576px) {
     .company__title {
-        font-size: 30px;
+        font-size: var(--font-size-30);
         line-height: 3rem;
     }
 
