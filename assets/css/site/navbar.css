@@ -94,13 +94,13 @@
 }
 
 /* Responsivity */
-@media (max-width: 1320px) {
+@media (width <=1320px) {
     .c-navbar {
         padding: var(--primary-padding-t-b) var(--secundary-padding-l-r);
     }
 }
 
-@media (max-width: 1150px) {
+@media (width <=1150px) {
     .c-navbar {
         position: fixed;
         top: 0;

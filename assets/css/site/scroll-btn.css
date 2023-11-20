@@ -28,13 +28,13 @@
     background-color: var(--primary-color);
 }
 
-@media (max-width: 1050px) {
+@media (width <=1050px) {
     .scroll {
         right: 20px;
     }
 }
 
-@media (max-width: 585px) {
+@media (width <=585px) {
     .scroll__btn {
         --btn-dimention: 50px;
         width: var(--btn-dimention);

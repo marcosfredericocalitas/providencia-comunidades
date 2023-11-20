@@ -124,7 +124,7 @@
 }
 
 /* Responsiviety */
-@media (max-width: 1320px) {
+@media (width <=1320px) {
     .company {
         padding: 0 var(--secundary-padding-l-r);
     }
@@ -134,7 +134,7 @@
     }
 }
 
-@media (max-width: 1150px) {
+@media (width <=1150px) {
     .company {
         transform: translateY(-60%);
         padding: var(--mobile-padding-t-b) var(--mobile-padding-l-r);
@@ -150,7 +150,7 @@
     }
 }
 
-@media (max-width: 720px) {
+@media (width <=720px) {
     .company__title {
         font-size: 35px;
         line-height: 3.5rem;
@@ -166,7 +166,7 @@
     }
 }
 
-@media (max-width: 465px) {
+@media (width <=465px) {
     .company__title {
         font-size: 30px;
         line-height: 3rem;

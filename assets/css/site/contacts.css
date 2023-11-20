@@ -74,14 +74,14 @@
     width: 100%;
 }
 
-@media (max-width: 1050px) {
+@media (width <=1050px) {
     .l-flex__info {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 768px) {
+@media (width <=768px) {
     .l-flex__info {
         display: grid;
         grid-template-columns: 1fr;
@@ -112,7 +112,7 @@
     }
 }
 
-@media (max-width: 576px) {
+@media (width <=576px) {
     .form {
         padding: 20px;
     }

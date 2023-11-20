@@ -9,13 +9,13 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../img/test-img-4.jpg');
 }
 
-@media (max-width: 992px) {
+@media (width <=992px) {
     .header__wrapper {
         height: 400px;
     }
 }
 
-@media (max-width: 576px) {
+@media (width <=576px) {
     .header__wrapper {
         height: 350px;
     }
