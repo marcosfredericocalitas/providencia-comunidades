@@ -29,6 +29,11 @@
     --input-error-bg: #fef3f5;
     --input-border-color: #ced4da;
     /* Font size */
+    --font-size-xl: 45px;
+    --font-size-xl: 40px;
+    --font-size-lg: 35px;
+    --font-size-md: 30px;
+    --font-size-sm: 25px;
     --primary-title-size: 45px;
     --secondary-title-size: 40px;
     --font-size-18: 18px;
