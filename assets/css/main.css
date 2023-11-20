@@ -314,7 +314,7 @@
 
 /* Title */
 .c-title {
-    font-size: var(--secondary-title-size);
+    font-size: var(--font-size-xl);
     padding: 0 var(--mobile-padding-l-r);
 }
 
