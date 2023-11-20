@@ -140,6 +140,54 @@
     background-color: transparent;
 }
 
+/* Collapse */
+.c-collapse__wrapper {
+    cursor: pointer;
+    background-color: var(--white);
+}
+
+.c-collapse__header {
+    padding: 15px 20px;
+    transition: all 500ms ease-in-out;
+}
+
+.c-collapse__title {
+    font-size: 28px;
+}
+
+.c-collapse__arrow {
+    font-size: 25px;
+}
+
+.c-collapse__body {
+    max-height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
+}
+
+.c-collapse__answer {
+    padding: 20px;
+    line-height: 1.5rem;
+    color: var(--primary-text-color);
+}
+
+.c-collapse__answer--sm-padding {
+    font-size: 20px;
+    padding: 20px 20px 0px 20px;
+}
+
+.c-collapse__wrapper.is-visible>.c-collapse__header {
+    border-color: var(--primary-color);
+}
+
+.c-collapse__wrapper.is-visible>.c-collapse__body {
+    border-color: var(--primary-color);
+    max-height: 300px;
+    visibility: visible;
+    margin-bottom: 30px;
+}
+
 /* Input */
 .c-input {
     display: block;
@@ -318,28 +366,7 @@
     justify-content: space-between;
 }
 
-/* Display grid  */
-.l-grid {
-    display: grid;
-}
-
-.l-grid-2-columns {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.l-col-2 {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.l-col-3 {
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.l-col-4 {
-    grid-template-columns: repeat(4, 1fr);
-}
-
-/* Gap */
+/* flex Gap */
 .l-gap-40 {
     gap: 40px;
 }
@@ -367,6 +394,33 @@
 .l-gap-10 {
     gap: 10px;
 }
+
+/* Display grid  */
+.l-grid {
+    display: grid;
+}
+
+.l-grid-2-columns {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.l-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.l-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.l-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Grid gap */
+.u-gap-row {
+    column-gap: 30px;
+}
+
 
 /* Margin & padding */
 .l-main {
@@ -470,4 +524,9 @@
 
 .u-youtube-color {
     color: var(--youtube-color);
+}
+
+.u-shadow {
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.060);
 }
