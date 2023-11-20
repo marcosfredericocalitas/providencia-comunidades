@@ -178,9 +178,6 @@
 
 .c-collapse__answer {
     padding: 20px;
-    line-height: 1.6rem;
-    font-size: var(--font-size-17);
-    color: var(--primary-text-color);
 }
 
 .c-collapse__answer--sm-padding {
@@ -318,6 +315,13 @@
     font-size: 17px;
 }
 
+/* Text */
+.c-text {
+    line-height: 1.6rem;
+    font-size: var(--font-size-17);
+    color: var(--primary-text-color);
+}
+
 /* Title */
 .c-title {
     font-size: var(--font-size-xl);
@@ -366,13 +370,13 @@
 }
 
 @media (max-width: 576px) {
-    .c-collapse__answer {
-        line-height: 1.5rem;
-        font-size: var(--font-size-16);
-    }
-
     .c-page__title {
         font-size: var(--font-size-md);
+    }
+
+    .c-text {
+        line-height: 1.5rem;
+        font-size: var(--font-size-16);
     }
 
     .c-title {

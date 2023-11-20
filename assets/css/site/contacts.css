@@ -33,11 +33,6 @@
     gap: 6px;
 }
 
-.info__item {
-    font-size: var(--font-size-17);
-    color: var(--primary-text-color);
-}
-
 /* Contacts */
 .contact__cta {
     gap: 20px;
@@ -51,8 +46,7 @@
 }
 
 .contact__description {
-    font-size: var(--font-size-18);
-    color: var(--primary-text-color);
+    font-size: 18px;
 }
 
 .form {
