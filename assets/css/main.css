@@ -155,7 +155,7 @@
 }
 
 .c-collapse__header {
-    padding: 15px 20px;
+    padding: 14px 20px;
     transition: all 500ms ease-in-out;
 }
 
@@ -165,6 +165,7 @@
 
 .c-collapse__arrow {
     font-size: 25px;
+    transition: all 400ms ease-in-out;
 }
 
 .c-collapse__body {
@@ -185,6 +186,10 @@
 
 .c-collapse__wrapper.is-visible>.c-collapse__header {
     border-color: var(--primary-color);
+}
+
+.c-collapse__wrapper.is-visible>.c-collapse__header .c-collapse__arrow {
+    transform: rotate(180deg);
 }
 
 .c-collapse__wrapper.is-visible>.c-collapse__body {
