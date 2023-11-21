@@ -495,7 +495,6 @@
     column-gap: 30px;
 }
 
-
 /* Margin & padding */
 .l-main {
     margin: 100px 0px 100px 0px;
@@ -523,10 +522,25 @@
 }
 
 /* -- Utilities -- */
+.u-hover {
+    transition: var(--hover-transition);
+}
+
+.u-hover:hover {
+    border: none;
+    transform: translateY(-15px);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.200);
+}
+
 .u-border {
     border: 1px solid #d7d7d7;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: var(--white);
+}
+
+.u-shadow {
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.150);
 }
 
 /* Position */
@@ -598,20 +612,4 @@
 
 .u-youtube-color {
     color: var(--youtube-color);
-}
-
-/* Cards hover */
-.c-hover-transform {
-    transition: var(--hover-transition);
-}
-
-.c-hover-transform:hover {
-    border: none;
-    transform: translateY(-15px);
-    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.100);
-}
-
-.u-shadow {
-    border-radius: 5px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.100);
 }
