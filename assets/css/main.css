@@ -296,7 +296,6 @@
     max-width: 100%;
     height: auto;
     font-style: italic;
-    object-fit: cover;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -306,6 +305,7 @@
     --dimention: 100%;
     width: var(--dimention);
     height: var(--dimention);
+    object-fit: cover;
 }
 
 .c-img--radius-full {
