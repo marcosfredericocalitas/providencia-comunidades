@@ -7,7 +7,7 @@
 }
 
 .about__title {
-    font-size: var(--font-size-35);
+    font-size: 35px
 }
 
 @media (width <=992px) {
@@ -16,7 +16,7 @@
     }
 
     .about__title {
-        font-size: var(--font-size-30);
+        font-size: 30px;
     }
 }
 

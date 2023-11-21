@@ -157,7 +157,7 @@
 
 @media (width <=576px) {
     .company__title {
-        font-size: var(--font-size-30);
+        font-size: 30px;
         line-height: 3rem;
     }
 
@@ -167,6 +167,6 @@
 
     .company__btn {
         padding: 12px 14px;
-        font-size: var(--font-size-16);
+        font-size: 16px;
     }
 }
