@@ -45,8 +45,7 @@
     --primary-footer-padding-t-b: 50px;
     --secundary-footer-padding-t-b: 30px 20px;
     /* Transition */
-    /* --hover-transition: all 150ms ease-in-out; */
-    --hover-transition: background-color .2s, box-shadow .2s, color .2s, -webkit-box-shadow .2s;
+    --hover-transition: all 150ms ease-in-out;
     /* Fonts */
     --poppins: 'Poppins', 'sans-serif';
     --nunito-sans-font: 'Nunito Sans', sans-serif;
@@ -124,7 +123,7 @@
     font-weight: 700;
     letter-spacing: .5px;
     line-height: 24px;
-    transition: var(--hover-transition);
+    transition: background-color .2s, box-shadow .2s, color .2s, -webkit-box-shadow .2s;
 }
 
 .c-btn--transparent {
