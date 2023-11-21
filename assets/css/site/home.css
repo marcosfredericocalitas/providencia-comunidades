@@ -167,5 +167,6 @@
 
     .company__btn {
         padding: 12px 14px;
+        font-size: var(--font-size-16);
     }
 }
