@@ -18,18 +18,18 @@
 }
 
 .c-card__title {
-    font-size: 20px;
+    font-size: 18.5px;
 }
 
 .c-card__text {
     font-size: 16px;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
 }
 
 .c-card__btn {
     padding: 12px 15px;
     margin-top: 5px;
-    font-size: 16.5px;
+    font-size: 16px;
 }
 
 @media (width <=1200px) {
