@@ -20,13 +20,25 @@
 }
 
 .info__title {
-    font-size: 25px;
+    font-size: 22px;
     color: var(--black);
     font-weight: bolder;
 }
 
 .info__icon {
-    font-size: 25px;
+    font-size: 35px;
+}
+
+.info__icon--blue {
+    color: #279de6;
+}
+
+.info__icon--purple {
+    color: #7e80e7;
+}
+
+.info__icon--orange {
+    color: #ffc646;
 }
 
 .info__body {
