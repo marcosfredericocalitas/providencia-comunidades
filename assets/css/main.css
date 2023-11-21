@@ -56,7 +56,8 @@
     --primary-footer-padding-t-b: 50px;
     --secundary-footer-padding-t-b: 30px 20px;
     /* Transition */
-    --hover-transition: all 150ms ease-in-out;
+    /* --hover-transition: all 150ms ease-in-out; */
+    --hover-transition: background-color .2s, box-shadow .2s, color .2s, -webkit-box-shadow .2s;
     /* Fonts */
     --poppins: 'Poppins', 'sans-serif';
     --nunito-sans-font: 'Nunito Sans', sans-serif;
@@ -126,12 +127,13 @@
 .c-btn {
     color: var(--white);
     border: none;
-    font-weight: bold;
-    font-size: 17.5px;
-    padding: 14px 30px;
-    border-radius: 5px;
-    text-align: center;
-    background-color: transparent;
+    padding: 12px 25px;
+    border-radius: 4px;
+    word-wrap: break-word;
+    font-size: var(--font-size-17);
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
     transition: var(--hover-transition);
 }
 
