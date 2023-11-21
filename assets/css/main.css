@@ -150,6 +150,11 @@
     background-color: transparent;
 }
 
+.c-btn--small {
+    font-size: 16px;
+    padding: 10px 17px;
+}
+
 /* Collapse */
 .c-collapse__wrapper {
     cursor: pointer;
@@ -194,6 +199,17 @@
     max-height: 300px;
     visibility: visible;
     margin-bottom: 30px;
+}
+
+/* Cards hover */
+.c-hover-transform {
+    transition: var(--hover-transition);
+}
+
+.c-hover-transform:hover {
+    border: none;
+    transform: translateY(-15px);
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.100);
 }
 
 /* Input */
