@@ -183,16 +183,19 @@
     padding: 20px 20px 0px 20px;
 }
 
-.c-collapse__wrapper.is-visible>.c-collapse__header {
-    border-color: var(--primary-color);
-}
 
 .c-collapse__wrapper.is-visible>.c-collapse__header .c-collapse__arrow {
     transform: rotate(180deg);
 }
 
+.c-collapse__wrapper.is-visible>.c-collapse__header,
+.c-collapse__body {
+    border: none;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.100);
+}
+
 .c-collapse__wrapper.is-visible>.c-collapse__body {
-    border-color: var(--primary-color);
+    border: none;
     max-height: 300px;
     visibility: visible;
     margin-bottom: 30px;
