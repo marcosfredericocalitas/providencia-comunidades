@@ -34,6 +34,8 @@
     --font-size-lg: 35px;
     --font-size-md: 30px;
     --font-size-sm: 25px;
+    --font-size-mobile: 17px;
+    --primary-line-height: 1.6rem;
     /* Navbar padding top and bottom */
     --primary-padding-t-b: 8px;
     --mobile-padding-t-b: 5px;
@@ -106,7 +108,7 @@
 
 @media (width <=1150px) {
     .c-menu__link--navbar {
-        padding: 7px 12px;
+        padding: 8px 12px;
         font-weight: bolder;
     }
 }
@@ -322,8 +324,8 @@
 
 /* Text */
 .c-text {
-    line-height: 1.6rem;
     font-size: 17px;
+    line-height: var(--primary-line-height);
     color: var(--primary-text-color);
 }
 
@@ -379,13 +381,23 @@
         font-size: var(--font-size-md);
     }
 
-    .c-text {
-        line-height: 1.5rem;
-        font-size: var(--font-size-16);
+    .c-page__details {
+        font-size: var(--font-size-mobile);
     }
 
     .c-title {
         font-size: var(--font-size-sm);
+    }
+
+    .c-text {
+        line-height: 1.6rem;
+        font-size: var(--font-size-mobile);
+    }
+}
+
+@media (width <=487px) {
+    .c-page {
+        transform: translateY(-20%) translateX(-50%);
     }
 }
 
