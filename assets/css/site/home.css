@@ -83,7 +83,7 @@
 .radio-btn--4:checked~.navegation .navegation__btn--4 {
     background-color: var(--white);
 }
-    
+
 /* Slider control */
 .slider__control {
     top: 50%;
@@ -141,7 +141,7 @@
 
 @media (width <=768px) {
     .company__title {
-        font-size: var(--font-size-35);
+        font-size: 35px;
         line-height: 3.5rem;
     }
 
