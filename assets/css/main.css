@@ -108,7 +108,7 @@
 
 @media (width <=1150px) {
     .c-menu__link--navbar {
-        padding: 8px 12px;
+        padding: 9px 12px;
         font-weight: bolder;
     }
 }
