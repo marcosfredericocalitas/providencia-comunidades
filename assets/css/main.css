@@ -395,7 +395,7 @@
     }
 }
 
-@media (width <=487px) {
+@media (width <=488px) {
     .c-page {
         transform: translateY(-20%) translateX(-50%);
     }

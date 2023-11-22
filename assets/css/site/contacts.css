@@ -126,4 +126,8 @@
         text-transform: uppercase;
         font-weight: 800;
     }
+
+    .contact__description {
+        font-size: var(--primary-font-mobile);
+    }
 }
