@@ -47,6 +47,21 @@
     margin-top: 10px;
 }
 
+.c-btn-group__item {
+    padding: 7px 14px;
+}
+
+.c-btn-group__dots {
+    width: 5.5px;
+    height: 5.5 px;
+    border-radius: 100px;
+    background-color: var(--black);
+}
+
+.l-flex--dots {
+    gap: 5px;
+}
+
 @media (width <=1050px) {
     .l-grid--c-card {
         padding: 0 50px;
