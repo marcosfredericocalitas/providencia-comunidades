@@ -74,24 +74,3 @@ function nextImage() {
     }, 3000);
 }
 nextImage();
-
-function swithImageByControl() {
-    let count = 0;
-    const slider = document.querySelector(".slider");
-    const controlButton = document.querySelectorAll(".slider__control");
-
-    controlButton.forEach((button) => {
-        button.addEventListener("click", function () {
-            let counter = button.classList[1] === "slider__control--prev" ? -1 : 1;
-            if (counter != -1) {
-                count++;
-                slider.querySelector("#radio-" + count).checked = true;
-                return;
-            }
-            count--;
-            slider.querySelector("#radio-" + count).checked = true;
-        });
-    });
-}
-
-console.log(swithImageByControl());
