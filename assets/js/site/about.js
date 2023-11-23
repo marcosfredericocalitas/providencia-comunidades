@@ -1,3 +1,4 @@
+// Collapse function 
 function addClasseOncollapse(collapseClass) {
     const collapse = document.querySelectorAll(collapseClass);
 
