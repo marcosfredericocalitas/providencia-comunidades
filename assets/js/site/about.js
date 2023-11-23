@@ -1,4 +1,4 @@
-function collapse(collapseClass) {
+function addClasseOncollapse(collapseClass) {
     const collapse = document.querySelectorAll(collapseClass);
 
     collapse.forEach(collapseButton => {
@@ -14,4 +14,4 @@ function collapse(collapseClass) {
     });
 }
 
-collapse(".c-collapse__wrapper");
+addClasseOncollapse(".c-collapse__wrapper");
