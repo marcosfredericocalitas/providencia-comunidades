@@ -313,6 +313,11 @@
     padding: var(--primary-padding-t-b) var(--primary-padding-l-r);
 }
 
+.c-page--left {
+    left: 0;
+    transform: translateX(0) translateY(-30%);
+}
+
 .c-page__title {
     font-size: var(--font-size-xxl);
 }
@@ -320,6 +325,10 @@
 .c-page__details {
     color: #ffffffb0;
     font-size: 17px;
+}
+
+.c-page__details--left {
+    max-width: 800px;
 }
 
 /* Text */
