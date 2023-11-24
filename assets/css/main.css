@@ -65,54 +65,6 @@
 }
 
 /* -- Components -- */
-/* Menu */
-.c-menu {
-    gap: 20px;
-}
-
-.c-menu__list {
-    gap: 30px;
-}
-
-.c-menu__item {
-    width: 100%;
-}
-
-.c-menu__link {
-    border-radius: 5px;
-    background-color: transparent;
-    transition: var(--hover-transition);
-}
-
-.c-menu__link--navbar {
-    color: var(--black);
-    font-size: 17.5px;
-    padding: 13px 20px;
-    font-weight: 500;
-}
-
-.c-menu__link--navbar:hover,
-.c-menu__link--navbar.is-active {
-    color: var(--white);
-    background-color: var(--primary-color);
-}
-
-.c-menu__link--footer {
-    color: var(--white);
-    padding: 5px;
-}
-
-.c-menu__link--footer:hover {
-    color: var(--primary-color);
-}
-
-@media (width <=1150px) {
-    .c-menu__link--navbar {
-        padding: 9px 12px;
-        font-weight: bolder;
-    }
-}
-
 /* Buttons */
 .c-btn {
     color: var(--white);
@@ -201,6 +153,34 @@
     max-height: 300px;
     visibility: visible;
     margin-bottom: 30px;
+}
+
+/* Header */
+.header__wrapper {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/test-img-4.jpg');
+}
+
+.header__wrapper--left {
+    height: 500px;
+}
+
+@media (width <=992px) {
+    .header__wrapper {
+        height: 400px;
+    }
+}
+
+@media (width <=576px) {
+    .header__wrapper {
+        height: 350px;
+    }
 }
 
 /* Input */
@@ -301,6 +281,54 @@
 
 .c-img--radius-full {
     border-radius: 100px;
+}
+
+/* Menu */
+.c-menu {
+    gap: 20px;
+}
+
+.c-menu__list {
+    gap: 30px;
+}
+
+.c-menu__item {
+    width: 100%;
+}
+
+.c-menu__link {
+    border-radius: 5px;
+    background-color: transparent;
+    transition: var(--hover-transition);
+}
+
+.c-menu__link--navbar {
+    color: var(--black);
+    font-size: 17.5px;
+    padding: 13px 20px;
+    font-weight: 500;
+}
+
+.c-menu__link--navbar:hover,
+.c-menu__link--navbar.is-active {
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+.c-menu__link--footer {
+    color: var(--white);
+    padding: 5px;
+}
+
+.c-menu__link--footer:hover {
+    color: var(--primary-color);
+}
+
+@media (width <=1150px) {
+    .c-menu__link--navbar {
+        padding: 9px 12px;
+        font-weight: bolder;
+    }
 }
 
 /* Page */
