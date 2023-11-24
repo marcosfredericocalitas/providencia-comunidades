@@ -14,15 +14,18 @@ for (let classToAddOnClick of classesToAddOnClick) {
         classToAddOnClick.element,
         classToAddOnClick.className
     );
-}
+};
 
 // Array of classes to be added on window scroll
 const classesToAddByScroll = [
     { element: "navbar", className: "is-fixed", time: 300 },
     { element: "navbar", className: "is-visible", time: 400 },
     { element: "menu-logo", className: "is-small", time: 300 },
+    { element: "card-details", className: "is-fixed", time: 200 },
+    { element: "card-details", className: "has-no-transition", time: 250 },
+    { element: "card-details", className: "is-top", time: 400 },
     { element: "btn-scroll-top", className: "is-visible", time: 400 }
-]
+];
 
 // Add classes on window scroll
 window.addEventListener("scroll", () => {
@@ -38,12 +41,12 @@ window.addEventListener("scroll", () => {
 // Remove class by event
 function removeClassByEvent(event) {
     window.addEventListener(event, () => {
-        for (let i = 0; i < 4; i++) {
+        for (let i = 0; i < 6; i++) {
             classToRemoveByEvent = classesToAddByScroll[i];
             removeClassBy(classToRemoveByEvent.element, classToRemoveByEvent.className);
         }
     });
-}
+};
 
 removeClassByEvent("resize");
 removeClassByEvent("scroll");
@@ -72,5 +75,6 @@ function nextImage() {
         }
         slider.querySelector("#radio-" + counter).checked = true;
     }, 3000);
-}
+};
+
 nextImage();
