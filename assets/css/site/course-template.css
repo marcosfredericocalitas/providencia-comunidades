@@ -18,6 +18,20 @@
     padding: 25px;
 }
 
+.card-details.is-fixed {
+    position: fixed;
+    top: 20px;
+}
+
+.card-details.has-no-transition {
+    transition: all 600ms ease-in-out;
+}
+
+.card-details.is-top {
+    top: 120px;
+    transition: all 600ms ease-in-out;
+}
+
 .card-details__wrapper {
     width: 400px;
     box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.130);
