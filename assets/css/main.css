@@ -322,6 +322,10 @@
     font-size: var(--font-size-xxl);
 }
 
+.c-page__title--lg {
+    font-size: 50px;
+}
+
 .c-page__details {
     color: #ffffffb0;
     font-size: 17px;

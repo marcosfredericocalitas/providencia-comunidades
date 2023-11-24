@@ -9,6 +9,10 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../img/test-img-4.jpg');
 }
 
+.header__wrapper--left {
+    height: 500px;
+}
+
 @media (width <=992px) {
     .header__wrapper {
         height: 400px;
