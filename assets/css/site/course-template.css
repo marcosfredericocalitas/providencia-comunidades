@@ -1,0 +1,11 @@
+.section {
+    padding: 25px;
+}
+
+.details__title {
+    font-size: 35px;
+}
+
+.card-details__wrapper {
+    width: 400px;
+}
