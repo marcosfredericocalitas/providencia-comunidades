@@ -2,20 +2,20 @@
     padding: 0px 400px 0px 0px;
 }
 
+.l-flex--details {
+    padding: 25px;
+}
+
 .details__title {
     font-size: 35px;
 }
 
+/* Card details */
 .card-details {
-    position: absolute;
     right: 0;
     top: 14rem;
-    transform: translateX(-18%);
+    transform: translateX(-17%);
     z-index: 100px;
-}
-
-.l-flex--details {
-    padding: 25px;
 }
 
 .card-details.is-fixed {
@@ -29,18 +29,17 @@
 
 .card-details.is-top {
     top: 120px;
-    transition: all 600ms ease-in-out;
 }
 
 .card-details__wrapper {
     width: 400px;
-    box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.130);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.150);
     background-color: var(--white);
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .card-details__header {
-    padding: 15px;
+    padding: 20px;
 }
 
 .card-details__img {
