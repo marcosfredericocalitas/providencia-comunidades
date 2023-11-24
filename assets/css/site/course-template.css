@@ -1,11 +1,46 @@
 .section {
-    padding: 25px;
+    padding: 0px 400px 0px 0px;
 }
 
 .details__title {
     font-size: 35px;
 }
 
+.card-details {
+    position: absolute;
+    right: 0;
+    top: 14rem;
+    transform: translateX(-18%);
+    z-index: 100px;
+}
+
+.l-flex--details {
+    padding: 25px;
+}
+
 .card-details__wrapper {
     width: 400px;
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.130);
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.card-details__header {
+    padding: 15px;
+}
+
+.card-details__img {
+    border-radius: 10px;
+}
+
+.card-details__body {
+    padding: 0px 20px 20px 20px;
+}
+
+.card-details__title {
+    font-size: 18px;
+}
+
+.card-details__list {
+    gap: 12px;
 }
