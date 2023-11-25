@@ -24,6 +24,9 @@ const classesToAddByScroll = [
     { element: "card-details", className: "is-fixed", time: 200 },
     { element: "card-details", className: "has-no-transition", time: 250 },
     { element: "card-details", className: "is-top", time: 400 },
+    { element: "card-details", className: "is-not-fixed", time: 700 },
+    { element: "card-details", className: "has-no-transition-2", time: 700 },
+    { element: "section-content", className: "is-full", time: 700 },
     { element: "btn-scroll-top", className: "is-visible", time: 400 }
 ];
 
@@ -41,7 +44,7 @@ window.addEventListener("scroll", () => {
 // Remove class by event
 function removeClassByEvent(event) {
     window.addEventListener(event, () => {
-        for (let i = 0; i < 6; i++) {
+        for (let i = 0; i < 7; i++) {
             classToRemoveByEvent = classesToAddByScroll[i];
             removeClassBy(classToRemoveByEvent.element, classToRemoveByEvent.className);
         }

@@ -10,7 +10,6 @@
 
 .c-card__wrapper {
     width: 100%;
-    /* min-height: 460px; */
     background-color: var(--white);
     transition: var(--hover-transition);
     overflow: hidden;
@@ -70,8 +69,6 @@
     gap: 5px;
 }
 
-
-
 @media (width >1380px) {
     .l-grid--c-card {
         padding: 100px 35px 100px 35px;
@@ -99,13 +96,13 @@
 
 @media (width <=665px) {
     .l-grid--c-card {
-       grid-template-columns: 1fr;
-       padding: 100px 50px 100px 50px;
+        grid-template-columns: 1fr;
+        padding: 100px 50px 100px 50px;
     }
 }
 
 @media (width <=576px) {
     .l-grid--c-card {
-       padding: 100px 0px 100px 0px;
+        padding: 100px 0px 100px 0px;
     }
 }

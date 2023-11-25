@@ -1,5 +1,15 @@
+.l-section--details {
+    align-items: end;
+    gap: 50px;
+}
+
 .section {
-    padding: 0px 400px 0px 0px;
+    padding: 0px 450px 0px 0px;
+}
+
+section.is-full {
+    padding: 0;
+    background-color: red;
 }
 
 .l-flex--details {
@@ -14,8 +24,8 @@
 .card-details {
     right: 0;
     top: 224px;
-    transform: translateX(-17%);
-    z-index: 100px;
+    transform: translateX(-35%);
+    z-index: 1;
 }
 
 .card-details.is-fixed {
@@ -27,8 +37,23 @@
     transition: all 600ms ease-in-out;
 }
 
+.card-details.has-no-transition-2 {
+    transition: none;
+}
+
 .card-details.is-top {
     top: 110px;
+}
+
+.card-details.is-not-fixed {
+    position: relative;
+    right: 0;
+    top: 0;
+    transform: translateX(0);
+}
+
+.card-details.is-not-fixed>.section {
+    padding: 0px 0px 0px 0px;
 }
 
 .card-details__wrapper {
@@ -79,6 +104,11 @@
 }
 
 @media (width <=1150px) {
+    .l-section--details {
+        align-items: flex-start;
+        gap: 70px;
+    }
+
     .l-main__item {
         gap: 30px;
     }
