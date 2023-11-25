@@ -4,13 +4,13 @@
 
 .l-grid--c-card {
     row-gap: 100px;
-    column-gap: 20px;
-    padding: 100px 50px 100px 50px;
+    column-gap: 25px;
+    padding: 100px 0px 100px 0px;
 }
 
 .c-card__wrapper {
     width: 100%;
-    min-height: 460px;
+    /* min-height: 460px; */
     background-color: var(--white);
     transition: var(--hover-transition);
     overflow: hidden;
@@ -68,4 +68,44 @@
 
 .l-flex--dots {
     gap: 5px;
+}
+
+
+
+@media (width >1380px) {
+    .l-grid--c-card {
+        padding: 100px 35px 100px 35px;
+    }
+}
+
+@media (width <=1150px) {
+    .l-grid--c-card {
+        column-gap: 20px;
+    }
+}
+
+@media (width <=1150px) {
+    .l-grid--c-card {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 25px;
+    }
+}
+
+@media (width <=768px) {
+    .l-grid--c-card {
+        column-gap: 20px;
+    }
+}
+
+@media (width <=665px) {
+    .l-grid--c-card {
+       grid-template-columns: 1fr;
+       padding: 100px 50px 100px 50px;
+    }
+}
+
+@media (width <=576px) {
+    .l-grid--c-card {
+       padding: 100px 0px 100px 0px;
+    }
 }
