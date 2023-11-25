@@ -1,57 +1,57 @@
+.l-section--c-card {
+    background-color: #f8f9fa;
+}
+
 .l-grid--c-card {
     row-gap: 100px;
     column-gap: 20px;
+    padding: 100px 50px 100px 50px;
 }
 
 .c-card__wrapper {
-    height: 400px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.130);
+    width: 100%;
+    min-height: 460px;
     background-color: var(--white);
+    transition: var(--hover-transition);
     overflow: hidden;
-    gap: 20px;
+}
+
+.c-card__wrapper:hover {
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.230);
 }
 
 .c-card__wrapper:hover>.c-card__header .c-card__img {
-    transform: scale(1.30);
     filter: brightness(0.6);
 }
 
 .c-card__header {
     width: 100%;
-    height: 180px;
+    padding: 15px 15px 0px 15px;
     overflow: hidden;
 }
 
 .c-card__img {
-    border-radius: 10px 10px 0 0;
+    border-radius: var(--primary-border-radius);
     transition: all 250ms ease-in-out;
 }
 
 .c-card__body {
-    padding: 0 20px 20px 20px;
-
+    padding: 20px;
+    justify-content: space-between;
 }
 
 .c-card__title {
-    font-size: 18.5px;
+    font-size: 22px;
 }
 
-.c-card__text {
-    font-size: 15.5px;
-    -webkit-line-clamp: 4;
+.c-text--sm {
+    font-size: 16px;
 }
-
-.l-flex--btn {}
 
 .c-card__btn {
-    font-size: 16px;
-    padding: 10px 15px;
-    /* margin-top: 10px; */
-}
-
-.c-btn-group__item {
-    padding: 7px 14px;
+    display: flex;
+    justify-content: end;
+    padding: 10px 16px;
 }
 
 .c-btn-group__item.is-active {
@@ -68,64 +68,4 @@
 
 .l-flex--dots {
     gap: 5px;
-}
-
-@media (width <=1050px) {
-    .l-grid--c-card {
-        padding: 0 50px;
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (width <=992px) {
-    .l-grid--c-card {
-        padding: 0 0px;
-    }
-}
-
-@media (width <=768px) {
-    .l-grid--c-card {
-        padding: 0 50px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (width <=655px) {
-    .l-grid--c-card {
-        padding: 0 0px;
-    }
-}
-
-@media (width <=535px) {
-    .l-grid--c-card {
-        padding: 0 80px;
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (width <=480px) {
-    .l-grid--c-card {
-        padding: 0 50px;
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (width <=430px) {
-    .l-grid--c-card {
-        padding: 0 20px;
-        grid-template-columns: 1fr;
-    }
-}
-
-
-@media (width <=388px) {
-    .l-grid--c-card {
-        padding: 0;
-        grid-template-columns: 1fr;
-    }
-
-    .c-btn-group__item {
-        padding: 5px 12px;
-    }
-
 }
