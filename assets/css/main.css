@@ -35,7 +35,9 @@
     --font-size-md: 30px;
     --font-size-sm: 25px;
     --font-size-mobile: 17px;
-    --primary-line-height: 1.6rem;
+    /* --primary-line-height: 1.6rem;
+    Border radius */
+    --primary-border-radius: 10px;
     /* Navbar padding top and bottom */
     --primary-padding-t-b: 8px;
     --mobile-padding-t-b: 5px;
@@ -602,7 +604,7 @@
 
 .u-border {
     border: 1px solid #d7d7d7;
-    border-radius: 10px;
+    border-radius: var(--primary-border-radius);
     background-color: var(--white);
 }
 
