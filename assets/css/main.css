@@ -35,8 +35,8 @@
     --font-size-md: 30px;
     --font-size-sm: 25px;
     --font-size-mobile: 17px;
-    /* --primary-line-height: 1.6rem;
-    Border radius */
+    --primary-line-height: 1.6rem;
+    /* Border radius */
     --primary-border-radius: 10px;
     /* Navbar padding top and bottom */
     --primary-padding-t-b: 8px;
@@ -113,9 +113,24 @@
     align-self: flex-start;
 }
 
-.c-btn--primary:hover {
+.c-btn--primary:hover,
+.c-btn--primary.is-active {
     color: var(--primary-color);
     background-color: transparent;
+}
+
+.c-btn--secundary {
+    color: #232323;
+    font-weight: 700;
+}
+
+.c-btn--secundary:hover {
+    background-color: #eee;
+}
+
+.c-btn--secundary.is-active {
+    color: var(--white);
+    background-color: var(--primary-color);
 }
 
 .c-btn--small {
@@ -601,7 +616,7 @@
     gap: 10px;
 }
 
-.l-gap-15px {
+.l-gap-15 {
     gap: 15px;
 }
 
