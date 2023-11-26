@@ -53,6 +53,11 @@
 
 .c-card__wrapper--width {
     width: 380px;
+    height: 600px;
+}
+
+.c-card__wrapper:hover {
+    transform: none;
 }
 
 .c-card__list {
@@ -101,13 +106,13 @@
         flex-direction: column-reverse;
     }
 
-    .c-card--details__wrapper {
+    .c-card__wrapper--width {
         width: 100%;
     }
 }
 
-@media (width <=330px) {
-    .c-card--details__item {
+@media (width <=350px) {
+    .c-card__item {
         flex-direction: column;
         word-break: break-all;
     }
