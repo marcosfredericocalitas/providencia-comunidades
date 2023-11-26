@@ -1,20 +1,25 @@
+:root {
+    --card-transition: all 200ms ease-in-out;
+}
+
 .l-grid--c-card {
     row-gap: 100px;
-    column-gap: 25px;
+    column-gap: 30px;
 }
 
 .c-card__wrapper {
     width: 340px;
-    min-height: 500px;
+    height: 500px;
     border-radius: var(--primary-border-radius);
     background-color: var(--white);
     box-shadow: 1px 4px 20px -2px rgba(0, 0, 0, 0.1);
-    transition: var(--hover-transition);
+    transition: var(--card-transition);
     overflow: hidden;
+    gap: 15px;
 }
 
 .c-card__wrapper:hover>.c-card__header .c-card__img {
-    transform: scale(1.30);
+    transform: scale(1.20);
     filter: brightness(0.6);
 }
 
@@ -24,11 +29,15 @@
 }
 
 .c-card__img {
-    transition: all 350ms ease-in-out;
+    transition: var(--card-transition);
 }
 
 .c-card__body {
-    padding: 20px 24px 0px 24px;
+    padding: 0px 24px;
+}
+
+.c-card__category {
+    font-weight: 700;
 }
 
 .c-card__title {
@@ -39,16 +48,17 @@
     font-size: 16.5px;
 }
 
-.c-card__btn {
-    position: absolute;
-    bottom: 0;
-    transform: translateY(-24px);
-    font-size: 16.5px;
-    padding: 10px 15px;
+.c-card__footer {
+    position: relative;
+    padding: 0 24px 24px 24px;
 }
 
-.c-card__category {
-    font-weight: 600;
+.c-card__btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 11px;
+    justify-content: flex-end;
 }
 
 .c-btn-group__item {
