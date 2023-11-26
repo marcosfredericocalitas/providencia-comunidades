@@ -336,14 +336,6 @@
     padding-right: 580px;
 }
 
-.c-page__title {
-    font-size: var(--font-size-xxl);
-}
-
-.c-page__title--lg {
-    font-size: 50px;
-}
-
 .c-page__details {
     color: #ffffffb0;
     font-size: 17px;
@@ -362,15 +354,36 @@
 
 /* Title */
 .c-title {
+    color: black;
+    word-break: break-all;
+    text-align: center;
+    font-weight: 800;
+}
+
+.c-title--xxl {
+    font-size: 50px;
+}
+
+.c-title--primary {
+    color: var(--white);
+    font-size: var(--font-size-xxl);
+}
+
+.c-title--secundary {
     font-size: var(--font-size-xl);
     padding: 0 var(--mobile-padding-l-r);
+}
+
+.c-title--tertiary {
+    font-weight: 700;
+    font-size: var(--font-size-lg);
+    text-align: left;
 }
 
 @media (width <=1320px) {
     .c-page {
         padding: var(--primary-padding-t-b) 460px var(--primary-padding-t-b) var(--secundary-padding-l-r);
     }
-
 }
 
 @media (width <=1150px) {
@@ -397,12 +410,16 @@
         height: 450px;
     }
 
-    .c-page__title {
+    .c-title--primary {
         font-size: var(--font-size-xl);
     }
 
-    .c-title {
+    .c-title--secundary {
         font-size: var(--font-size-lg);
+    }
+
+    .c-title--tertiary {
+        font-size: var(--font-size-md);
     }
 }
 
@@ -423,12 +440,16 @@
         font-size: 22px;
     }
 
-    .c-page__title {
+    .c-title--primary {
         font-size: var(--font-size-lg);
     }
 
-    .c-title {
+    .c-title--secundary {
         font-size: var(--font-size-md);
+    }
+
+    .c-title--tertiary {
+        font-size: var(--font-size-sm);
     }
 }
 
@@ -441,15 +462,15 @@
         height: 420px;
     }
 
-    .c-page__title {
-        font-size: var(--font-size-md);
-    }
-
     .c-page__details {
         font-size: var(--font-size-mobile);
     }
 
-    .c-title {
+    .c-title--primary {
+        font-size: var(--font-size-md);
+    }
+
+    .c-title--secundary {
         font-size: var(--font-size-sm);
     }
 
@@ -677,6 +698,14 @@
 
 .u-txt-center {
     text-align: center;
+}
+
+.u-txt-left {
+    text-align: left;
+}
+
+.u-txt-right {
+    text-align: right;
 }
 
 .u-txt-gold {

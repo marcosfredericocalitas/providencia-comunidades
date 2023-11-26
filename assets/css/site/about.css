@@ -6,10 +6,6 @@
     border-radius: 5px;
 }
 
-.about__title {
-    font-size: 35px
-}
-
 @media (width <=992px) {
     .about__wrapper {
         flex-direction: column;
@@ -23,9 +19,5 @@
 @media (width <=768px) {
     .l-grid__collapse {
         grid-template-columns: 1fr;
-    }
-
-    .about__title {
-        font-size: var(--font-size-sm);
     }
 }
