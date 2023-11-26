@@ -67,6 +67,26 @@
 }
 
 /* -- Components -- */
+
+/* Brand */
+.c-brand {
+    --logo-dimention: 92px;
+    width: var(--logo-dimention);
+    height: var(--logo-dimention);
+}
+
+.c-brand.is-small {
+    --logo-dimention-small: 70px;
+    width: var(--logo-dimention-small);
+    height: var(--logo-dimention-small);
+}
+
+.c-brand--large {
+    --logo-dimention: 150px;
+    width: var(--logo-dimention);
+    height: var(--logo-dimention);
+}
+
 /* Buttons */
 .c-btn {
     color: var(--white);
@@ -377,9 +397,21 @@
     .c-page {
         padding: var(--primary-padding-t-b) 460px var(--primary-padding-t-b) var(--secundary-padding-l-r);
     }
+
+    .c-brand--large {
+        --logo-dimention: 130px;
+        width: var(--logo-dimention);
+        height: var(--logo-dimention);
+    }
 }
 
 @media (width <=1150px) {
+    .c-brand {
+        --logo-dimention: 70px;
+        width: var(--logo-dimention);
+        height: var(--logo-dimention);
+    }
+
     .c-header__wrapper--left {
         height: 480px;
     }
@@ -452,6 +484,12 @@
 }
 
 @media (width <=576px) {
+    .c-brand--large {
+        --logo-dimention: 100px;
+        width: var(--logo-dimention);
+        height: var(--logo-dimention);
+    }
+
     .c-header__wrapper {
         height: 350px;
     }
