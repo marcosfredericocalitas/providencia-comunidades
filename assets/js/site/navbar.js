@@ -44,8 +44,8 @@ window.addEventListener("scroll", () => {
 // Remove class by event
 function removeClassByEvent(event) {
     window.addEventListener(event, () => {
-        for (let i = 0; i < 7; i++) {
-            classToRemoveByEvent = classesToAddByScroll[i];
+        for (let i = 0; i < 9; i++) {
+            let classToRemoveByEvent = classesToAddByScroll[i];
             removeClassBy(classToRemoveByEvent.element, classToRemoveByEvent.className);
         }
     });
