@@ -334,6 +334,14 @@
     color: var(--primary-color);
 }
 
+.c-menu__icon--small {
+    font-size: 18px;
+}
+
+.c-menu__icon--medium {
+    font-size: 20px;
+}
+
 /* Page */
 .c-page {
     position: absolute;
@@ -625,10 +633,6 @@
 /* Display grid  */
 .l-grid {
     display: grid;
-}
-
-.l-grid-2-columns {
-    grid-template-columns: repeat(2, 1fr);
 }
 
 .l-col-2 {
