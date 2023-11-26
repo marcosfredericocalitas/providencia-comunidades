@@ -19,7 +19,7 @@
 .c-card--details {
     top: 224px;
     right: 0;
-    transform: translateX(-37%);
+    transform: translateX(-36.9%);
     z-index: 1;
 }
 
@@ -61,7 +61,7 @@
 
 @media (width <=1320px) {
     .c-card--details {
-        transform: translateX(-6%);
+        transform: translateX(-13%);
     }
 }
 

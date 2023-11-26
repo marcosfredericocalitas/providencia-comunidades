@@ -24,9 +24,9 @@ const classesToAddByScroll = [
     { element: "card-details", className: "is-fixed", time: 200 },
     { element: "card-details", className: "has-no-transition", time: 250 },
     { element: "card-details", className: "is-top", time: 400 },
-    { element: "card-details", className: "is-not-fixed", time: 725 },
+    { element: "card-details", className: "is-not-fixed", time: 790},
     { element: "card-details", className: "has-no-transition-2", time: 700 },
-    { element: "section-content", className: "is-full", time: 725 },
+    { element: "section-content", className: "is-full", time: 790 },
     { element: "btn-scroll-top", className: "is-visible", time: 400 }
 ];
 
