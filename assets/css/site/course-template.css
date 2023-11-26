@@ -1,4 +1,4 @@
-.l-section--details {
+.l-main__item--details {
     align-items: end;
     gap: 50px;
 }
@@ -7,12 +7,11 @@
     padding: 0px 450px 0px 0px;
 }
 
-section.is-full {
+.section.is-full {
     padding: 0;
-    background-color: red;
 }
 
-.l-flex--details {
+.section__item {
     padding: 25px;
 }
 
@@ -104,7 +103,7 @@ section.is-full {
 }
 
 @media (width <=1150px) {
-    .l-section--details {
+    .l-main__item--details {
         align-items: flex-start;
         gap: 70px;
     }
@@ -135,7 +134,7 @@ section.is-full {
 }
 
 @media (width <=880px) {
-    .l-section--details {
+    .l-main__item--details {
         flex-direction: column-reverse;
     }
 
