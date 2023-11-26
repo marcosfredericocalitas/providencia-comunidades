@@ -117,6 +117,10 @@
 }
 
 @media (width <=576px) {
+    .info__title {
+        font-size: 22px;
+    }
+
     .form {
         padding: 20px;
     }
