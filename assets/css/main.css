@@ -334,11 +334,11 @@
     color: var(--primary-color);
 }
 
-.c-menu__icon--small {
+.c-menu__icon--sm {
     font-size: 18px;
 }
 
-.c-menu__icon--medium {
+.c-menu__icon--md {
     font-size: 20px;
 }
 
