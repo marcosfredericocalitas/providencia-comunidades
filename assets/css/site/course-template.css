@@ -4,7 +4,7 @@
 }
 
 .section {
-    padding: 0px 450px 0px 0px;
+    padding: 0px 380px 0px 0px;
 }
 
 .section.is-full {
@@ -15,77 +15,52 @@
     padding: 25px;
 }
 
-.details__title {
-    font-size: 35px;
-}
-
 /* Card details */
-.card-details {
-    right: 0;
+.c-card--details {
     top: 224px;
-    transform: translateX(-35%);
+    right: 0;
+    transform: translateX(-37%);
     z-index: 1;
 }
 
-.card-details.is-fixed {
+.c-card--details.is-fixed {
     position: fixed;
     top: 20px;
 }
 
-.card-details.has-no-transition {
+.c-card--details.has-no-transition {
     transition: all 600ms ease-in-out;
 }
 
-.card-details.has-no-transition-2 {
+.c-card--details.has-no-transition-2 {
     transition: none;
 }
 
-.card-details.is-top {
+.c-card--details.is-top {
     top: 110px;
 }
 
-.card-details.is-not-fixed {
+.c-card--details.is-not-fixed {
     position: relative;
     right: 0;
     top: 0;
     transform: translateX(0);
 }
 
-.card-details.is-not-fixed>.section {
+.c-card--details.is-not-fixed>.section {
     padding: 0px 0px 0px 0px;
 }
 
-.card-details__wrapper {
-    width: 400px;
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.150);
-    background-color: var(--white);
-    border-radius: 10px;
+.c-card__wrapper--width {
+    width: 380px;
 }
 
-.card-details__header {
-    padding: 20px;
+.c-card__list {
+    gap: 8px;
 }
-
-.card-details__img {
-    border-radius: 10px;
-}
-
-.card-details__body {
-    padding: 0px 20px 20px 20px;
-}
-
-.card-details__title {
-    font-size: 18px;
-}
-
-.card-details__list {
-    gap: 12px;
-}
-
-@media (width <=1430px) {}
 
 @media (width <=1320px) {
-    .card-details {
+    .c-card--details {
         transform: translateX(-6%);
     }
 }
@@ -104,18 +79,18 @@
         padding: 0;
     }
 
-    .card-details {
+    .c-card--details {
         position: relative;
         top: 0;
         transform: translateX(0%);
     }
 
-    .card-details.is-fixed {
+    .c-card--details.is-fixed {
         position: relative;
         top: 0;
     }
 
-    .card-details.is-top {
+    .c-card--details.is-top {
         position: relative;
         top: 0;
     }
@@ -126,13 +101,13 @@
         flex-direction: column-reverse;
     }
 
-    .card-details__wrapper {
+    .c-card--details__wrapper {
         width: 100%;
     }
 }
 
 @media (width <=330px) {
-    .card-details__item {
+    .c-card--details__item {
         flex-direction: column;
         word-break: break-all;
     }
