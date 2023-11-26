@@ -82,19 +82,7 @@
     gap: 12px;
 }
 
-@media (width <=1430px) {
-    .card-details {
-        top: 378px;
-    }
-
-    .card-details.is-fixed {
-        top: 178px;
-    }
-
-    .card-details.is-top {
-        top: 110px;
-    }
-}
+@media (width <=1430px) {}
 
 @media (width <=1320px) {
     .card-details {
