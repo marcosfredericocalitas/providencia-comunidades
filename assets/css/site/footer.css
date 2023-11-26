@@ -1,20 +1,10 @@
 .c-footer {
-    position: relative;
-    width: 100%;
     border-top: var(--bottom-navba-border);
 }
 
 .c-footer-primary {
     padding: var(--primary-footer-padding-t-b) var(--primary-padding-l-r);
     background-color: var(--primary-footer-bg);
-}
-
-.c-menu__icon--small {
-    font-size: 18px;
-}
-
-.c-menu__icon--medium {
-    font-size: 20px;
 }
 
 .c-footer__secondary {
