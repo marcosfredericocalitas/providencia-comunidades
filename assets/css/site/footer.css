@@ -28,7 +28,7 @@
     }
 }
 
-@media (width <=675px) {
+@media (width <=665px) {
     .c-footer-primary {
         flex-direction: column;
         gap: 50px;
