@@ -67,7 +67,6 @@
 }
 
 /* -- Components -- */
-
 /* Brand */
 .c-brand {
     --logo-dimention: 92px;
@@ -490,139 +489,6 @@
     text-align: left;
 }
 
-@media (width <=1320px) {
-    .c-page {
-        padding: var(--primary-padding-t-b) 460px var(--primary-padding-t-b) var(--secundary-padding-l-r);
-    }
-
-    .c-brand--large {
-        --logo-dimention: 130px;
-        width: var(--logo-dimention);
-        height: var(--logo-dimention);
-    }
-}
-
-@media (width <=1150px) {
-    .c-brand {
-        --logo-dimention: 70px;
-        width: var(--logo-dimention);
-        height: var(--logo-dimention);
-    }
-
-    .c-header__wrapper--left {
-        height: 480px;
-    }
-
-    .c-menu__link--navbar {
-        padding: 9px 12px;
-        font-weight: bolder;
-    }
-
-    .c-page {
-        transform: translateX(-50%) translateY(-10%);
-        padding: var(--mobile-padding-t-b) var(--mobile-padding-l-r);
-    }
-
-    .c-page--left {
-        transform: translateX(-50%) translateY(-37%);
-    }
-}
-
-@media (width <=992px) {
-    .c-header__wrapper {
-        height: 400px;
-    }
-
-    .c-header__wrapper--left {
-        height: 450px;
-    }
-
-    .c-title--primary {
-        font-size: var(--font-size-xl);
-    }
-
-    .c-title--secundary {
-        font-size: var(--font-size-lg);
-    }
-
-    .c-title--tertiary {
-        font-size: var(--font-size-md);
-    }
-}
-
-@media (width <=768px) {
-    .c-collapse__header {
-        padding: 10px 20px;
-    }
-
-    .c-collapse__title {
-        font-size: 22px;
-    }
-
-    .c-header__wrapper--left {
-        height: 420px;
-    }
-
-    .c-page--left {
-        transform: translateX(-50%) translateY(-35%);
-    }
-
-    .c-title--primary {
-        font-size: var(--font-size-lg);
-    }
-
-    .c-title--secundary {
-        font-size: var(--font-size-md);
-    }
-
-    .c-title--tertiary {
-        font-size: var(--font-size-sm);
-    }
-}
-
-@media (width <=576px) {
-    .c-brand--large {
-        --logo-dimention: 100px;
-        width: var(--logo-dimention);
-        height: var(--logo-dimention);
-    }
-
-    .c-header__wrapper {
-        height: 350px;
-    }
-
-    .c-header__wrapper--left {
-        height: 420px;
-    }
-
-    .c-page__details {
-        font-size: var(--font-size-mobile);
-    }
-
-    .c-text {
-        line-height: 1.6rem;
-        font-size: var(--font-size-mobile);
-    }
-
-    .c-title--primary {
-        font-size: var(--font-size-md);
-    }
-
-    .c-title--secundary {
-        font-size: var(--font-size-sm);
-    }
-}
-
-@media (width <=488px) {
-    .c-page {
-        transform: translateY(-15%) translateX(-50%);
-    }
-
-    .c-page__title {
-        font-size: 27px;
-    }
-}
-
 /* -- Layouts -- */
 /* Display box */
 .l-box {
@@ -750,18 +616,6 @@
     padding: 0 var(--primary-padding-l-r);
 }
 
-@media (width <=1320px) {
-    .l-section {
-        padding: 0 var(--secundary-padding-l-r);
-    }
-}
-
-@media (width <=1150px) {
-    .l-section {
-        padding: 0 var(--mobile-padding-l-r);
-    }
-}
-
 /* -- Utilities -- */
 /* Position */
 .u-relative {
@@ -859,4 +713,162 @@
 .u-none,
 .is-none {
     display: none;
+}
+
+/* Responsivity */
+@media (width <=1320px) {
+    .c-page {
+        padding: var(--primary-padding-t-b) 460px var(--primary-padding-t-b) var(--secundary-padding-l-r);
+    }
+
+    .c-brand--large {
+        --logo-dimention: 130px;
+        width: var(--logo-dimention);
+        height: var(--logo-dimention);
+    }
+
+    .l-section {
+        padding: 0 var(--secundary-padding-l-r);
+    }
+}
+
+@media (width <=1220px) {
+    .l-grid--c-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width <=1150px) {
+    .c-brand {
+        --logo-dimention: 70px;
+        width: var(--logo-dimention);
+        height: var(--logo-dimention);
+    }
+
+    .c-header__wrapper--left {
+        height: 480px;
+    }
+
+    .c-menu__link--navbar {
+        padding: 9px 12px;
+        font-weight: bolder;
+    }
+
+    .c-page {
+        transform: translateX(-50%) translateY(-10%);
+        padding: var(--mobile-padding-t-b) var(--mobile-padding-l-r);
+    }
+
+    .c-page--left {
+        transform: translateX(-50%) translateY(-37%);
+    }
+
+    .l-section {
+        padding: 0 var(--mobile-padding-l-r);
+    }
+}
+
+@media (width <=992px) {
+    .c-header__wrapper {
+        height: 400px;
+    }
+
+    .c-header__wrapper--left {
+        height: 450px;
+    }
+
+    .c-title--primary {
+        font-size: var(--font-size-xl);
+    }
+
+    .c-title--secundary {
+        font-size: var(--font-size-lg);
+    }
+
+    .c-title--tertiary {
+        font-size: var(--font-size-md);
+    }
+}
+
+@media (width <=768px) {
+    .l-grid--c-card {
+        grid-template-columns: 1fr;
+    }
+
+    .c-collapse__header {
+        padding: 10px 20px;
+    }
+
+    .c-collapse__title {
+        font-size: 22px;
+    }
+
+    .c-header__wrapper--left {
+        height: 420px;
+    }
+
+    .c-page--left {
+        transform: translateX(-50%) translateY(-35%);
+    }
+
+    .c-title--primary {
+        font-size: var(--font-size-lg);
+    }
+
+    .c-title--secundary {
+        font-size: var(--font-size-md);
+    }
+
+    .c-title--tertiary {
+        font-size: var(--font-size-sm);
+    }
+}
+
+@media (width <=576px) {
+    .c-brand--large {
+        --logo-dimention: 100px;
+        width: var(--logo-dimention);
+        height: var(--logo-dimention);
+    }
+
+    .c-header__wrapper {
+        height: 350px;
+    }
+
+    .c-header__wrapper--left {
+        height: 420px;
+    }
+
+    .c-page__details {
+        font-size: var(--font-size-mobile);
+    }
+
+    .c-text {
+        line-height: 1.6rem;
+        font-size: var(--font-size-mobile);
+    }
+
+    .c-title--primary {
+        font-size: var(--font-size-md);
+    }
+
+    .c-title--secundary {
+        font-size: var(--font-size-sm);
+    }
+}
+
+@media (width <=488px) {
+    .c-page {
+        transform: translateY(-15%) translateX(-50%);
+    }
+
+    .c-page__title {
+        font-size: 27px;
+    }
+}
+
+@media (width <=415px) {
+    .c-card__wrapper {
+        width: 100%;
+    }
 }
