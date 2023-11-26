@@ -1,16 +1,18 @@
-// Collapse function 
+// Open and close collapse
 function addClasseOncollapse(collapseClass) {
-    const collapse = document.querySelectorAll(collapseClass);
+    const collapses = document.querySelectorAll(collapseClass);
 
-    collapse.forEach(collapseButton => {
-        collapseButton.addEventListener("click", () => {
-            // Remove a classe "is-visible" de todos os elementos
-            collapse.forEach(element => {
-                element.classList.remove("is-visible");
+    collapses.forEach(collapse => {
+        collapse.addEventListener("click", () => {
+            collapses.forEach(otherCollapse => {
+                if (otherCollapse !== collapse) {
+                    console.log(collapse);
+                    console.log(otherCollapse);
+                    otherCollapse.classList.remove("is-visible");
+                }
             });
 
-            // Adiciona a classe "is-visible" apenas ao elemento clicado
-            collapseButton.classList.toggle("is-visible");
+            collapse.classList.toggle("is-visible");
         });
     });
 }
