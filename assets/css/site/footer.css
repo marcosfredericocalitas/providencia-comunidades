@@ -9,12 +9,6 @@
     background-color: var(--primary-footer-bg);
 }
 
-.c-brand--large {
-    --logo-dimention: 150px;
-    width: var(--logo-dimention);
-    height: var(--logo-dimention);
-}
-
 .c-menu__icon--small {
     font-size: 18px;
 }
@@ -34,12 +28,6 @@
         padding: var(--primary-footer-padding-t-b) var(--secundary-padding-l-r);
         gap: 50px;
     }
-
-    .c-brand--large {
-        --logo-dimention: 130px;
-        width: var(--logo-dimention);
-        height: var(--logo-dimention);
-    }
 }
 
 @media (width <=1150px) {
@@ -54,12 +42,6 @@
     .c-footer-primary {
         flex-direction: column;
         gap: 50px;
-    }
-
-    .c-brand--large {
-        --logo-dimention: 100px;
-        width: var(--logo-dimention);
-        height: var(--logo-dimention);
     }
 }
 

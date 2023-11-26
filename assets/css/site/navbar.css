@@ -29,18 +29,6 @@
     overflow: visible;
 }
 
-.c-brand {
-    --logo-dimention: 92px;
-    width: var(--logo-dimention);
-    height: var(--logo-dimention);
-}
-
-.c-brand.is-small {
-    --logo-dimention-small: 70px;
-    width: var(--logo-dimention-small);
-    height: var(--logo-dimention-small);
-}
-
 /* Menu */
 .c-menu__arrow {
     display: none;
@@ -108,12 +96,6 @@
         border-bottom: var(--bottom-navba-border);
         width: 100%;
         z-index: 2;
-    }
-
-    .c-brand {
-        --logo-dimention: 70px;
-        width: var(--logo-dimention);
-        height: var(--logo-dimention);
     }
 
     .c-menu--mobile {
