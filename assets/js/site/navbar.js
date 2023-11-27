@@ -1,5 +1,5 @@
 // Array of classes to be added on button click
-const classesToAddOnClick = [
+const classesToAddByClick = [
     { button: "btn-mobile", element: "menu-mobile", className: "is-block" },
     { button: "btn-mobile", element: "menu-searth", className: "is-block" },
     { button: "btn-mobile", element: "icon-menu-mobile-open", className: "is-none" },
@@ -8,16 +8,16 @@ const classesToAddOnClick = [
 ];
 
 // Add classes on button click
-for (let classToAddOnClick of classesToAddOnClick) {
+for (let object of classesToAddByClick) {
     addClassByClick(
-        classToAddOnClick.button,
-        classToAddOnClick.element,
-        classToAddOnClick.className
+        object.button,
+        object.element,
+        object.className
     );
 };
 
 // Array of classes to be added on window scroll
-const classesToAddByScroll = [
+const classesToAddByEvent = [
     { element: "navbar", className: "is-fixed", time: 300 },
     { element: "navbar", className: "is-visible", time: 400 },
     { element: "menu-logo", className: "is-small", time: 300 },
@@ -32,11 +32,11 @@ const classesToAddByScroll = [
 
 // Add classes on window scroll
 window.addEventListener("scroll", () => {
-    for (let classToAddByScroll of classesToAddByScroll) {
+    for (let object of classesToAddByEvent) {
         addClassByScroll(
-            classToAddByScroll.element,
-            classToAddByScroll.className,
-            classToAddByScroll.time
+            object.element,
+            object.className,
+            object.time
         );
     };
 });
@@ -45,8 +45,8 @@ window.addEventListener("scroll", () => {
 function removeClassByEvent(event) {
     window.addEventListener(event, () => {
         for (let i = 0; i < 9; i++) {
-            let classToRemoveByEvent = classesToAddByScroll[i];
-            removeClassBy(classToRemoveByEvent.element, classToRemoveByEvent.className);
+            let arrayObject = classesToAddByEvent[i];
+            removeClassBy(arrayObject.element, arrayObject.className);
         }
     });
 };
