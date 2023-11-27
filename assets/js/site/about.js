@@ -6,8 +6,6 @@ function addClasseOncollapse(collapseClass) {
         collapse.addEventListener("click", () => {
             collapses.forEach(otherCollapse => {
                 if (otherCollapse !== collapse) {
-                    console.log(collapse);
-                    console.log(otherCollapse);
                     otherCollapse.classList.remove("is-visible");
                 }
             });
