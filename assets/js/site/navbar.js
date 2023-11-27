@@ -8,11 +8,11 @@ const classesToAddByClick = [
 ];
 
 // Add classes on button click
-for (let object of classesToAddByClick) {
+for (let classToAddOnClick of classesToAddByClick) {
     addClassByClick(
-        object.button,
-        object.element,
-        object.className
+        classToAddOnClick.button,
+        classToAddOnClick.element,
+        classToAddOnClick.className
     );
 };
 
@@ -32,11 +32,11 @@ const classesToAddByEvent = [
 
 // Add classes on window scroll
 window.addEventListener("scroll", () => {
-    for (let object of classesToAddByEvent) {
+    for (let classToAddByEvent of classesToAddByEvent) {
         addClassByScroll(
-            object.element,
-            object.className,
-            object.time
+            classToAddByEvent.element,
+            classToAddByEvent.className,
+            classToAddByEvent.time
         );
     };
 });
@@ -45,8 +45,8 @@ window.addEventListener("scroll", () => {
 function removeClassByEvent(event) {
     window.addEventListener(event, () => {
         for (let i = 0; i < 9; i++) {
-            let arrayObject = classesToAddByEvent[i];
-            removeClassBy(arrayObject.element, arrayObject.className);
+            let classToAddByEvent = classesToAddByEvent[i];
+            removeClassBy(classToAddByEvent.element, classToAddByEvent.className);
         }
     });
 };
