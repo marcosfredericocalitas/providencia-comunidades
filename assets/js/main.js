@@ -1,10 +1,3 @@
-// Get window scroll Y  
-function getWindowScrollY() {
-    return {
-        windowScroll: window.scrollY
-    };
-};
-
 // Add a class on button click
 function addClassByClick(button, element, className) {
     const buttonId = document.getElementById(button);
@@ -17,7 +10,7 @@ function addClassByClick(button, element, className) {
 
 // Add a class on window scroll
 function addClassByScroll(element, className, time) {
-    const { windowScroll } = getWindowScrollY();
+    const windowScroll = window.scrollY
     const shouldAddClass = windowScroll > time;
     const elementId = document.getElementById(element);
 
@@ -25,11 +18,11 @@ function addClassByScroll(element, className, time) {
 };
 
 // Remove classes
-function removeClassBy(element, classNam) {
+function removeClassBy(element, className) {
     const windowWidth = window.innerWidth;
     const elementId = document.getElementById(element);
 
     if (windowWidth <= 1120) {
-        elementId.classList.remove(classNam);
+        elementId.classList.remove(className);
     }
 };
