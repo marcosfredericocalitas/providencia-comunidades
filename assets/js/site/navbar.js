@@ -24,7 +24,7 @@ const classesToAddByScroll = [
     { element: "card-details", className: "is-fixed", time: 200 },
     { element: "card-details", className: "has-no-transition", time: 250 },
     { element: "card-details", className: "is-top", time: 400 },
-    { element: "card-details", className: "is-not-fixed", time: 688},
+    { element: "card-details", className: "is-not-fixed", time: 688 },
     { element: "card-details", className: "has-no-transition-2", time: 650 },
     { element: "section-content", className: "is-full", time: 688 },
     { element: "btn-scroll-top", className: "is-visible", time: 400 }
@@ -69,14 +69,14 @@ scrollTopBtn.addEventListener("click", scrollToTop);
 function nextImage() {
     let counter = 1;
     const totalImages = 4;
-    const slider = document.querySelector(".slider");
+    let slider = document.getElementById("radio-1").checked = true;
 
     setInterval(() => {
         counter++;
         if (counter > totalImages) {
             counter = 1;
         }
-        slider.querySelector("#radio-" + counter).checked = true;
+        slider = document.getElementById("radio-" + counter).checked = true;
     }, 3000);
 };
 
