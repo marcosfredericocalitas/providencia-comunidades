@@ -707,6 +707,11 @@
     word-break: break-all;
 }
 
+.u-bg-gray {
+    background-color: #f6f6f6;
+}
+
+
 /* Visibility */
 .u-none,
 .is-none {
