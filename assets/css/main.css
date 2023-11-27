@@ -442,12 +442,13 @@
     padding-right: 580px;
 }
 
-.c-page__details {
+.c-page__text {
     color: #ffffffb0;
-    font-size: 17px;
+    font-size: 17.2px;
+    line-height: 1.5rem;
 }
 
-.c-page__details--left {
+.c-page__text--left {
     max-width: 800px;
 }
 
@@ -836,7 +837,7 @@
         height: 420px;
     }
 
-    .c-page__details {
+    .c-page__text {
         font-size: var(--font-size-mobile);
     }
 
