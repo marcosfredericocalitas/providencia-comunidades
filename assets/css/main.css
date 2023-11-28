@@ -51,7 +51,7 @@
     --secundary-footer-padding-t-b: 30px 20px;
     /* Transition */
     --hover-transition: all 150ms ease-in-out;
-    --hover-transition-2: all 200ms ease-in-out;
+    --hover-transition-2: all 250ms ease-in-out;
     /* Fonts */
     --poppins: 'Poppins', 'sans-serif';
     --nunito-sans-font: 'Nunito Sans', sans-serif;
