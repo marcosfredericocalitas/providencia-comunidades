@@ -20,6 +20,8 @@
     top: 224px;
     right: 0;
     transform: translateX(-36.9%);
+    border: 1px solid var(--white);
+    border-radius: 8px;
     z-index: 1;
 }
 
