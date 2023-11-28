@@ -1,4 +1,3 @@
-
 // Next image 
 function nextImage() {
     let counter = 1;
@@ -10,7 +9,6 @@ function nextImage() {
     sliderControl.forEach(controler => {
         controler.addEventListener("click", () => {
             count = controler.classList.contains("slider__control--prev") ? -1 : 1;
-
             if (count == 1) {
                 counter++;
             } else {
@@ -22,7 +20,6 @@ function nextImage() {
             } else if (count < 1) {
                 counter = 4;
             }
-
             slider = document.getElementById("radio-" + counter).checked = true;
         });
     });
