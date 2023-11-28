@@ -311,19 +311,14 @@
 
 /* Images */
 .c-img {
+    --img-dimention: 100%;
     display: block;
-    max-width: 100%;
-    height: auto;
+    width: var(--img-dimention);
+    height: var(--img-dimention);
     font-style: italic;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.c-img-responsive {
-    --dimention: 100%;
-    width: var(--dimention);
-    height: var(--dimention);
     object-fit: cover;
 }
 
