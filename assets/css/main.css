@@ -163,14 +163,12 @@
     transition: var(--hover-transition-2);
     border: 2px solid #eee;
     overflow: hidden;
-    margin: 10px 0 10px 0;
     gap: 15px;
 }
 
 .c-card__wrapper--news {
     min-width: 604px;
     height: 260px;
-    margin: 5px 0 5px 0;
     gap: 20px;
 }
 
