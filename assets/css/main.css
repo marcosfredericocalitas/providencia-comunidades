@@ -173,9 +173,10 @@
     transform: scale(1.15);
 }
 
-/* .c-card__wrapper--news {
-   
-} */
+.c-card__wrapper--news {
+    height: auto;
+    /* box-shadow: none; */
+}
 
 .c-card__header {
     width: 100%;
@@ -204,7 +205,9 @@
     padding: 0px 24px;
 }
 
-/* .c-card__body--news {} */
+.c-card__body--news {
+    padding: 0px 20px 20px 20px;
+}
 
 .c-card__title {
     font-size: 20px;
