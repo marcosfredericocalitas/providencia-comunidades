@@ -1,5 +1,5 @@
 .l-main__item--details {
-    align-items: end;
+    align-items: flex-start;
     gap: 50px;
 }
 
