@@ -68,7 +68,7 @@
     font-family: var(--poppins-Source);
 }
 
-/* -- Components -- */
+/* -- Components or c -- */
 /* Brand */
 .c-brand {
     --logo-dimention: 92px;
@@ -531,7 +531,7 @@
     text-align: left;
 }
 
-/* -- Layouts -- */
+/* -- Layouts or l -- */
 /* Display box */
 .l-box {
     display: -webkit-box;
@@ -623,7 +623,7 @@
 }
 
 /* Grid gap */
-.u-gap-row {
+.l-column-gap-30 {
     column-gap: 30px;
 }
 
@@ -662,7 +662,7 @@
     padding: 0 var(--primary-padding-l-r);
 }
 
-/* -- Utilities -- */
+/* -- Utilities or u -- */
 /* Position */
 .u-relative {
     position: relative;
