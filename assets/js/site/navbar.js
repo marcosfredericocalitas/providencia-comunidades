@@ -21,6 +21,7 @@ const classesToAddByEvent = [
     { element: "navbar", className: "is-fixed", time: 300 },
     { element: "navbar", className: "is-visible", time: 400 },
     { element: "menu-logo", className: "is-small", time: 300 },
+    { element: "main-content-course", className: "is-relative", time: 600 },
     { element: "card-details", className: "is-fixed", time: 200 },
     { element: "card-details", className: "has-no-transition", time: 250 },
     { element: "card-details", className: "is-top", time: 400 },
