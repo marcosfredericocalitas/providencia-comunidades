@@ -174,8 +174,7 @@
 }
 
 .c-card__wrapper--news {
-    height: 430px;
-    box-shadow: none;
+    height: 472px;
 }
 
 .c-card__header {
@@ -190,6 +189,8 @@
 }
 
 .c-card__category {
+    display: block;
+    align-self: flex-start;
     left: 0;
     bottom: 0;
     padding: 8px 12px;
@@ -198,7 +199,13 @@
     color: var(--white);
     background-color: var(--primary-color);
     border-radius: 0px 4px 0 0px;
+    border-radius: 4px;
     gap: 5px;
+}
+
+.c-card__category--news {
+    border-radius: 4px;
+    margin-bottom: 5px;
 }
 
 .c-card__img {
