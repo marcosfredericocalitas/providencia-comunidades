@@ -1,13 +1,13 @@
-.l-main__item {
+.l-main__item--course-details {
     gap: 50px;
     align-items: flex-end;
 }
 
-.l-section__item {
+.l-section--course-details {
     padding: 0px 382px 0px 0px;
 }
 
-.l-section__item.is-full {
+.l-section--course-details.is-full {
     padding: 0;
 }
 
