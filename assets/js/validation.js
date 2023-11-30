@@ -317,7 +317,6 @@ function putEyeIconToBottom(input) {
     });
 }
 
-
 //------------------------------------------------------------------------
 function validateSubject(input, error) {
     return textValidation(input, error, "Assunto")
