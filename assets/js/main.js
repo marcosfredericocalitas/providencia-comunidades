@@ -37,6 +37,5 @@ function addClassByScroll(elementId, className, time, type) {
             console.error("Invalid type provided.");
             return false;
     }
-
     return true;
 }
