@@ -17,7 +17,7 @@ for (let classToAddOnClick of classesToAddByClick) {
 };
 
 // Array of classes to be added on window scroll
-const classesToAddByEvent = [
+const classesToAddByScroll = [
     // Card template
     { element: "card-details", className: "is-fixed", time: 195, type: "not-full" },
     { element: "card-details", className: "has-transition", time: 200, type: "not-full" },
@@ -28,20 +28,20 @@ const classesToAddByEvent = [
     { element: "main-item", className: "has-gap", time: 1568, type: "not-full" },
     { element: "main-content-course", className: "u-relative", time: 1568, type: "not-full" },
     // Navbar
-    { element: "navbar", className: "is-fixed", time: 300, type: "full" },
-    { element: "navbar", className: "is-visible", time: 400, type: "full" },
-    { element: "menu-logo", className: "is-small", time: 300, type: "full" },
+    { element: "navbar", className: "is-fixed", time: 300, type: "not-full" },
+    { element: "navbar", className: "is-visible", time: 400, type: "not-full" },
+    { element: "menu-logo", className: "is-small", time: 300, type: "not-full" },
     { element: "btn-scroll-top", className: "is-visible", time: 400, type: "full" }
 ];
 
 // Add classes on window scroll
 window.addEventListener("scroll", () => {
-    for (let classToAddByEvent of classesToAddByEvent) {
+    for (let classToAddByScroll of classesToAddByScroll) {
         addClassByScroll(
-            classToAddByEvent.element,
-            classToAddByEvent.className,
-            classToAddByEvent.time,
-            classToAddByEvent.type
+            classToAddByScroll.element,
+            classToAddByScroll.className,
+            classToAddByScroll.time,
+            classToAddByScroll.type
         );
     };
 });
