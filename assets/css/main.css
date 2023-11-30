@@ -703,11 +703,13 @@
 
 /* -- Utilities or u -- */
 /* Position */
-.u-relative {
+.u-relative,
+.is-relative {
     position: relative;
 }
 
-.u-absolute {
+.u-absolute,
+.is-absolute {
     position: absolute;
 }
 
@@ -797,7 +799,6 @@
 .u-bg-gray {
     background-color: var(--hover-gray-color);
 }
-
 
 /* Visibility */
 .u-none,

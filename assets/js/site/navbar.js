@@ -26,7 +26,6 @@ const classesToAddByScroll = [
     { element: "card-details", className: "is-not-fixed", time: 1568, type: "not-full" },
     { element: "section-content", className: "is-full", time: 1568, type: "not-full" },
     { element: "main-item", className: "has-gap", time: 1568, type: "not-full" },
-    { element: "main-content-course", className: "u-relative", time: 1568, type: "not-full" },
     // Navbar
     { element: "navbar", className: "is-fixed", time: 300, type: "not-full" },
     { element: "navbar", className: "is-visible", time: 400, type: "not-full" },
