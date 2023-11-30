@@ -3,6 +3,7 @@
 }
 
 .recent-news__wrapper {
+    width: 400px;
     background-color: var(--white);
 }
 
@@ -29,4 +30,15 @@
 
 .news__text {
     line-height: normal;
+}
+
+@media (width <=880px) {
+    .l-section--news-details {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .recent-news__wrapper {
+        width: 100%;
+    }
 }
