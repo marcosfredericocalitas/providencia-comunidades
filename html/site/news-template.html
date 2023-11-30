@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nóticia de...</title>
+    <title>Notícia de...</title>
     <link rel="stylesheet" href="../../assets/css/main.css">
     <link rel="stylesheet" href="../../assets/css/site/navbar.css">
-    <link rel="stylesheet" href="../../assets/css/site/course-template.css">
+    <link rel="stylesheet" href="../../assets/css/site/news-template.css">
     <link rel="stylesheet" href="../../assets/css/site/preloader.css">
     <link rel="stylesheet" href="../../assets/css/site/scroll-btn.css">
     <link rel="stylesheet" href="../../assets/css/site/footer.css">
@@ -125,9 +125,9 @@
     <!-- Main content -->
     <main class="main-content">
         <div class="l-main l-flex l-flex-column l-align-center">
-            <div class="l-main__item l-main__item--details l-flex l-section">
+            <div class="l-section l-section--news-details l-flex">
                 <!-- Section start -->
-                <section class="u-width-100">
+                <section class="u-width-100" id="section-content">
                     <div class="c-details">
                         <div class="c-details__wrapper l-flex l-flex-column l-gap-20">
                             <div class="c-details__header">
@@ -189,99 +189,130 @@
                     </div>
                 </section>
                 <!-- Section end -->
-
-                <!-- Aside stat -->
+                <!-- Aside start -->
                 <aside>
                     <div class="recent-news">
-                        <div class="recent-news__wrapper l-flex l-flex-column l-flex-center l-gap-20">
-                            <h1>Notícias recentes</h1>
-                            <ul class="l-flex l-flex-column l-flex-center l-gap-30">
+                        <div class="recent-news__wrapper u-shadow l-flex l-flex-column l-gap-15">
+                            <h2 class="">Notícias recentes</h2>
+                            <ul class="l-flex l-flex-column l-gap-20">
                                 <li>
-                                    <article class="c-card">
-                                        <div
-                                            class="c-card__wrapper c-card__wrapper--recent-news l-flex l-space-between">
+                                    <article class="news">
+                                        <div class="news__wrapper l-flex l-gap-10">
                                             <!-- Card header -->
-                                            <div class="c-card__header c-card__header--recent-news">
+                                            <div class="recent-news__header">
                                                 <img src="../../assets/img/test-img-2.jpg" alt="Imagem do curso"
-                                                    class="c-img c-card__img c-card__img--course c-card__img--recent-news">
+                                                    class="c-img">
                                             </div>
                                             <!-- Card body -->
-                                            <div class="c-card__body">
-                                                <h3 class="c-card__title l-box l-line-clamp-2">
-                                                    <a href="course-template.html" class="u-txt-black">Lorem ipsum,
-                                                        dolor sit amet consectetur adipisicing elit. Hic, inventore
-                                                        ducimus? Dolorem quam, voluptatum minus provident voluptate vel
-                                                        vitae tenetur magni hic nam tempore repudiandae aspernatur.
-                                                        Labore blanditiis rem et?
+                                            <div class="news__body l-flex l-flex-column">
+                                                <h3 class="c-card__title l-box l-line-clamp-1">
+                                                    <a href="course-template.html" class="u-txt-black">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                                                        eos suscipit voluptatum recusandae, eaque voluptatibus placeat
+                                                        perspiciatis. Explicabo similique nemo quo natus! Sunt fugit quo
+                                                        molestiae totam non pariatur eum.
                                                     </a>
                                                 </h3>
+                                                <p class="news__text c-text c-text--sm2 l-box l-line-clamp-2">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                                                    voluptatum
+                                                    inventore repellendus doloribus aut natus voluptate unde minima
+                                                    incidunt,
+                                                    commodi eveniet quod eaque odio esse ipsum ad corrupti libero
+                                                    voluptas?
+                                                </p>
                                             </div>
+                                        </div>
                                     </article>
                                 </li>
                                 <li>
-                                    <article class="c-card">
-                                        <div
-                                            class="c-card__wrapper c-card__wrapper--recent-news l-flex l-space-between">
+                                    <article class="news">
+                                        <div class="news__wrapper l-flex l-gap-10">
                                             <!-- Card header -->
-                                            <div class="c-card__header c-card__header--recent-news">
+                                            <div class="recent-news__header">
                                                 <img src="../../assets/img/test-img-2.jpg" alt="Imagem do curso"
-                                                    class="c-img c-card__img c-card__img--course c-card__img--recent-news">
+                                                    class="c-img">
                                             </div>
                                             <!-- Card body -->
-                                            <div class="c-card__body">
-                                                <h3 class="c-card__title l-box l-line-clamp-2">
-                                                    <a href="course-template.html" class="u-txt-black">Lorem ipsum,
-                                                        dolor sit amet consectetur adipisicing elit. Hic, inventore
-                                                        ducimus? Dolorem quam, voluptatum minus provident voluptate vel
-                                                        vitae tenetur magni hic nam tempore repudiandae aspernatur.
-                                                        Labore blanditiis rem et?
+                                            <div class="news__body l-flex l-flex-column">
+                                                <h3 class="c-card__title l-box l-line-clamp-1">
+                                                    <a href="course-template.html" class="u-txt-black">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                                                        eos suscipit voluptatum recusandae, eaque voluptatibus placeat
+                                                        perspiciatis. Explicabo similique nemo quo natus! Sunt fugit quo
+                                                        molestiae totam non pariatur eum.
                                                     </a>
                                                 </h3>
+                                                <p class="news__text c-text c-text--sm2 l-box l-line-clamp-2">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                                                    voluptatum
+                                                    inventore repellendus doloribus aut natus voluptate unde minima
+                                                    incidunt,
+                                                    commodi eveniet quod eaque odio esse ipsum ad corrupti libero
+                                                    voluptas?
+                                                </p>
                                             </div>
+                                        </div>
                                     </article>
                                 </li>
                                 <li>
-                                    <article class="c-card">
-                                        <div
-                                            class="c-card__wrapper c-card__wrapper--recent-news l-flex l-space-between">
+                                    <article class="news">
+                                        <div class="news__wrapper l-flex l-gap-10">
                                             <!-- Card header -->
-                                            <div class="c-card__header c-card__header--recent-news">
+                                            <div class="recent-news__header">
                                                 <img src="../../assets/img/test-img-2.jpg" alt="Imagem do curso"
-                                                    class="c-img c-card__img c-card__img--course c-card__img--recent-news">
+                                                    class="c-img">
                                             </div>
                                             <!-- Card body -->
-                                            <div class="c-card__body">
-                                                <h3 class="c-card__title l-box l-line-clamp-2">
-                                                    <a href="course-template.html" class="u-txt-black">Lorem ipsum,
-                                                        dolor sit amet consectetur adipisicing elit. Hic, inventore
-                                                        ducimus? Dolorem quam, voluptatum minus provident voluptate vel
-                                                        vitae tenetur magni hic nam tempore repudiandae aspernatur.
-                                                        Labore blanditiis rem et?
+                                            <div class="news__body l-flex l-flex-column">
+                                                <h3 class="c-card__title l-box l-line-clamp-1">
+                                                    <a href="course-template.html" class="u-txt-black">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                                                        eos suscipit voluptatum recusandae, eaque voluptatibus placeat
+                                                        perspiciatis. Explicabo similique nemo quo natus! Sunt fugit quo
+                                                        molestiae totam non pariatur eum.
                                                     </a>
                                                 </h3>
+                                                <p class="news__text c-text c-text--sm2 l-box l-line-clamp-2">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                                                    voluptatum
+                                                    inventore repellendus doloribus aut natus voluptate unde minima
+                                                    incidunt,
+                                                    commodi eveniet quod eaque odio esse ipsum ad corrupti libero
+                                                    voluptas?
+                                                </p>
                                             </div>
+                                        </div>
                                     </article>
                                 </li>
                                 <li>
-                                    <article class="c-card">
-                                        <div
-                                            class="c-card__wrapper c-card__wrapper--recent-news l-flex l-space-between">
+                                    <article class="news">
+                                        <div class="news__wrapper l-flex l-gap-10">
                                             <!-- Card header -->
-                                            <div class="c-card__header c-card__header--recent-news">
+                                            <div class="recent-news__header">
                                                 <img src="../../assets/img/test-img-2.jpg" alt="Imagem do curso"
-                                                    class="c-img c-card__img c-card__img--course c-card__img--recent-news">
+                                                    class="c-img">
                                             </div>
                                             <!-- Card body -->
-                                            <div class="c-card__body">
-                                                <h3 class="c-card__title l-box l-line-clamp-2">
-                                                    <a href="course-template.html" class="u-txt-black">Lorem ipsum,
-                                                        dolor sit amet consectetur adipisicing elit. Hic, inventore
-                                                        ducimus? Dolorem quam, voluptatum minus provident voluptate vel
-                                                        vitae tenetur magni hic nam tempore repudiandae aspernatur.
-                                                        Labore blanditiis rem et?
+                                            <div class="news__body l-flex l-flex-column">
+                                                <h3 class="c-card__title l-box l-line-clamp-1">
+                                                    <a href="course-template.html" class="u-txt-black">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                                                        eos suscipit voluptatum recusandae, eaque voluptatibus placeat
+                                                        perspiciatis. Explicabo similique nemo quo natus! Sunt fugit quo
+                                                        molestiae totam non pariatur eum.
                                                     </a>
                                                 </h3>
+                                                <p class="news__text c-text c-text--sm2 l-box l-line-clamp-2">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                                                    voluptatum
+                                                    inventore repellendus doloribus aut natus voluptate unde minima
+                                                    incidunt,
+                                                    commodi eveniet quod eaque odio esse ipsum ad corrupti libero
+                                                    voluptas?
+                                                </p>
                                             </div>
+                                        </div>
                                     </article>
                                 </li>
                             </ul>
@@ -289,15 +320,15 @@
                     </div>
                 </aside>
                 <!-- Aside end -->
-
-                <!-- Scroll button  -->
-                <div class="scroll" id="scroll-btn">
-                    <button type="button" class="c-btn--transparent scroll__btn u-txt-white u-btn-hover"
-                        id="btn-scroll-top" title="Ir para o topo">
-                        <i class="fa-solid fa-arrow-up"></i>
-                    </button>
-                </div>
             </div>
+        </div>
+
+        <!-- Scroll button  -->
+        <div class="scroll" id="scroll-btn">
+            <button type="button" class="c-btn--transparent scroll__btn u-txt-white u-btn-hover" id="btn-scroll-top"
+                title="Ir para o topo">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
         </div>
     </main>
 
@@ -419,6 +450,7 @@
     <script src="../../assets/js/adminlte.js"></script>
     <script src="../../assets/js/main.js"></script>
     <script src="../../assets/js/site/navbar.js"></script>
+    <script src="../../assets/js/site/course-template.js"></script>
 </body>
 
 </html>

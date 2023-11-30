@@ -1,0 +1,32 @@
+.l-section--news-details {
+    gap: 30px;
+}
+
+.recent-news__wrapper {
+    background-color: var(--white);
+}
+
+.c-card__title {
+    font-size: 17px;
+}
+
+.c-text--recent-news {
+    font-size: 14px;
+}
+
+.news__wrapper {
+    border-radius: 8px;
+}
+
+.recent-news__header {
+    width: 600px;
+    height: 80px;
+}
+
+.recent-news__header img {
+    border-radius: 8px;
+}
+
+.news__text {
+    line-height: normal;
+}
