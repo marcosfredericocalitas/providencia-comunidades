@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../assets/css/main.css">
     <link rel="stylesheet" href="../../assets/css/site/navbar.css">
     <link rel="stylesheet" href="../../assets/css/site/preloader.css">
+    <link rel="stylesheet" href="../../assets/css/site/course-template.css">
     <link rel="stylesheet" href="../../assets/css/site/scroll-btn.css">
     <link rel="stylesheet" href="../../assets/css/site/footer.css">
     <link rel="stylesheet" href="../../assets/css/icons/All/all.min.css ">
@@ -115,8 +116,8 @@
     <!-- Main content -->
     <main>
         <div class="l-main l-flex l-flex-column l-align-center">
-            <div class="l-main__item l-main__item--details l-section l-flex u-width-100">
-                <section>
+            <div class="l-main__item l-main__item--details l-section l-flex u-width-100" id="main-item">
+                <section class="u-width-100" id="section-content">
                     <div class="c-details">
                         <div class="c-details__wrapper l-flex l-flex-column l-gap-20">
                             <div class="c-details__body l-flex l-flex-column l-gap-20">
@@ -227,7 +228,7 @@
 
                 <!-- Aside start -->
                 <aside>
-                    <article class="c-card c-card--details" id="card-details">
+                    <article class="c-card c-card--details u-absolute" id="card-details">
                         <div
                             class="c-card__wrapper c-card__wrapper--details l-flex l-flex-column l-space-between u-hover u-relative">
                             <!-- Card header -->

@@ -1,13 +1,8 @@
-.l-main__item--course-details {
-    gap: 50px;
-    align-items: flex-end;
-}
-
-.l-section--course-details {
+.section {
     padding: 0px 382px 0px 0px;
 }
 
-.l-section--course-details.is-full {
+.section.is-full {
     padding: 0;
 }
 
@@ -72,7 +67,7 @@
         align-items: flex-start;
     }
 
-    .l-section__item {
+    .section {
         padding: 0;
     }
 
@@ -94,10 +89,6 @@
 }
 
 @media (width <=880px) {
-    .l-main__item {
-        flex-direction: column-reverse;
-    }
-
     .c-card__wrapper--details {
         width: 100%;
         height: auto;
