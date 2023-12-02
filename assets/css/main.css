@@ -614,6 +614,14 @@
     align-items: center;
 }
 
+.l-align-start {
+    align-items: flex-start;
+}
+
+.l-align-end {
+    align-items: flex-end;
+}
+
 .l-flex-center {
     justify-content: center;
 }
@@ -701,7 +709,6 @@
 
 .l-main__item--details {
     gap: 50px;
-    align-items: flex-start;
 }
 
 .c-card__wrapper--details {
