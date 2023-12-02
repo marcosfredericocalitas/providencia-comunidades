@@ -699,6 +699,16 @@
     gap: 100px;
 }
 
+.l-main__item--details {
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.c-card__wrapper--details {
+    width: 380px;
+    height: 575px;
+}
+
 .l-section {
     padding: 0 var(--primary-padding-l-r);
 }
@@ -877,6 +887,12 @@
 
     .c-title--tertiary {
         font-size: var(--font-size-md);
+    }
+}
+
+@media (width <=880px) {
+    .l-main__item--details {
+        flex-direction: column-reverse;
     }
 }
 
