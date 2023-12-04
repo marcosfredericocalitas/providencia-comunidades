@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../assets/css/main.css">
     <link rel="stylesheet" href="../../assets/css/site/navbar.css">
     <link rel="stylesheet" href="../../assets/css/site/preloader.css">
+    <link rel="stylesheet" href="../../assets/css/site/news-template.css">
     <link rel="stylesheet" href="../../assets/css/site/scroll-btn.css">
     <link rel="stylesheet" href="../../assets/css/site/footer.css">
     <link rel="stylesheet" href="../../assets/css/icons/All/all.min.css ">
@@ -104,7 +105,6 @@
                     Venha, Conheça a nossa história e os nossos valores. Saiba Quem somos e como fazemos a diferença
                 </p>
             </div>
-
             <!-- Preloader -->
             <div class="preloader flex-column justify-content-center align-items-center">
                 <img class="animation__shake" src="../../assets/img/Logitipo-blue.png" alt="AdminLTELogo" height="150"
@@ -114,14 +114,14 @@
     </header>
 
     <!-- Main content -->
-    <main class="main-content">
+    <main>
         <div class="l-main l-flex l-flex-column l-align-center">
             <div class="l-main__item l-main__item--details l-section l-flex" id="main-item">
-                <div class="l-flex l-flex-column">
+                <div class="l-flex l-flex--news-details l-flex-column">
                     <!-- Section start -->
-                    <section class="section u-width-100" id="section-content">
-                        <div class="c-details u-width-100">
-                            <div class="c-details__wrapper l-flex l-flex-column l-gap-20 u-width-100">
+                    <section class="section" id="section-content">
+                        <div class="c-details">
+                            <div class="c-details__wrapper l-flex l-flex-column l-gap-20">
                                 <div class="c-details__header">
                                     <img src="../../assets/img/test-img-2.jpg" alt="Imagem da notícia"
                                         class="c-img c-details__img">
@@ -201,72 +201,75 @@
                     <!-- Section end -->
                     <!-- Section star -->
                     <section>
-                        <div class="c-comments">
-                            <div class="c-comments__wrapper u-bg-white">
-                                <h2 class="c-comments__title">Comentários (4)</h2>
-                                <ul class="l-flex l-flex-column l-gap-40">
-                                    <li>
-                                        <article class="c-comment">
-                                            <div class="c-comment__wrapper l-flex l-space-between l-gap-30">
-                                                <div class="c-comment__img">
-                                                    <img src="../../assets/img/test-img-4.jpg"
-                                                        alt="Imagem do utilizador que comentou" class="c-img">
+                        <div class="c-box">
+                            <div class="c-box__wrapper c-box__wrapper--full l-flex  l-flex-column l-gap-15">
+                                <h1 class="c-box__title">COMENTÁRIOS</h1>
+                                <ul class="c-box__list l-flex l-flex-column l-gap-15">
+                                    <!-- Item -->
+                                    <li class="c-box__item">
+                                        <article class="c-comments">
+                                            <div class="c-comments__wrapper">
+                                                <div class="c-comments__header">
+                                                    <img src="../../assets/img/test-img-2.jpg"
+                                                        alt="Imagem do utilzador que comentou"
+                                                        class="c-img u-radius-100">
                                                 </div>
-                                                <!-- Comment body -->
-                                                <div class="c-comment__body">
-                                                    <h3 class="c-comment__user">
-                                                        Marcos Frederico Calitas
-                                                    </h3>
-                                                    <p class="c-text c-text--sm">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit.
-                                                        Voluptatum, maxime dolorem? Aperiam eius quae autem accusantium
-                                                        in, voluptatum cum obcaecati modi at tempore magnam animi vitae
-                                                        ex porro impedit repellat.</p>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </li>
-                                    <li>
-                                        <article class="c-comment">
-                                            <div class="c-comment__wrapper l-flex l-space-between l-gap-30">
-                                                <div class="c-comment__img">
-                                                    <img src="../../assets/img/test-img-4.jpg"
-                                                        alt="Imagem do utilizador que comentou" class="c-img">
-                                                </div>
-                                                <!-- Comment body -->
-                                                <div class="c-comment__body">
-                                                    <h3 class="c-comment__user">
-                                                        Marcos Frederico Calitas
-                                                    </h3>
-                                                    <p class="c-text c-text--sm">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit.
-                                                        Voluptatum, maxime dolorem? Aperiam eius quae autem accusantium
-                                                        in, voluptatum cum obcaecati modi at tempore magnam animi vitae
-                                                        ex porro impedit repellat.</p>
+                                                <div class="c-comments__body">
+                                                    <h2 class="l-box l-line-clamp-1">Lorem ipsum dolor sit amet
+                                                        consectetur adipisicing elit. Error,
+                                                        perferendis facere! Provident quae delectus maiores eius
+                                                        exercitationem nostrum quisquam rerum, impedit ex totam tenetur
+                                                        ut, nesciunt placeat amet suscipit quidem?</h2>
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                                                        ipsam possimus enim, perferendis commodi sed. Tenetur minima
+                                                        tempore nam dolorem iusto, reprehenderit illum unde neque facere
+                                                        sunt officiis, in aliquid!</p>
                                                 </div>
                                             </div>
                                         </article>
                                     </li>
-                                    <li>
-                                        <article class="c-comment">
-                                            <div class="c-comment__wrapper l-flex l-space-between l-gap-30">
-                                                <div class="c-comment__img">
-                                                    <img src="../../assets/img/test-img-4.jpg"
-                                                        alt="Imagem do utilizador que comentou" class="c-img">
+                                    <!-- Item -->
+                                    <li class="c-box__item">
+                                        <article class="c-comments">
+                                            <div class="c-comments__wrapper">
+                                                <div class="c-comments__header">
+                                                    <img src="../../assets/img/test-img-2.jpg"
+                                                        alt="Imagem do utilzador que comentou"
+                                                        class="c-img u-radius-100">
                                                 </div>
-                                                <!-- Comment body -->
-                                                <div class="c-comment__body">
-                                                    <h3 class="c-comment__user">
-                                                        Marcos Frederico Calitas
-                                                    </h3>
-                                                    <p class="c-text c-text--sm">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing
-                                                        elit.
-                                                        Voluptatum, maxime dolorem? Aperiam eius quae autem accusantium
-                                                        in, voluptatum cum obcaecati modi at tempore magnam animi vitae
-                                                        ex porro impedit repellat.</p>
+                                                <div class="c-comments__body">
+                                                    <h2 class="l-box l-line-clamp-1">Lorem ipsum dolor sit amet
+                                                        consectetur adipisicing elit. Error,
+                                                        perferendis facere! Provident quae delectus maiores eius
+                                                        exercitationem nostrum quisquam rerum, impedit ex totam tenetur
+                                                        ut, nesciunt placeat amet suscipit quidem?</h2>
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                                                        ipsam possimus enim, perferendis commodi sed. Tenetur minima
+                                                        tempore nam dolorem iusto, reprehenderit illum unde neque facere
+                                                        sunt officiis, in aliquid!</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <!-- Item -->
+                                    <li class="c-box__item">
+                                        <article class="c-comments">
+                                            <div class="c-comments__wrapper">
+                                                <div class="c-comments__header">
+                                                    <img src="../../assets/img/test-img-2.jpg"
+                                                        alt="Imagem do utilzador que comentou"
+                                                        class="c-img u-radius-100">
+                                                </div>
+                                                <div class="c-comments__body">
+                                                    <h2 class="l-box l-line-clamp-1">Lorem ipsum dolor sit amet
+                                                        consectetur adipisicing elit. Error,
+                                                        perferendis facere! Provident quae delectus maiores eius
+                                                        exercitationem nostrum quisquam rerum, impedit ex totam tenetur
+                                                        ut, nesciunt placeat amet suscipit quidem?</h2>
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                                                        ipsam possimus enim, perferendis commodi sed. Tenetur minima
+                                                        tempore nam dolorem iusto, reprehenderit illum unde neque facere
+                                                        sunt officiis, in aliquid!</p>
                                                 </div>
                                             </div>
                                         </article>
@@ -277,129 +280,74 @@
                     </section>
                     <!-- Section end -->
                 </div>
-
                 <!-- Aside start -->
                 <aside>
-                    <div class="recent-news">
-                        <div class="recent-news__wrapper u-shadow l-flex l-flex-column l-gap-15">
-                            <h2 class="">Notícias recentes</h2>
-                            <ul class="l-flex l-flex-column l-gap-20">
-                                <li>
-                                    <article class="news">
-                                        <div class="news__wrapper l-flex l-gap-10">
-                                            <!-- Card header -->
-                                            <div class="recent-news__header">
-                                                <img src="../../assets/img/test-img-2.jpg" alt="Imagem do curso"
-                                                    class="c-img">
+                    <div class="c-box">
+                        <div class="c-box__wrapper l-flex  l-flex-column l-gap-15">
+                            <h1 class="c-box__title">COMENTÁRIOS</h1>
+                            <ul class="c-box__list l-flex l-flex-column l-gap-15">
+                                <!-- Item -->
+                                <li class="c-box__item">
+                                    <article class="c-comments">
+                                        <div class="c-comments__wrapper">
+                                            <div class="c-comments__header">
+                                                <img src="../../assets/img/test-img-2.jpg"
+                                                    alt="Imagem do utilzador que comentou" class="c-img u-radius-100">
                                             </div>
-                                            <!-- Card body -->
-                                            <div class="news__body l-flex l-flex-column">
-                                                <h3 class="c-card__title l-box l-line-clamp-1">
-                                                    <a href="course-template.html" class="u-txt-black">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                                                        eos suscipit voluptatum recusandae, eaque voluptatibus placeat
-                                                        perspiciatis. Explicabo similique nemo quo natus! Sunt fugit quo
-                                                        molestiae totam non pariatur eum.
-                                                    </a>
-                                                </h3>
-                                                <p class="news__text c-text c-text--sm2 l-box l-line-clamp-2">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                                                    voluptatum
-                                                    inventore repellendus doloribus aut natus voluptate unde minima
-                                                    incidunt,
-                                                    commodi eveniet quod eaque odio esse ipsum ad corrupti libero
-                                                    voluptas?
-                                                </p>
+                                            <div class="c-comments__body">
+                                                <h2 class="l-box l-line-clamp-1">Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing elit. Error,
+                                                    perferendis facere! Provident quae delectus maiores eius
+                                                    exercitationem nostrum quisquam rerum, impedit ex totam tenetur
+                                                    ut, nesciunt placeat amet suscipit quidem?</h2>
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                                                    ipsam possimus enim, perferendis commodi sed. Tenetur minima
+                                                    tempore nam dolorem iusto, reprehenderit illum unde neque facere
+                                                    sunt officiis, in aliquid!</p>
                                             </div>
                                         </div>
                                     </article>
                                 </li>
-                                <li>
-                                    <article class="news">
-                                        <div class="news__wrapper l-flex l-gap-10">
-                                            <!-- Card header -->
-                                            <div class="recent-news__header">
-                                                <img src="../../assets/img/test-img-2.jpg" alt="Imagem do curso"
-                                                    class="c-img">
+                                <!-- Item -->
+                                <li class="c-box__item">
+                                    <article class="c-comments">
+                                        <div class="c-comments__wrapper">
+                                            <div class="c-comments__header">
+                                                <img src="../../assets/img/test-img-2.jpg"
+                                                    alt="Imagem do utilzador que comentou" class="c-img u-radius-100">
                                             </div>
-                                            <!-- Card body -->
-                                            <div class="news__body l-flex l-flex-column">
-                                                <h3 class="c-card__title l-box l-line-clamp-1">
-                                                    <a href="course-template.html" class="u-txt-black">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                                                        eos suscipit voluptatum recusandae, eaque voluptatibus placeat
-                                                        perspiciatis. Explicabo similique nemo quo natus! Sunt fugit quo
-                                                        molestiae totam non pariatur eum.
-                                                    </a>
-                                                </h3>
-                                                <p class="news__text c-text c-text--sm2 l-box l-line-clamp-2">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                                                    voluptatum
-                                                    inventore repellendus doloribus aut natus voluptate unde minima
-                                                    incidunt,
-                                                    commodi eveniet quod eaque odio esse ipsum ad corrupti libero
-                                                    voluptas?
-                                                </p>
+                                            <div class="c-comments__body">
+                                                <h2 class="l-box l-line-clamp-1">Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing elit. Error,
+                                                    perferendis facere! Provident quae delectus maiores eius
+                                                    exercitationem nostrum quisquam rerum, impedit ex totam tenetur
+                                                    ut, nesciunt placeat amet suscipit quidem?</h2>
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                                                    ipsam possimus enim, perferendis commodi sed. Tenetur minima
+                                                    tempore nam dolorem iusto, reprehenderit illum unde neque facere
+                                                    sunt officiis, in aliquid!</p>
                                             </div>
                                         </div>
                                     </article>
                                 </li>
-                                <li>
-                                    <article class="news">
-                                        <div class="news__wrapper l-flex l-gap-10">
-                                            <!-- Card header -->
-                                            <div class="recent-news__header">
-                                                <img src="../../assets/img/test-img-2.jpg" alt="Imagem do curso"
-                                                    class="c-img">
+                                <!-- Item -->
+                                <li class="c-box__item">
+                                    <article class="c-comments">
+                                        <div class="c-comments__wrapper">
+                                            <div class="c-comments__header">
+                                                <img src="../../assets/img/test-img-2.jpg"
+                                                    alt="Imagem do utilzador que comentou" class="c-img u-radius-100">
                                             </div>
-                                            <!-- Card body -->
-                                            <div class="news__body l-flex l-flex-column">
-                                                <h3 class="c-card__title l-box l-line-clamp-1">
-                                                    <a href="course-template.html" class="u-txt-black">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                                                        eos suscipit voluptatum recusandae, eaque voluptatibus placeat
-                                                        perspiciatis. Explicabo similique nemo quo natus! Sunt fugit quo
-                                                        molestiae totam non pariatur eum.
-                                                    </a>
-                                                </h3>
-                                                <p class="news__text c-text c-text--sm2 l-box l-line-clamp-2">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                                                    voluptatum
-                                                    inventore repellendus doloribus aut natus voluptate unde minima
-                                                    incidunt,
-                                                    commodi eveniet quod eaque odio esse ipsum ad corrupti libero
-                                                    voluptas?
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </li>
-                                <li>
-                                    <article class="news">
-                                        <div class="news__wrapper l-flex l-gap-10">
-                                            <!-- Card header -->
-                                            <div class="recent-news__header">
-                                                <img src="../../assets/img/test-img-2.jpg" alt="Imagem do curso"
-                                                    class="c-img">
-                                            </div>
-                                            <!-- Card body -->
-                                            <div class="news__body l-flex l-flex-column">
-                                                <h3 class="c-card__title l-box l-line-clamp-1">
-                                                    <a href="course-template.html" class="u-txt-black">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                                                        eos suscipit voluptatum recusandae, eaque voluptatibus placeat
-                                                        perspiciatis. Explicabo similique nemo quo natus! Sunt fugit quo
-                                                        molestiae totam non pariatur eum.
-                                                    </a>
-                                                </h3>
-                                                <p class="news__text c-text c-text--sm2 l-box l-line-clamp-2">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                                                    voluptatum
-                                                    inventore repellendus doloribus aut natus voluptate unde minima
-                                                    incidunt,
-                                                    commodi eveniet quod eaque odio esse ipsum ad corrupti libero
-                                                    voluptas?
-                                                </p>
+                                            <div class="c-comments__body">
+                                                <h2 class="l-box l-line-clamp-1">Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing elit. Error,
+                                                    perferendis facere! Provident quae delectus maiores eius
+                                                    exercitationem nostrum quisquam rerum, impedit ex totam tenetur
+                                                    ut, nesciunt placeat amet suscipit quidem?</h2>
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                                                    ipsam possimus enim, perferendis commodi sed. Tenetur minima
+                                                    tempore nam dolorem iusto, reprehenderit illum unde neque facere
+                                                    sunt officiis, in aliquid!</p>
                                             </div>
                                         </div>
                                     </article>
@@ -409,12 +357,6 @@
                     </div>
                 </aside>
                 <!-- Aside end -->
-
-                <!-- Section star -->
-                <section>
-
-                </section>
-                <!-- Section end -->
             </div>
         </div>
 
