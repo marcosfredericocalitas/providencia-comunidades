@@ -27,27 +27,22 @@
     height: 100%;
 }
 
-.news__wrapper .c-img {
-    transition: var(--hover-transition-3);
-}
-
-.news__wrapper:hover .c-img {
-    transform: var(--img-zoom);
-}
-
-.news__body {
-    bottom: 70px;
-    padding: 0px 30px;
-    z-index: 1;
-}
-
 .news__text {
     line-height: 1.5rem;
 }
 
 /* Top news */
-.top-news__wrapper {
+.top-news {
+    border-radius: var(--primary-border-radius);
     overflow: hidden;
+}
+
+.top-news__body {
+    bottom: 30px;
+}
+
+.ffffff {
+    grid-column: 1 / span 2;
 }
 
 /* Responsiviety */
