@@ -158,16 +158,14 @@
 
 .c-box__wrapper {
     width: 400px;
-    /* height: 300px; */
     padding: 30px;
     background-color: var(--white);
     border-radius: var(--primary-border-radius);
-
-    /* border: var(--primary-border); */
+    border: var(--primary-border);
 }
 
 .c-box__title {
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-sm);
 }
 
 .c-box__wrapper--full {
@@ -183,7 +181,6 @@
     width: 80px;
     height: 80px;
 }
-
 
 .c-comments__body {
     gap: 5px;
