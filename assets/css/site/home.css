@@ -32,17 +32,28 @@
 }
 
 /* Top news */
+.l-grid--top-news:nth-child(1) {
+    grid-column: 1 / span 2;
+}
+
 .top-news {
     border-radius: var(--primary-border-radius);
     overflow: hidden;
+}
+
+.top-news__wrapper {
+    width: 100%;
+    height: 262px;
 }
 
 .top-news__body {
     bottom: 30px;
 }
 
-.ffffff {
-    grid-column: 1 / span 2;
+.top-news__title {
+    color: var(--white);
+    line-height: 1.4rem;
+    font-size: 20px;
 }
 
 /* Responsiviety */

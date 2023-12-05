@@ -561,8 +561,7 @@
 }
 
 .c-slider--news {
-    /* width: 500px;
-    height: 600px; */
+    height: 550px;
     border-radius: var(--primary-border-radius);
 }
 
@@ -708,6 +707,10 @@
 
 .c-title--xxl {
     font-size: 50px;
+}
+
+.c-title--sm {
+    font-size: 20px;
 }
 
 /* -- Layouts or l -- */
