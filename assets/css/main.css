@@ -17,6 +17,7 @@
     --black: #000;
     --hover-gray-color: #f6f6f6;
     --primary-text-color: #000000ab;
+    --secundary-text-color: #8a8a8a;
     --primary-color: #1088e9;
     --primary-color-hover: #0c70c2;
     --secundary-color: #003384;
@@ -166,7 +167,7 @@
 }
 
 .c-box__title {
-    font-size: 20px;
+    font-size: var(--font-size-md);
 }
 
 .c-box__wrapper--full {
@@ -612,6 +613,10 @@
     text-align: left;
 }
 
+.c-title--forth {
+    font-size: var(--font-size-md);
+}
+
 /* -- Layouts or l -- */
 /* Display box */
 .l-box {
@@ -947,6 +952,11 @@
     .c-title--tertiary {
         font-size: var(--font-size-md);
     }
+
+    .c-title--forth {
+        font-size: var(--font-size-sm);
+    }
+
 }
 
 @media (width <=880px) {
@@ -1013,6 +1023,10 @@
         height: var(--logo-dimention);
     }
 
+    .c-comments__wrapper {
+        flex-direction: column;
+    }
+
     .c-form {
         padding: 20px;
     }
@@ -1061,6 +1075,11 @@
 
     .c-card__title {
         font-size: 20px;
+    }
+
+    .c-form {
+        padding: 0;
+        border: none;
     }
 }
 
