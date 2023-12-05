@@ -941,6 +941,10 @@
     text-align: right;
 }
 
+.u-txt-break {
+    word-break: break-all;
+}
+
 /* Others */
 .u-border {
     border: 1px solid #d7d7d7;
@@ -969,8 +973,14 @@
     border-radius: 100%;
 }
 
-.u-txt-break {
-    word-break: break-all;
+.u-body {
+    bottom: 70px;
+    padding: 0px 30px;
+    z-index: 1;
+}
+
+.u-bg-gray {
+    background-color: var(--hover-gray-color);
 }
 
 .u-img-shadow::after {
@@ -990,16 +1000,6 @@
 
 .u-wrapper:hover img {
     transform: var(--img-zoom);
-}
-
-.u-body {
-    bottom: 70px;
-    padding: 0px 30px;
-    z-index: 1;
-}
-
-.u-bg-gray {
-    background-color: var(--hover-gray-color);
 }
 
 /* Visibility */
