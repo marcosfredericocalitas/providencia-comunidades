@@ -20,6 +20,29 @@
 .company__slogan {
     line-height: 1.5rem;
 }
+
+/* News */
+.news__header .c-img {
+    transition: var(--hover-transition-3);
+}
+
+.news__wrapper:hover .news__header .c-img {
+    transform: var(--img-zoom);
+}
+
+.news__body {
+    bottom: 70px;
+    padding: 0px 30px;
+    z-index: 1;
+}
+
+.news__text {
+    line-height: 1.5rem;
+}
+
+/* Top news */
+
+
 /* Responsiviety */
 @media (width <=1320px) {
     .company {
