@@ -161,7 +161,6 @@
     padding: 30px;
     background-color: var(--white);
     border-radius: var(--primary-border-radius);
-    border: var(--primary-border);
 }
 
 .c-box__title {
