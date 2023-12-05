@@ -22,11 +22,16 @@
 }
 
 /* News */
-.news__header .c-img {
+.news__wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.news__wrapper .c-img {
     transition: var(--hover-transition-3);
 }
 
-.news__wrapper:hover .news__header .c-img {
+.news__wrapper:hover .c-img {
     transform: var(--img-zoom);
 }
 
@@ -41,7 +46,9 @@
 }
 
 /* Top news */
-
+.top-news__wrapper {
+    overflow: hidden;
+}
 
 /* Responsiviety */
 @media (width <=1320px) {
