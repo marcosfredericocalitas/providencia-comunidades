@@ -176,11 +176,6 @@
     height: 100px;
 }
 
-.c-comments__header--news img {
-    width: 80px;
-    height: 80px;
-}
-
 .c-comments__body {
     gap: 5px;
 }
@@ -956,6 +951,10 @@
 @media (width <=880px) {
     .l-main__item--details {
         flex-direction: column-reverse;
+    }
+
+    .c-box__wrapper {
+        width: 100%;
     }
 
     .c-form__item--news {
