@@ -376,11 +376,11 @@
     font-weight: bolder;
 }
 
-.c-field:nth-child(5) {
+.c-field--full-column {
     grid-column: 1 / span 2;
 }
 
-.c-field:nth-child(5) .c-input {
+.c-input--resize {
     resize: vertical;
 }
 

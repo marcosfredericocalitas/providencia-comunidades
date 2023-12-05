@@ -86,13 +86,7 @@
         padding: 0;
         white-space: normal;
     }
-
-    .c-field:nth-child(5) {
-        grid-column: 1 / span 1;
-    }
-
 }
-
 
 @media (width <=576px) {
     .info__title {
