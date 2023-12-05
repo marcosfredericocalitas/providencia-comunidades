@@ -62,7 +62,7 @@
     width: 100%;
 }
 
-@media (width <=1050px) {
+@media (width <=992px) {
     .l-flex__info {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -87,26 +87,16 @@
         white-space: normal;
     }
 
-    .c-form__item {
-        grid-template-columns: 1fr;
-    }
-
     .c-field:nth-child(5) {
         grid-column: 1 / span 1;
     }
 
-    .c-input--primary {
-        padding: 9px 14px;
-    }
 }
+
 
 @media (width <=576px) {
     .info__title {
         font-size: 22px;
-    }
-
-    .c-form {
-        padding: 20px;
     }
 
     .contact__title {
