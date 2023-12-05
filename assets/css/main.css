@@ -587,34 +587,34 @@
 
 /* Title */
 .c-title {
-    color: black;
+    color: var(--black);
     word-break: break-all;
-    text-align: center;
-    font-weight: 800;
-}
-
-.c-title--xxl {
-    font-size: 50px;
+    text-align: left;
 }
 
 .c-title--primary {
     color: var(--white);
     font-size: var(--font-size-xxl);
+    text-align: center;
+    font-weight: 800;
 }
 
 .c-title--secundary {
     font-size: var(--font-size-xl);
     padding: 0 var(--mobile-padding-l-r);
+    font-weight: 800;
 }
 
 .c-title--tertiary {
-    font-weight: 700;
     font-size: var(--font-size-lg);
-    text-align: left;
 }
 
 .c-title--forth {
     font-size: var(--font-size-md);
+}
+
+.c-title--xxl {
+    font-size: 50px;
 }
 
 /* -- Layouts or l -- */
@@ -956,7 +956,6 @@
     .c-title--forth {
         font-size: var(--font-size-sm);
     }
-
 }
 
 @media (width <=880px) {
