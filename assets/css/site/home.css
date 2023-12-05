@@ -32,10 +32,6 @@
 }
 
 /* Top news */
-.l-grid--top-news:nth-child(1) {
-    grid-column: 1 / span 2;
-}
-
 .top-news {
     border-radius: var(--primary-border-radius);
     overflow: hidden;
@@ -79,6 +75,17 @@
     }
 }
 
+
+@media (width <=992px) {
+    .l-grid--slider-news {
+        grid-template-columns: 1fr;
+    }
+
+    .top-news__wrapper {
+        height: 350px;
+    }
+}
+
 @media (width <=768px) {
     .company__title {
         font-size: 35px;
@@ -87,6 +94,10 @@
 
     .company__btn {
         padding: 12px 16px;
+    }
+
+    .l-grid--top-news {
+        grid-template-columns: 1fr;
     }
 }
 
