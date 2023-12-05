@@ -876,6 +876,10 @@
     gap: 70px;
 }
 
+.l-row__wrapper--gap-none {
+    gap: 0;
+}
+
 /* -- Utilities or u -- */
 /* Position */
 .u-relative,
