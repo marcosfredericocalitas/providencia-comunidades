@@ -367,6 +367,23 @@
     border-radius: var(--primary-border-radius) var(--primary-border-radius) 0 0;
 }
 
+/* Form & field */
+.c-form {
+    padding: 30px;
+}
+
+.c-field__label {
+    font-weight: bolder;
+}
+
+.c-field:nth-child(5) {
+    grid-column: 1 / span 2;
+}
+
+.c-field:nth-child(5) .c-input {
+    resize: vertical;
+}
+
 /* Header */
 .c-header__wrapper {
     position: relative;

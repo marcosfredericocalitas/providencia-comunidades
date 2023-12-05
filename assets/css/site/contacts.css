@@ -53,22 +53,6 @@
     font-size: 18px;
 }
 
-.form {
-    padding: 30px;
-}
-
-.field__label {
-    font-weight: bolder;
-}
-
-.field:nth-child(5) {
-    grid-column: 1 / span 2;
-}
-
-.field:nth-child(5) .c-input {
-    resize: vertical;
-}
-
 /* Google maps */
 .google__maps {
     border: 1px solid rgba(0, 0, 0, 0.158);
@@ -103,11 +87,11 @@
         white-space: normal;
     }
 
-    .form__item {
+    .c-form__item {
         grid-template-columns: 1fr;
     }
 
-    .field:nth-child(5) {
+    .c-field:nth-child(5) {
         grid-column: 1 / span 1;
     }
 
@@ -121,7 +105,7 @@
         font-size: 22px;
     }
 
-    .form {
+    .c-form {
         padding: 20px;
     }
 
