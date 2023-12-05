@@ -193,16 +193,6 @@
     font-size: 18px;
 }
 
-/* Cards */
-.l-flex--c-card {
-    padding: 70px 0;
-    gap: 30px;
-}
-
-.l-flex--news-details {
-    gap: 70px;
-}
-
 .c-card__wrapper {
     width: 340px;
     height: 480px;
@@ -645,6 +635,15 @@
 /* Display flex */
 .l-flex {
     display: flex;
+}
+
+.l-flex--c-card {
+    padding: 70px 0;
+    gap: 30px;
+}
+
+.l-flex--details {
+    gap: 70px;
 }
 
 .l-align-baseline {
