@@ -567,8 +567,11 @@
 .c-slider__item {
     width: 25%;
     height: 100%;
-    filter: brightness(0.5);
     transition: var(--slider-transition);
+}
+
+.c-slider__item--filter {
+    filter: brightness(0.5);
 }
 
 /* Navegation buttons */
