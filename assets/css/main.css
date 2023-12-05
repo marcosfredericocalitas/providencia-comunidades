@@ -956,6 +956,14 @@
         font-size: 22px;
     }
 
+    .c-form__item {
+        grid-template-columns: 1fr;
+    }
+
+    .c-input--primary {
+        padding: 9px 14px;
+    }
+
     .c-header__wrapper--left {
         height: 420px;
     }
@@ -982,6 +990,10 @@
         --logo-dimention: 100px;
         width: var(--logo-dimention);
         height: var(--logo-dimention);
+    }
+
+    .c-form {
+        padding: 20px;
     }
 
     .c-header__wrapper {
