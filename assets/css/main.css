@@ -158,19 +158,38 @@
 .c-box__wrapper {
     width: 400px;
     /* height: 300px; */
-    padding: 20px;
+    padding: 30px;
     background-color: var(--white);
     border-radius: var(--primary-border-radius);
+
     /* border: var(--primary-border); */
+}
+
+.c-box__title {
+    font-size: 20px;
 }
 
 .c-box__wrapper--full {
     width: 100%;
 }
 
-.c-comments__header {
+.c-comments__header img {
     width: 100px;
     height: 100px;
+}
+
+.c-comments__header--news img {
+    width: 80px;
+    height: 80px;
+}
+
+
+.c-comments__body {
+    gap: 5px;
+}
+
+.c-comments__title {
+    font-size: 18px;
 }
 
 /* Cards */
