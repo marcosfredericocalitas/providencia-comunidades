@@ -956,6 +956,10 @@
         font-size: 22px;
     }
 
+    .c-field--full-column {
+        grid-column: 1;
+    }
+
     .c-form__item {
         grid-template-columns: 1fr;
     }
