@@ -380,10 +380,6 @@
     grid-column: 1 / span 2;
 }
 
-.c-input--resize {
-    resize: vertical;
-}
-
 /* Header */
 .c-header__wrapper {
     position: relative;
@@ -465,6 +461,10 @@
 
 .c-input-error.is-flex {
     display: flex;
+}
+
+.c-input--resize {
+    resize: vertical;
 }
 
 /* Eye icon */
