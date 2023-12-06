@@ -8,8 +8,7 @@
 
 /* Card details */
 .c-card--details {
-    /* top: 224px; */
-    top: 0;
+    top: 224px;
     right: 140px;
     border: 1px solid var(--white);
     border-radius: 8px;
@@ -64,7 +63,7 @@
 }
 
 @media (width <=1150px) {
-    .l-main__item {
+    .l-main__wrapper {
         align-items: flex-start;
     }
 
@@ -89,7 +88,11 @@
     }
 }
 
-@media (width <=880px) {
+@media (width <=992px) {
+    .l-main__wrapper {
+        flex-direction: column-reverse;
+    }
+
     .c-card__wrapper--details {
         width: 100%;
         height: auto;
