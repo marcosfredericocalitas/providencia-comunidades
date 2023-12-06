@@ -1,14 +1,15 @@
-.section {
+.row {
     padding: 0px 382px 0px 0px;
 }
 
-.section.is-full {
+.row.is-full {
     padding: 0;
 }
 
 /* Card details */
 .c-card--details {
-    top: 224px;
+    /* top: 224px; */
+    top: 0;
     right: 140px;
     border: 1px solid var(--white);
     border-radius: 8px;
@@ -67,7 +68,7 @@
         align-items: flex-start;
     }
 
-    .section {
+    .row {
         padding: 0;
     }
 
