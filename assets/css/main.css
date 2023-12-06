@@ -821,6 +821,14 @@
     gap: 40px;
 }
 
+.l-gap-45 {
+    gap: 45px;
+}
+
+.l-gap-50 {
+    gap: 50px;
+}
+
 /* Grid gap */
 .l-column-gap-30 {
     column-gap: 30px;
