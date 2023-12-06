@@ -776,10 +776,6 @@
     flex-direction: column;
 }
 
-.l-flex-column {
-    flex-direction: column;
-}
-
 .l-column-reverse {
     flex-direction: column-reverse;
 }
@@ -1071,7 +1067,7 @@
     .c-header__wrapper {
         height: 400px;
     }
-    
+
     .c-form__item--news {
         grid-template-columns: repeat(2, 1fr);
     }
