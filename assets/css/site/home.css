@@ -75,7 +75,6 @@
     }
 }
 
-
 @media (width <=992px) {
     .l-grid--slider-news {
         grid-template-columns: 1fr;
