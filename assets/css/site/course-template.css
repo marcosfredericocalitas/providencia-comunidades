@@ -15,11 +15,6 @@
     z-index: 1;
 }
 
-.c-card__wrapper--details {
-    width: 380px;
-    height: 575px;
-}
-
 .c-card__wrapper--details:hover {
     transform: none;
 }
