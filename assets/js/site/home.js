@@ -15,6 +15,9 @@ function nextImage(radio) {
     }, 3000);
 };
 
+nextImage("radio");
+nextImage("news-radio");
+
 // sliderControl.forEach(controler => {
 //     controler.addEventListener("click", () => {
 //         count = controler.classList.contains("slider__control--prev") ? -1 : 1;
