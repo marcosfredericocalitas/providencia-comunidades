@@ -1,9 +1,13 @@
+.c-header__wrapper {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../img/about-us-bg.jpg');
+}
+
 .about__image {
-    flex-shrink: 0.9;
+    flex-shrink: 0;
 }
 
 .about__image img {
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 @media (width <=992px) {
@@ -14,10 +18,26 @@
     .about__title {
         font-size: 30px;
     }
+
+    .l-flex__item-about {
+        flex-direction: column;
+    }
+
+    .about__image {
+        width: 400px;
+        height: 300px;
+    }
 }
 
 @media (width <=768px) {
     .l-grid__collapse {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (width <=576px) {
+    .about__image {
+        width: 100%;
+        height: 100%;
     }
 }

@@ -734,6 +734,10 @@
     display: flex;
 }
 
+.l-flex--about {
+    gap: 80px;
+}
+
 .l-flex--c-card {
     padding: 70px 0;
     gap: 30px;
