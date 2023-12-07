@@ -987,7 +987,7 @@
 }
 
 .u-hover:hover {
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.200);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.200);
 }
 
 .u-img-shadow::after {
