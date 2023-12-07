@@ -192,6 +192,7 @@
     background-color: var(--white);
     transition: var(--hover-transition-3);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.600);
+    margin-bottom: 50px;
     overflow: hidden;
 }
 
@@ -874,6 +875,7 @@
 
 .l-row,
 .l-row__content {
+    margin-top: 50px;
     padding: 0 var(--primary-padding-l-r);
 }
 
