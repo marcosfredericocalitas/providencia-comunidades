@@ -885,6 +885,7 @@
 
 .l-row__wrapper--has-no-gap {
     gap: 0;
+    background-color: red;
 }
 
 /* -- Utilities or u -- */
@@ -980,6 +981,10 @@
 
 .u-hover {
     transition: var(--hover-transition-2);
+}
+
+.u-has-no-gap {
+    gap: 0;
 }
 
 .u-hover:hover {
