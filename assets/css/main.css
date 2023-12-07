@@ -191,7 +191,6 @@
     border-radius: var(--primary-border-radius);
     background-color: var(--white);
     transition: var(--hover-transition-3);
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.600);
     margin-bottom: 50px;
     overflow: hidden;
 }
@@ -988,8 +987,6 @@
 }
 
 .u-hover:hover {
-    border: none;
-    transform: translateY(-20px);
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.200);
 }
 
@@ -1014,7 +1011,7 @@
 }
 
 .u-shadow {
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.100);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.600);
 }
 
 .u-width-100 {
