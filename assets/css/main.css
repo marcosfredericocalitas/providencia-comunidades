@@ -15,7 +15,9 @@
     --red: #ff0000;
     --white: #fff;
     --black: #000;
-    --hover-gray-color: #f6f6f6;
+    --gray-color: #F8F9FA;
+    /* --gray-color: #f6f6f6; */
+
     --primary-text-color: #000000ab;
     --secundary-text-color: #8a8a8a;
     --primary-color: #1088e9;
@@ -904,7 +906,7 @@
 /* -- Utilities or u -- */
 /* Background */
 .u-bg-gray {
-    background-color: var(--hover-gray-color);
+    background-color: var(--gray-color);
 }
 
 /* Position */
@@ -1052,7 +1054,8 @@
         height: var(--logo-dimention);
     }
 
-    .l-row {
+    .l-row,
+    .l-row__content {
         padding: 0 var(--secundary-padding-l-r);
     }
 
@@ -1086,7 +1089,8 @@
         transform: translateX(-50%) translateY(-37%);
     }
 
-    .l-row {
+    .l-row,
+    .l-row__content {
         padding: 0 var(--mobile-padding-l-r);
     }
 }
