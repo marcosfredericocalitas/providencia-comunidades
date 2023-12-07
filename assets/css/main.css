@@ -187,7 +187,7 @@
 
 .c-card__wrapper {
     width: 340px;
-    height: 480px;
+    height: 490px;
     border-radius: var(--primary-border-radius);
     background-color: var(--white);
     transition: var(--hover-transition-3);
