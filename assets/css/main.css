@@ -679,13 +679,12 @@
 .c-title {
     color: var(--black);
     word-break: break-all;
-    text-align: left;
+    text-align: center;
 }
 
 .c-title--primary {
     color: var(--white);
     font-size: var(--font-size-xxl);
-    text-align: center;
     font-weight: 800;
 }
 
@@ -693,15 +692,16 @@
     font-size: var(--font-size-xl);
     padding: 0 var(--mobile-padding-l-r);
     font-weight: 800;
-    text-align: center;
 }
 
 .c-title--tertiary {
     font-size: var(--font-size-lg);
+    text-align: left;
 }
 
 .c-title--forth {
     font-size: var(--font-size-md);
+    text-align: left;
 }
 
 .c-title--xxl {
