@@ -879,16 +879,21 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
+/* Containers */
+
 .l-main {
     margin: 100px 0px 100px 0px;
 }
 
-/* Containers */
 .l-main__wrapper {
     gap: 100px;
 }
 
-.l-main__wrapper--details-gap {
+.l-main__wrapper--c-card {
+    gap: 50px;
+}
+
+.l-main__wrapper--details {
     gap: 50px;
 }
 
