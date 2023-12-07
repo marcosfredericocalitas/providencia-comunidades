@@ -890,8 +890,11 @@
 
 .l-row,
 .l-row__content {
-    margin-top: 50px;
     padding: 0 var(--primary-padding-l-r);
+}
+
+.l-row__content {
+    margin-top: 50px;
 }
 
 .l-row__wrapper {
