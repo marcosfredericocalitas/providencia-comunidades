@@ -864,7 +864,8 @@
     gap: 50px;
 }
 
-.l-row {
+.l-row,
+.l-row__content {
     padding: 0 var(--primary-padding-l-r);
 }
 
