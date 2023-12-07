@@ -867,6 +867,10 @@
     gap: 100px;
 }
 
+.l-main__wrapper--details-gap {
+    gap: 50px;
+}
+
 .l-row {
     padding: 0 var(--primary-padding-l-r);
 }
