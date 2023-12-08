@@ -485,81 +485,83 @@
                                     </span>
                                 </button>
                             </div>
-                            <form class="l-flex l-column l-gap-10">
-                                <div class="l-grid l-col-2 l-gap-15 c-form__item c-form__item--news">
-                                    <div class="c-field">
-                                        <div class="l-flex l-column l-gap-10">
-                                            <label for="name" class="c-field__label">Nome</label>
-                                            <input type="text" name="name" id="name" class="c-input"
-                                                placeholder="Digite o seu nome completo">
+                            <div class="c-modal__body">
+                                <form class="l-flex l-column l-gap-10">
+                                    <div class="l-grid l-col-2 l-gap-15 c-form__item c-form__item--news">
+                                        <div class="c-field">
+                                            <div class="l-flex l-column l-gap-10">
+                                                <label for="name" class="c-field__label">Nome</label>
+                                                <input type="text" name="name" id="name" class="c-input"
+                                                    placeholder="Digite o seu nome completo">
+                                            </div>
+                                            <span class="c-input-error" id="name-err"></span>
                                         </div>
-                                        <span class="c-input-error" id="name-err"></span>
-                                    </div>
-                                    <div class="c-field">
-                                        <div class="l-flex l-column l-gap-10">
-                                            <label for="email" class="c-field__label">Email</label>
-                                            <input type="text" name="email" id="email" class="c-input"
-                                                placeholder="email@exemplo.com">
+                                        <div class="c-field">
+                                            <div class="l-flex l-column l-gap-10">
+                                                <label for="email" class="c-field__label">Email</label>
+                                                <input type="text" name="email" id="email" class="c-input"
+                                                    placeholder="email@exemplo.com">
+                                            </div>
+                                            <span class="c-input-error" id="email-err"></span>
                                         </div>
-                                        <span class="c-input-error" id="email-err"></span>
-                                    </div>
-                                    <div class="c-field">
-                                        <div class="l-flex l-column l-gap-10">
-                                            <label for="birthday" class="c-field__label">Data de nascimento</label>
-                                            <input type="date" name="birthday" id="birthday" class="c-input">
+                                        <div class="c-field">
+                                            <div class="l-flex l-column l-gap-10">
+                                                <label for="birthday" class="c-field__label">Data de nascimento</label>
+                                                <input type="date" name="birthday" id="birthday" class="c-input">
+                                            </div>
+                                            <span class="c-input-error" id="birthday-err"></span>
                                         </div>
-                                        <span class="c-input-error" id="birthday-err"></span>
-                                    </div>
-                                    <div class="c-field">
-                                        <div class="l-flex l-column l-gap-10">
-                                            <label for="phone" class="c-field__label">Sexo</label>
-                                            <div class="l-flex l-align-center l-gap-20">
-                                                <div class="l-flex l-align-center l-gap-10">
-                                                    <input type="radio" name="gender" id="male">
-                                                    <label class="c-field__label" for="male">Masculino</label>
-                                                </div>
-                                                <div class="l-flex l-align-center l-gap-10">
-                                                    <input type="radio" name="gender" id="feminine">
-                                                    <label class="c-field__label" for="feminine">Feminino</label>
+                                        <div class="c-field">
+                                            <div class="l-flex l-column l-gap-10">
+                                                <label for="phone" class="c-field__label">Sexo</label>
+                                                <div class="l-flex l-align-center l-gap-20">
+                                                    <div class="l-flex l-align-center l-gap-10">
+                                                        <input type="radio" name="gender" id="male">
+                                                        <label class="c-field__label" for="male">Masculino</label>
+                                                    </div>
+                                                    <div class="l-flex l-align-center l-gap-10">
+                                                        <input type="radio" name="gender" id="feminine">
+                                                        <label class="c-field__label" for="feminine">Feminino</label>
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <span class="c-input-error" id="gender-err"></span>
                                         </div>
-                                        <span class="c-input-error" id="gender-err"></span>
-                                    </div>
-                                    <div class="c-field u-none">
-                                        <div class="l-flex l-column l-gap-10">
-                                            <label for="phone" class="c-field__label">Curso</label>
-                                            <input type="tel" name="phone" id="phone" class="c-input"
-                                                placeholder="123-456-789">
-                                        </div>
-                                        <span class="c-input-error" id="phone-err"></span>
-                                    </div>
-                                    <div class="c-field c-field--full-column">
-                                        <div class="l-flex l-column l-gap-20">
-                                            <label for="phone" class="c-field__label">Telefone</label>
-                                            <input type="tel" name="phone" id="phone" class="c-input"
-                                                placeholder="123-456-789">
-                                        </div>
-                                        <span class="c-input-error" id="phone-err"></span>
-                                    </div>
-                                    <div class="c-field c-field--user-img c-field--full-column l-grid l-col-2 l-gap-20">
-                                        <div>
-                                            <div class="l-flex l-column l-gap-20">
-                                                <label for="image" class="c-field__label">Imagem</label>
-                                                <input type="file" name="image" id="image" class="c-input">
+                                        <div class="c-field u-none">
+                                            <div class="l-flex l-column l-gap-10">
+                                                <label for="phone" class="c-field__label">Curso</label>
+                                                <input type="tel" name="phone" id="phone" class="c-input"
+                                                    placeholder="123-456-789">
                                             </div>
                                             <span class="c-input-error" id="phone-err"></span>
                                         </div>
-                                        <div class="c-field__preview">
-                                            <img src="../../assets/img/profile-pic.png" alt="Preview da imagem"
-                                                class="c-img c-img--radius-full" id="edit-image-preview">
+                                        <div class="c-field c-field--full-column">
+                                            <div class="l-flex l-column l-gap-20">
+                                                <label for="phone" class="c-field__label">Telefone</label>
+                                                <input type="tel" name="phone" id="phone" class="c-input"
+                                                    placeholder="123-456-789">
+                                            </div>
+                                            <span class="c-input-error" id="phone-err"></span>
+                                        </div>
+                                        <div class="c-field c-field--user-img c-field--full-column l-grid l-col-2 l-gap-20">
+                                            <div>
+                                                <div class="l-flex l-column l-gap-20">
+                                                    <label for="image" class="c-field__label">Imagem</label>
+                                                    <input type="file" name="image" id="image" class="c-input">
+                                                </div>
+                                                <span class="c-input-error" id="phone-err"></span>
+                                            </div>
+                                            <div class="c-field__preview">
+                                                <img src="../../assets/img/profile-pic.png" alt="Preview da imagem"
+                                                    class="c-img c-img--radius-full" id="edit-image-preview">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <button type="button" class="c-btn c-btn--primary" id="btn-submit-contacts">
-                                    Cadstrar-se
-                                </button>
-                            </form>
+                                    <button type="button" class="c-btn c-btn--primary c-btn--small" id="btn-submit-contacts">
+                                        Cadstrar-se
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </section>
