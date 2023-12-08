@@ -375,6 +375,11 @@
     font-weight: bolder;
 }
 
+.c-field__preview {
+    width: 115px;
+    height: 115px;
+}
+
 .c-field--full-column {
     grid-column: 1 / span 2;
 }
@@ -541,6 +546,40 @@
 
 .c-menu__icon--md {
     font-size: 20px;
+}
+
+/* Modal */
+.c-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background-color: #000000be;
+    transition: all 400ms ease-in-out;
+    opacity: 0;
+    padding: 0px 20px;
+    visibility: hidden;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.c-modal.is-visible {
+    opacity: 1;
+    visibility: visible;
+    overflow: auto;
+    padding-top: 60px;
+}
+
+
+.c-modal__wrapper {
+    padding: 30px;
+    width: 750px;
+    border-radius: var(--primary-border-radius);
+    background-color: var(--white);
 }
 
 /* Page */
