@@ -5,8 +5,6 @@ const classesToAddByClick = [
     { button: "btn-mobile", element: "icon-menu-mobile-open", className: "is-none" },
     { button: "btn-mobile", element: "icon-menu-mobile-close", className: "is-none" },
     { button: "btn-mobile", element: "menu-mobile-wrapper", className: "is-flex" },
-    { button: "btn-signup-course", element: "modal-container", className: "is-visible" },
-    { button: "btn-hide-signup-course", element: "modal-container", className: "is-visible" }
 ];
 
 // Add classes on button click
