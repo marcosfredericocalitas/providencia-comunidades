@@ -549,13 +549,10 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
     background-color: #000000be;
     transition: all 400ms ease-in-out;
     opacity: 0;
-    padding: 0px 20px;
+    padding: 0px 20px 50px 20px;
     visibility: hidden;
     overflow: hidden;
     z-index: 2;
@@ -567,6 +564,17 @@
     overflow: auto;
     padding-top: 60px;
 }
+
+.c-modal__btn {
+    font-size: 25px;
+    padding: 9px 13px;
+    transition: var(--hover-transition);
+}
+
+.c-modal__btn:hover {
+    color: var(--red);
+}
+
 
 
 .c-modal__wrapper {
@@ -1241,6 +1249,10 @@
 
     .c-comments__wrapper {
         flex-direction: column;
+    }
+
+    .c-field--user-img {
+        grid-template-columns: 1fr;
     }
 
     .c-form {
