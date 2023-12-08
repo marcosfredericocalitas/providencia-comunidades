@@ -30,13 +30,14 @@ const classesToAddByScroll = [
     { element: "main-wrapper", className: "has-gap", time: 2858, type: "not-full" },
     // Navbar
     { element: "navbar", className: "is-fixed", time: 300, type: "not-full" },
+    { element: "navbar", className: "is-visible", time: 400, type: "not-full" },
+    { element: "menu-logo", className: "is-small", time: 300, type: "not-full" },
+    { element: "btn-scroll-top", className: "is-visible", time: 400, type: "full" },
+    // Others
     { element: "header-wrapper", className: "has-top", time: 300, type: "not-full" },
     { element: "company-wrapper", className: "has-top", time: 300, type: "not-full" },
     { element: "main-wrapper", className: "has-top", time: 300, type: "not-full" },
-    { element: "course-image", className: "has-top", time: 300, type: "not-full" },
-    { element: "navbar", className: "is-visible", time: 400, type: "not-full" },
-    { element: "menu-logo", className: "is-small", time: 300, type: "not-full" },
-    { element: "btn-scroll-top", className: "is-visible", time: 400, type: "full" }
+    { element: "course-image", className: "has-top", time: 300, type: "not-full" }
 ];
 
 // Add classes on window scroll
