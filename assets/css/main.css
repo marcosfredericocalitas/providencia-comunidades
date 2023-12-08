@@ -196,12 +196,6 @@
     overflow: hidden;
 }
 
-.c-card__wrapper--details {
-    width: 380px;
-    height: 575px;
-    margin: 0;
-}
-
 .c-card__wrapper--news {
     height: 492px;
 }

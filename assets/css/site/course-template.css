@@ -34,6 +34,12 @@
     z-index: 1;
 }
 
+.c-card__wrapper--details {
+    width: 380px;
+    height: 575px;
+    margin: 0;
+}
+
 .c-card__wrapper--details:hover {
     transform: none;
 }
@@ -105,6 +111,10 @@
 @media (width <=992px) {
     .l-main__wrapper {
         flex-direction: column-reverse;
+    }
+
+    .aside {
+        width: 100%;
     }
 
     .c-card__wrapper--details {
