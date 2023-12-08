@@ -3,12 +3,25 @@
     --slider-transition: all 500ms ease-in-out;
 }
 
+.header__wrapper.has-top {
+    position: relative;
+    top: 108px;
+}
+
+.l-main__wrapper.has-top {
+    margin-top: 208px;
+}
+
 .company {
     z-index: 1;
     top: 50%;
     left: 0%;
     transform: translateY(-40%);
     padding: 0 var(--primary-padding-l-r);
+}
+
+.company__wrapper.has-top {
+    transform: translateY(-18%);
 }
 
 .company__title {
