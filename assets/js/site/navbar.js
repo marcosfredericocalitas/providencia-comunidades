@@ -31,6 +31,7 @@ const classesToAddByScroll = [
     { element: "header-wrapper", className: "has-top", time: 300, type: "not-full" },
     { element: "company-wrapper", className: "has-top", time: 300, type: "not-full" },
     { element: "main-wrapper", className: "has-top", time: 300, type: "not-full" },
+    { element: "course-image", className: "has-top", time: 300, type: "not-full" },
     { element: "navbar", className: "is-visible", time: 400, type: "not-full" },
     { element: "menu-logo", className: "is-small", time: 300, type: "not-full" },
     { element: "btn-scroll-top", className: "is-visible", time: 400, type: "full" }
