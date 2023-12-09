@@ -296,10 +296,6 @@
     transition: all 500ms ease-in-out;
 }
 
-.c-collapse__title {
-    font-size: 25px;
-}
-
 .c-collapse__arrow {
     font-size: 25px;
     transition: all 400ms ease-in-out;
@@ -1195,10 +1191,6 @@
 @media (width <=768px) {
     .c-collapse__header {
         padding: 10px 20px;
-    }
-
-    .c-collapse__title {
-        font-size: 22px;
     }
 
     .c-field--full-column,
