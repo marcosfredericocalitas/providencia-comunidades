@@ -33,6 +33,17 @@
     line-height: 1.5rem;
 }
 
+/* About */
+.about__wrapper {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #f6f9ff;
+}
+
+.about__image {
+    width: 1800px;
+}
+
 /* News */
 .news__wrapper {
     width: 100%;
@@ -92,6 +103,14 @@
         grid-template-columns: 1fr;
     }
 
+    .l-row__wrapper--about {
+        flex-direction: column;
+    }
+
+    .about__image {
+        width: 500px;
+    }
+
     .top-news__wrapper {
         height: 350px;
     }
@@ -125,5 +144,9 @@
     .company__btn {
         padding: 12px 14px;
         font-size: 16px;
+    }
+
+    .about__image {
+        width: 100%;
     }
 }
