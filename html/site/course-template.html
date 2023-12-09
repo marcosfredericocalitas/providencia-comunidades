@@ -368,46 +368,50 @@
                                 <!-- Comments title -->
                                 <h2 class="c-title c-title--forth">Deixe um comentário</h2>
                                 <!-- Content -->
-                                <form class="c-form c-form--comments l-flex l-column l-gap-25 u-border">
-                                    <div class="l-grid l-col-2 l-gap-25 c-form__item c-form__item--news">
-                                        <div class="c-field">
-                                            <div class="l-flex l-column l-gap-10">
-                                                <label for="name" class="c-field__label">Nome</label>
-                                                <input type="text" name="comment-name" id="comment-name"
-                                                    class="c-input c-input--primary"
-                                                    placeholder="Digite o seu nome completo">
+                                <!-- Form -->
+                                <form class="c-form">
+                                    <div class="c-form__wrapper c-form__wrapper--comments l-flex l-column u-border">
+                                        <div class="c-form__fields l-grid l-col-2">
+                                            <div class="c-field">
+                                                <div class="l-flex l-column l-gap-10">
+                                                    <label for="name" class="c-field__label">Nome</label>
+                                                    <input type="text" name="comment-name" id="comment-name"
+                                                        class="c-input c-input--primary"
+                                                        placeholder="Digite o seu nome completo">
+                                                </div>
+                                                <span class="c-input-error" id="comment-name-err"></span>
                                             </div>
-                                            <span class="c-input-error" id="comment-name-err"></span>
-                                        </div>
-                                        <div class="c-field">
-                                            <div class="l-flex l-column l-gap-10">
-                                                <label for="email" class="c-field__label">Email</label>
-                                                <input type="text" name="comment-email" id="comment-email"
-                                                    class="c-input c-input--primary" placeholder="email@exemplo.com">
+                                            <div class="c-field">
+                                                <div class="l-flex l-column l-gap-10">
+                                                    <label for="email" class="c-field__label">Email</label>
+                                                    <input type="text" name="comment-email" id="comment-email"
+                                                        class="c-input c-input--primary"
+                                                        placeholder="email@exemplo.com">
+                                                </div>
+                                                <span class="c-input-error" id="comment-email-err"></span>
                                             </div>
-                                            <span class="c-input-error" id="comment-email-err"></span>
-                                        </div>
-                                        <div class="c-field">
-                                            <div class="l-flex l-column l-gap-10">
-                                                <label for="phone" class="c-field__label">Telefone</label>
-                                                <input type="tel" name="comment-phone" id="comment-phone"
-                                                    class="c-input c-input--primary" placeholder="123-456-789">
+                                            <div class="c-field">
+                                                <div class="l-flex l-column l-gap-10">
+                                                    <label for="phone" class="c-field__label">Telefone</label>
+                                                    <input type="tel" name="comment-phone" id="comment-phone"
+                                                        class="c-input c-input--primary" placeholder="123-456-789">
+                                                </div>
+                                                <span class="c-input-error" id="comment-phone-err"></span>
                                             </div>
-                                            <span class="c-input-error" id="comment-phone-err"></span>
-                                        </div>
-                                        <div class="c-field c-field--full-column">
-                                            <div class="l-flex l-column l-gap-10">
-                                                <label for="" class="c-field__label">Mensagem</label>
-                                                <textarea name="comment-message" id="comment-message" cols="30" rows="7"
-                                                    class="c-input c-input--primary c-input--resize"
-                                                    placeholder="Digite a sua mensagem"></textarea>
+                                            <div class="c-field c-field--full-column">
+                                                <div class="l-flex l-column l-gap-10">
+                                                    <label for="" class="c-field__label">Mensagem</label>
+                                                    <textarea name="comment-message" id="comment-message" cols="30"
+                                                        rows="7" class="c-input c-input--primary c-input--resize"
+                                                        placeholder="Digite a sua mensagem"></textarea>
+                                                </div>
+                                                <span class="c-input-error" id="comment-message-err"></span>
                                             </div>
-                                            <span class="c-input-error" id="comment-message-err"></span>
                                         </div>
+                                        <button type="button" class="c-btn c-btn--primary" id="">
+                                            Enviar Comentário
+                                        </button>
                                     </div>
-                                    <button type="button" class="c-btn c-btn--primary" id="btn-submit-contacts">
-                                        Enviar Comentário
-                                    </button>
                                 </form>
                             </div>
                         </div>
@@ -487,82 +491,87 @@
                             </button>
                         </div>
                         <div class="c-modal__body">
-                            <form class="l-flex l-column l-gap-10">
-                                <div class="l-grid l-col-2 l-gap-15 c-form__item c-form__item--news">
-                                    <div class="c-field">
-                                        <div class="l-flex l-column l-gap-10">
-                                            <label for="name" class="c-field__label">Nome</label>
-                                            <input type="text" name="name" id="name" class="c-input c-input--primary"
-                                                placeholder="Digite o seu nome completo">
-                                        </div>
-                                        <span class="c-input-error" id="name-err"></span>
-                                    </div>
-                                    <div class="c-field">
-                                        <div class="l-flex l-column l-gap-10">
-                                            <label for="email" class="c-field__label">Email</label>
-                                            <input type="text" name="email" id="email" class="c-input c-input--primary"
-                                                placeholder="email@exemplo.com">
-                                        </div>
-                                        <span class="c-input-error" id="email-err"></span>
-                                    </div>
-                                    <div class="c-field">
-                                        <div class="l-flex l-column l-gap-10">
-                                            <label for="birthday" class="c-field__label">Data de nascimento</label>
-                                            <input type="date" name="birthday" id="birthday"
-                                                class="c-input c-input--primary">
-                                        </div>
-                                        <span class="c-input-error" id="birthday-err"></span>
-                                    </div>
-                                    <div class="c-field">
-                                        <div class="l-flex l-column l-gap-10">
-                                            <label class="c-field__label">Sexo</label>
-                                            <div class="l-flex l-align-center l-gap-20">
-                                                <div class="l-flex l-align-center l-gap-10">
-                                                    <input type="radio" name="gender" id="male">
-                                                    <label class="c-field__label" for="male">Masculino</label>
-                                                </div>
-                                                <div class="l-flex l-align-center l-gap-10">
-                                                    <input type="radio" name="gender" id="feminine">
-                                                    <label class="c-field__label" for="feminine">Feminino</label>
-                                                </div>
+                            <!-- Form -->
+                            <form class="c-form">
+                                <div class="c-form__wrapper c-form__wrapper--has-no-padding l-flex l-column">
+                                    <div class="c-form__fields l-grid l-col-2">
+                                        <div class="c-field">
+                                            <div class="l-flex l-column l-gap-10">
+                                                <label for="name" class="c-field__label">Nome</label>
+                                                <input type="text" name="name" id="name"
+                                                    class="c-input c-input--primary"
+                                                    placeholder="Digite o seu nome completo">
                                             </div>
+                                            <span class="c-input-error" id="name-err"></span>
                                         </div>
-                                        <span class="c-input-error" id="gender-err"></span>
-                                    </div>
-                                    <div class="c-field u-none">
-                                        <div class="l-flex l-column l-gap-10">
-                                            <label for="course" class="c-field__label">Curso</label>
-                                            <input type="tel" name="course" id="course" class="c-input c-input--primary"
-                                                placeholder="123-456-789">
+                                        <div class="c-field">
+                                            <div class="l-flex l-column l-gap-10">
+                                                <label for="email" class="c-field__label">Email</label>
+                                                <input type="text" name="email" id="email"
+                                                    class="c-input c-input--primary" placeholder="email@exemplo.com">
+                                            </div>
+                                            <span class="c-input-error" id="email-err"></span>
                                         </div>
-                                        <span class="c-input-error" id="course-err"></span>
-                                    </div>
-                                    <div class="c-field c-field--full-column">
-                                        <div class="l-flex l-column l-gap-20">
-                                            <label for="phone" class="c-field__label">Telefone</label>
-                                            <input type="tel" name="phone" id="phone" class="c-input c-input--primary"
-                                                placeholder="123-456-789">
-                                        </div>
-                                        <span class="c-input-error" id="phone-err"></span>
-                                    </div>
-                                    <div class="c-field c-field--user-img c-field--full-column l-grid l-col-2 l-gap-20">
-                                        <div>
-                                            <div class="l-flex l-column l-gap-20">
-                                                <label for="image" class="c-field__label">Imagem</label>
-                                                <input type="file" name="image" id="image"
+                                        <div class="c-field">
+                                            <div class="l-flex l-column l-gap-10">
+                                                <label for="birthday" class="c-field__label">Data de nascimento</label>
+                                                <input type="date" name="birthday" id="birthday"
                                                     class="c-input c-input--primary">
                                             </div>
-                                            <span class="c-input-error" id="image-err"></span>
+                                            <span class="c-input-error" id="birthday-err"></span>
                                         </div>
-                                        <div class="c-field__preview">
-                                            <img src="../../assets/img/profile-pic.png" alt="Preview da imagem"
-                                                class="c-img c-img--radius-full" id="edit-image-preview">
+                                        <div class="c-field">
+                                            <div class="l-flex l-column l-gap-10">
+                                                <label class="c-field__label">Sexo</label>
+                                                <div class="l-flex l-align-center l-gap-20">
+                                                    <div class="l-flex l-align-center l-gap-10">
+                                                        <input type="radio" name="gender" id="male">
+                                                        <label class="c-field__label" for="male">Masculino</label>
+                                                    </div>
+                                                    <div class="l-flex l-align-center l-gap-10">
+                                                        <input type="radio" name="gender" id="feminine">
+                                                        <label class="c-field__label" for="feminine">Feminino</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="c-input-error" id="gender-err"></span>
+                                        </div>
+                                        <div class="c-field u-none">
+                                            <div class="l-flex l-column l-gap-10">
+                                                <label for="course" class="c-field__label">Curso</label>
+                                                <input type="tel" name="course" id="course"
+                                                    class="c-input c-input--primary" placeholder="123-456-789">
+                                            </div>
+                                            <span class="c-input-error" id="course-err"></span>
+                                        </div>
+                                        <div class="c-field c-field--full-column">
+                                            <div class="l-flex l-column l-gap-20">
+                                                <label for="phone" class="c-field__label">Telefone</label>
+                                                <input type="tel" name="phone" id="phone"
+                                                    class="c-input c-input--primary" placeholder="123-456-789">
+                                            </div>
+                                            <span class="c-input-error" id="phone-err"></span>
+                                        </div>
+                                        <div
+                                            class="c-field c-field--user-img c-field--full-column l-grid l-col-2 l-gap-20">
+                                            <div>
+                                                <div class="l-flex l-column l-gap-20">
+                                                    <label for="image" class="c-field__label">Imagem</label>
+                                                    <input type="file" name="image" id="image"
+                                                        class="c-input c-input--primary">
+                                                </div>
+                                                <span class="c-input-error" id="image-err"></span>
+                                            </div>
+                                            <div class="c-field__preview">
+                                                <img src="../../assets/img/profile-pic.png" alt="Preview da imagem"
+                                                    class="c-img c-img--radius-full" id="edit-image-preview">
+                                            </div>
                                         </div>
                                     </div>
+                                    <button type="button" class="c-btn c-btn--primary" id="btn-signup-student">
+                                        Cadastrar-se
+                                    </button>
                                 </div>
-                                <button type="button" class="c-btn c-btn--primary c-btn--small" id="btn-signup-student">
-                                    Cadstrar-se
-                                </button>
                             </form>
                         </div>
                     </div>
