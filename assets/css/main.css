@@ -738,6 +738,7 @@
     color: var(--black);
     word-break: break-all;
     text-align: center;
+    padding: 0 var(--mobile-padding-l-r);
 }
 
 .c-title--primary {
@@ -748,7 +749,6 @@
 
 .c-title--secundary {
     font-size: var(--font-size-xl);
-    padding: 0 var(--mobile-padding-l-r);
     font-weight: 800;
 }
 
@@ -762,12 +762,9 @@
     text-align: left;
 }
 
-.c-title--xxl {
-    font-size: 50px;
-}
-
-.c-title--sm {
-    font-size: 20px;
+.c-title--fith {
+    font-size: var(--font-size-xl);
+    text-align: left;
 }
 
 /* -- Layouts or l -- */
