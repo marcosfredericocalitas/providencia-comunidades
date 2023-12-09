@@ -738,34 +738,36 @@
     color: var(--black);
     word-break: break-all;
     text-align: center;
-    padding: 0 var(--mobile-padding-l-r);
 }
 
 .c-title--primary {
     color: var(--white);
     font-size: var(--font-size-xxl);
+    padding: 0 var(--mobile-padding-l-r);
     font-weight: 900;
 }
 
 .c-title--secundary {
     font-size: var(--font-size-xl);
+    padding: 0 var(--mobile-padding-l-r);
     font-weight: 800;
 }
 
 .c-title--tertiary {
-    font-size: var(--font-size-lg);
-    text-align: left;
-}
-
-.c-title--forth {
     font-size: var(--font-size-md);
     text-align: left;
 }
 
-.c-title--fith {
-    font-size: var(--font-size-xl);
+.c-title--forth {
+    font-size: 30px;
     text-align: left;
 }
+
+.c-title--fith {
+    font-size: 25px;
+    text-align: left;
+}
+
 
 /* -- Layouts or l -- */
 /* Display box */
@@ -1176,11 +1178,15 @@
     }
 
     .c-title--tertiary {
-        font-size: var(--font-size-md);
+        font-size: var(--font-size-sm);
     }
 
     .c-title--forth {
-        font-size: var(--font-size-sm);
+        font-size: 25px
+    }
+
+    .c-title--fith {
+        font-size: 22px;
     }
 }
 
@@ -1235,10 +1241,6 @@
 
     .c-title--secundary {
         font-size: var(--font-size-md);
-    }
-
-    .c-title--tertiary {
-        font-size: var(--font-size-sm);
     }
 }
 
