@@ -36,7 +36,9 @@
     --font-size-md: 35px;
     --font-size-sm: 30px;
     --font-size-xs: 25px;
-    --font-size-mobile: 17px;
+    --font-size-text-md: 17px;
+    --font-size-text-sm: 16px;
+    --font-size-text-xs: 14px;
     --primary-line-height: 1.6rem;
     /* Border radius */
     --primary-border-radius: 4px;
@@ -711,17 +713,17 @@
 
 /* Text */
 .c-text {
-    font-size: 17px;
+    font-size: var(--font-size-text-md);
     line-height: var(--primary-line-height);
     color: var(--primary-text-color);
 }
 
 .c-text--sm {
-    font-size: 16px;
+    font-size: var(--font-size-text-sm);
 }
 
-.c-text--sm2 {
-    font-size: 14px;
+.c-text--xs {
+    font-size: var(--font-size-text-xs);
 }
 
 /* Title */
@@ -1254,12 +1256,12 @@
     }
 
     .c-page__text {
-        font-size: var(--font-size-mobile);
+        font-size: var(--font-size-text-md);
     }
 
     .c-text {
         line-height: 1.6rem;
-        font-size: var(--font-size-mobile);
+        font-size: var(--font-size-text-md);
     }
 
     .c-title--primary {
