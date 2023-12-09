@@ -9,8 +9,8 @@
     width: 100%;
     padding: var(--primary-padding-t-b) var(--primary-padding-l-r);
     background-color: var(--white);
-    transition: var(--navbar-transition);
     box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.200);
+    transition: var(--primary-transition);
     z-index: 2;
 }
 

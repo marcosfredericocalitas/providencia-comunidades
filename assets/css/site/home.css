@@ -1,6 +1,5 @@
 :root {
     --arrow-align: 40px;
-    --slider-transition: all 500ms ease-in-out;
 }
 
 .header__wrapper.has-top {

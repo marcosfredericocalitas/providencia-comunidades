@@ -54,9 +54,13 @@
     --primary-footer-padding-t-b: 50px;
     --secundary-footer-padding-t-b: 30px 20px;
     /* Transition */
-    --primary-transition: all 150ms ease-in-out;
-    --secundary-transition: all 250ms ease-in-out;
-    --tertiary-transition: all 300ms ease-in-out;
+    --primary-transition: background-color .2s, box-shadow .2s, color .2s, -webkit-box-shadow .2s;
+    --slider-transition: all 500ms ease-in-out;
+    --transition-200: all 200ms ease-in-out;
+    --transition-300: all 300ms ease-in-out;
+    --transition-400: all 400ms ease-in-out;
+    --transition-500: all 500ms ease-in-out;
+    --transition-600: all 600ms ease-in-out;
     /* Fonts */
     --poppins: 'Poppins', 'sans-serif';
     --nunito-sans-font: 'Nunito Sans', sans-serif;
@@ -192,7 +196,7 @@
     height: 480px;
     border-radius: var(--secundary-border-radius);
     background-color: var(--white);
-    transition: var(--primary-transition-3);
+    transition: var(--transition-300);
     margin-bottom: 30px;
     overflow: hidden;
 }
@@ -220,7 +224,7 @@
 
 .c-card__img {
     filter: brightness(0.9);
-    transition: var(--primary-transition-3);
+    transition: var(--transition-300);
 }
 
 .c-card__body {
@@ -296,19 +300,19 @@
 
 .c-collapse__header {
     padding: 14px 20px;
-    transition: all 500ms ease-in-out;
+    transition: var(--transition-500)
 }
 
 .c-collapse__arrow {
     font-size: 25px;
-    transition: all 400ms ease-in-out;
+    transition: var(--transition-400)
 }
 
 .c-collapse__body {
     max-height: 0;
     visibility: hidden;
     overflow: hidden;
-    transition: all 500ms ease-in-out;
+    transition: var(--transition-500)
 }
 
 .c-collapse__answer {
@@ -541,7 +545,7 @@
     width: 100%;
     height: 100vh;
     background-color: #000000be;
-    transition: all 400ms ease-in-out;
+    transition: var(--transition-400);
     opacity: 0;
     padding: 0px 20px 50px 20px;
     visibility: hidden;
@@ -653,7 +657,7 @@
     height: var(--btn-dimention);
     border-radius: 100px;
     background-color: #ffffff33;
-    transition: var(--primary-transition);
+    transition: var(--transition-200);
 }
 
 .c-navegation__btn:hover {
@@ -1040,7 +1044,7 @@
 }
 
 .u-hover {
-    transition: var(--primary-transition-2);
+    transition: var(--transition-300);
 }
 
 .u-has-no-gap {
@@ -1080,7 +1084,7 @@
 }
 
 .u-scale img {
-    transition: var(--primary-transition-3);
+    transition: var(--transition-300);
 }
 
 .u-scale:hover img {

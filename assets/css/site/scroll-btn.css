@@ -14,9 +14,9 @@
     width: var(--btn-dimention);
     height: var(--btn-dimention);
     background-color: var(--btn-scroll-bg);
-    opacity: 0;
-    visibility: hidden;
     transition: var(--primary-transition);
+    visibility: hidden;
+    opacity: 0;
 }
 
 .scroll__btn.is-visible {

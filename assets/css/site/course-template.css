@@ -50,7 +50,7 @@
 }
 
 .c-card--details.has-transition {
-    transition: all 600ms ease-in-out;
+    transition: var(--transition-600)
 }
 
 .c-card--details.is-top {
