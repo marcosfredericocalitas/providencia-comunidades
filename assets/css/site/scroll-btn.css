@@ -16,7 +16,7 @@
     background-color: var(--btn-scroll-bg);
     opacity: 0;
     visibility: hidden;
-    transition: var(--hover-transition);
+    transition: var(--primary-transition);
 }
 
 .scroll__btn.is-visible {
