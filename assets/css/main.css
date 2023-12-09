@@ -699,6 +699,10 @@
     transition: var(--primary-transition);
 }
 
+.c-slider__control--sm {
+    padding: 30px 12px;
+}
+
 .c-slider__control:hover {
     color: var(--white);
 }
@@ -711,8 +715,16 @@
     left: var(--arrow-align);
 }
 
+.c-slider__control--prev- {
+    left: 20px;
+}
+
 .c-slider__control--next {
     right: var(--arrow-align);
+}
+
+.c-slider__control--next- {
+    right: 20px;
 }
 
 /* Text */
