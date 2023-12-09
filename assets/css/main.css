@@ -35,6 +35,7 @@
     --font-size-lg: 40px;
     --font-size-md: 35px;
     --font-size-sm: 30px;
+    --font-size-xs: 25px;
     --font-size-mobile: 17px;
     --primary-line-height: 1.6rem;
     /* Border radius */
@@ -755,15 +756,14 @@
 }
 
 .c-title--forth {
-    font-size: 30px;
+    font-size: var(--font-size-sm);
     text-align: left;
 }
 
 .c-title--fith {
-    font-size: 25px;
+    font-size: var(--font-size-xs);
     text-align: left;
 }
-
 
 /* -- Layouts or l -- */
 /* Display box */
@@ -1174,7 +1174,7 @@
     }
 
     .c-title--forth {
-        font-size: 25px
+        font-size: var(--font-size-xs);
     }
 
     .c-title--fith {
