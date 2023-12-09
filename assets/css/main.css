@@ -360,6 +360,10 @@
     padding: 30px;
 }
 
+.c-form__wraper {
+    width: 100%;
+}
+
 .c-field__label {
     font-weight: bolder;
 }

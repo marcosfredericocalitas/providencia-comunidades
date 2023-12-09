@@ -62,6 +62,10 @@
     font-size: 18px;
 }
 
+.contact__image {
+    width: 650px
+}
+
 /* Google maps */
 .google__maps {
     border: 1px solid rgba(0, 0, 0, 0.158);
@@ -75,6 +79,25 @@
     .l-flex__info {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact__cta,
+    .l-flex--contacts {
+        flex-direction: column;
+    }
+
+    .contact__title {
+        border: none;
+        padding: 0;
+        white-space: normal;
+    }
+
+    .contact__description {
+        text-align: center;
+    }
+
+    .l-flex--contact-form {
+        flex-direction: column;
     }
 }
 
@@ -94,6 +117,14 @@
         border: none;
         padding: 0;
         white-space: normal;
+    }
+
+    .contact__image {
+        width: 100%;
+    }
+
+    .c-form__item {
+        width: 100%;
     }
 }
 
