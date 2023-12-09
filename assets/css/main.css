@@ -959,11 +959,6 @@
     gap: 50px;
 }
 
-.l-row__wrapper--has-no-gap {
-    gap: 0;
-    background-color: red;
-}
-
 /* -- Utilities or u -- */
 /* Background */
 .u-bg-gray {
