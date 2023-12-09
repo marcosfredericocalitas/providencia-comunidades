@@ -16,9 +16,7 @@
     --white: #fff;
     --black: #000;
     --gray-color: #F8F9FA;
-    /* --gray-color: #f6f6f6; */
     --primary-text-color: #000000ab;
-    --secundary-text-color: #8a8a8a;
     --primary-color: #1088e9;
     --primary-color-hover: #0c70c2;
     --secundary-color: #003384;
@@ -32,7 +30,6 @@
     --input-border-color: #ced4da;
     --primary-border: 1px solid #d7d7d7;
     /* -- Font size -- */
-    /* Title */
     --font-size-xxl: 50px;
     --font-size-xl: 45px;
     --font-size-lg: 40px;
@@ -43,10 +40,10 @@
     /* Border radius */
     --primary-border-radius: 4px;
     --secundary-border-radius: 6px;
-    /* Navbar padding top and bottom */
+    /* Padding top and bottom */
     --primary-padding-t-b: 8px;
     --mobile-padding-t-b: 5px;
-    /* Navbar padding left and rigth */
+    /* Padding left and rigth */
     --primary-padding-l-r: 140px;
     --secundary-padding-l-r: 50px;
     --mobile-padding-l-r: 20px;
