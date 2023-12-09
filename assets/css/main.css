@@ -101,7 +101,7 @@
 .c-btn {
     color: var(--white);
     border: none;
-    padding: 12px 25px;
+    padding: 12px 20px;
     border-radius: var(--primary-border-radius);
     text-align: center;
     word-wrap: break-word;
