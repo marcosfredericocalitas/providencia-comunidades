@@ -1,7 +1,6 @@
 :root {
     --moblie-menu-animation: 800ms scrollTop forwards;
     --bottom-navba-border: 3.2px solid var(--primary-color);
-    --navbar-transition: all 500ms ease-in-out;
 }
 
 /* Navbar */
@@ -10,7 +9,7 @@
     padding: var(--primary-padding-t-b) var(--primary-padding-l-r);
     background-color: var(--white);
     box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.200);
-    transition: var(--primary-transition);
+    transition: var(--transition-500);
     z-index: 2;
 }
 

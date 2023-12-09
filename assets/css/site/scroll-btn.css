@@ -14,7 +14,7 @@
     width: var(--btn-dimention);
     height: var(--btn-dimention);
     background-color: var(--btn-scroll-bg);
-    transition: var(--primary-transition);
+    transition: var(--transition-300);
     visibility: hidden;
     opacity: 0;
 }
