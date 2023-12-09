@@ -743,11 +743,13 @@
 .c-title--primary {
     color: var(--white);
     font-size: var(--font-size-xxl);
+    padding: 0 var(--mobile-padding-l-r);
     font-weight: 900;
 }
 
 .c-title--secundary {
     font-size: var(--font-size-xl);
+    padding: 0 var(--mobile-padding-l-r);
     font-weight: 800;
 }
 
