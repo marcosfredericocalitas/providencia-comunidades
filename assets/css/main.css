@@ -966,7 +966,7 @@
 }
 
 .l-row,
-.l-row__content {
+.l-row-content {
     padding: 0 var(--primary-padding-l-r);
 }
 
@@ -1122,7 +1122,7 @@
     }
 
     .l-row,
-    .l-row__content {
+    .l-row-content {
         padding: 0 var(--secundary-padding-l-r);
     }
 
@@ -1157,7 +1157,7 @@
     }
 
     .l-row,
-    .l-row__content {
+    .l-row-content {
         padding: 0 var(--mobile-padding-l-r);
     }
 }
