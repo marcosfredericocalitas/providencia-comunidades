@@ -63,7 +63,7 @@
 }
 
 .contact__image {
-    width: 600px
+    width: 1200px
 }
 
 /* Google maps */
@@ -98,6 +98,10 @@
 
     .l-flex--contact-form {
         flex-direction: column;
+    }
+
+    .contact__image {
+        width: 700px;
     }
 }
 
