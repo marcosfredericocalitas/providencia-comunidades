@@ -595,7 +595,7 @@
     top: 50%;
     left: 50%;
     width: 100%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-5%);
     padding: var(--primary-padding-t-b) var(--primary-padding-l-r);
 }
 
@@ -1097,10 +1097,6 @@
 
 /* Responsivity */
 @media (width <=1320px) {
-    .c-page {
-        padding: var(--primary-padding-t-b) 460px var(--primary-padding-t-b) var(--secundary-padding-l-r);
-    }
-
     .c-brand--large {
         --logo-dimention: 130px;
         width: var(--logo-dimention);
@@ -1134,7 +1130,7 @@
     }
 
     .c-page {
-        transform: translateX(-50%) translateY(-10%);
+        transform: translateX(-50%) translateY(-20%);
         padding: var(--mobile-padding-t-b) var(--mobile-padding-l-r);
     }
 
