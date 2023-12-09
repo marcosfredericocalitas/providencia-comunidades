@@ -4,10 +4,11 @@
 
 .about__image {
     flex-shrink: 0;
+    width: 40%;
 }
 
 .about__image img {
-    border-radius: 8px;
+    border-radius: var(--primary-border-radius);
 }
 
 @media (width <=992px) {
@@ -15,12 +16,8 @@
         flex-direction: column;
     }
 
-    .about__title {
-        font-size: 30px;
-    }
-
-    .l-flex__item-about {
-        flex-direction: column;
+    .about__image {
+        width: auto;
     }
 }
 
