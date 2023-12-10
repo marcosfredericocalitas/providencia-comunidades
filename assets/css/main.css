@@ -626,8 +626,6 @@
 
 /* Slider  */
 .c-slider {
-    width: 100%;
-    /* height: calc(100vh - 108px); */
     height: 510px;
     overflow: hidden;
 }
@@ -1136,6 +1134,7 @@
         height: var(--logo-dimention);
     }
 
+
     .c-menu__link--navbar {
         padding: 9px 12px;
         font-weight: bolder;
@@ -1148,6 +1147,10 @@
 
     .c-page--course-details {
         transform: translateX(-50%) translateY(-37%);
+    }
+
+    .c-slider {
+        height: 550px;
     }
 
     .l-row,
@@ -1273,10 +1276,6 @@
 }
 
 @media (width <=480px) {
-    .c-slider {
-        height: calc(100vh - 200px);
-    }
-
     .c-page {
         transform: translateY(-15%) translateX(-50%);
     }
