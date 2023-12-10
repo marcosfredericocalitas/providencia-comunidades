@@ -218,7 +218,8 @@
                     <section>
                         <!-- Content -->
                         <div class="c-box">
-                            <div class="c-box__wrapper u-padding-mobile c-box__wrapper--full l-flex l-column l-gap-30 u-shadow">
+                            <div
+                                class="c-box__wrapper u-padding-mobile c-box__wrapper--full l-flex l-column l-gap-30 u-shadow">
                                 <h2 class="c-title c-title--fith">Comentários</h2>
                                 <ul class="c-box__list l-flex l-column l-gap-40">
                                     <!-- Item -->
@@ -330,6 +331,12 @@
                                                 </div>
                                                 <span class="c-input-error" id="comment-phone-err"></span>
                                             </div>
+                                            <div class="c-field u-none">
+                                                <div class="l-flex l-column l-gap-5">
+                                                    <input type="hidden" name="id-comment" id="id-comment"
+                                                        class="c-input c-input--primary" value="1">
+                                                </div>
+                                            </div>
                                             <div class="c-field c-field--full-column">
                                                 <div class="l-flex l-column l-gap-10">
                                                     <label for="" class="c-field__label">Mensagem</label>
@@ -340,7 +347,7 @@
                                                 <span class="c-input-error" id="comment-message-err"></span>
                                             </div>
                                         </div>
-                                        <button type="button" class="c-btn c-btn--primary" id="">
+                                        <button type="button" class="c-btn c-btn--primary" id="btn-comment-submit">
                                             Enviar Comentário
                                         </button>
                                     </div>
@@ -599,7 +606,8 @@
     <script src="../../assets/js/adminlte.js"></script>
     <script src="../../assets/js/main.js"></script>
     <script src="../../assets/js/site/navbar.js"></script>
-    <script src="../../assets/js/site/course-template.js"></script>
+    <script src="../../assets/js/validation.js"></script>
+    <script src="../../assets/js/site/comments.js"></script>
 </body>
 
 </html>
