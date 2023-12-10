@@ -1,7 +1,7 @@
 $(document).ready(function () {
     addClassByClick("btn-signup-course", "modal-container", "is-visible");
     addClassByClick("btn-hide-signup-course", "modal-container", "is-visible")
-    
+
     // Validation by focusout event
     const validationFunctions = [
         // Add student functions and params
@@ -19,15 +19,15 @@ $(document).ready(function () {
 
     // Validation by click button
     $("#btn-signup-student").click(function () {
-        const isEditNameValid = validateName("name", "name-err");
-        const isEditEmailValid = validateEmail("email", "email-err");
-        const isEditBirthdateValid = validateBirthdate("birthdate", "birthdate-err");
-        const isEditGenderValid = validateGender("gender", "gender-err");
-        const isEditPhoneValid = validatePhone("phone", "phone-err");
-        const isEditImageValid = validateImage("image", "image-err");
+        const isNameValid = validateName("name", "name-err");
+        const isEmailValid = validateEmail("email", "email-err");
+        const isBirthdateValid = validateBirthdate("birthdate", "birthdate-err");
+        const isGenderValid = validateGender("gender", "gender-err");
+        const isPhoneValid = validatePhone("phone", "phone-err");
+        const isImageValid = validateImage("image", "image-err");
 
-        if (!isEditNameValid || !isEditEmailValid || !isEditBirthdateValid ||
-            !isEditGenderValid || !isEditPhoneValid || !isEditImageValid) {
+        if (!isNameValid || !isEmailValid || !isBirthdateValid ||
+            !isGenderValid || !isPhoneValid || !isImageValid) {
             alert('Erro ao adicionar novo aluno');
             return false;
         }
