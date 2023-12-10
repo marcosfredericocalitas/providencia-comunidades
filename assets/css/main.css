@@ -1281,6 +1281,10 @@
         transform: translateY(-15%) translateX(-50%);
     }
 
+    .c-page--course-details {
+        transform: translateX(-50%) translateY(-37%);
+    }
+
     .c-page__title {
         font-size: 27px;
     }
