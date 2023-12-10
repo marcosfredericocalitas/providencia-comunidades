@@ -348,7 +348,7 @@
 }
 
 .c-details__body {
-    padding: 25px;
+    padding: 25px
 }
 
 .c-details__img {
@@ -1262,7 +1262,7 @@
         grid-template-columns: 1fr;
     }
 
-    .u-has-padding {
+    .u-padding-mobile {
         padding: 20px;
     }
 
