@@ -1,6 +1,21 @@
 $(document).ready(function () {
     addClassByClick("btn-signup-course", "modal-container", "is-visible");
     addClassByClick("btn-hide-signup-course", "modal-container", "is-visible")
+    
+    // Validation by focusout event
+    const validationFunctions = [
+        // Add student functions and params
+        ["name", "name-err", validateName],
+        ["email", "email-err", validateEmail],
+        ["birthdate", "birthdate-err", validateBirthdate],
+        ["phone", "phone-err", validatePhone],
+        ["image", "image-err", validateImage],
+
+    ];
+
+    validationFunctions.forEach((validation) => {
+        validateByFocusOut(validation[0], validation[1], validation[2]);
+    });
 
     // Validation by click button
     $("#btn-signup-student").click(function () {
