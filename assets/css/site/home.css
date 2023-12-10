@@ -3,12 +3,7 @@
 }
 
 .header__wrapper.has-top {
-    position: relative;
-    top: 108px;
-}
-
-.l-main__wrapper.has-top {
-    margin-top: 208px;
+    margin-top: 108px;
 }
 
 .company {
@@ -17,10 +12,6 @@
     left: 0%;
     transform: translateY(-58%);
     padding: 0 var(--primary-padding-l-r);
-}
-
-.company__wrapper.has-top {
-    transform: translateY(-18%);
 }
 
 .company__title {
