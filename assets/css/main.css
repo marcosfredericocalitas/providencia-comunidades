@@ -613,7 +613,7 @@
     padding: var(--primary-padding-t-b) var(--primary-padding-l-r);
 }
 
-.c-page--left {
+.c-page--course-details {
     transform: translateX(-50%) translateY(-32%);
     padding-right: 580px;
 }
@@ -1154,7 +1154,7 @@
         padding: var(--mobile-padding-t-b) var(--mobile-padding-l-r);
     }
 
-    .c-page--left {
+    .c-page--course-details {
         transform: translateX(-50%) translateY(-37%);
     }
 
@@ -1234,7 +1234,7 @@
         height: 13px;
     }
 
-    .c-page--left {
+    .c-page--course-details {
         transform: translateX(-50%) translateY(-35%);
     }
 
