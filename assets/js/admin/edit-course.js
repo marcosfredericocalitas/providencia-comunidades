@@ -3,15 +3,16 @@ $(document).ready(function () {
     setImagePreview("edit-image", "edit-image-preview");
 
     // Validation by focusout event
-    const courseValidationFunctions = [
+    const editCourseValidation = [
         ["edit-name", "edit-name-err", validateName],
         ["edit-admin", "edit-admin-err", validateAdmin],
         ["edit-description", "edit-description-err", validateDescription],
-        ["topics", "edit-topics-err", validateTopics],
+        ["edit-details", "edit-details-err", validateDetails],
+        ["edit-topics", "edit-topics-err", validateTopics],
         ["edit-image", "edit-image-err", validateImage]
     ];
 
-    courseValidationFunctions.forEach((array) => {
+    editCourseValidation.forEach((array) => {
         validateByFocusOut(array[0], array[1], array[2]);
     });
 
@@ -20,15 +21,16 @@ $(document).ready(function () {
         const isEditNameValid = validateName("edit-name", "edit-name-err");
         const isEditValidAdmin = validateAdmin("edit-admin", "edit-admin-err");
         const isEditValidDescription = validateDescription("edit-description", "edit-description-err");
+        const isDetailsValid = validateDetails("edit-details", "edit-details-err");
         const isEditValidTopics = validateTopics("edit-topics", "edit-topics-err");
         const isEditImageValid = validateImage("edit-image", "edit-image-err");
 
-        if (!isEditNameValid || !isEditValidAdmin || !isEditValidDescription || !isEditValidTopics || !isEditImageValid) {
-            alert('Erro ao adicionar novo curso');
+        if (!isEditNameValid || !isEditValidAdmin || !isEditValidDescription || !isDetailsValid || !isEditValidTopics || !isEditImageValid) {
+            alert('Erro ao editar novo curso');
             return false;
         }
 
-        alert('Curso adicionado com sucesso');
+        alert('Curso editado com sucesso');
         return true;
     });
 });

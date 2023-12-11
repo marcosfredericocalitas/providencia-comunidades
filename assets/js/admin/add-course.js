@@ -3,27 +3,29 @@ $(document).ready(function () {
     setImagePreview("image", "image-preview");
 
     // Validation by focusout event
-    const courseValidationFunctions = [
+    const courseValidation = [
         ["name", "name-err", validateName],
         ["admin", "admin-err", validateAdmin],
         ["description", "description-err", validateDescription],
+        ["details", "details-err", validateDetails],
         ["topics", "topics-err", validateTopics],
         ["image", "image-err", validateImage]
     ];
 
-    courseValidationFunctions.forEach((array) => {
+    courseValidation.forEach((array) => {
         validateByFocusOut(array[0], array[1], array[2]);
     });
 
     // Validation by click button
     $("#btn-add-course").click(function () {
         const isNameValid = validateName("name", "name-err");
-        const isValidAdmin = validateAdmin("admin", "admin-err");
-        const isValidDescription = validateDescription("description", "description-err");
-        const isValidTopics = validateTopics("topics", "topics-err");
-        const isImageValid = validateImage("image", "image-err");
+        const isAdminValid = validateAdmin("admin", "admin-err");
+        const isDescriptionValid = validateDescription("description", "description-err");
+        const isDetailsValid = validateDetails("details", "details-err");
+        const isTopicsValid = validateTopics("topics", "topics-err");
+        const isEditImageValid = validateImage("image", "image-err");
 
-        if (!isNameValid || !isValidAdmin || !isValidDescription || !isValidTopics || !isImageValid) {
+        if (!isNameValid || !isAdminValid || isDetailsValid || !isDescriptionValid || !isTopicsValid || !isEditImageValid) {
             alert('Erro ao adicionar novo curso');
             return false;
         }
