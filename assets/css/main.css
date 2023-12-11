@@ -12,9 +12,12 @@
 
 :root {
     /* Color */
-    --red: #ff0000;
     --white: #fff;
     --black: #000;
+    --red: #ff0000;
+    --blue: #279de6;
+    --purple: #7e80e7;
+    --orange: #ffc646;
     --gray-color: #F8F9FA;
     --primary-text-color: #000000ab;
     --primary-color: #1088e9;
@@ -1187,6 +1190,10 @@
     .c-title--fith {
         font-size: 22px;
     }
+
+    .l-grid--card {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (width <=880px) {
@@ -1232,6 +1239,10 @@
     .c-title--secundary {
         font-size: var(--font-size-md);
     }
+
+    .l-grid--card {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (width <=576px) {
@@ -1257,7 +1268,7 @@
         height: 350px;
     }
 
-    
+
     .c-page--course-details {
         transform: translateX(-50%) translateY(-98%);
     }

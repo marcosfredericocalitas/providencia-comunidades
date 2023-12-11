@@ -25,6 +25,56 @@
     line-height: 1.5rem;
 }
 
+/* Card */
+/* .l-row__wrapper--card {
+    position: relative;
+    bottom: 30px;
+} */
+
+.card__wrapper {
+    width: 100%;
+    padding: 35px 30px;
+    border-radius: 4px;
+}
+
+.card__wrapper--blue {
+    background-color: #279de61d;
+}
+
+.card__wrapper--purple {
+    background-color: #7e80e61d;
+}
+
+.card__wrapper--orange {
+    background-color: #ffc8461d;
+}
+
+.card__icon {
+    font-size: 45px;
+    color: var(--primary-color);
+}
+
+.card__icon--blue {
+    color: var(--blue);
+}
+
+.card__icon--purple {
+    color: var(--purple);
+}
+
+.card__icon--orange {
+    color: var(--orange);
+}
+
+.card__title {
+    font-weight: 800;
+}
+
+.card__text {
+    font-size: 19px;
+    font-weight: 600;
+}
+
 /* About */
 .about__wrapper {
     padding: 30px;
