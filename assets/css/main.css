@@ -610,7 +610,7 @@
 }
 
 .c-page--course-details {
-    transform: translateX(-50%) translateY(-32%);
+    transform: translateX(-50%) translateY(-72%);
     padding-right: 580px;
 }
 
@@ -1146,7 +1146,7 @@
     }
 
     .c-page--course-details {
-        transform: translateX(-50%) translateY(-37%);
+        transform: translateX(-50%) translateY(-88%);
     }
 
     .c-slider {
@@ -1222,7 +1222,7 @@
     }
 
     .c-page--course-details {
-        transform: translateX(-50%) translateY(-35%);
+        transform: translateX(-50%) translateY(-90%);
     }
 
     .c-title--primary {
@@ -1257,6 +1257,11 @@
         height: 350px;
     }
 
+    
+    .c-page--course-details {
+        transform: translateX(-50%) translateY(-98%);
+    }
+
     .c-page__text {
         font-size: var(--font-size-text-md);
     }
@@ -1281,7 +1286,7 @@
     }
 
     .c-page--course-details {
-        transform: translateX(-50%) translateY(-37%);
+        transform: translateX(-50%) translateY(-97%);
     }
 
     .c-page__title {
