@@ -979,6 +979,18 @@
     background-color: var(--gray-color);
 }
 
+.u-bg-blue {
+    background-color: #279de61d;
+}
+
+.u-bg-purple {
+    background-color: #7e80e61d;
+}
+
+.u-bg-orange {
+    background-color: #ffc8461d;
+}
+
 /* Position */
 .u-relative,
 .is-relative {
