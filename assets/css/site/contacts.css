@@ -8,7 +8,8 @@
     max-height: 310px;
     padding: 100px 30px;
     text-align: center;
-    background-color: var(--white);
+    border-radius: var(--secundary-border-radius);
+    /* background-color: var(--white); */
 }
 
 .info__wrapper:hover {
