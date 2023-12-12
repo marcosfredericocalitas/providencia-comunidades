@@ -1267,7 +1267,6 @@
         height: 350px;
     }
 
-
     .c-page--course-details {
         transform: translateX(-50%) translateY(-98%);
     }
@@ -1288,6 +1287,10 @@
     .c-title--secundary {
         font-size: var(--font-size-sm);
     }
+
+    .c-title--tertiary {
+        font-size: var(--font-size-xs);
+    }
 }
 
 @media (width <=480px) {
@@ -1306,6 +1309,14 @@
     .c-form__wrapper--comments {
         padding: 0;
         border: none;
+    }
+
+    .c-title--primary {
+        font-size: var(--font-size-sm);
+    }
+
+    .c-title--secundary {
+        font-size: var(--font-size-xs);
     }
 }
 
