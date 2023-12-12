@@ -363,6 +363,7 @@
 .c-form,
 .c-form__wrapper {
     width: 100%;
+    border-radius: var(--primary-border-radius);
 }
 
 .c-form__wrapper {
