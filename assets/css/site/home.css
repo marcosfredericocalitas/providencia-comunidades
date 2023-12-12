@@ -6,6 +6,7 @@
     margin-top: 108px;
 }
 
+/* Company */
 .company {
     z-index: 1;
     top: 50%;
@@ -22,9 +23,11 @@
 }
 
 .company__slogan {
+    font-size: var(--font-size-text-sm);
     line-height: 1.5rem;
 }
 
+/* Card */
 .card__wrapper {
     width: 100%;
     padding: 35px 30px;
@@ -172,10 +175,6 @@
         font-size: 35px;
         line-height: 3rem;
     }
-
-    /* .company__slogan {
-        font-size: 14px;
-    } */
 
     .company__btn {
         padding: 12px 14px;
