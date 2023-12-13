@@ -80,7 +80,7 @@
 }
 
 .about__image {
-    width: 1800px;
+    width: 1900px;
 }
 
 /* News */
@@ -163,6 +163,10 @@
 
     .company__btn {
         padding: 12px 16px;
+    }
+
+    .about__wrapper {
+        padding: 0px 20px;
     }
 
     .l-grid--top-news {
