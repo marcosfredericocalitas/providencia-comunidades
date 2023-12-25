@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    // Set image preview
+    setImagePreview("image", "image-preview");
+
     addClassByClick("btn-signup-course", "modal-container", "is-visible");
     addClassByClick("btn-hide-signup-course", "modal-container", "is-visible")
 
