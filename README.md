@@ -2,4 +2,4 @@
 
 Para acessar o sistema acesse o link abaixo:👇
 
-<a href="https://marcosfredericocalitas.github.io/providencia-comunidades/html/admin/profile.html">Ver projecto</a>
+<a href="https://marcosfredericocalitas.github.io/providencia-comunidades/html/site/home.html">Ver projecto</a>
