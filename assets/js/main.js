@@ -16,7 +16,6 @@ function addClassByScroll(elementId, className, time, type) {
     const element = document.getElementById(elementId);
 
     if (!element) {
-        console.error(`Element with id "${elementId}" not found.`);
         return false;
     }
 
