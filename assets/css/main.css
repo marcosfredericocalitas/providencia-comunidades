@@ -197,7 +197,7 @@
 }
 
 .c-card__wrapper {
-    width: 345px;
+    width: 340px;
     height: 490px;
     border-radius: var(--secundary-border-radius);
     background-color: var(--white);
