@@ -104,12 +104,12 @@
 .c-btn {
     color: var(--white);
     border: none;
-    padding: 12px 20px;
+    padding: 13px 20px;
     border-radius: var(--primary-border-radius);
     text-align: center;
     word-wrap: break-word;
     font-size: 17px;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: .5px;
     line-height: 24px;
     transition: background-color .2s, box-shadow .2s, color .2s, -webkit-box-shadow .2s;
