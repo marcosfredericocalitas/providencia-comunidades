@@ -136,6 +136,33 @@
     background-color: transparent;
 }
 
+.c-btn-group__item {
+    font-size: 16px;
+    color: #232323;
+    font-weight: 700;
+    border-radius: var(--primary-border-radius);
+    background-color: var(--gray-color);
+}
+
+.c-btn-group__item:hover {
+    background-color: #e5e5e5;
+}
+
+.c-btn-group__item.active {
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+.c-btn-group__item {
+    border-radius: 4;
+    padding: 8px 16px;
+}
+
+.c-btn-group__item:nth-child(1),
+.c-btn-group__item:nth-last-child(1) {
+    padding: 9px 14px;
+}
+
 /* Box */
 .c-box {
     position: relative;
