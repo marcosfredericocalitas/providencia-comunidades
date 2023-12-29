@@ -1391,10 +1391,10 @@
 }
 
 @media (width <=400px) {
-    /* .c-card__wrapper {
+    .c-card__wrapper {
         width: 100%;
         height: 480px;
-    } */
+    }
 
     .c-card__title {
         font-size: 20px;
@@ -1402,13 +1402,13 @@
 }
 
 @media (width <=380px) {
-    /* .c-card__wrapper {
+    .c-card__wrapper {
         height: 460px;
-    } */
+    }
 }
 
-@media (width <=350px) {
-    /* .c-card__wrapper {
+@media (width <=360px) {
+    .c-card__wrapper {
         height: 450px;
-    } */
+    }
 }
