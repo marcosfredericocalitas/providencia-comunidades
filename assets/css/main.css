@@ -928,6 +928,10 @@
     justify-content: space-between;
 }
 
+.l-flex-start {
+    align-self: flex-start;
+}
+
 /* Flex gap */
 .l-gap-5 {
     gap: 5px;
