@@ -44,7 +44,8 @@
     --font-size-text-xs: 14px;
     --primary-line-height: 1.6rem;
     /* Border radius */
-    --primary-border-radius: 4px;
+    /* --primary-border-radius: 4px; */
+    --primary-border-radius: .25rem;
     --secundary-border-radius: 6px;
     /* Padding top and bottom */
     --primary-padding-t-b: 8px;
@@ -113,6 +114,7 @@
     letter-spacing: .5px;
     line-height: 24px;
     transition: background-color .2s, box-shadow .2s, color .2s, -webkit-box-shadow .2s;
+    padding: .75rem 1.5rem;
 }
 
 .c-btn--transparent {
