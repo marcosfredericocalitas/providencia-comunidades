@@ -1,0 +1,9 @@
+.page-not-found {
+    width: 600px;
+}
+
+@media (width <=650px) {
+    .page-not-found {
+        width: 100%;
+    }
+}
