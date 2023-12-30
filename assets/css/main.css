@@ -206,9 +206,9 @@
     overflow: hidden;
 }
 
-/* .c-card__wrapper--news {
+.c-card__wrapper--news {
     height: auto;
-} */
+}
 
 .c-card__wrapper:hover>.l-flex .c-card__header .c-card__img {
     filter: brightness(0.5);
@@ -230,9 +230,9 @@
     padding: 0px 24px;
 }
 
-/* .c-card__body--news {
+.c-card__body--news {
     padding: 0;
-} */
+}
 
 .c-card__info-data {
     gap: 5px;
