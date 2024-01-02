@@ -1011,8 +1011,7 @@
 }
 
 .l-main--page-not-found {
-
-    margin: 0 0 55px 0;
+    margin: 0;
 }
 
 .l-main__wrapper {
@@ -1037,6 +1036,7 @@
 }
 
 .l-row__wrapper--gap-none {
+    padding-bottom: 50px;
     gap: 0px;
 }
 
