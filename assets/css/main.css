@@ -943,6 +943,7 @@
 
 .l-gap-20 {
     gap: 20px;
+    background-color: red;
 }
 
 .l-gap-25 {
@@ -1035,9 +1036,8 @@
     gap: 70px;
 }
 
-.l-row__wrapper--gap-none {
-    padding-bottom: 50px;
-    gap: 0px;
+.l-row__wrapper--page-not-found {
+    gap: 5px;
 }
 
 /* -- Utilities or u -- */
