@@ -57,10 +57,6 @@
     white-space: nowrap;
 }
 
-.contact__description {
-    font-size: 18px;
-}
-
 .contact__image {
     width: 1200px
 }
@@ -89,10 +85,6 @@
         border: none;
         padding: 0;
         white-space: normal;
-    }
-
-    .contact__description {
-        text-align: center;
     }
 
     .l-flex--contact-form {
@@ -144,9 +136,5 @@
         font-size: var(--font-size-sm);
         text-transform: uppercase;
         font-weight: 800;
-    }
-
-    .contact__description {
-        font-size: var(--primary-font-mobile);
     }
 }

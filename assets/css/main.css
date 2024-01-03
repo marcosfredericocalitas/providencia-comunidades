@@ -762,6 +762,12 @@
     color: var(--primary-text-color);
 }
 
+.c-text--primary {
+    font-size: 18px;
+    text-align: center;
+    /* font-size: var(--primary-font-mobile); */
+}
+
 .c-text--sm {
     font-size: var(--font-size-text-sm);
 }
