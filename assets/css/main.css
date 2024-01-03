@@ -765,7 +765,6 @@
 .c-text--primary {
     font-size: 18px;
     text-align: center;
-    /* font-size: var(--primary-font-mobile); */
 }
 
 .c-text--sm {
