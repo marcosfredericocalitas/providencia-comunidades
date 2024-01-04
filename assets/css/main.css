@@ -1348,6 +1348,10 @@
     .c-title--primary {
         font-size: var(--font-size-sm);
     }
+
+    .c-title--secundary {
+        font-size: var(--font-size-xs);
+    }
 }
 
 @media (width <=400px) {
