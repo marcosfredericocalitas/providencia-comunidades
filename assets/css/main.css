@@ -608,7 +608,7 @@
     left: 50%;
     width: 100%;
     transform: translateX(-50%);
-    padding: var(--primary-padding-t-b) var(--primary-padding-l-r);
+    padding: 0 var(--mobile-padding-l-r);
 }
 
 .c-page--course-details {
@@ -777,7 +777,6 @@
 /* Title */
 .c-title {
     color: var(--black);
-    word-break: break-all;
     text-align: center;
 }
 
@@ -1293,6 +1292,10 @@
         height: var(--logo-dimention);
     }
 
+    .c-header__wrapper {
+        height: 320px;
+    }
+
     .c-comments__wrapper {
         flex-direction: column;
     }
@@ -1328,8 +1331,8 @@
 }
 
 @media (width <=480px) {
-    .c-page {
-        transform: translateY(-15%) translateX(-50%);
+    .c-header__wrapper {
+        height: 300px;
     }
 
     .c-page--course-details {
