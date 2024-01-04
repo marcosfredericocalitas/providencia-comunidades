@@ -607,19 +607,13 @@
     top: 50%;
     left: 50%;
     width: 100%;
-    transform: translateX(-50%) translateY(-5%);
+    transform: translateX(-50%);
     padding: var(--primary-padding-t-b) var(--primary-padding-l-r);
 }
 
 .c-page--course-details {
     transform: translateX(-50%) translateY(-72%);
     padding-right: 580px;
-}
-
-.c-page__text {
-    color: #ffffffb0;
-    font-size: 17.2px;
-    line-height: 1.5rem;
 }
 
 .c-page__text--left {
@@ -763,6 +757,11 @@
 }
 
 .c-text--primary {
+    color: #f6f6f6b0;
+    font-size: 19px;
+}
+
+.c-text--secundary {
     font-size: 18px;
     text-align: center;
 }
@@ -1177,15 +1176,13 @@
         height: var(--logo-dimention);
     }
 
-
     .c-menu__link--navbar {
         padding: 9px 12px;
         font-weight: bolder;
     }
 
-    .c-page {
-        transform: translateX(-50%) translateY(-20%);
-        padding: var(--mobile-padding-t-b) var(--mobile-padding-l-r);
+    .c-header__wrapper {
+        height: 400px
     }
 
     .c-page--course-details {
@@ -1203,12 +1200,12 @@
 }
 
 @media (width <=992px) {
-    .c-header__wrapper {
-        height: 400px;
-    }
-
     .l-main__wrapper--details {
         flex-direction: column;
+    }
+
+    .c-header__wrapper {
+        height: 380px;
     }
 
     .c-title--primary {
@@ -1243,6 +1240,10 @@
 }
 
 @media (width <=768px) {
+    .c-header__wrapper {
+        height: 350px;
+    }
+
     .c-collapse__header {
         padding: 10px 20px;
     }
@@ -1304,16 +1305,8 @@
         padding: 20px;
     }
 
-    .c-header__wrapper {
-        height: 350px;
-    }
-
     .c-page--course-details {
         transform: translateX(-50%) translateY(-98%);
-    }
-
-    .c-page__text {
-        font-size: var(--font-size-text-md);
     }
 
     .c-text {
