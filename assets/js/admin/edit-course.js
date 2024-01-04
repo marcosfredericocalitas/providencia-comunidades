@@ -3,30 +3,44 @@ $(document).ready(function () {
     setImagePreview("edit-image", "edit-image-preview");
 
     // Validation by focusout event
-    const editCourseValidation = [
+    const courseValidation = [
         ["edit-name", "edit-name-err", validateName],
+        ["edit-category", "edit-category-err", validateCategory],
         ["edit-admin", "edit-admin-err", validateAdmin],
         ["edit-description", "edit-description-err", validateDescription],
         ["edit-details", "edit-details-err", validateDetails],
         ["edit-topics", "edit-topics-err", validateTopics],
+        ["edit-total-content", "edit-total-content-err", validateTotalContent],
+        ["edit-duration", "edit-duration-err", validateDuration],
+        ["edit-level", "edit-level-err", validateLevel],
+        ["edit-language", "edit-language-err", validateLanguage],
+        ["edit-certificate", "edit-certificate-err", validateCertificate],
         ["edit-image", "edit-image-err", validateImage]
     ];
 
-    editCourseValidation.forEach((array) => {
+    courseValidation.forEach((array) => {
         validateByFocusOut(array[0], array[1], array[2]);
     });
 
     // Validation by click button
     $("#btn-edit-course").click(function () {
         const isEditNameValid = validateName("edit-name", "edit-name-err");
-        const isEditValidAdmin = validateAdmin("edit-admin", "edit-admin-err");
-        const isEditValidDescription = validateDescription("edit-description", "edit-description-err");
-        const isDetailsValid = validateDetails("edit-details", "edit-details-err");
-        const isEditValidTopics = validateTopics("edit-topics", "edit-topics-err");
-        const isEditImageValid = validateImage("edit-image", "edit-image-err");
+        const isEditCategoryValid = validateCategory("edit-category", "edit-category-err");
+        const isEditAdminValid = validateAdmin("edit-admin", "edit-admin-err");
+        const isEditDescriptionValid = validateDescription("edit-description", "edit-description-err");
+        const isEditDetailsValid = validateDetails("edit-details", "edit-details-err");
+        const isEditTopicsValid = validateTopics("edit-topics", "edit-topics-err");
+        const isEditTotalContentValid = validateTotalContent("edit-total-content", "edit-total-content-err");
+        const isEditDurationValid = validateDuration("edit-duration", "edit-duration-err");
+        const isEditLevelValid = validateLevel("edit-level", "edit-level-err");
+        const isEditLanguageValid = validateLanguage("edit-language", "edit-language-err");
+        const isEditCertificateValid = validateCertificate("edit-certificate", "edit-certificate-err");
+        const isEditEditImageValid = validateImage("edit-image", "edit-image-err");
 
-        if (!isEditNameValid || !isEditValidAdmin || !isEditValidDescription || !isDetailsValid || !isEditValidTopics || !isEditImageValid) {
-            alert('Erro ao editar novo curso');
+        if (!isEditNameValid || !isEditCategoryValid || !isEditAdminValid || !isEditDescriptionValid ||
+            isEditDetailsValid || !isEditTopicsValid || !isEditTotalContentValid || !isEditDurationValid ||
+            !isEditLevelValid || !isEditLanguageValid || !isEditCertificateValid || !isEditEditImageValid) {
+            alert('Erro ao editar curso');
             return false;
         }
 

@@ -418,15 +418,15 @@
                                             <span class="c-input-error" id="name-err"></span>
                                         </div>
                                         <div class="form-group">
-                                            <label for="admin">Admin</label>
-                                            <select name="admin" id="admin" class="c-input">
-                                                <option value="" selected>Quem cadastrou o curso?</option>
-                                                <option value="1">Jenilson Lucas</option>
-                                                <option value="4">Jenilson Lucas</option>
-                                                <option value="6">Jenilson Lucas</option>
-                                                <option value="3">Jenilson Lucas</option>
+                                            <label for="category">Categoria</label>
+                                            <select name="category" id="category" class="c-input">
+                                                <option disabled selected value="">Selecione o nivel do curso
+                                                </option>
+                                                <option value="1">Informática</option>
+                                                <option value="2">Idiomas</option>
+                                                <option value="3">Gestão</option>
                                             </select>
-                                            <span class="c-input-error" id="admin-err"></span>
+                                            <span class="c-input-error" id="category-err"></span>
                                         </div>
                                         <div class="form-group form-group-last">
                                             <label for="description">Descrição</label>
@@ -445,6 +445,64 @@
                                             <textarea name="topics" id="topics" cols="5" rows="4" class="c-input"
                                                 placeholder="Digite os tópicos do curso"></textarea>
                                             <span class="c-input-error" id="topics-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="total-content">Total do conteúdo</label>
+                                            <input type="number" name="total-content" id="total-content" class="c-input"
+                                                placeholder="Quantos PDF's tem o curso?">
+                                            <span class="c-input-error" id="total-content-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="duration">Duração</label>
+                                            <input type="text" name="duration" id="duration" class="c-input"
+                                                placeholder="Digite o tempo de duração do curso">
+                                            <span class="c-input-error" id="duration-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="level">Nivel</label>
+                                            <select name="level" id="level" class="c-input">
+                                                <option disabled selected value="">Selecione o nivel do curso
+                                                </option>
+                                                <option value="beginner">Iniciante</option>
+                                                <option value="intermediate">Intermediário</option>
+                                                <option value="profissional">Profissional</option>
+                                            </select>
+                                            <span class="c-input-error" id="level-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="language">Idioma</label>
+                                            <select name="language" id="language" class="c-input">
+                                                <option disabled selected value="">Selecione o idioma do curso
+                                                </option>
+                                                <option value="spanish">Espanhol</option>
+                                                <option value="french">Françes</option>
+                                                <option value="english">Inglés</option>
+                                                <option value="portuguese">Portugues</option>
+                                            </select>
+                                            <span class="c-input-error" id="language-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="certificate">Certificado</label>
+                                            <select name="certificate" id="certificate" class="c-input">
+                                                <option disabled selected value="">
+                                                    Disponibilidade de certificado
+                                                </option>
+                                                <option value="spanish">Sim</option>
+                                                <option value="french">Não</option>
+                                                <option value="english">Temporariamente indisponivel</option>
+                                            </select>
+                                            <span class="c-input-error" id="certificate-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="admin">Admin</label>
+                                            <select name="admin" id="admin" class="c-input">
+                                                <option disabled selected value="">Quem cadastrou o curso?</option>
+                                                <option value="1">Jenilson Lucas</option>
+                                                <option value="4">Jenilson Lucas</option>
+                                                <option value="6">Jenilson Lucas</option>
+                                                <option value="3">Jenilson Lucas</option>
+                                            </select>
+                                            <span class="c-input-error" id="admin-err"></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="image">Imagem </label>
@@ -470,7 +528,7 @@
                     <div id="editEmployeeModal" class="modal fade">
                         <div class="modal-dialog">
                             <div class="modal-content modal-content-add">
-                                <form enctype="multipart/form-data" id="student-add-form">
+                                <form enctype="multipart/form-data" id="student-edit-form">
                                     <div class="modal-header">
                                         <h4 class="modal-title">Editar curso</h4>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -479,20 +537,20 @@
                                     <div class="modal-body modal-body-add l-grid">
                                         <div class="form-group">
                                             <label for="edit-name">Nome</label>
-                                            <input type="text" name="name" id="edit-name" class="c-input"
+                                            <input type="text" name="edit-name" id="edit-name" class="c-input"
                                                 placeholder="Digite o nome do curso">
                                             <span class="c-input-error" id="edit-name-err"></span>
                                         </div>
                                         <div class="form-group">
-                                            <label for="edit-admin">Admin</label>
-                                            <select name="course" id="edit-admin" class="c-input">
-                                                <option value="" selected>Quem editou o curso?</option>
-                                                <option value="1">Jenilson Lucas</option>
-                                                <option value="4">Jenilson Lucas</option>
-                                                <option value="6">Jenilson Lucas</option>
-                                                <option value="3">Jenilson Lucas</option>
+                                            <label for="edit-category">Categoria</label>
+                                            <select name="edit-category" id="edit-category" class="c-input">
+                                                <option disabled selected value="">Selecione o nivel do curso
+                                                </option>
+                                                <option value="1">Informática</option>
+                                                <option value="2">Idiomas</option>
+                                                <option value="3">Gestão</option>
                                             </select>
-                                            <span class="c-input-error" id="edit-admin-err"></span>
+                                            <span class="c-input-error" id="edit-category-err"></span>
                                         </div>
                                         <div class="form-group form-group-last">
                                             <label for="edit-description">Descrição</label>
@@ -508,13 +566,71 @@
                                         </div>
                                         <div class="form-group form-group-last">
                                             <label for="edit-topics">Tópicos</label>
-                                            <textarea name="topics" id="edit-topics" cols="5" rows="4" class="c-input"
-                                                placeholder="Digite os tópicos do curso"></textarea>
+                                            <textarea name="edit-topics" id="edit-topics" cols="5" rows="4"
+                                                class="c-input" placeholder="Digite os tópicos do curso"></textarea>
                                             <span class="c-input-error" id="edit-topics-err"></span>
                                         </div>
                                         <div class="form-group">
+                                            <label for="edit-total-content">Total do conteúdo</label>
+                                            <input type="number" name="edit-total-content" id="edit-total-content"
+                                                class="c-input" placeholder="Quantos PDF's tem o curso?">
+                                            <span class="c-input-error" id="edit-total-content-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="edit-duration">Duração</label>
+                                            <input type="text" name="edit-duration" id="edit-duration" class="c-input"
+                                                placeholder="Digite o tempo de duração do curso">
+                                            <span class="c-input-error" id="edit-duration-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="edit-level">Nivel</label>
+                                            <select name="edit-level" id="edit-level" class="c-input">
+                                                <option disabled selected value="">Selecione o nivel do curso
+                                                </option>
+                                                <option value="beginner">Iniciante</option>
+                                                <option value="intermediate">Intermediário</option>
+                                                <option value="profissional">Profissional</option>
+                                            </select>
+                                            <span class="c-input-error" id="edit-level-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="edit-language">Idioma</label>
+                                            <select name="edit-language" id="edit-language" class="c-input">
+                                                <option disabled selected value="">Selecione o idioma do curso
+                                                </option>
+                                                <option value="spanish">Espanhol</option>
+                                                <option value="french">Françes</option>
+                                                <option value="english">Inglés</option>
+                                                <option value="portuguese">Portugues</option>
+                                            </select>
+                                            <span class="c-input-error" id="edit-language-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="edit-certificate">Certificado</label>
+                                            <select name="edit-certificate" id="edit-certificate" class="c-input">
+                                                <option disabled selected value="">
+                                                    Disponibilidade de certificado
+                                                </option>
+                                                <option value="spanish">Sim</option>
+                                                <option value="french">Não</option>
+                                                <option value="english">Temporariamente indisponivel</option>
+                                            </select>
+                                            <span class="c-input-error" id="edit-certificate-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="edit-admin">Admin</label>
+                                            <select name="edit-admin" id="edit-admin" class="c-input">
+                                                <option disabled selected value="">Quem cadastrou o curso?</option>
+                                                <option value="1">Jenilson Lucas</option>
+                                                <option value="4">Jenilson Lucas</option>
+                                                <option value="6">Jenilson Lucas</option>
+                                                <option value="3">Jenilson Lucas</option>
+                                            </select>
+                                            <span class="c-input-error" id="edit-admin-err"></span>
+                                        </div>
+                                        <div class="form-group">
                                             <label for="edit-image">Imagem </label>
-                                            <input type="file" name="image" id="edit-image">
+                                            <input type="file" name="edit-image" id="edit-image">
                                             <span class="c-input-error" id="edit-image-err"></span>
                                         </div>
                                         <div class="form-image">

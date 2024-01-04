@@ -273,7 +273,7 @@ function validateTitle(input, error) {
 
 // Category validation
 function validateCategory(input, error) {
-    return textValidation(input, error, "Categoría")
+    return selectValidation(input, error, "Categoría");    
 }
 
 // Details validation
@@ -324,4 +324,24 @@ function validateSubject(input, error) {
 
 function validateMessage(input, error) {
     return textValidation(input, error, "Mensagem")
+}
+
+//------------------------------------------------------------------------
+function validateTotalContent(input, error) {
+    return validation(input, "number", /^(?=.*[1-9])\d*\.?\d*$/,
+        error, "Total do conteúdo", "A duração deve estar acima de 0");
+}
+
+function validateDuration(input, error) {
+    return textValidation(input, error, "Duração");
+}
+
+function validateLevel(input, error) {
+    return selectValidation(input, error, "Nivel");
+}
+function validateLanguage(input, error) {
+    return selectValidation(input, error, "Idioma");
+}
+function validateCertificate(input, error) {
+    return selectValidation(input, error, "Cetificado");
 }
