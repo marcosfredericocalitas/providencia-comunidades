@@ -614,6 +614,7 @@
 .c-page--course-details {
     transform: translateX(-50%) translateY(-72%);
     padding-right: 580px;
+    padding: var(--primary-padding-t-b) var(--primary-padding-l-r);
 }
 
 .c-page__text--left {
@@ -1163,6 +1164,10 @@
         padding: 0 var(--secundary-padding-l-r);
     }
 
+    .c-page--course-details {
+        padding: var(--primary-padding-t-b) var(--secundary-padding-l-r);
+    }
+
     .c-slider-btn {
         display: none;
     }
@@ -1186,6 +1191,10 @@
 
     .c-page--course-details {
         transform: translateX(-50%) translateY(-88%);
+    }
+
+    .c-page--course-details {
+        padding: var(--mobile-padding-t-b) var(--mobile-padding-l-r);
     }
 
     .c-slider {
