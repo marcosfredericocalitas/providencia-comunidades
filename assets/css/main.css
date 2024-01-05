@@ -1044,6 +1044,10 @@
     font-weight: 1000;
 }
 
+.u-txt-nowrap {
+    white-space: nowrap;
+}
+
 /* Text Color */
 .u-txt-white {
     color: var(--white);
@@ -1141,6 +1145,10 @@
 
 .u-width-100 {
     width: 100%;
+}
+
+.u-width-400px {
+    width: 400px;
 }
 
 .u-scale img {
