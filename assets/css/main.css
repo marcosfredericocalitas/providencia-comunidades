@@ -183,17 +183,27 @@
     width: 100%;
 }
 
-.c-comments__header img {
-    width: 100px;
-    height: 100px;
+/* Comments */
+.c-comments__wrapper {
+    flex-direction: column;
+    background-color: var(--gray-color);
+    border-radius: var(--primary-border-radius);
+    padding: 20px;
 }
 
-.c-comments__body {
-    gap: 5px;
+.c-comments__header img {
+    width: 70px;
+    height: 70px;
 }
 
 .c-comments__title {
     font-size: 18px;
+    /* color: var(--primary-color); */
+}
+
+.c-comments__date,
+.c-comments__time {
+    font-weight: 600;
 }
 
 /* Cards */
