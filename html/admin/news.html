@@ -406,20 +406,14 @@
                                             <span class="c-input-error" id="title-err"></span>
                                         </div>
                                         <div class="form-group">
-                                            <label for="admin">Admin</label>
-                                            <select name="admin" id="admin" class="c-input">
-                                                <option value="" selected>Quem cadastrou a noticia?</option>
-                                                <option value="1">Jenilson Lucas</option>
-                                                <option value="4">Jenilson Lucas</option>
-                                                <option value="6">Jenilson Lucas</option>
-                                                <option value="3">Jenilson Lucas</option>
-                                            </select>
-                                            <span class="c-input-error" id="admin-err"></span>
-                                        </div>
-                                        <div class="form-group form-group-last">
                                             <label for="category">Categoria</label>
-                                            <input type="text" name="category" id="category" class="c-input"
-                                                placeholder="Digite a categoria da notíciaa">
+                                            <select name="category" id="category" class="c-input">
+                                                <option disabled selected value="">Selecione o nivel do curso
+                                                </option>
+                                                <option value="1">Informática</option>
+                                                <option value="2">Idiomas</option>
+                                                <option value="3">Gestão</option>
+                                            </select>
                                             <span class="c-input-error" id="category-err"></span>
                                         </div>
                                         <div class="form-group form-group-last">
@@ -427,6 +421,27 @@
                                             <textarea name="details" id="details" cols="5" rows="5" class="c-input"
                                                 placeholder="Digite os detalhes da notícia"></textarea>
                                             <span class="c-input-error" id="details-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="date">Data</label>
+                                            <input type="date" name="date" id="date" class="c-input">
+                                            <span class="c-input-error" id="date-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="hour">Hora</label>
+                                            <input type="time" name="hour" id="hour" class="c-input">
+                                            <span class="c-input-error" id="hour-err"></span>
+                                        </div>
+                                        <div class="form-group form-group-last">
+                                            <label for="admin">Admin</label>
+                                            <select name="admin" id="admin" class="c-input">
+                                                <option disabled selected value="">Quem cadastrou o curso?</option>
+                                                <option value="1">Jenilson Lucas</option>
+                                                <option value="4">Jenilson Lucas</option>
+                                                <option value="6">Jenilson Lucas</option>
+                                                <option value="3">Jenilson Lucas</option>
+                                            </select>
+                                            <span class="c-input-error" id="admin-err"></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="image">Imagem </label>
@@ -452,7 +467,7 @@
                     <div id="editEmployeeModal" class="modal fade">
                         <div class="modal-dialog">
                             <div class="modal-content modal-content-add">
-                                <form enctype="multipart/form-data" id="news-edit-form">
+                                <form enctype="multipart/form-data" id="news-add-form">
                                     <div class="modal-header">
                                         <h4 class="modal-title">Editar noticia</h4>
                                         <button type="button" class="close" data-dismiss="modal"
@@ -461,32 +476,47 @@
                                     <div class="modal-body modal-body-add l-grid">
                                         <div class="form-group">
                                             <label for="edit-title">Título</label>
-                                            <input type="text" name="title" id="edit-title" class="c-input"
+                                            <input type="text" name="edit-title" id="edit-title" class="c-input"
                                                 placeholder="Digite o título da notícia">
                                             <span class="c-input-error" id="edit-title-err"></span>
                                         </div>
                                         <div class="form-group">
+                                            <label for="edit-category">Categoria</label>
+                                            <select name="edit-category" id="edit-category" class="c-input">
+                                                <option disabled selected value="">Selecione o nivel do curso
+                                                </option>
+                                                <option value="1">Informática</option>
+                                                <option value="2">Idiomas</option>
+                                                <option value="3">Gestão</option>
+                                            </select>
+                                            <span class="c-input-error" id="edit-category-err"></span>
+                                        </div>
+                                        <div class="form-group form-group-last">
+                                            <label for="edit-details">Detalhes</label>
+                                            <textarea name="edit-details" id="edit-details" cols="5" rows="5"
+                                                class="c-input" placeholder="Digite os detalhes da notícia"></textarea>
+                                            <span class="c-input-error" id="edit-details-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="edit-date">Data</label>
+                                            <input type="date" name="edit-date" id="edit-date" class="c-input">
+                                            <span class="c-input-error" id="edit-date-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="edit-hour">Hora</label>
+                                            <input type="time" name="edit-hour" id="edit-hour" class="c-input">
+                                            <span class="c-input-error" id="edit-hour-err"></span>
+                                        </div>
+                                        <div class="form-group form-group-last">
                                             <label for="edit-admin">Admin</label>
-                                            <select name="admin" id="edit-admin" class="c-input">
-                                                <option value="" selected>Quem cadastrou a noticia?</option>
+                                            <select name="edit-admin" id="edit-admin" class="c-input">
+                                                <option disabled selected value="">Quem cadastrou o curso?</option>
                                                 <option value="1">Jenilson Lucas</option>
                                                 <option value="4">Jenilson Lucas</option>
                                                 <option value="6">Jenilson Lucas</option>
                                                 <option value="3">Jenilson Lucas</option>
                                             </select>
                                             <span class="c-input-error" id="edit-admin-err"></span>
-                                        </div>
-                                        <div class="form-group form-group-last">
-                                            <label for="edit-category">Categoria</label>
-                                            <input type="text" name="edit-category" id="edit-category" class="c-input"
-                                                placeholder="Digite a categoria da notíciaa">
-                                            <span class="c-input-error" id="edit-category-err"></span>
-                                        </div>
-                                        <div class="form-group form-group-last">
-                                            <label for="edit-details">Detalhes</label>
-                                            <textarea name="details" id="edit-details" cols="5" rows="5" class="c-input"
-                                                placeholder="Digite os detalhes da notícia"></textarea>
-                                            <span class="c-input-error" id="edit-details-err"></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="edit-image">Imagem </label>
@@ -495,8 +525,7 @@
                                         </div>
                                         <div class="form-image">
                                             <img src="../../assets/img/profile-pic.png" alt="Preview da imagem"
-                                                class="c-img c-img--radius-full"
-                                                id="edit-image-preview">
+                                                class="c-img c-img--radius-full" id="edit-image-preview">
                                         </div>
                                     </div>
                                     <div class="modal-footer">

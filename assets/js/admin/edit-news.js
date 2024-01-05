@@ -6,8 +6,10 @@ $(document).ready(function () {
     const NewsValidationFunctions = [
         ["edit-title", "edit-title-err", validateTitle],
         ["edit-category", "edit-category-err", validateCategory],
-        ["edit-admin", "edit-admin-err", validateAdmin],
         ["edit-details", "edit-details-err", validateDetails],
+        ["edit-date", "edit-date-err", validateDate],
+        ["edit-hour", "edit-hour-err", validateHour],
+        ["edit-admin", "edit-admin-err", validateAdmin],
         ["edit-image", "edit-image-err", validateImage]
     ];
 
@@ -17,19 +19,23 @@ $(document).ready(function () {
 
     // Validation by click button
     $("#btn-edit-news").click(function () {
-        const isValidTitle = validateTitle("edit-title", "edit-title-err");
-        const isValidCategory = validateCategory("edit-category", "edit-category-err");
-        const isValidAdmin = validateAdmin("edit-admin", "edit-admin-err");
-        const isValidDetails = validateDetails("edit-details", "edit-details-err");
-        const isImageValid = validateImage("edit-image", "edit-image-err");
+        const isEditTitleValid = validateTitle("edit-title", "edit-title-err");
+        const isEditCategoryValid = validateCategory("edit-category", "edit-category-err");
+        const isEditDetailsValid = validateDetails("edit-details", "edit-details-err");
+        const isEditDateValid = validateDate("edit-date", "edit-date-err");
+        const isEditHourValid = validateHour("edit-hour", "edit-hour-err");
+        const isEditAdminValid = validateAdmin("edit-admin", "edit-admin-err");
+        const isEditImageValid = validateImage("edit-image", "edit-image-err");
 
-        if (!isValidTitle || !isValidCategory || !isValidAdmin || !isValidDetails || !isImageValid) {
-            alert('Erro ao adicioar novo notícia');
+        if (!isEditTitleValid || !isEditCategoryValid || !isEditDetailsValid ||
+            !isEditDateValid || !isEditHourValid || !isEditAdminValid || !isEditImageValid) {
+            alert('Erro ao editar notícia');
             return false;
         }
 
-        alert('Notícia adicionado com sucesso');
+        alert('Notícia editada com sucesso');
         return true;
     });
 });
+
 

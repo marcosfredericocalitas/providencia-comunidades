@@ -6,6 +6,7 @@ function getInputValue(input, type) {
     switch (type) {
         case "tel":
         case "date":
+        case "time":
         case "text":
         case "email":
         case "number":
@@ -342,9 +343,21 @@ function validateDuration(input, error) {
 function validateLevel(input, error) {
     return selectValidation(input, error, "Nivel");
 }
+
 function validateLanguage(input, error) {
     return selectValidation(input, error, "Idioma");
 }
+
 function validateCertificate(input, error) {
     return selectValidation(input, error, "Cetificado");
 }
+
+//------------------------------------------------------------------------
+function validateDate(input, error) {
+    return validation(input, "date", /^\d{4}-\d{2}-\d{2}$/, error, "Data", "Escolha uma data válida")
+}
+
+function validateHour(input, error) {
+    return validation(input, "time", /^([01]\d|2[0-3]):[0-5]\d$/, error, "Data", "Escolha uma hora válida")
+}
+
