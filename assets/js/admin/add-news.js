@@ -3,17 +3,18 @@ $(document).ready(function () {
     setImagePreview("image", "image-preview");
 
     // Validation by focusout event
-    const NewsValidationFunctions = [
+    const NewsValidationByFocusOUt = [
         ["title", "title-err", validateTitle],
         ["category", "category-err", validateCategory],
         ["details", "details-err", validateDetails],
         ["date", "date-err", validateDate],
         ["hour", "hour-err", validateHour],
+        ["location", "location-err", validateLocation],
         ["admin", "admin-err", validateAdmin],
         ["image", "image-err", validateImage]
     ];
 
-    NewsValidationFunctions.forEach((array) => {
+    NewsValidationByFocusOUt.forEach((array) => {
         validateByFocusOut(array[0], array[1], array[2]);
     });
 
@@ -24,11 +25,12 @@ $(document).ready(function () {
         const isDetailsValid = validateDetails("details", "details-err");
         const isDateValid = validateDate("date", "date-err");
         const isHourValid = validateHour("hour", "hour-err");
+        const isLocationValid = validateLocation("location", "location-err");
         const isAdminValid = validateAdmin("admin", "admin-err");
         const isImageValid = validateImage("image", "image-err");
 
-        if (!isTitleValid || !isCategoryValid || !isDetailsValid ||
-            !isDateValid || !isHourValid || !isAdminValid || !isImageValid) {
+        if (!isTitleValid || !isCategoryValid || !isDetailsValid || !isDateValid ||
+            !isHourValid || !isLocationValid || !isAdminValid || !isImageValid) {
             alert('Erro ao adicioar novo notícia');
             return false;
         }

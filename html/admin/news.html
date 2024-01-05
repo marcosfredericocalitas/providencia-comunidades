@@ -432,7 +432,7 @@
                             <div class="modal-content modal-content-add">
                                 <form enctype="multipart/form-data" id="news-add-form">
                                     <div class="modal-header">
-                                        <h4 class="modal-title">Adicionar noticia</h4>
+                                        <h4 class="modal-title">Adicionar notícia</h4>
                                         <button type="button" class="close" data-dismiss="modal"
                                             aria-hidden="true">&times;</button>
                                     </div>
@@ -444,7 +444,7 @@
                                             <span class="c-input-error" id="title-err"></span>
                                         </div>
                                         <div class="form-group">
-                                            <label for="category">Categoria</label>
+                                            <label for="category">Categoría</label>
                                             <select name="category" id="category" class="c-input">
                                                 <option disabled selected value="">Selecione o nivel do curso
                                                 </option>
@@ -470,7 +470,13 @@
                                             <input type="time" name="hour" id="hour" class="c-input">
                                             <span class="c-input-error" id="hour-err"></span>
                                         </div>
-                                        <div class="form-group form-group-last">
+                                        <div class="form-group">
+                                            <label for="location">Localização</label>
+                                            <input type="text" name="location" id="location" class="c-input"
+                                                placeholder="Digite o local do evento">
+                                            <span class="c-input-error" id="location-err"></span>
+                                        </div>
+                                        <div class="form-group">
                                             <label for="admin">Admin</label>
                                             <select name="admin" id="admin" class="c-input">
                                                 <option disabled selected value="">Quem cadastrou o curso?</option>
@@ -507,7 +513,7 @@
                             <div class="modal-content modal-content-add">
                                 <form enctype="multipart/form-data" id="news-add-form">
                                     <div class="modal-header">
-                                        <h4 class="modal-title">Editar noticia</h4>
+                                        <h4 class="modal-title">Editar notícia</h4>
                                         <button type="button" class="close" data-dismiss="modal"
                                             aria-hidden="true">&times;</button>
                                     </div>
@@ -519,7 +525,7 @@
                                             <span class="c-input-error" id="edit-title-err"></span>
                                         </div>
                                         <div class="form-group">
-                                            <label for="edit-category">Categoria</label>
+                                            <label for="edit-category">Categoría</label>
                                             <select name="edit-category" id="edit-category" class="c-input">
                                                 <option disabled selected value="">Selecione o nivel do curso
                                                 </option>
@@ -545,7 +551,13 @@
                                             <input type="time" name="edit-hour" id="edit-hour" class="c-input">
                                             <span class="c-input-error" id="edit-hour-err"></span>
                                         </div>
-                                        <div class="form-group form-group-last">
+                                        <div class="form-group">
+                                            <label for="edit-location">Localização</label>
+                                            <input type="text" name="edit-location" id="edit-location" class="c-input"
+                                                placeholder="Digite o local do evento">
+                                            <span class="c-input-error" id="edit-location-err"></span>
+                                        </div>
+                                        <div class="form-group">
                                             <label for="edit-admin">Admin</label>
                                             <select name="edit-admin" id="edit-admin" class="c-input">
                                                 <option disabled selected value="">Quem cadastrou o curso?</option>

@@ -3,17 +3,18 @@ $(document).ready(function () {
     setImagePreview("edit-image", "edit-image-preview");
 
     // Validation by focusout event
-    const NewsValidationFunctions = [
+    const EditNewsValidationByFocusOUt = [
         ["edit-title", "edit-title-err", validateTitle],
         ["edit-category", "edit-category-err", validateCategory],
         ["edit-details", "edit-details-err", validateDetails],
         ["edit-date", "edit-date-err", validateDate],
         ["edit-hour", "edit-hour-err", validateHour],
+        ["edit-location", "edit-location-err", validateLocation],
         ["edit-admin", "edit-admin-err", validateAdmin],
         ["edit-image", "edit-image-err", validateImage]
     ];
 
-    NewsValidationFunctions.forEach((array) => {
+    EditNewsValidationByFocusOUt.forEach((array) => {
         validateByFocusOut(array[0], array[1], array[2]);
     });
 
@@ -24,11 +25,12 @@ $(document).ready(function () {
         const isEditDetailsValid = validateDetails("edit-details", "edit-details-err");
         const isEditDateValid = validateDate("edit-date", "edit-date-err");
         const isEditHourValid = validateHour("edit-hour", "edit-hour-err");
+        const isEditLocationValid = validateLocation("edit-location", "edit-location-err");
         const isEditAdminValid = validateAdmin("edit-admin", "edit-admin-err");
         const isEditImageValid = validateImage("edit-image", "edit-image-err");
 
         if (!isEditTitleValid || !isEditCategoryValid || !isEditDetailsValid ||
-            !isEditDateValid || !isEditHourValid || !isEditAdminValid || !isEditImageValid) {
+            !isEditDateValid || !isEditHourValid || !isEditLocationValid || !isEditAdminValid || !isEditImageValid) {
             alert('Erro ao editar notícia');
             return false;
         }

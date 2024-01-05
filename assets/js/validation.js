@@ -361,3 +361,6 @@ function validateHour(input, error) {
     return validation(input, "time", /^([01]\d|2[0-3]):[0-5]\d$/, error, "Data", "Escolha uma hora válida")
 }
 
+function validateLocation(input, error) {
+    return textValidation(input, error, "Localização")
+}
