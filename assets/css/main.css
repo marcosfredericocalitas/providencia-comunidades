@@ -201,11 +201,6 @@
     /* color: var(--primary-color); */
 }
 
-.c-comments__date,
-.c-comments__time {
-    font-weight: 600;
-}
-
 /* Cards */
 .c-card__wrapper {
     width: 340px;
@@ -1122,6 +1117,10 @@
 .u-border {
     border: 1px solid #d7d7d7;
     border-radius: var(--primary-border-radius);
+}
+
+.u-bold-600 {
+    font-weight: 600;
 }
 
 .u-hover {
