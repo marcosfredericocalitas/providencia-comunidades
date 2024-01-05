@@ -1348,7 +1348,6 @@
 
     .c-text {
         line-height: 1.6rem;
-        font-size: var(--font-size-text-md);
     }
 
     .c-title--primary {
@@ -1377,6 +1376,12 @@
         font-size: 27px;
     }
 
+    .c-comments__header {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
     .c-form__wrapper--comments {
         padding: 0;
         border: none;
@@ -1394,5 +1399,15 @@
 @media (width <=400px) {
     .c-card__wrapper {
         width: 100%;
+    }
+}
+
+@media (width <=335px) {
+    .l-flex--date-time {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin-top: 5px;
+        gap: 0;
     }
 }
