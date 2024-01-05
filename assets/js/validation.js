@@ -273,7 +273,7 @@ function validateTitle(input, error) {
 
 // Category validation
 function validateCategory(input, error) {
-    return selectValidation(input, error, "Categoría");    
+    return selectValidation(input, error, "Categoría");
 }
 
 // Details validation
@@ -333,7 +333,10 @@ function validateTotalContent(input, error) {
 }
 
 function validateDuration(input, error) {
-    return textValidation(input, error, "Duração");
+    return validation(
+        input, "text", /^\d+\s*[a-zA-Z]+$/, error, "Duração",
+        "A duração deve seguir este formato. Ex: 40 min ou 20 hora ou 6 meses"
+    );
 }
 
 function validateLevel(input, error) {
