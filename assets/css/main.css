@@ -445,6 +445,13 @@
     padding: 8px 14px;
 }
 
+.c-input--disable {
+    background-color: #f0f0f0;
+    color: #888;
+    cursor: not-allowed;
+    border: 1px solid #ddd;
+}
+
 .c-input:focus {
     border: 1.5px solid var(--primary-color);
 }
