@@ -82,8 +82,7 @@ function textValidation(input, error, field) {
 
 // Validation by Focus Out
 function validateByFocusOut(input, error, validate) {
-    const inputId = ("#" + input)
-    $(inputId).focusout(() => {
+    $("#" + input).focusout(() => {
         validate(input, error);
     });
 }
