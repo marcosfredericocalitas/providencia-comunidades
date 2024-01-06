@@ -1,12 +1,12 @@
 $(document).ready(function () {
     // Set image preview
     setImagePreview("image", "image-preview");
-
+    // Add class by click
     addClassByClick("btn-signup-course", "modal-container", "is-visible");
     addClassByClick("btn-hide-signup-course", "modal-container", "is-visible")
 
     // Validation by focusout event
-    const validationFunctions = [
+    const signupValidationFields = [
         // Add student functions and params
         ["name", "name-err", validateName],
         ["email", "email-err", validateEmail],
@@ -15,9 +15,7 @@ $(document).ready(function () {
         ["image", "image-err", validateImage],
     ];
 
-    validationFunctions.forEach((validation) => {
-        validateByFocusOut(validation[0], validation[1], validation[2]);
-    });
+    validateFieldsOnFocusOut(signupValidationFields);
 
     // Validation by click button
     $("#btn-signup-student").click(function () {

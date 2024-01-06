@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     // Validation by focusout event
     validateByFocusOut("old-password", "old-password-err", validatePassword);
     validateByFocusOut("password", "password-err", validatePassword);

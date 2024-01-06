@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // Validation by focusout event
-    const validationFunctions = [
+    const commentsValidationFields = [
         // Add student functions and params
         ["comment-name", "comment-name-err", validateName],
         ["comment-email", "comment-email-err", validateEmail],
@@ -8,9 +8,7 @@ $(document).ready(function () {
         ["comment-message", "comment-message-err", validateMessage],
     ];
 
-    validationFunctions.forEach((validation) => {
-        validateByFocusOut(validation[0], validation[1], validation[2]);
-    });
+    validateFieldsOnFocusOut(commentsValidationFields);
 
     // Validation by click button
     $("#btn-comment-submit").click(function () {

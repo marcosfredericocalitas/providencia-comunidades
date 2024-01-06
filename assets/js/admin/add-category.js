@@ -1,14 +1,12 @@
 $(document).ready(function () {
     // Validation by focusout event
-    const categoryValidationByFocusOUt = [
+    const categoryValidationFields = [
         ["name", "name-err", validateName],
         ["admin", "admin-err", validateAdmin],
         ["description", "description-err", validateDescription],
     ];
 
-    categoryValidationByFocusOUt.forEach((array) => {
-        validateByFocusOut(array[0], array[1], array[2]);
-    });
+    validateFieldsOnFocusOut(categoryValidationFields);
 
     // Validation by click button
     $("#btn-add-category").click(function () {

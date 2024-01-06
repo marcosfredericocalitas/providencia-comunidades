@@ -1,14 +1,12 @@
 $(document).ready(function () {
     // Validation by focusout event
-    const EditcategoryValidationByFocusOUt = [
+    const editCategoryValidationFields = [
         ["edit-name", "edit-name-err", validateName],
         ["edit-admin", "edit-admin-err", validateAdmin],
         ["edit-description", "edit-description-err", validateDescription],
     ];
 
-    EditcategoryValidationByFocusOUt.forEach((array) => {
-        validateByFocusOut(array[0], array[1], array[2]);
-    });
+    validateFieldsOnFocusOut(editCategoryValidationFields);
 
     // Validation by click button
     $("#btn-edit-category").click(function () {
@@ -19,7 +17,7 @@ $(document).ready(function () {
         if (!isNameValid || !isAdminValid || !isDescriptionValid) {
             return false;
         }
-        
+
         showMessageEditedsuccessfully();
         return true;
     });

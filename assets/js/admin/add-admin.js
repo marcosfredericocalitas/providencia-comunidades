@@ -5,7 +5,6 @@ $(document).ready(function () {
     validateByFocusOut("password", "password-err", validatePassword);
     // Change password visibility
     togglePasswordVisibility("password", "admin-eye-btn");
-
     // put the eye icon down
     putEyeIconToBottom("password");
 
@@ -23,7 +22,7 @@ $(document).ready(function () {
             !isImageValid || !isGenderValid || !isPhoneValid || !isPasswordValid) {
             return false;
         }
-        
+
         showMessageAddedsuccessfully();
         return true;
     });

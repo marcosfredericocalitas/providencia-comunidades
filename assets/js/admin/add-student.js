@@ -1,7 +1,6 @@
 $(document).ready(function () {
     // Set image preview
     setImagePreview("image", "image-preview");
-
     // Validation by focusout event
     validateByFocusOut("course", "course-err", validateCourse);
 

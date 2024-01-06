@@ -3,7 +3,7 @@ $(document).ready(function () {
     setImagePreview("edit-image", "edit-image-preview");
 
     // Validation by focusout event
-    const courseValidation = [
+    const editCourseValidationFields = [
         ["edit-name", "edit-name-err", validateName],
         ["edit-category", "edit-category-err", validateCategory],
         ["edit-admin", "edit-admin-err", validateAdmin],
@@ -18,9 +18,7 @@ $(document).ready(function () {
         ["edit-image", "edit-image-err", validateImage]
     ];
 
-    courseValidation.forEach((array) => {
-        validateByFocusOut(array[0], array[1], array[2]);
-    });
+    validateFieldsOnFocusOut(editCourseValidationFields);
 
     // Validation by click button
     $("#btn-edit-course").click(function () {
