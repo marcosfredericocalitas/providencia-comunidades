@@ -17,11 +17,10 @@ $(document).ready(function () {
 
         if (!isNameValid || !isEmailValid || !isBirthdateValid ||
             !isGenderValid || !isCourseValid || !isPhoneValid || !isImageValid) {
-            alert('Erro ao adicioar novo aluno');
             return false;
         }
 
-        alert('Aluno adicionado com sucesso');
+        showMessageAddedsuccessfully();
         return true;
     });
 });

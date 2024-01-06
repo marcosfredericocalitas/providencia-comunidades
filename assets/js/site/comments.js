@@ -4,8 +4,8 @@ $(document).ready(function () {
         // Add student functions and params
         ["comment-name", "comment-name-err", validateName],
         ["comment-email", "comment-email-err", validateEmail],
-        ["comment-phone", "comment-phone-err", validateBirthdate],
-        ["comment-message", "comment-message-err", validatePhone],
+        ["comment-phone", "comment-phone-err", validatePhone],
+        ["comment-message", "comment-message-err", validateMessage],
     ];
 
     validationFunctions.forEach((validation) => {
@@ -20,11 +20,10 @@ $(document).ready(function () {
         const isImageValid = validateMessage("comment-message", "comment-message-err");
 
         if (!isNameValid || !isEmailValid || !isPhoneValid || !isImageValid) {
-            alert('Erro ao adicioar comentário');
             return false;
         }
 
-        alert('Comentário adicionado com sucesso');
+        showMessageCommentSendedsuccessfully();
         return true;
     });
 });

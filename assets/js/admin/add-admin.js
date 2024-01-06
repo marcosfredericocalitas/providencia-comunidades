@@ -21,11 +21,10 @@ $(document).ready(function () {
 
         if (!isNameValid || !isEmailValid || !isBirthdateValid ||
             !isImageValid || !isGenderValid || !isPhoneValid || !isPasswordValid) {
-            alert('Erro ao adicioar novo admin');
             return false;
         }
-
-        alert('Admin adicionado com sucesso');
+        
+        showMessageAddedsuccessfully();
         return true;
     });
 });

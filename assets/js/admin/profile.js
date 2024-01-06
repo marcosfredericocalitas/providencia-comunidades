@@ -22,10 +22,9 @@ $(document).ready(function () {
         const isImageValid = validateImage("image", "image-err");
 
         if (!isImageValid) {
-            alert('Erro ao alterar imagem');
             return false;
         }
-        alert('Imagem alterada com sucesso');
+        showMessageSavedSuccessfully();
         return true;
     });
 
@@ -38,11 +37,10 @@ $(document).ready(function () {
         const isPhoneValid = validatePhone("phone", "phone-err");
 
         if (!isNameValid || !isEmailValid || !isBirthdateValid || !isGenderValid || !isPhoneValid) {
-            alert('Erro ao adicioar novo admin');
             return false;
         }
 
-        alert('Admin adicionado com sucesso');
+        showMessageSavedSuccessfully();
         return true;
     })
 });

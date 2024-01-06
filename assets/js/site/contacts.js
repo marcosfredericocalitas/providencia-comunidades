@@ -23,11 +23,10 @@ $(document).ready(function () {
 
         if (!isNameValid || !isEmailValid || !isPhoneValid ||
             !isSubjectValid || !isMessageValid) {
-            alert('Erro ao enviar mensagem');
             return false;
         }
 
-        alert('Mensagem enviada com sucesso');
+        showMessageSendedsuccessfully();
         return true;
     })
 });

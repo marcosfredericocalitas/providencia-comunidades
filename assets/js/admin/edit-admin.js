@@ -18,11 +18,10 @@ $(document).ready(function () {
 
         if (!isEditNameValid || !isEditEmailValid || !isEditBirthdateValid ||
             !isEditImageValid || !isEditGenderValid || !isEditPhoneValid || !isEditPasswordValid) {
-            alert('Erro ao adicioar novo admin');
             return false;
         }
 
-        alert('Admin adicionado com sucesso');
+        showMessageEditedsuccessfully();
         return true;
     });
 });

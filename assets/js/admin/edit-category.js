@@ -17,11 +17,10 @@ $(document).ready(function () {
         const isDescriptionValid = validateDescription("edit-description", "edit-description-err");
 
         if (!isNameValid || !isAdminValid || !isDescriptionValid) {
-            alert('Erro ao adicionar nova categoria');
             return false;
         }
-
-        alert('Categoria adicionado com sucesso');
+        
+        showMessageEditedsuccessfully();
         return true;
     });
 });

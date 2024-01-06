@@ -38,13 +38,12 @@ $(document).ready(function () {
         const isEditEditImageValid = validateImage("edit-image", "edit-image-err");
 
         if (!isEditNameValid || !isEditCategoryValid || !isEditAdminValid || !isEditDescriptionValid ||
-            isEditDetailsValid || !isEditTopicsValid || !isEditTotalContentValid || !isEditDurationValid ||
+            !isEditDetailsValid || !isEditTopicsValid || !isEditTotalContentValid || !isEditDurationValid ||
             !isEditLevelValid || !isEditLanguageValid || !isEditCertificateValid || !isEditEditImageValid) {
-            alert('Erro ao editar curso');
             return false;
         }
 
-        alert('Curso editado com sucesso');
+        showMessageEditedsuccessfully();
         return true;
     });
 });

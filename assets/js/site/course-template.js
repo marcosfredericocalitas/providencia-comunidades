@@ -13,7 +13,6 @@ $(document).ready(function () {
         ["birthdate", "birthdate-err", validateBirthdate],
         ["phone", "phone-err", validatePhone],
         ["image", "image-err", validateImage],
-
     ];
 
     validationFunctions.forEach((validation) => {
@@ -31,11 +30,13 @@ $(document).ready(function () {
 
         if (!isNameValid || !isEmailValid || !isBirthdateValid ||
             !isGenderValid || !isPhoneValid || !isImageValid) {
-            alert('Erro ao adicionar novo aluno');
             return false;
         }
 
-        alert('Aluno adicionado com sucesso');
+        $("#modal-container").removeClass("is-visible");
+        setTimeout(() => {
+            showMessageSignupedsuccessfully();
+        }, 150);
         return true;
     });
 });

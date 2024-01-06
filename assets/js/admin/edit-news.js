@@ -31,11 +31,10 @@ $(document).ready(function () {
 
         if (!isEditTitleValid || !isEditCategoryValid || !isEditDetailsValid ||
             !isEditDateValid || !isEditHourValid || !isEditLocationValid || !isEditAdminValid || !isEditImageValid) {
-            alert('Erro ao editar notícia');
             return false;
         }
 
-        alert('Notícia editada com sucesso');
+        showMessageEditedsuccessfully();
         return true;
     });
 });

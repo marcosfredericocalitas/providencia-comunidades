@@ -20,11 +20,10 @@ $(document).ready(function () {
         const isConfirmPasswordValid = validateConfirmPassword("confirm-password", "confirm-password-err");
 
         if (!isOldPasswordValid || !isPasswordValid || !isConfirmPasswordValid) {
-            alert('Erro ao alterar senha');
             return false;
         }
 
-        alert('Senha alterada com sucesso');
+        showMessageSavedSuccessfully();
         return true;
     });
 

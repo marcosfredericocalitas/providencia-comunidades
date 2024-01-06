@@ -38,13 +38,12 @@ $(document).ready(function () {
         const isEditImageValid = validateImage("image", "image-err");
 
         if (!isNameValid || !isCategoryValid || !isAdminValid || !isDescriptionValid ||
-            isDetailsValid || !isTopicsValid || !isTotalContentValid || !isDurationValid ||
+            !isDetailsValid || !isTopicsValid || !isTotalContentValid || !isDurationValid ||
             !isLevelValid || !isLanguageValid || !isCertificateValid || !isEditImageValid) {
-            alert('Erro ao adicionar novo curso');
             return false;
         }
 
-        alert('Curso adicionado com sucesso');
+        showMessageAddedsuccessfully();
         return true;
     });
 });
