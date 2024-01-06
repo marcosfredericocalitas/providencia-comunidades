@@ -1,5 +1,5 @@
 // Validation by focusout event
-const validationFunctions = [
+const usersValidationFields = [
     // Add student functions and params
     ["name", "name-err", validateName],
     ["email", "email-err", validateEmail],
@@ -15,6 +15,4 @@ const validationFunctions = [
     ["edit-image", "edit-image-err", validateImage]
 ];
 
-validationFunctions.forEach((validation) => {
-    validateByFocusOut(validation[0], validation[1], validation[2]);
-});
+validateFieldsOnFocusOut(usersValidationFields);  

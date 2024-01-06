@@ -88,6 +88,16 @@ function validateByFocusOut(input, error, validate) {
     });
 }
 
+// Validate fields on focusOut
+function validateFieldsOnFocusOut(fields) {
+    fields.forEach((fieldInfo) => {
+        const fieldName = fieldInfo[0];
+        const errorId = fieldInfo[1];
+        const validationFunction = fieldInfo[2];
+        return validateByFocusOut(fieldName, errorId, validationFunction);
+    });
+}
+
 // Selects validation
 function selectValidation(input, error, field) {
     const selectValue = getInputValue(input, "select");
