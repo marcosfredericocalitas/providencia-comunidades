@@ -372,7 +372,10 @@
 .c-form__wrapper {
     padding: 25px;
     gap: 25px;
-    /* background-color: #f6f9ff; */
+}
+
+.c-form__wrapper--has-no-gap {
+    gap: 0;
 }
 
 .c-form__wrapper--has-no-padding {
