@@ -23,6 +23,7 @@ $(document).ready(function () {
         }
 
         showMessageSavedSuccessfully();
+        cleanAllFields();
         return true;
     });
 

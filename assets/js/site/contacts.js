@@ -25,6 +25,7 @@ $(document).ready(function () {
         }
 
         showMessageSendedsuccessfully();
+        cleanAllFields();
         return true;
     })
 });

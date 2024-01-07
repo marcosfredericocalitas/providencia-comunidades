@@ -34,6 +34,7 @@ $(document).ready(function () {
         $("#modal-container").removeClass("is-visible");
         setTimeout(() => {
             showMessageSignupedsuccessfully();
+            cleanAllFields();
         }, 150);
         return true;
     });

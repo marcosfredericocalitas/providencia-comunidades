@@ -25,6 +25,7 @@ $(document).ready(function () {
             return false;
         }
         showMessageSavedSuccessfully();
+        cleanAllFields();
         return true;
     });
 
@@ -41,6 +42,7 @@ $(document).ready(function () {
         }
 
         showMessageSavedSuccessfully();
+        cleanAllFields();
         return true;
     })
 });

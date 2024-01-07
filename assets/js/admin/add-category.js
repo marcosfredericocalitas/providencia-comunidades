@@ -19,6 +19,7 @@ $(document).ready(function () {
         }
 
         showMessageAddedsuccessfully();
+        cleanAllFields();
         return true;
     });
 });

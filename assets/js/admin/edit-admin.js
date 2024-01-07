@@ -22,6 +22,7 @@ $(document).ready(function () {
         }
 
         showMessageEditedsuccessfully();
+        cleanAllFields();
         return true;
     });
 });

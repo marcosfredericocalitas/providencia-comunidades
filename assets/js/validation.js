@@ -168,6 +168,12 @@ function codeValidation(input, error, field) {
     return validation(input, "text", /^\d{6}$/, error, field, "O " + field + " deve ter apenas 6 dígitos")
 }
 
+// Clean all fields
+function cleanAllFields() {
+    const inputs = $(".c-input");
+    inputs.val("");
+}
+
 /* ------------------------ Calling the functions ------------------------ */
 // Name validation
 function validateName(input, error) {
