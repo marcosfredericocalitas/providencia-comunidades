@@ -211,7 +211,7 @@ function validateCourse(input, error) {
 function validatePhone(input, error) {
     return validation(
         input, "tel", /^\d{9}$/, error, "Telefone",
-        "O número de telefone deve conter apenas 9 dígitos."
+        "O número de telefone deve conter apenas 9 dígitos e não deve conter espaços em branco"
     );
 }
 
