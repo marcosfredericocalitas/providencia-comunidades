@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerir notícias</title>
+    <title>Gerir alunos</title>
     <link rel="stylesheet" href="../../assets/css/dashboard/adminlte.min.css">
     <link rel="stylesheet" href="../../assets/css/fontawesome-icons/All/all.min.css">
     <link rel="stylesheet" href="../../assets/css/dashboard/bootstrap.min.css">
@@ -62,7 +62,7 @@
                         <img src="../../assets/img/profile-pic.png" class="img-circle elevation-2" alt="User Image">
                     </a>
                     <div class="info">
-                        <a href="#" class="d-block u-display-box u-line-clamp1">Marcos Frederico Calitas</a>
+                        <a href="#" class="d-block l-box l-line-clamp-1">Marcos Frederico Calitas </a>
                     </div>
                 </div>
 
@@ -113,7 +113,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="news.html" class="nav-link active">
+                            <a href="news.html" class="nav-link">
                                 <i class="nav-icon fas fa-newspaper"></i>
                                 <p>
                                     Noticias
@@ -129,7 +129,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="comments.html" class="nav-link">
+                            <a href="category.html" class="nav-link active">
                                 <i class="nav-icon fas fa-comment"></i>
                                 <p>
                                     Comentários
@@ -166,7 +166,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">Notícias</h1>
+                            <h1 class="m-0">Alunos</h1>
                         </div>
                     </div>
                 </div>
@@ -181,12 +181,12 @@
                             <div class="table-title">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <h2>Gerir <b>notícias</b></h2>
+                                        <h2>Gerir <b>alunos</b></h2>
                                     </div>
                                     <div class="col-sm-6">
                                         <a href="#addEmployeeModal" class="btn btn-success btn-big"
                                             data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add
-                                                novo notícia</span></a>
+                                                novo aluno</span></a>
                                         <a href="#deleteAllEmployeeModal" class="btn btn-danger btn-big"
                                             data-toggle="modal"><i class="material-icons">&#xE15C;</i>
                                             <span>Apagar todos</span></a>
@@ -197,13 +197,12 @@
                                 <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>Notícia</th>
-                                        <th>Título</th>
-                                        <th>Categoria</th>
-                                        <th>Localização</th>
-                                        <th>Hora</th>
-                                        <th>Data</th>
-                                        <th>Admin</th>
+                                        <th>Aluno</th>
+                                        <th>Nome</th>
+                                        <th>Email</th>
+                                        <th>Curso</th>
+                                        <th>Sexo</th>
+                                        <th>Telefone</th>
                                         <th>Ações</th>
                                     </tr>
                                 </thead>
@@ -212,38 +211,33 @@
                                         <td>01</td>
                                         <td>
                                             <div class="table-img">
-                                                <img src="../../assets/img/profile-pic.png" alt="Imagem do admin"
+                                                <img src="../../assets/img/profile-pic.png" alt="Imagem do aluno"
                                                     class="c-img c-img--radius-full">
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="table-data l-box l-line-clamp-2">
+                                            <div class="table-data l-box l-line-clamp-1">
                                                 Marcos Frederico Marcos
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="table-data l-box l-line-clamp-2">
-                                                Cultura
+                                            <div class="table-data l-box l-line-clamp-1">
+                                                marcosfredericocalitas22@mail.com
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="table-data l-box l-line-clamp-2">
-                                                Kilamba kyaxi golf 2
+                                            <div class="table-data l-box l-line-clamp-1">
+                                                Programação web (Full-stack)
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="table-data l-box l-line-clamp-2">
-                                                10h:30
+                                            <div class="table-data l-box l-line-clamp-1">
+                                                Masculino
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="table-data l-box l-line-clamp-2">
-                                                10/05/2023
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="table-data l-box l-line-clamp-2">
-                                                Jenilson Lucas
+                                            <div class="table-data l-box l-line-clamp-1">
+                                                (+244) 940-345-430
                                             </div>
                                         </td>
                                         <td>
@@ -261,38 +255,33 @@
                                         <td>01</td>
                                         <td>
                                             <div class="table-img">
-                                                <img src="../../assets/img/profile-pic.png" alt="Imagem do admin"
+                                                <img src="../../assets/img/profile-pic.png" alt="Imagem do aluno"
                                                     class="c-img c-img--radius-full">
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="table-data l-box l-line-clamp-2">
+                                            <div class="table-data l-box l-line-clamp-1">
                                                 Marcos Frederico Marcos
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="table-data l-box l-line-clamp-2">
-                                                Cultura
+                                            <div class="table-data l-box l-line-clamp-1">
+                                                marcosfredericocalitas22@mail.com
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="table-data l-box l-line-clamp-2">
-                                                Kilamba kyaxi golf 2
+                                            <div class="table-data l-box l-line-clamp-1">
+                                                Programação web (Full-stack)
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="table-data l-box l-line-clamp-2">
-                                                10h:30
+                                            <div class="table-data l-box l-line-clamp-1">
+                                                Masculino
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="table-data l-box l-line-clamp-2">
-                                                10/05/2023
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="table-data l-box l-line-clamp-2">
-                                                Jenilson Lucas
+                                            <div class="table-data l-box l-line-clamp-1">
+                                                (+244) 940-345-430
                                             </div>
                                         </td>
                                         <td>
@@ -310,38 +299,33 @@
                                         <td>01</td>
                                         <td>
                                             <div class="table-img">
-                                                <img src="../../assets/img/profile-pic.png" alt="Imagem do admin"
+                                                <img src="../../assets/img/profile-pic.png" alt="Imagem do aluno"
                                                     class="c-img c-img--radius-full">
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="table-data l-box l-line-clamp-2">
+                                            <div class="table-data l-box l-line-clamp-1">
                                                 Marcos Frederico Marcos
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="table-data l-box l-line-clamp-2">
-                                                Cultura
+                                            <div class="table-data l-box l-line-clamp-1">
+                                                marcosfredericocalitas22@mail.com
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="table-data l-box l-line-clamp-2">
-                                                Kilamba kyaxi golf 2
+                                            <div class="table-data l-box l-line-clamp-1">
+                                                Programação web (Full-stack)
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="table-data l-box l-line-clamp-2">
-                                                10h:30
+                                            <div class="table-data l-box l-line-clamp-1">
+                                                Masculino
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="table-data l-box l-line-clamp-2">
-                                                10/05/2023
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="table-data l-box l-line-clamp-2">
-                                                Jenilson Lucas
+                                            <div class="table-data l-box l-line-clamp-1">
+                                                (+244) 940-345-430
                                             </div>
                                         </td>
                                         <td>
@@ -359,38 +343,33 @@
                                         <td>01</td>
                                         <td>
                                             <div class="table-img">
-                                                <img src="../../assets/img/profile-pic.png" alt="Imagem do admin"
+                                                <img src="../../assets/img/profile-pic.png" alt="Imagem do aluno"
                                                     class="c-img c-img--radius-full">
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="table-data l-box l-line-clamp-2">
+                                            <div class="table-data l-box l-line-clamp-1">
                                                 Marcos Frederico Marcos
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="table-data l-box l-line-clamp-2">
-                                                Cultura
+                                            <div class="table-data l-box l-line-clamp-1">
+                                                marcosfredericocalitas22@mail.com
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="table-data l-box l-line-clamp-2">
-                                                Kilamba kyaxi golf 2
+                                            <div class="table-data l-box l-line-clamp-1">
+                                                Programação web (Full-stack)
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="table-data l-box l-line-clamp-2">
-                                                10h:30
+                                            <div class="table-data l-box l-line-clamp-1">
+                                                Masculino
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="table-data l-box l-line-clamp-2">
-                                                10/05/2023
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="table-data l-box l-line-clamp-2">
-                                                Jenilson Lucas
+                                            <div class="table-data l-box l-line-clamp-1">
+                                                (+244) 940-345-430
                                             </div>
                                         </td>
                                         <td>
@@ -411,7 +390,7 @@
                                 <h1 class="table-title-nd">Ainda não há nenhum aluno Cadastrado</h1>
                             </div>
                             <div class="clearfix">
-                                <div class="hint-text">Mostrando <b>4</b> dos <b>25</b> n oticias</div>
+                                <div class="hint-text">Mostrando <b>4</b> dos <b>25</b> alunos</div>
                                 <ul class="pagination">
                                     <li class="page-item disabled"><a href="#">Anterior</a></li>
                                     <li class="page-item"><a href="#" class="page-link">1</a></li>
@@ -428,65 +407,62 @@
                     <div id="addEmployeeModal" class="modal fade">
                         <div class="modal-dialog">
                             <div class="modal-content modal-content-add">
-                                <form enctype="multipart/form-data" id="news-add-form">
+                                <form enctype="multipart/form-data" id="add-student-form">
                                     <div class="modal-header">
-                                        <h4 class="modal-title">Adicionar notícia</h4>
+                                        <h4 class="modal-title">Adicionar aluno</h4>
                                         <button type="button" class="close" data-dismiss="modal"
                                             aria-hidden="true">&times;</button>
                                     </div>
                                     <div class="modal-body modal-body-add l-grid">
                                         <div class="form-group">
-                                            <label for="title">Título</label>
-                                            <input type="text" name="title" id="title" class="c-input"
-                                                placeholder="Digite o título da notícia">
-                                            <span class="c-input-error" id="title-err"></span>
+                                            <label for="name">Nome</label>
+                                            <input type="text" name="name" id="name" class="c-input"
+                                                placeholder="Digite o nome do aluno">
+                                            <span class="c-input-error" id="name-err"></span>
                                         </div>
                                         <div class="form-group">
-                                            <label for="category">Categoría</label>
-                                            <select name="category" id="category" class="c-input">
+                                            <label for="email">Email</label>
+                                            <input type="email" name="email" id="email" class="c-input"
+                                                placeholder="email@exemplo.com">
+                                            <span class="c-input-error" id="email-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="birthdate">Data de nascimento</label>
+                                            <input type="date" name="birthdate" id="birthdate" class="c-input">
+                                            <span class="c-input-error" id="birthdate-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Sexo</label>
+                                            <div class="form-gender l-flex">
+                                                <div class="form-gender-gap l-flex">
+                                                    <Label for="male" class="label-normal">Masculino</Label>
+                                                    <input type="radio" name="gender" id="male" value="Masculino">
+                                                </div>
+                                                <div class="form-gender-gap l-flex">
+                                                    <Label for="feminine" class="label-normal">Feminino</Label>
+                                                    <input type="radio" name="gender" id="feminine" value="Feminino">
+                                                </div>
+                                            </div>
+                                            <span class="c-input-error" id="gender-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="course">Curso</label>
+                                            <select name="course" id="course" class="c-input">
                                                 <option disabled selected value="">
-                                                    Selecione a categoría da notícia
+                                                    Selecione o curso
                                                 </option>
-                                                <option value="1">Informática</option>
-                                                <option value="2">Idiomas</option>
-                                                <option value="3">Gestão</option>
+                                                <option value="1">Programação web</option>
+                                                <option value="4">Programação Front-end</option>
+                                                <option value="6">Programação back-end</option>
+                                                <option value="3">Programação mobile</option>
                                             </select>
-                                            <span class="c-input-error" id="category-err"></span>
-                                        </div>
-                                        <div class="form-group form-group-last">
-                                            <label for="details">Detalhes</label>
-                                            <textarea name="details" id="details" cols="5" rows="5" class="c-input"
-                                                placeholder="Digite os detalhes da notícia"></textarea>
-                                            <span class="c-input-error" id="details-err"></span>
+                                            <span class="c-input-error" id="course-err"></span>
                                         </div>
                                         <div class="form-group">
-                                            <label for="date">Data</label>
-                                            <input type="date" name="date" id="date" class="c-input">
-                                            <span class="c-input-error" id="date-err"></span>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="hour">Hora</label>
-                                            <input type="time" name="hour" id="hour" class="c-input">
-                                            <span class="c-input-error" id="hour-err"></span>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="location">Localização</label>
-                                            <input type="text" name="location" id="location" class="c-input"
-                                                placeholder="Digite o local do evento">
-                                            <span class="c-input-error" id="location-err"></span>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="admin">Admin</label>
-                                            <select name="admin" id="admin" class="c-input">
-                                                <option disabled selected value="">
-                                                    Quem está adicionando a notícia?
-                                                </option>
-                                                <option value="1">Jenilson Lucas</option>
-                                                <option value="4">Jenilson Lucas</option>
-                                                <option value="6">Jenilson Lucas</option>
-                                                <option value="3">Jenilson Lucas</option>
-                                            </select>
-                                            <span class="c-input-error" id="admin-err"></span>
+                                            <label for="phone">Telefone</label>
+                                            <input type="tel" name="phone" id="phone" class="c-input" maxlength="9"
+                                                placeholder="123-456-789">
+                                            <span class="c-input-error" id="phone-err"></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="image">Imagem </label>
@@ -501,8 +477,8 @@
                                     <div class="modal-footer">
                                         <input type="button" class="btn btn-default" data-dismiss="modal"
                                             value="Cancelar">
-                                        <input type="button" class="btn btn-success" value="Adicionar"
-                                            id="btn-add-news">
+                                        <input type="button" onclick="SendEyeIconToBottom();" class="btn btn-success"
+                                            value="Adicionar" id="btn-add-student">
                                     </div>
                                 </form>
                             </div>
@@ -512,65 +488,65 @@
                     <div id="editEmployeeModal" class="modal fade">
                         <div class="modal-dialog">
                             <div class="modal-content modal-content-add">
-                                <form enctype="multipart/form-data" id="news-add-form">
+                                <form enctype="multipart/form-data" id="edit-student-form">
                                     <div class="modal-header">
-                                        <h4 class="modal-title">Editar notícia</h4>
+                                        <h4 class="modal-title">Editar aluno</h4>
                                         <button type="button" class="close" data-dismiss="modal"
                                             aria-hidden="true">&times;</button>
                                     </div>
                                     <div class="modal-body modal-body-add l-grid">
                                         <div class="form-group">
-                                            <label for="edit-title">Título</label>
-                                            <input type="text" name="edit-title" id="edit-title" class="c-input"
-                                                placeholder="Digite o título da notícia">
-                                            <span class="c-input-error" id="edit-title-err"></span>
+                                            <label for="edit-name">Nome</label>
+                                            <input type="text" name="edit-name" id="edit-name" class="c-input"
+                                                placeholder="Digite o nome do aluno">
+                                            <span class="c-input-error" id="edit-name-err"></span>
                                         </div>
                                         <div class="form-group">
-                                            <label for="edit-category">Categoría</label>
-                                            <select name="edit-category" id="edit-category" class="c-input">
+                                            <label for="edit-email">Email</label>
+                                            <input type="email" name="edit-email" id="edit-email" class="c-input"
+                                                placeholder="email@exemplo.com">
+                                            <span class="c-input-error" id="edit-email-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="edit-birthdate">Data de nascimento</label>
+                                            <input type="date" name="edit-birthdate" id="edit-birthdate"
+                                                class="c-input">
+                                            <span class="c-input-error" id="edit-birthdate-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Sexo</label>
+                                            <div class="form-gender l-flex">
+                                                <div class="form-gender-gap l-flex">
+                                                    <Label for="edit-male" class="label-normal">Masculino</Label>
+                                                    <input type="radio" name="edit-gender" id="edit-male"
+                                                        value="Masculino">
+                                                </div>
+                                                <div class="form-gender-gap l-flex">
+                                                    <Label for="edit-feminine" class="label-normal">Feminino</Label>
+                                                    <input type="radio" name="edit-gender" id="edit-feminine"
+                                                        value="Feminino">
+                                                </div>
+                                            </div>
+                                            <span class="c-input-error" id="edit-gender-err"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="edit-course">Curso</label>
+                                            <select name="edit-course" id="edit-course" class="c-input">
                                                 <option disabled selected value="">
-                                                    Selecione a categoría da notícia
+                                                    Selecione o curso
                                                 </option>
-                                                <option value="1">Informática</option>
-                                                <option value="2">Idiomas</option>
-                                                <option value="3">Gestão</option>
+                                                <option value="1">Programação web</option>
+                                                <option value="4">Programação Front-end</option>
+                                                <option value="6">Programação back-end</option>
+                                                <option value="3">Programação mobile</option>
                                             </select>
-                                            <span class="c-input-error" id="edit-category-err"></span>
-                                        </div>
-                                        <div class="form-group form-group-last">
-                                            <label for="edit-details">Detalhes</label>
-                                            <textarea name="edit-details" id="edit-details" cols="5" rows="5"
-                                                class="c-input" placeholder="Digite os detalhes da notícia"></textarea>
-                                            <span class="c-input-error" id="edit-details-err"></span>
+                                            <span class="c-input-error" id="edit-course-err"></span>
                                         </div>
                                         <div class="form-group">
-                                            <label for="edit-date">Data</label>
-                                            <input type="date" name="edit-date" id="edit-date" class="c-input">
-                                            <span class="c-input-error" id="edit-date-err"></span>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="edit-hour">Hora</label>
-                                            <input type="time" name="edit-hour" id="edit-hour" class="c-input">
-                                            <span class="c-input-error" id="edit-hour-err"></span>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="edit-location">Localização</label>
-                                            <input type="text" name="edit-location" id="edit-location" class="c-input"
-                                                placeholder="Digite o local do evento">
-                                            <span class="c-input-error" id="edit-location-err"></span>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="edit-admin">Admin</label>
-                                            <select name="edit-admin" id="edit-admin" class="c-input">
-                                                <option disabled selected value="">
-                                                    Quem está adicionando a notícia?
-                                                </option>
-                                                <option value="1">Jenilson Lucas</option>
-                                                <option value="4">Jenilson Lucas</option>
-                                                <option value="6">Jenilson Lucas</option>
-                                                <option value="3">Jenilson Lucas</option>
-                                            </select>
-                                            <span class="c-input-error" id="edit-admin-err"></span>
+                                            <label for="edit-phone">Telefone</label>
+                                            <input type="tel" name="edit-phone" id="edit-phone" class="c-input"
+                                                maxlength="9" placeholder="123-456-789">
+                                            <span class="c-input-error" id="edit-phone-err"></span>
                                         </div>
                                         <div class="form-group">
                                             <label for="edit-image">Imagem </label>
@@ -596,7 +572,8 @@
                                     <div class="modal-footer">
                                         <input type="button" class="btn btn-default" data-dismiss="modal"
                                             value="Cancelar">
-                                        <input type="button" class="btn btn-success" value="Editar" id="btn-edit-news">
+                                        <input type="button" onclick="SendEyeIconToBottom();" class="btn btn-success"
+                                            value="Editar" id="btn-edit-student">
                                     </div>
                                 </form>
                             </div>
@@ -673,8 +650,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- Validation Scripts -->
     <script src="../../assets/js/validation.js"></script>
-    <script src="../../assets/js/admin/add-news.js"></script>
-    <script src="../../assets/js/admin/edit-news.js"></script>
+    <script src="../../assets/js/admin/add-student.js"></script>
+    <script src="../../assets/js/admin/edit-student.js"></script>
+    <script src="../../assets/js/admin/users-validation-by-focus-out.js"></script>
     <script src="../../assets/js/sweet-alert.js"></script>
     <script src="../../assets/js/alert.js"></script>
 
